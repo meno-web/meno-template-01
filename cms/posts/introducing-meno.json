@@ -1,0 +1,127 @@
+{
+  "_id": "introducing-meno",
+  "_filename": "introducing-meno",
+  "_createdAt": "2026-01-13T12:00:00.000Z",
+  "_updatedAt": "2026-01-15T11:04:12.178Z",
+  "title": "Introducing Meno",
+  "slug": "introducing-meno",
+  "excerpt": "Meet Meno: the AI-powered visual web builder that turns your ideas into production-ready websites in minutes, not weeks.",
+  "content": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "We built Meno because creating websites shouldn't be this hard. Traditional web development takes weeks of back-and-forth between designers, developers, and content teams. We wanted to change that."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "What is Meno?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Meno is an AI-powered visual web builder. Select any element, describe what you want, and watch as AI transforms your vision into reality. Then use the visual editor to refine every detail until it's exactly right."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Why Meno?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Unlike other website builders, Meno gives you complete ownership of your work. Your pages and components are stored as clean JSON files in your Git repository. No vendor lock-in, no proprietary formats. You can self-host or deploy anywhere."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "The built-in CMS lets you manage dynamic content with typed fields, while Git integration means your entire team can collaborate with proper version control, branching, and pull requests."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Who is it for?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Meno is built for developers who want to move faster, designers who want to see their vision come to life, and marketing teams who need to ship without waiting on engineering. Whether you're building a landing page or an entire product site, Meno gets you there in minutes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Ready to try it? We'd love to show you what's possible."
+          }
+        ]
+      }
+    ]
+  },
+  "featuredImage": "/images/Screenshot-2026-01-09-at-09.32.53.webp",
+  "publishedAt": "2026-01-13"
+}

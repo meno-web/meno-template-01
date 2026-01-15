@@ -1,0 +1,42 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "style": {
+        "base": {
+          "backgroundColor": "var(--bg)"
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "attributes": {
+        "theme": "light"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "Navigation"
+        },
+        {
+          "type": "node",
+          "tag": "main",
+          "treeNodeName": "main",
+          "style": {
+            "base": {}
+          },
+          "children": [
+            {
+              "type": "slot"
+            }
+          ]
+        },
+        {
+          "type": "component",
+          "component": "Footer"
+        }
+      ]
+    },
+    "interface": {}
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "treeNodeName": "Item",
+      "style": {
+        "base": {
+          "borderBottom": "1px solid var(--border)"
+        }
+      },
+      "attributes": {
+        "class": "{{isOpen ? \"is-open\" : \"\"}}"
+      },
+      "children": [
+        {
+          "type": "node",
+          "tag": "dt",
+          "treeNodeName": "question",
+          "style": {
+            "base": {
+              "padding": "20px 0 8px",
+              "fontWeight": "600",
+              "cursor": "pointer",
+              "opacity": "0.6"
+            },
+            "tablet": {},
+            "mobile": {}
+          },
+          "interactiveStyles": [
+            {
+              "name": "on hover",
+              "postfix": ":hover",
+              "style": {
+                "base": {
+                  "opacity": "1"
+                }
+              }
+            },
+            {
+              "name": "is open",
+              "prefix": ".is-open ",
+              "style": {
+                "base": {
+                  "opacity": "1"
+                }
+              }
+            }
+          ],
+          "attributes": {
+            "data-el": "question"
+          },
+          "children": [
+            "",
+            {
+              "type": "component",
+              "component": "Heading",
+              "props": {
+                "text": "{{question}}",
+                "tag": "4",
+                "variant": "default",
+                "size": "3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "tag": "dd",
+          "treeNodeName": "answer",
+          "style": {
+            "base": {
+              "margin": "0",
+              "paddingBottom": "30px",
+              "maxWidth": "800px",
+              "display": "none"
+            },
+            "tablet": {},
+            "mobile": {}
+          },
+          "interactiveStyles": [
+            {
+              "name": "is open",
+              "prefix": ".is-open ",
+              "style": {
+                "base": {
+                  "display": "block"
+                }
+              }
+            }
+          ],
+          "attributes": {
+            "data-el": "answer"
+          },
+          "children": [
+            "",
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "size": "default",
+                "text": "{{answer}} ",
+                "variant": "default"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "question": {
+        "type": "string",
+        "default": "Question?"
+      },
+      "answer": {
+        "type": "rich-text",
+        "default": "Answer goes here."
+      },
+      "isOpen": {
+        "type": "boolean"
+      }
+    }
+  }
+}

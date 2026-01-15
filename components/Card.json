@@ -1,0 +1,40 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "treeNodeName": "card",
+      "style": {
+        "base": {
+          "padding": "24px",
+          "backgroundColor": {
+            "_mapping": true,
+            "prop": "variant",
+            "values": {
+              "default": "var(--bg-light)",
+              "light": "var(--bg)"
+            }
+          },
+          "borderRadius": "6px"
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "children": [
+        {
+          "type": "slot"
+        }
+      ]
+    },
+    "interface": {
+      "variant": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "light"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "p",
+      "style": {
+        "base": {
+          "fontSize": {
+            "_mapping": true,
+            "prop": "size",
+            "values": {
+              "default": "18px",
+              "large": "22px",
+              "small": "16px"
+            }
+          },
+          "lineHeight": "150%",
+          "fontWeight": "325",
+          "color": {
+            "_mapping": true,
+            "prop": "variant",
+            "values": {
+              "default": "var(--text)",
+              "light": "var(--text-medium)"
+            }
+          },
+          "maxWidth": "{{maxWidth}}",
+          "textAlign": {
+            "_mapping": true,
+            "prop": "align",
+            "values": {
+              "default": "left",
+              "left": "left",
+              "center": "center",
+              "right": "right",
+              "inherit": "inherit"
+            }
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "children": [
+        "{{text}}"
+      ]
+    },
+    "interface": {
+      "variant": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "light"
+        ]
+      },
+      "size": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "large",
+          "small"
+        ]
+      },
+      "text": {
+        "type": "rich-text",
+        "default": "Text"
+      },
+      "isMarginBottom": {
+        "type": "boolean",
+        "default": false
+      },
+      "maxWidth": {
+        "type": "string",
+        "default": "100%"
+      },
+      "align": {
+        "type": "select",
+        "default": "left",
+        "options": [
+          "left",
+          "center",
+          "right",
+          "inherit"
+        ]
+      }
+    }
+  }
+}

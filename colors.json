@@ -1,0 +1,32 @@
+{
+  "default": "light",
+  "themes": {
+    "light": {
+      "label": "Light",
+      "colors": {
+        "text": "#050505",
+        "text-light": "#888",
+        "bg": "#fafafa",
+        "bg-light": "#ededed",
+        "border": "#d1d5db",
+        "border-light": "#e5e7eb",
+        "primary": "#5156d6",
+        "text-highlight": "#7a7a7a",
+        "text-medium": "#777"
+      }
+    },
+    "dark": {
+      "label": "Dark",
+      "colors": {
+        "text": "#f5f5f5",
+        "text-light": "#a0a0a0",
+        "bg": "#1a1a1a",
+        "bg-light": "#2d2d2d",
+        "border": "#404040",
+        "border-light": "#333333",
+        "primary": "#7c84f8",
+        "text-highlight": "#b8b8b8"
+      }
+    }
+  }
+}

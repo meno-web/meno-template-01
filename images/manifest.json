@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "images": {
+    "Screenshot-2026-01-09-at-09.32.53.webp": {
+      "filename": "Screenshot-2026-01-09-at-09.32.53.webp",
+      "originalFilename": "Screenshot-2026-01-09-at-09.32.53.png",
+      "width": 3420,
+      "height": 2138,
+      "blurHash": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAwCdASogABQAPzmOvlevKaYjqAqp4CcJZwDKtBcKwIAA/u4gtLjWB2Cu08/rRq4GAAAA",
+      "formats": {
+        "avif": true,
+        "webp": true
+      },
+      "variants": [
+        {
+          "width": 500,
+          "webpFilename": "Screenshot-2026-01-09-at-09.32.53-500.webp",
+          "avifFilename": "Screenshot-2026-01-09-at-09.32.53-500.avif"
+        },
+        {
+          "width": 800,
+          "webpFilename": "Screenshot-2026-01-09-at-09.32.53-800.webp",
+          "avifFilename": "Screenshot-2026-01-09-at-09.32.53-800.avif"
+        },
+        {
+          "width": 1080,
+          "webpFilename": "Screenshot-2026-01-09-at-09.32.53-1080.webp",
+          "avifFilename": "Screenshot-2026-01-09-at-09.32.53-1080.avif"
+        },
+        {
+          "width": 1600,
+          "webpFilename": "Screenshot-2026-01-09-at-09.32.53-1600.webp",
+          "avifFilename": "Screenshot-2026-01-09-at-09.32.53-1600.avif"
+        },
+        {
+          "width": 2400,
+          "webpFilename": "Screenshot-2026-01-09-at-09.32.53-2400.webp",
+          "avifFilename": "Screenshot-2026-01-09-at-09.32.53-2400.avif"
+        }
+      ],
+      "createdAt": "2026-01-14T14:27:41.514Z",
+      "updatedAt": "2026-01-14T14:27:41.514Z"
+    },
+    "Screenshot-2026-01-13-at-15.48.27.webp": {
+      "filename": "Screenshot-2026-01-13-at-15.48.27.webp",
+      "originalFilename": "Screenshot-2026-01-13-at-15.48.27.png",
+      "width": 2732,
+      "height": 1980,
+      "blurHash": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAgCdASogABcAPzmUwVmvKicjqAgB4CcJaQAAPaOgAP7trt0lHByV5IAAAA==",
+      "formats": {
+        "avif": true,
+        "webp": true
+      },
+      "variants": [
+        {
+          "width": 500,
+          "webpFilename": "Screenshot-2026-01-13-at-15.48.27-500.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.48.27-500.avif"
+        },
+        {
+          "width": 800,
+          "webpFilename": "Screenshot-2026-01-13-at-15.48.27-800.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.48.27-800.avif"
+        },
+        {
+          "width": 1080,
+          "webpFilename": "Screenshot-2026-01-13-at-15.48.27-1080.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.48.27-1080.avif"
+        },
+        {
+          "width": 1600,
+          "webpFilename": "Screenshot-2026-01-13-at-15.48.27-1600.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.48.27-1600.avif"
+        },
+        {
+          "width": 2400,
+          "webpFilename": "Screenshot-2026-01-13-at-15.48.27-2400.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.48.27-2400.avif"
+        }
+      ],
+      "createdAt": "2026-01-14T14:28:49.580Z",
+      "updatedAt": "2026-01-14T14:28:49.580Z"
+    },
+    "Screenshot-2026-01-13-at-15.53.03.webp": {
+      "filename": "Screenshot-2026-01-13-at-15.53.03.webp",
+      "originalFilename": "Screenshot-2026-01-13-at-15.53.03.png",
+      "width": 3340,
+      "height": 2138,
+      "blurHash": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAgCdASogABQAPzmUwFmvKiajqAgB4CcJaQAAPfn8AAD+7lstS3tgAAA=",
+      "formats": {
+        "avif": true,
+        "webp": true
+      },
+      "variants": [
+        {
+          "width": 500,
+          "webpFilename": "Screenshot-2026-01-13-at-15.53.03-500.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.53.03-500.avif"
+        },
+        {
+          "width": 800,
+          "webpFilename": "Screenshot-2026-01-13-at-15.53.03-800.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.53.03-800.avif"
+        },
+        {
+          "width": 1080,
+          "webpFilename": "Screenshot-2026-01-13-at-15.53.03-1080.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.53.03-1080.avif"
+        },
+        {
+          "width": 1600,
+          "webpFilename": "Screenshot-2026-01-13-at-15.53.03-1600.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.53.03-1600.avif"
+        },
+        {
+          "width": 2400,
+          "webpFilename": "Screenshot-2026-01-13-at-15.53.03-2400.webp",
+          "avifFilename": "Screenshot-2026-01-13-at-15.53.03-2400.avif"
+        }
+      ],
+      "createdAt": "2026-01-14T14:29:27.798Z",
+      "updatedAt": "2026-01-14T14:29:27.798Z"
+    },
+    "Screenshot-2026-01-14-at-11.49.00.webp": {
+      "filename": "Screenshot-2026-01-14-at-11.49.00.webp",
+      "originalFilename": "Screenshot-2026-01-14-at-11.49.00.png",
+      "width": 3330,
+      "height": 2044,
+      "blurHash": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAgCdASogABQAPzmSv1ovKaakKAgB4CcJaQAAPaUIAAD+7exxmd40cAA=",
+      "formats": {
+        "avif": true,
+        "webp": true
+      },
+      "variants": [
+        {
+          "width": 500,
+          "webpFilename": "Screenshot-2026-01-14-at-11.49.00-500.webp",
+          "avifFilename": "Screenshot-2026-01-14-at-11.49.00-500.avif"
+        },
+        {
+          "width": 800,
+          "webpFilename": "Screenshot-2026-01-14-at-11.49.00-800.webp",
+          "avifFilename": "Screenshot-2026-01-14-at-11.49.00-800.avif"
+        },
+        {
+          "width": 1080,
+          "webpFilename": "Screenshot-2026-01-14-at-11.49.00-1080.webp",
+          "avifFilename": "Screenshot-2026-01-14-at-11.49.00-1080.avif"
+        },
+        {
+          "width": 1600,
+          "webpFilename": "Screenshot-2026-01-14-at-11.49.00-1600.webp",
+          "avifFilename": "Screenshot-2026-01-14-at-11.49.00-1600.avif"
+        },
+        {
+          "width": 2400,
+          "webpFilename": "Screenshot-2026-01-14-at-11.49.00-2400.webp",
+          "avifFilename": "Screenshot-2026-01-14-at-11.49.00-2400.avif"
+        }
+      ],
+      "createdAt": "2026-01-14T14:29:48.517Z",
+      "updatedAt": "2026-01-14T14:29:48.517Z"
+    }
+  }
+}

@@ -1,0 +1,3901 @@
+{
+  "root": {
+    "type": "component",
+    "component": "Layout",
+    "children": [
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "spaceTop": "small",
+          "theme": "primary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "top",
+              "horizontal": "left"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Security Whitepaper",
+                  "maxWidth": "600px",
+                  "size": "1",
+                  "tag": "1",
+                  "align": "left"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Version 1.0 | January 2026",
+                  "size": "large",
+                  "maxWidth": "740px",
+                  "isMarginBottom": true,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "16"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Meno Studio is a desktop application for visual website building, operating on a local-first architecture. This document provides a comprehensive overview of our security practices, architecture, and policies.",
+                  "size": "large",
+                  "maxWidth": "740px",
+                  "align": "left"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary",
+          "maxWidth": "1280"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Heading",
+            "props": {
+              "text": "Table of Contents",
+              "size": "2",
+              "tag": "2"
+            }
+          },
+          {
+            "type": "component",
+            "component": "Spacer",
+            "props": {
+              "size": "24"
+            }
+          },
+          {
+            "type": "component",
+            "component": "Grid",
+            "props": {
+              "columns": "3",
+              "gap": "16"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#executive-summary\">1. Executive Summary</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#solution-architecture\">2. Solution Architecture</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#network-communication\">3. Network Communication</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#data-flows\">4. Data Flows</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#security-mechanisms\">5. Security Mechanisms</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#security-testing\">6. Security Testing</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#cloud-infrastructure\">7. Cloud Infrastructure</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#integrations\">8. Integrations</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#sso-authentication\">9. SSO and Authentication</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#security-policies\">10. Security Policies</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#compliance\">11. Compliance</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "<a href=\"#contact\">12. Contact</a>"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "executive-summary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "primary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "1. Executive Summary",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Meno Studio is a desktop application for visual website building, operating on a local-first architecture. The application was designed with user data privacy and security in mind.",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Key Security Features",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "3",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Architecture",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Desktop application (Electron) - no cloud backend"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Data Storage",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Locally on user's machine (~/Documents/Meno/)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Credential Encryption",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "OS-level encryption (macOS Keychain, Windows DPAPI)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Sandbox",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Renderer process isolated from operating system"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Automated Scanning",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Semgrep, npm audit, Dependabot on every commit"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Code Signing",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "macOS: Apple notarization"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "solution-architecture"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "secondary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "2. Solution Architecture",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "System Components",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Main Process",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Main Node.js process handling system operations"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Technology: Node.js 20",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Renderer Process",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Sandboxed Chromium process for UI"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Technology: React 18, Vite",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Preload Script",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Secure bridge between main and renderer"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Technology: contextBridge API",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Dev Server",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Local development server (only during editing)"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Technology: Bun 1.3",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Process Separation",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Main Process (Node.js)",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletList",
+                        "children": [
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "Full system access"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "Encryption operations"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "File I/O"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Renderer Process (Chromium)",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletList",
+                        "children": [
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "No Node.js access"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "Sandbox enforced"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "CSP enforced"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Communication between processes happens through contextBridge with granular API exposure."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "network-communication"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "primary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "3. Network Communication and Ports",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Locally Used Ports",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "gap": "16",
+                  "columns": "2"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "3000-3999",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Local editor project preview"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "5173",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Static generated project preview"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Outbound Connections",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "api.github.com",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "GitHub API (repos, auth, git)"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Port 443 | HTTPS | Login, git push/pull",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "github.com",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "GitHub OAuth Device Flow"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Port 443 | HTTPS | Login",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "registry.npmjs.org",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "npm package lookup"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Port 443 | HTTPS | Viewing dependencies",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "api.anthropic.com",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Claude AI API"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Port 443 | HTTPS | When user uses AI",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Content Security Policy",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Key restrictions enforced in production:",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "16"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "No unsafe-eval in production"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Scripts only from 'self'"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "External connections limited to whitelist"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "data-flows"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "secondary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "4. Data Flows",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Data Stored Locally",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Projects",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "~/Documents/Meno/"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Page and component JSON files | Not encrypted (working files)",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "GitHub Token",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "userData/github-token.enc"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "GitHub OAuth token | Encrypted (safeStorage)",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "User Info",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "userData/github-user.json"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Login, avatar, email (display only) | Not encrypted",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "AI API Key",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "OS Keychain"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Anthropic API key | Encrypted (OS-level)",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Data NOT Transmitted Anywhere",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Project content (pages, components, code)"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Local file paths"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Edit history"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Application logs"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Feature usage metrics"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Keystrokes / interactions"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Data Transmitted to External Services",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "gap": "16",
+                  "columns": "2"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "GitHub",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Token, commits, files (git push)"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Required for git ops",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Anthropic",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Prompt + file context (AI)"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Requires API key",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "security-mechanisms"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "primary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "5. Security Mechanisms",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Electron Security",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "contextIsolation: true",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Isolates renderer from Node.js APIs"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "nodeIntegration: false",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Blocks direct Node.js access"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "sandbox: true",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Restricts renderer process permissions"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "webviewTag: true (with CSP)",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Controlled webview embedding"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Credential Encryption",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "GitHub tokens are encrypted using Electron's safeStorage API, which leverages OS-level encryption:",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "16"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "macOS: Keychain Services"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Windows: DPAPI (Data Protection API)"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Path Traversal Protection",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Three-layer path validation protects against directory traversal attacks:",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "16"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Path normalization"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Check if within allowed directory"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Validate project is in ~/Documents/Meno"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Rate Limiting",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "AI Chat",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "30 requests / 1 minute"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Tool Approvals",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "10 attempts / 1 minute"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Generate Commit",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "20 requests / 1 minute"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "AI Init",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "5 requests / 1 minute"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Input Validation",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Zod schemas — All JSON structures"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "File size limit — Max 5MB for file reads"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Image size limit — Max 2MB for images"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Filename validation — Disallowed characters: <>:\\\"/\\\\|?*"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Binary detection — Exclude binary files from search"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "security-testing"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "secondary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "6. Security Testing",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Automated Scanning (CI/CD)",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "3",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Semgrep",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "SAST, secrets detection"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Push, PR, weekly",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "npm audit",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Dependency vulnerabilities"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Push, PR | --audit-level=high",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Dependabot",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Automated updates"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Weekly PRs with updates",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Semgrep Rules",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "p/javascript"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "p/typescript"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "p/security-audit"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "p/secrets"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "p/owasp-top-ten"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Vulnerability Status",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Critical",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "0 known (CI checks on every PR)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "High",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "0 known (CI checks on every PR)"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Note: Meno has not undergone a formal external penetration test. Automated scanning includes static code analysis and dependency auditing. Upon enterprise customer request, we can commission an external pentest."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "cloud-infrastructure"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "primary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "7. Cloud Infrastructure",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Local-First Architecture",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Meno Studio does NOT have a cloud backend. The application runs entirely locally on the user's machine.",
+                  "isMarginBottom": true,
+                  "size": "large"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "What We Don't Have",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletList",
+                        "children": [
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "No application servers"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "No cloud database for projects"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "No cloud storage for user files"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "No API gateway"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "No load balancer"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "No CDN for user assets"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "What We Do Have",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletList",
+                        "children": [
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "All project data stored locally"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "Credentials encrypted at OS level"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "No project data transmission to cloud"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "External Services (Third-Party)",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "gap": "16",
+                  "columns": "3"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "GitHub",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Git hosting, OAuth"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Provider: Microsoft | Location: US/EU | Required for git",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Anthropic",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "AI API"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Provider: Anthropic | Location: US | Opt-in",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "npm Registry",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Package info"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Provider: GitHub/npm | Location: US | Read only",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "integrations"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "secondary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "8. Integrations",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Currently Supported Integrations",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "gap": "16",
+                  "columns": "4"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "GitHub",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Full support"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "OAuth, repos, git push/pull, branches",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Git (generic)",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Partial support"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Local git operations, any remote via CLI",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Claude AI",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Full support"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "AI assistant in editor",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Figma (MCP)",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Experimental"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Design import via Model Context Protocol",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Extensibility",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "16"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Meno uses Model Context Protocol (MCP) for integration with external tools. Currently supported: Figma MCP Server for design import. The architecture allows adding new MCP integrations without changes to the core application."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "sso-authentication"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "primary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "9. SSO and Authentication",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Current Authentication Model",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "GitHub OAuth 2.0 (Device Flow):",
+                  "isMarginBottom": true,
+                  "size": "large"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "16"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "1. User clicks \"Login with GitHub\""
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "2. App sends request to github.com/login/device/code"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "3. GitHub returns device_code and user_code"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "4. User goes to github.com/login/device"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "5. User enters user_code and authorizes"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "6. App polls /login/oauth/access_token"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "7. After authorization, receives access_token"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "8. Token encrypted and saved locally (safeStorage)"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "OAuth Permissions (Scope)",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "repo — Full access to private repositories"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "user:email — Access to user's email address"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "read:org — Read organization membership"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "SSO Enterprise Support",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "GitHub OAuth is the only login method. GitHub OAuth provides SSO for Meno Studio:",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Organizations using GitHub Enterprise can enforce SAML SSO authentication at the GitHub level. Since Meno exclusively uses GitHub OAuth for login, it automatically inherits these security controls:",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "16"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "User must first authenticate through corporate IdP (Okta, Azure AD, etc.) to access GitHub"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Only after passing SSO can they authorize Meno"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Organization can restrict access only to members with enforced SSO"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "This means Meno supports SSO indirectly through GitHub Enterprise—without requiring native SAML/OIDC integration in the application itself."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "security-policies"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "secondary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "10. Security Policies",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Update Management",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "3",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Latest",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Full support (features + security)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Previous",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Security fixes only"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Older",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "No support—please update"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Code Signing",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "2",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "macOS",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletList",
+                        "children": [
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "Certificate: Developer ID Application"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "Team ID: V48BWM8PP8"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "Hardened Runtime: Enabled"
+                            }
+                          },
+                          {
+                            "type": "component",
+                            "component": "BulletItem",
+                            "props": {
+                              "text": "Notarization: Apple Notary Service"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {
+                      "variant": "light"
+                    },
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "Windows",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Authenticode: Planned"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Auto-Updates",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Updates downloaded from GitHub Releases"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Update packages are digitally signed"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "User receives notification about new version"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Installation requires manual confirmation"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Dependency Management Policy",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Dependabot — automated PRs with updates (weekly)"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "npm audit — blocks merge on High/Critical"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Lockfile — package-lock.json committed to repo"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Review — every dependency change requires code review"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "compliance"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "primary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "11. Compliance and Certifications",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Current Status",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Grid",
+                "props": {
+                  "columns": "3",
+                  "gap": "16"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "GDPR",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "No"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Local data",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "SOC 2",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "No"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "No cloud infrastructure",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "ISO 27001",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "No"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Not applicable (local-first)",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "HIPAA",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "No"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "Not applicable",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "component",
+                    "component": "Card",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "Heading",
+                        "props": {
+                          "text": "PCI DSS",
+                          "size": "5",
+                          "tag": "5",
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "No"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "Text",
+                        "props": {
+                          "text": "We don't process payments",
+                          "size": "small"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "GDPR Considerations",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Data stored locally — user has full control"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Right to deletion — delete Meno folder"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Analytics (Supabase) — minimal, opt-out possible"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Data processing agreement — available upon request"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "tag": "div",
+        "attributes": {
+          "id": "contact"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Section",
+            "props": {
+              "theme": "secondary",
+              "maxWidth": "1280"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "12. Contact and Vulnerability Reporting",
+                  "size": "2",
+                  "tag": "2"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Reporting Vulnerabilities",
+                  "size": "4",
+                  "tag": "4"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Email: <a href=\"mailto:team@meno.so\">team@meno.so</a>",
+                  "size": "large",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Response time: 48 hours",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "What to include in your report:",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "16"
+                }
+              },
+              {
+                "type": "component",
+                "component": "BulletList",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Description of vulnerability"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Steps to reproduce"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Potential impact"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletItem",
+                    "props": {
+                      "text": "Contact information (optional)"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "We ask that you do not publicly disclose vulnerabilities before our response and give us time to fix before disclosure."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "primary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Questions about security?",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center",
+                  "maxWidth": "600px"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Reach out to: <a href=\"mailto:team@meno.so\">team@meno.so</a>",
+                  "isMarginBottom": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "title": "Security Whitepaper | Meno",
+    "description": "Technical security whitepaper for Meno Studio covering architecture, data flows, security mechanisms, and compliance."
+  }
+}

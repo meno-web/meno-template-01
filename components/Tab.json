@@ -1,0 +1,27 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "style": {
+        "base": {
+          "width": "100%"
+        }
+      },
+      "attributes": {
+        "data-active-tab": "{{activeTab}}"
+      },
+      "children": [
+        {
+          "type": "slot"
+        }
+      ]
+    },
+    "interface": {
+      "activeTab": {
+        "type": "number",
+        "default": "0"
+      }
+    }
+  }
+}

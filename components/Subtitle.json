@@ -1,0 +1,44 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "p",
+      "style": {
+        "base": {
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "marginBottom": "16px",
+          "letterSpacing": "-0.015em",
+          "lineHeight": "115%",
+          "color": {
+            "_mapping": true,
+            "prop": "variant",
+            "values": {
+              "default": "var(--text)",
+              "light": "var(--text-light)"
+            }
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "children": [
+        "{{text}}"
+      ]
+    },
+    "interface": {
+      "text": {
+        "type": "string",
+        "default": "SUBTITLE"
+      },
+      "variant": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "light"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "style": {
+        "base": {
+          "paddingTop": {
+            "_mapping": true,
+            "prop": "spaceTop",
+            "values": {
+              "default": "92px",
+              "small": "56px",
+              "none": "0"
+            }
+          },
+          "paddingBottom": {
+            "_mapping": true,
+            "prop": "spaceBottom",
+            "values": {
+              "default": "92px",
+              "small": "56px",
+              "none": "0"
+            }
+          },
+          "backgroundColor": {
+            "_mapping": true,
+            "prop": "theme",
+            "values": {
+              "primary": "transparent",
+              "secondary": "var(--bg-light)"
+            }
+          },
+          "fontFamily": "Inter"
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "children": [
+        {
+          "type": "node",
+          "tag": "div",
+          "style": {
+            "base": {
+              "padding": "0 80px",
+              "maxWidth": {
+                "_mapping": true,
+                "prop": "maxWidth",
+                "values": {
+                  "640": "640px",
+                  "900": "1060px",
+                  "1280": "1440px"
+                }
+              },
+              "margin": "auto"
+            },
+            "tablet": {
+              "padding": "0 40px"
+            },
+            "mobile": {
+              "padding": "0 20px"
+            }
+          },
+          "children": [
+            {
+              "type": "slot"
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "theme": {
+        "type": "select",
+        "default": "light",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      },
+      "maxWidth": {
+        "type": "select",
+        "default": "1280",
+        "options": [
+          "1280",
+          "900",
+          "640"
+        ]
+      },
+      "spaceTop": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "small",
+          "none"
+        ]
+      },
+      "spaceBottom": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "small",
+          "none"
+        ]
+      }
+    }
+  }
+}

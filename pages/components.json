@@ -1,0 +1,47 @@
+{
+  "root": {
+    "type": "component",
+    "component": "Layout",
+    "children": [
+      {
+        "type": "component",
+        "component": "Section",
+        "children": [
+          {
+            "type": "component",
+            "component": "TestimonialGrid",
+            "children": [
+              {
+                "type": "component",
+                "component": "Testimonial"
+              },
+              {
+                "type": "component",
+                "component": "Testimonial"
+              },
+              {
+                "type": "component",
+                "component": "Testimonial"
+              },
+              {
+                "type": "component",
+                "component": "Testimonial"
+              },
+              {
+                "type": "component",
+                "component": "Testimonial"
+              },
+              {
+                "type": "component",
+                "component": "Testimonial"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "draft": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "style": {
+        "base": {
+          "width": "100%"
+        }
+      },
+      "children": [
+        {
+          "type": "slot"
+        }
+      ]
+    },
+    "interface": {}
+  }
+}

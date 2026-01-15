@@ -1,0 +1,66 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "style": {
+        "base": {
+          "paddingBottom": {
+            "_mapping": true,
+            "prop": "isMain",
+            "values": {
+              "default": "80px",
+              "true": "80px",
+              "false": "0"
+            }
+          },
+          "paddingLeft": {
+            "_mapping": true,
+            "prop": "isMain",
+            "values": {
+              "default": "80px",
+              "true": "80px",
+              "false": "0"
+            }
+          },
+          "borderBottom": {
+            "_mapping": true,
+            "prop": "isMain",
+            "values": {
+              "default": "1px solid",
+              "true": "1px solid",
+              "false": "none"
+            }
+          },
+          "borderColor": "var(--border)",
+          "marginBottom": "80px"
+        },
+        "tablet": {},
+        "mobile": {
+          "paddingLeft": "0",
+          "paddingBottom": {
+            "_mapping": true,
+            "prop": "isMain",
+            "values": {
+              "default": "32px",
+              "true": "32px",
+              "false": "0"
+            }
+          }
+        }
+      },
+      "children": [
+        {
+          "type": "slot"
+        }
+      ]
+    },
+    "interface": {
+      "isMain": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "category": "ui"
+  }
+}

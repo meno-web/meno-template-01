@@ -1,0 +1,107 @@
+{
+  "root": {
+    "type": "component",
+    "component": "Layout",
+    "children": [
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "primary"
+        },
+        "children": [
+          {
+            "type": "node",
+            "tag": "article",
+            "style": {
+              "base": {
+                "maxWidth": "720px",
+                "margin": "0 auto"
+              }
+            },
+            "children": [
+              {
+                "type": "node",
+                "tag": "header",
+                "style": {
+                  "base": {
+                    "marginBottom": "32px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "{{cms.title}}",
+                      "size": "1",
+                      "tag": "1"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "{{cms.publishedAt}}",
+                      "size": "small"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "32"
+                }
+              },
+              {
+                "type": "component",
+                "component": "RichText"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "title": "{{cms.title}}",
+    "description": "{{cms.excerpt}}",
+    "source": "cms",
+    "cms": {
+      "id": "posts",
+      "name": "Blog Posts",
+      "slugField": "slug",
+      "urlPattern": "/blog/{{slug}}",
+      "fields": {
+        "title": {
+          "type": "string",
+          "label": "Title",
+          "required": true
+        },
+        "slug": {
+          "type": "string",
+          "label": "URL Slug",
+          "required": true
+        },
+        "excerpt": {
+          "type": "text",
+          "label": "Excerpt"
+        },
+        "content": {
+          "type": "rich-text",
+          "label": "Content"
+        },
+        "featuredImage": {
+          "type": "image",
+          "label": "Featured Image"
+        },
+        "publishedAt": {
+          "type": "date",
+          "label": "Publish Date"
+        }
+      }
+    }
+  }
+}

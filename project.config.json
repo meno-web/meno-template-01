@@ -1,0 +1,64 @@
+{
+  "siteUrl": "https://meno.so",
+  "editor": {
+    "theme": "light"
+  },
+  "i18n": {
+    "defaultLocale": "en",
+    "locales": [
+      {
+        "code": "en",
+        "name": "English",
+        "nativeName": "English",
+        "langTag": "en-US"
+      },
+      {
+        "code": "pl",
+        "name": "Polish",
+        "nativeName": "Polski",
+        "langTag": "pl-PL",
+        "icon": ""
+      }
+    ]
+  },
+  "breakpoints": {
+    "tablet": 1024,
+    "mobile": 540
+  },
+  "fonts": [
+    {
+      "path": "/fonts/Inter-VariableFont_opsz,wght.woff2",
+      "family": "Inter",
+      "weight": 100,
+      "weightMax": 900,
+      "fontDisplay": "swap"
+    }
+  ],
+  "responsiveScales": {
+    "enabled": true,
+    "baseReference": 16,
+    "fontSize": {
+      "tablet": 0.88,
+      "mobile": 0.75
+    },
+    "padding": {
+      "tablet": 0.75,
+      "mobile": 0.5
+    },
+    "margin": {
+      "tablet": 0.7,
+      "mobile": 0.45
+    },
+    "gap": {
+      "tablet": 0.65,
+      "mobile": 0.4
+    }
+  },
+  "prefetch": {
+    "enabled": false
+  },
+  "icons": {
+    "favicon": "/icons/icon-32.png",
+    "appleTouchIcon": "/icons/icon-180.png"
+  }
+}

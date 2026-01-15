@@ -1,0 +1,867 @@
+{
+  "root": {
+    "type": "component",
+    "component": "Layout",
+    "children": [
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "primary",
+          "spaceTop": "default"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Build visually <span class=\"custom-span\" data-meno-span=\"true\">Ship real code</span>",
+                  "size": "1",
+                  "tag": "1",
+                  "align": "center",
+                  "maxWidth": "520px"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Meno is a visual editor that outputs clean, version-controlled JSON. Design in the browser, commit to Git, deploy anywhere.",
+                  "size": "large",
+                  "align": "center",
+                  "maxWidth": "620px"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "32"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Button",
+                "props": {
+                  "text": "Get Started",
+                  "variant": "primary",
+                  "link": {
+                    "href": "/get-started"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary",
+          "text": "Diffable output — Review AI changes with standard Git diffs"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "SplitContent",
+            "children": [
+              {
+                "type": "node",
+                "tag": "div",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "A visual editor that doesn't get in your way.",
+                      "size": "2",
+                      "tag": "2",
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Build pages and components visually with a real-time preview. No generated code spaghetti—just structured JSON that compiles to static HTML."
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Drag-and-drop canvas — Add, move, and nest elements with a click"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Real-time preview — See exactly what you're building as you build it"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Component library — Reusable components with props and variants"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Responsive controls — Design for desktop, tablet, and mobile in one view"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Style panel — Full control over spacing, typography, colors, and layout"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Keyboard shortcuts — Fast navigation and editing for power users"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "tag": "div",
+                "style": {
+                  "base": {
+                    "display": "flex",
+                    "alignItems": "flex-start"
+                  },
+                  "tablet": {},
+                  "mobile": {}
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Image",
+                    "props": {
+                      "image": "/images/Screenshot-2026-01-13-at-15.48.27.webp",
+                      "objectFit": "contain",
+                      "height": "auto",
+                      "border": true,
+                      "rounded": "large"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "primary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "SplitContent",
+            "children": [
+              {
+                "type": "node",
+                "tag": "div",
+                "style": {
+                  "base": {
+                    "display": "flex",
+                    "alignItems": "flex-start"
+                  },
+                  "tablet": {},
+                  "mobile": {}
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Image",
+                    "props": {
+                      "image": "/images/Screenshot-2026-01-13-at-15.53.03.webp",
+                      "objectFit": "contain",
+                      "height": "auto",
+                      "border": true,
+                      "rounded": "large"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "tag": "div",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Built for developers who care about their stack.",
+                      "size": "2",
+                      "tag": "2",
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Meno doesn't hide the code—it generates clean JSON you can read, edit, and version control. Your pages live in your repo, not in a proprietary database."
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "JSON-based architecture — Pages and components are plain JSON files"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Git-native workflow — Every change is a commit. Branch, merge, review."
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "TypeScript support — Full type definitions for all node types and props"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Static HTML output — Clean, semantic HTML with no framework overhead"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Local-first — Run entirely on your machine, no cloud dependency"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Open format — No lock-in. Your content is always portable."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "SplitContent",
+            "children": [
+              {
+                "type": "node",
+                "tag": "div",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Content management that lives in your codebase.",
+                      "size": "2",
+                      "tag": "2",
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Define collections, create content, and bind it to your pages—all stored as JSON in your repo. No external CMS, no API keys, no sync issues."
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Collections — Define content types with custom fields (text, images, rich text, references)"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Dynamic pages — Create templates that generate pages for each content item"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Field binding — Connect any element to CMS data with {{cms.field}} syntax"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Localization ready — Slug translations and multi-language content support"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Static generation — Pre-render all CMS pages at build time"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "CMSList component — Loop through collections directly in your page structure"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "tag": "div",
+                "style": {
+                  "base": {
+                    "display": "flex",
+                    "alignItems": "flex-start"
+                  },
+                  "tablet": {},
+                  "mobile": {}
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Image",
+                    "props": {
+                      "image": "/images/Screenshot-2026-01-14-at-11.49.00.webp",
+                      "objectFit": "contain",
+                      "height": "auto",
+                      "border": true,
+                      "rounded": "large"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "primary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "SplitContent",
+            "children": [
+              {
+                "type": "node",
+                "tag": "div",
+                "style": {
+                  "base": {
+                    "display": "flex",
+                    "alignItems": "flex-start"
+                  },
+                  "tablet": {},
+                  "mobile": {}
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Image",
+                    "props": {
+                      "image": "/images/Screenshot-2026-01-09-at-09.32.53.webp",
+                      "objectFit": "contain",
+                      "height": "auto",
+                      "border": true,
+                      "rounded": "large"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "tag": "div",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "AI-first workflow built into the format.",
+                      "size": "2",
+                      "tag": "2",
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Meno's JSON format is designed for AI agents. LLMs can read, understand, and generate pages and components without any special training or context window overhead."
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Human-readable JSON — AI can parse and generate without special tooling"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Structured schemas — Clear component interfaces that LLMs understand instantly"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "No binary formats — Everything is text that fits in context windows"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Predictable patterns — Consistent structure makes AI-generated code reliable"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Diffable output — Review AI changes with standard Git diffs"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Prompt-friendly — Include CLAUDE.md instructions for any AI coding assistant"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "How It Works",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              }
+            ]
+          },
+          {
+            "type": "component",
+            "component": "Grid",
+            "props": {
+              "columns": "3",
+              "gap": "24"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "StatNumber",
+                    "props": {
+                      "text": "1"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Design",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Use the visual editor to build your page layout. Add elements, style them, and preview in real-time."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "StatNumber",
+                    "props": {
+                      "text": "2",
+                      "color": "primary",
+                      "size": "large"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Commit",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Your work saves as JSON files in your Git repository. Review diffs, branch for experiments, merge when ready."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "StatNumber",
+                    "props": {
+                      "text": "3",
+                      "color": "primary"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Deploy",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Deploy to Vercel, Netlify, GitHub Pages, or your own infrastructure using meno-core package to build static HTML"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "primary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Developer-Friendly Details",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              }
+            ]
+          },
+          {
+            "type": "component",
+            "component": "Table",
+            "children": [
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "No runtime dependency",
+                  "value": "Generated pages are static HTML + CSS"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Zero JavaScript required",
+                  "value": "Output works without JS (add it if you want)"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Predictable output",
+                  "value": "Same JSON always produces same HTML"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Component props",
+                  "value": "Pass data to components for flexible reuse"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Tree structure",
+                  "value": "Nodes have path arrays for precise targeting"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Zod validation",
+                  "value": "All schemas are validated at runtime"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Extensible",
+                  "value": "Add custom components"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "See it in action",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center",
+                  "maxWidth": "600px"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Clone a starter project and have a working editor in under a minute.",
+                  "align": "center",
+                  "maxWidth": "340px"
+                }
+              },
+              {
+                "type": "node",
+                "tag": "div",
+                "style": {
+                  "base": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "gap": "16px",
+                    "justifyContent": "center",
+                    "marginTop": "32px"
+                  },
+                  "mobile": {
+                    "flexDirection": "column",
+                    "alignItems": "center"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Button",
+                    "props": {
+                      "text": "View Documentation",
+                      "variant": "primary",
+                      "link": {
+                        "href": "/docs"
+                      }
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Button",
+                    "props": {
+                      "text": "Try the Demo",
+                      "variant": "secondary",
+                      "link": {
+                        "href": "/demo"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "title": "Features - Meno",
+    "description": "Discover Meno's visual editor, developer experience, and CMS features. Build visually, ship real code."
+  }
+}

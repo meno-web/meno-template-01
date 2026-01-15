@@ -1,0 +1,119 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "h{{size}}",
+      "treeNodeName": "Text",
+      "style": {
+        "base": {
+          "fontSize": {
+            "_mapping": true,
+            "prop": "size",
+            "values": {
+              "1": "75px",
+              "2": "58px",
+              "3": "34px",
+              "4": "34px",
+              "5": "23px",
+              "6": "18px",
+              "default": "95px"
+            }
+          },
+          "fontWeight": "450",
+          "marginBottom": {
+            "_mapping": true,
+            "prop": "size",
+            "values": {
+              "1": "20px",
+              "2": "20px",
+              "3": "12px",
+              "4": "12px",
+              "5": "10px",
+              "6": "10px",
+              "default": "20px"
+            }
+          },
+          "letterSpacing": "-0.025em",
+          "lineHeight": "105%",
+          "maxWidth": "{{maxWidth}}",
+          "color": {
+            "_mapping": true,
+            "prop": "variant",
+            "values": {
+              "default": "var(--text)",
+              "light": "var(--text-light)"
+            }
+          },
+          "textAlign": {
+            "_mapping": true,
+            "prop": "align",
+            "values": {
+              "default": "left",
+              "light": "",
+              "left": "left",
+              "center": "center",
+              "right": "right"
+            }
+          }
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "children": [
+        "{{text}}"
+      ]
+    },
+    "interface": {
+      "text": {
+        "type": "rich-text",
+        "default": "Heading"
+      },
+      "size": {
+        "type": "select",
+        "default": "1",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      "variant": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "light"
+        ]
+      },
+      "maxWidth": {
+        "type": "string",
+        "default": "100%"
+      },
+      "align": {
+        "type": "select",
+        "default": "left",
+        "options": [
+          "left",
+          "center",
+          "right"
+        ]
+      },
+      "tag": {
+        "type": "select",
+        "default": 1,
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      }
+    },
+    "css": "h1 .custom-span,\nh2 .custom-span,\nh3 .custom-span,\nh4 .custom-span,\nh5 .custom-span { color: var(--text-highlight); }"
+  }
+}

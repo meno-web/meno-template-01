@@ -1,0 +1,514 @@
+{
+  "root": {
+    "type": "component",
+    "component": "Layout",
+    "children": [
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "primary",
+          "spaceTop": "default"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Enterprise-grade, out of the box",
+                  "size": "1",
+                  "tag": "1",
+                  "align": "center",
+                  "maxWidth": "600px"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Meno connects directly to GitHub, so your team gets SSO, compliance, and audit logs out of the box. Powered by the enterprise features your org already has. No enterprise tier required.",
+                  "size": "large",
+                  "align": "center",
+                  "maxWidth": "680px",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Button",
+                "props": {
+                  "text": "Talk to Us",
+                  "variant": "primary",
+                  "link": {
+                    "href": "/contact-sales"
+                  },
+                  "isMarginTop": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary",
+          "spaceTop": "default",
+          "spaceBottom": "default"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Everything included. No upgrade needed.",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center",
+                  "maxWidth": "520px"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Most tools lock enterprise features behind expensive plans or build their own security stack. We don't. Meno connects directly to GitHub. Your SSO, audit logs, and compliance come from there. No duplicate infrastructure, no extra configuration.",
+                  "align": "center",
+                  "maxWidth": "700px"
+                }
+              }
+            ]
+          },
+          {
+            "type": "component",
+            "component": "Spacer",
+            "props": {
+              "size": "64"
+            }
+          },
+          {
+            "type": "component",
+            "component": "Grid",
+            "props": {
+              "columns": "2",
+              "gap": "24"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "SSO & Team Management",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Meno authenticates through GitHub OAuth. If your org has GitHub Enterprise with SAML SSO, your team signs in the same way they access your repos—no separate identity setup needed.",
+                      "isMarginBottom": true
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "SSO via GitHub OAuth—inherits your org's identity provider"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Role-based access through GitHub org permissions"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Team workspaces with granular permissions"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Audit logs via GitHub—every action tracked in your repos"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Self-Hosting & Security",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Your pages, components, and assets live in Git repositories under your GitHub org. Meno never stores your content—GitHub does.",
+                      "isMarginBottom": true
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Deploy on your own infrastructure"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Air-gapped environment support"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Data stored in your GitHub repos, not Meno servers"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "End-to-end encryption"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Priority Support",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Your team gets the help they need, when they need it.",
+                      "isMarginBottom": true
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Dedicated support channel for your organization"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "24-hour response SLA"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Hands-on onboarding and training"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Direct access to our engineering team for complex issues"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Custom Integrations",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Make Meno fit your workflow, not the other way around.",
+                      "isMarginBottom": true
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Full API access"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Webhooks for automation"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "CI/CD pipeline integration"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "White-label options available"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "spaceTop": "default",
+          "spaceBottom": "default",
+          "theme": "primary",
+          "maxWidth": "1280"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Heading",
+            "props": {
+              "text": "Frequently asked questions",
+              "size": "2",
+              "tag": "2",
+              "align": "left"
+            }
+          },
+          {
+            "type": "component",
+            "component": "Spacer",
+            "props": {
+              "size": "32"
+            }
+          },
+          {
+            "type": "component",
+            "component": "FaqList",
+            "children": [
+              {
+                "type": "component",
+                "component": "FaqItem",
+                "props": {
+                  "question": "Do I need to pay extra for enterprise features?",
+                  "answer": "No. SSO and compliance come from your GitHub org—Meno just connects to it. Self-hosting and team management are included in every plan.",
+                  "isOpen": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "FaqItem",
+                "props": {
+                  "question": "Can I run Meno on my own servers?",
+                  "answer": "Yes. Meno can be deployed on-premise or in your private cloud."
+                }
+              },
+              {
+                "type": "component",
+                "component": "FaqItem",
+                "props": {
+                  "question": "What kind of support do enterprise teams get?",
+                  "answer": "All teams get priority support with a 24-hour response SLA. Larger teams can request dedicated onboarding and a direct line to our engineering team."
+                }
+              },
+              {
+                "type": "component",
+                "component": "FaqItem",
+                "props": {
+                  "question": "Is Meno SOC 2 compliant?",
+                  "answer": "Meno doesn't store your data—GitHub does. All your pages, components, and assets live in Git repositories under your organization's GitHub account. You get GitHub's enterprise-grade security (SOC 2 Type II, encryption at rest and in transit, audit logs) without any additional setup. Your security team already trusts GitHub—Meno just works on top of it."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "spaceTop": "default",
+          "spaceBottom": "default",
+          "theme": "secondary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Ready to see how Meno fits your team?",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center",
+                  "maxWidth": "600px"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Whether you're evaluating for a small team or rolling out across an organization, we're happy to walk you through it.",
+                  "align": "center",
+                  "maxWidth": "500px",
+                  "isMarginBottom": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "Button",
+                "props": {
+                  "text": "Contact Sales",
+                  "variant": "primary",
+                  "link": {
+                    "href": "/contact-sales"
+                  },
+                  "isMarginTop": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "title": "Enterprise - Meno Studio",
+    "description": "Meno connects directly to GitHub, so your team gets SSO, compliance, and audit logs out of the box—powered by the enterprise features your org already has. No enterprise tier required."
+  }
+}

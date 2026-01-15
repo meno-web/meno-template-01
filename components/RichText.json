@@ -1,0 +1,25 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "style": {
+        "base": {
+          "lineHeight": "1.7",
+          "fontSize": "18px",
+          "color": "var(--text)",
+          "fontFamily": "Inter",
+          "letterSpacing": "-0.01em"
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "attributes": {
+        "cmsrt": true
+      },
+      "children": "{{cms.content}}"
+    },
+    "interface": {},
+    "css": "[cmsrt] h1,\n[cmsrt] h2,\n[cmsrt] h3,\n[cmsrt] h4,\n[cmsrt] h5,\n[cmsrt] h6 {\n  font-weight: 450;\n}"
+  }
+}

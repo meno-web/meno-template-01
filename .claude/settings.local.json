@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "WebFetch(domain:staging-meno-web.maciejkociela.workers.dev)"
+    ]
+  }
+}

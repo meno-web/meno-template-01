@@ -1,0 +1,112 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "treeNodeName": "Wrap",
+      "style": {
+        "base": {
+          "position": "relative",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "cursor": "pointer",
+          "width": "100%",
+          "overflow": "hidden",
+          "border": "1px solid",
+          "borderColor": "var(--border)",
+          "borderRadius": " 12px",
+          "aspectRatio": "3420/2138"
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "attributes": {
+        "open-modal": "video-modal"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "Image",
+          "props": {
+            "image": "/images/Screenshot-2026-01-09-at-09.32.53.webp",
+            "border": false,
+            "loading": "eager",
+            "objectFit": "cover",
+            "rounded": "none",
+            "alt": "",
+            "priority": true,
+            "fetchpriority": "high",
+            "sizes": "(max-width: 640px) 100vw, (max-width: 1024px) 95vw, 1200px"
+          }
+        },
+        {
+          "type": "node",
+          "tag": "div",
+          "treeNodeName": "Filter",
+          "style": {
+            "base": {
+              "background": "rgba(0,0,0,0.25)",
+              "position": "absolute",
+              "height": "100%",
+              "width": "100%"
+            },
+            "tablet": {},
+            "mobile": {}
+          },
+          "children": []
+        },
+        {
+          "type": "node",
+          "tag": "div",
+          "treeNodeName": "PlayButton",
+          "style": {
+            "base": {
+              "position": "absolute",
+              "height": "60px",
+              "width": "60px",
+              "background": "var(--bg)",
+              "display": "flex",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "borderRadius": "50%",
+              "border": "1px solid",
+              "borderColor": "var(--border)",
+              "transition": "transform .2s",
+              "cursor": "pointer"
+            },
+            "tablet": {},
+            "mobile": {}
+          },
+          "interactiveStyles": [
+            {
+              "name": "on wrap hover",
+              "prefix": "[open-modal]:hover ",
+              "style": {
+                "base": {
+                  "transform": "scale(1.2)"
+                }
+              }
+            }
+          ],
+          "children": [
+            {
+              "type": "embed",
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play-icon lucide-play\"><path d=\"M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z\"/></svg>",
+              "treeNodeName": "play-icon",
+              "style": {
+                "base": {
+                  "height": "20px",
+                  "color": "var(--text)"
+                },
+                "tablet": {},
+                "mobile": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {}
+  }
+}
