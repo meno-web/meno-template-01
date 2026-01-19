@@ -3,7 +3,7 @@
     "structure": {
       "type": "node",
       "tag": "div",
-      "treeNodeName": "grid",
+      "label": "grid",
       "style": {
         "base": {
           "display": "grid",

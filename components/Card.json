@@ -3,7 +3,7 @@
     "structure": {
       "type": "node",
       "tag": "div",
-      "treeNodeName": "card",
+      "label": "card",
       "style": {
         "base": {
           "padding": "24px",

@@ -3,7 +3,7 @@
     "structure": {
       "type": "node",
       "tag": "div",
-      "treeNodeName": "Panel",
+      "label": "Panel",
       "style": {
         "base": {
           "padding": "24px 0",

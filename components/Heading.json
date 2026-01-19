@@ -3,7 +3,7 @@
     "structure": {
       "type": "node",
       "tag": "h{{size}}",
-      "treeNodeName": "Text",
+      "label": "Text",
       "style": {
         "base": {
           "fontSize": {

@@ -94,7 +94,7 @@
               {
                 "type": "node",
                 "tag": "div",
-                "treeNodeName": "Button List",
+                "label": "Button List",
                 "style": {
                   "base": {
                     "display": "flex",

@@ -21,7 +21,7 @@
         {
           "type": "node",
           "tag": "main",
-          "treeNodeName": "main",
+          "label": "main",
           "style": {
             "base": {}
           },

@@ -3,7 +3,7 @@
     "structure": {
       "type": "node",
       "tag": "button",
-      "treeNodeName": "Tab",
+      "label": "Tab",
       "style": {
         "base": {
           "padding": "12px 20px",

@@ -10,7 +10,7 @@
       },
       "children": [
         {
-          "type": "object-link",
+          "type": "link",
           "href": {
             "_mapping": true,
             "prop": "link",

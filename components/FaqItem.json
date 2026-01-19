@@ -3,7 +3,7 @@
     "structure": {
       "type": "node",
       "tag": "div",
-      "treeNodeName": "Item",
+      "label": "Item",
       "style": {
         "base": {
           "borderBottom": "1px solid var(--border)"
@@ -16,7 +16,7 @@
         {
           "type": "node",
           "tag": "dt",
-          "treeNodeName": "question",
+          "label": "question",
           "style": {
             "base": {
               "padding": "20px 0 8px",
@@ -67,7 +67,7 @@
         {
           "type": "node",
           "tag": "dd",
-          "treeNodeName": "answer",
+          "label": "answer",
           "style": {
             "base": {
               "margin": "0",

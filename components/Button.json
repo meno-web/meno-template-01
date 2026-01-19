@@ -1,12 +1,12 @@
 {
   "component": {
     "structure": {
-      "type": "object-link",
+      "type": "link",
       "href": {
         "_mapping": true,
         "prop": "link"
       },
-      "treeNodeName": "button",
+      "label": "button",
       "style": {
         "base": {
           "fontSize": "16px",
@@ -89,7 +89,7 @@
         {
           "type": "node",
           "tag": "span",
-          "treeNodeName": "text",
+          "label": "text",
           "style": {
             "base": {},
             "tablet": {},
@@ -101,7 +101,7 @@
         {
           "type": "embed",
           "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 18l6-6-6-6\"/></svg>",
-          "treeNodeName": "arrow",
+          "label": "arrow",
           "style": {
             "base": {
               "height": "18px"
