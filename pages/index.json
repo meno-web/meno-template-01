@@ -49,16 +49,8 @@
                 "type": "component",
                 "component": "Heading",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "AI first visual <span class=\"custom-span\" data-meno-span=\"true\">website editor</span>",
-                    "pl": "Wizualny edytor www <span class=\"custom-span\" data-meno-span=\"true\">z wbudowanym AI</span>"
-                  },
-                  "maxWidth": {
-                    "_i18n": true,
-                    "en": "480px",
-                    "pl": "710px"
-                  },
+                  "text": "Build your next <span class=\"custom-span\" data-meno-span=\"true\">great idea</span>",
+                  "maxWidth": "480px",
                   "align": "center",
                   "size": "1",
                   "tag": "1",
@@ -69,92 +61,12 @@
                 "type": "component",
                 "component": "Text",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Meno Studio is an AI-powered web builder that turns your ideas into production-ready websites. Describe what you want, refine it visually, and publish all in one place",
-                    "pl": "Meno Studio to kreator stron oparty na AI, który zamienia Twoje pomysły w gotowe do publikacji strony. Opisz, czego chcesz, dopracuj wizualnie i opublikuj — wszystko w jednym miejscu"
-                  },
+                  "text": "A modern starter template for building profesional, responsive websites. Customize it to match your brand and launch faster",
                   "size": "large",
                   "align": "center",
-                  "maxWidth": "580px",
+                  "maxWidth": "640px",
                   "isMarginBottom": true
                 }
-              },
-              {
-                "type": "component",
-                "component": "Spacer",
-                "props": {
-                  "size": "48"
-                }
-              },
-              {
-                "type": "component",
-                "component": "PromoPlay"
-              },
-              {
-                "type": "node",
-                "tag": "div",
-                "label": "Button List",
-                "style": {
-                  "base": {
-                    "display": "flex",
-                    "flexDirection": "row",
-                    "gap": "16px",
-                    "justifyContent": "center",
-                    "marginTop": "38px"
-                  },
-                  "tablet": {},
-                  "mobile": {
-                    "flexDirection": "column",
-                    "alignItems": "center"
-                  }
-                },
-                "children": [
-                  {
-                    "type": "component",
-                    "component": "Button",
-                    "props": {
-                      "text": {
-                        "_i18n": true,
-                        "en": "Download for Free",
-                        "pl": "Pobierz za darmo"
-                      },
-                      "href": "#",
-                      "variant": "primary",
-                      "isMarginTop": false,
-                      "link": {
-                        "href": "https://github.com/meno-so/studio/releases",
-                        "target": "_blank"
-                      }
-                    }
-                  },
-                  {
-                    "type": "node",
-                    "tag": "div",
-                    "style": {
-                      "base": {}
-                    },
-                    "attributes": {
-                      "open-modal": "video-modal"
-                    },
-                    "children": [
-                      {
-                        "type": "component",
-                        "component": "Button",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Watch Demo",
-                            "pl": "Zobacz demo"
-                          },
-                          "href": "#",
-                          "variant": "secondary",
-                          "isMarginTop": false
-                        }
-                      }
-                    ]
-                  }
-                ]
               }
             ]
           }
@@ -169,41 +81,199 @@
         "children": [
           {
             "type": "component",
-            "component": "Stack",
-            "props": {
-              "vertical": "center",
-              "horizontal": "center"
-            },
+            "component": "SectionHeader",
             "children": [
               {
                 "type": "component",
                 "component": "Heading",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "From idea to live website in minutes, not weeks",
-                    "pl": "Od pomysłu do strony w minuty, nie tygodnie"
-                  },
+                  "text": "Everything you need to get started",
                   "size": "2",
                   "tag": "2",
-                  "align": "center",
-                  "maxWidth": "700px"
+                  "maxWidth": "480px",
+                  "align": "left"
                 }
               },
               {
                 "type": "component",
                 "component": "Text",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Traditional web development is slow. Page builders are limiting. Meno Studio combines AI generation with visual editing so you can build exactly what you imagine, faster than ever before.",
-                    "pl": "Tradycyjne tworzenie stron jest wolne. Kreatory są ograniczające. Meno Studio łączy generowanie AI z edycją wizualną, dzięki czemu możesz budować dokładnie to, co sobie wyobrażasz, szybciej niż kiedykolwiek."
-                  },
-                  "align": "center",
-                  "maxWidth": "640px",
-                  "isMarginBottom": true
+                  "text": "A complete foundation for your next project. Built with best practices and ready to customize",
+                  "maxWidth": "400px",
+                  "isMarginBottom": true,
+                  "align": "left"
                 }
+              }
+            ]
+          },
+          {
+            "type": "component",
+            "component": "Grid",
+            "props": {
+              "columns": "3",
+              "gap": "16"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Responsive Design",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Built mobile-first with responsive breakpoints. Looks great on every device from phones to desktops."
+                    }
+                  }
+                ]
               },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Modern Components",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Pre-built, customizable components ready to use. Cards, navigation, forms, and more."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Easy Customization",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Change colors, fonts, and content easily. Make it yours in minutes, not hours."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Fast Performance",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Optimized for speed with minimal dependencies. Your site loads instantly."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "SEO Ready",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Semantic HTML and meta tags included. Search engines will love your site."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Clean Code",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Well-organized, maintainable code structure. Easy to extend and customize."
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
               {
                 "type": "component",
                 "component": "Spacer",
@@ -213,223 +283,11 @@
               },
               {
                 "type": "component",
-                "component": "Grid",
-                "props": {
-                  "columns": "3",
-                  "gap": "16"
-                },
-                "children": [
-                  {
-                    "type": "component",
-                    "component": "Card",
-                    "props": {
-                      "variant": "light"
-                    },
-                    "children": [
-                      {
-                        "type": "component",
-                        "component": "Heading",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "AI-First Editing",
-                            "pl": "Edycja z AI"
-                          },
-                          "size": "3",
-                          "tag": "3"
-                        }
-                      },
-                      {
-                        "type": "component",
-                        "component": "Text",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Built-in AI assistant that understands project. Select an element, describe what you want, refine, approve.",
-                            "pl": "Wbudowany asystent AI, który rozumie projekt. Wybierz element, opisz czego chcesz, dopracuj, zatwierdź."
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "component",
-                    "component": "Card",
-                    "props": {
-                      "variant": "light"
-                    },
-                    "children": [
-                      {
-                        "type": "component",
-                        "component": "Heading",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Visual Editor",
-                            "pl": "Edytor wizualny"
-                          },
-                          "size": "3",
-                          "tag": "3"
-                        }
-                      },
-                      {
-                        "type": "component",
-                        "component": "Text",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Drag-and-drop page builder with live preview. Design for desktop, tablet, and mobile with reusable components.",
-                            "pl": "Kreator stron typu drag-and-drop z podglądem na żywo. Projektuj na komputer, tablet i telefon z wielokrotnym użyciem komponentów."
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "component",
-                    "component": "Card",
-                    "props": {
-                      "variant": "light"
-                    },
-                    "children": [
-                      {
-                        "type": "component",
-                        "component": "Heading",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Built-in CMS",
-                            "pl": "Wbudowany CMS"
-                          },
-                          "size": "3",
-                          "tag": "3"
-                        }
-                      },
-                      {
-                        "type": "component",
-                        "component": "Text",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Create custom content collections with typed fields. Dynamic lists with filtering, sorting, and templating.",
-                            "pl": "Twórz własne kolekcje treści z typowanymi polami. Dynamiczne listy z filtrowaniem, sortowaniem i szablonami."
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "component",
-                    "component": "Card",
-                    "props": {
-                      "variant": "light"
-                    },
-                    "children": [
-                      {
-                        "type": "component",
-                        "component": "Heading",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Multi Language",
-                            "pl": "Wiele języków"
-                          },
-                          "size": "3",
-                          "tag": "3"
-                        }
-                      },
-                      {
-                        "type": "component",
-                        "component": "Text",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Localized content fields with language-specific URLs. Manage translations directly in the editor.",
-                            "pl": "Zlokalizowane pola treści z URL-ami dla różnych języków. Zarządzaj tłumaczeniami bezpośrednio w edytorze."
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "component",
-                    "component": "Card",
-                    "props": {
-                      "variant": "light"
-                    },
-                    "children": [
-                      {
-                        "type": "component",
-                        "component": "Heading",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Git Version Control",
-                            "pl": "Kontrola wersji Git"
-                          },
-                          "size": "3",
-                          "tag": "3"
-                        }
-                      },
-                      {
-                        "type": "component",
-                        "component": "Text",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Every change is a commit with full audit trail. Branch, merge, and rollback with visual diff viewer.",
-                            "pl": "Każda zmiana to commit z pełną historią. Twórz gałęzie, scalaj i cofaj zmiany z wizualnym podglądem różnic."
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "component",
-                    "component": "Card",
-                    "props": {
-                      "variant": "light"
-                    },
-                    "children": [
-                      {
-                        "type": "component",
-                        "component": "Heading",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Own Your Data",
-                            "pl": "Twoje dane"
-                          },
-                          "size": "3",
-                          "tag": "3"
-                        }
-                      },
-                      {
-                        "type": "component",
-                        "component": "Text",
-                        "props": {
-                          "text": {
-                            "_i18n": true,
-                            "en": "Files stored in your repository, not our cloud. Self-host or deploy anywhere with zero lock-in.",
-                            "pl": "Pliki przechowywane w Twoim repozytorium, nie w naszej chmurze. Hostuj samodzielnie lub wdrażaj gdziekolwiek bez uzależnienia od dostawcy."
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "component",
                 "component": "Button",
                 "props": {
                   "isMarginTop": true,
                   "variant": "secondary",
-                  "text": {
-                    "_i18n": true,
-                    "en": "View more",
-                    "pl": "Zobacz więcej"
-                  },
+                  "text": "View All Features",
                   "link": {
                     "href": "/features"
                   }
@@ -457,11 +315,7 @@
                 "type": "component",
                 "component": "Heading",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Building scalable websites with AI",
-                    "pl": "Budowanie skalowalnych stron z AI"
-                  },
+                  "text": "Built for your workflow",
                   "size": "2",
                   "tag": "2",
                   "align": "left"
@@ -485,11 +339,7 @@
                     "type": "component",
                     "component": "Heading",
                     "props": {
-                      "text": {
-                        "_i18n": true,
-                        "en": "Set Up Your Design System",
-                        "pl": "Skonfiguruj swój Design System"
-                      },
+                      "text": "Start from a Template",
                       "size": "3",
                       "tag": "3"
                     }
@@ -498,11 +348,7 @@
                     "type": "component",
                     "component": "Text",
                     "props": {
-                      "text": {
-                        "_i18n": true,
-                        "en": "Define colors, typography, spacing, and components. Ensures consistency across all pages and aligns AI-generated designs with your brand.",
-                        "pl": "Zdefiniuj kolory, typografię, odstępy i komponenty. Zapewnia spójność na wszystkich stronach i dopasowuje projekty generowane przez AI do Twojej marki."
-                      }
+                      "text": "Pick a template and customize it. No need to start from scratch. Save time and focus on what matters."
                     }
                   }
                 ]
@@ -515,11 +361,7 @@
                     "type": "component",
                     "component": "Heading",
                     "props": {
-                      "text": {
-                        "_i18n": true,
-                        "en": "Design System Setup",
-                        "pl": "Konfiguracja Design System"
-                      },
+                      "text": "Customize Everything",
                       "size": "3",
                       "tag": "3"
                     }
@@ -528,11 +370,7 @@
                     "type": "component",
                     "component": "Text",
                     "props": {
-                      "text": {
-                        "_i18n": true,
-                        "en": "Define colors, typography, spacing, and components. Ensures consistency across all pages and aligns AI-generated designs with your brand.",
-                        "pl": "Zdefiniuj kolory, typografię, odstępy i komponenty. Zapewnia spójność na wszystkich stronach i dopasowuje projekty generowane przez AI do Twojej marki."
-                      }
+                      "text": "Change colors, fonts, images, and content. Every element is designed to be easily modified."
                     }
                   }
                 ]
@@ -545,11 +383,7 @@
                     "type": "component",
                     "component": "Heading",
                     "props": {
-                      "text": {
-                        "_i18n": true,
-                        "en": "Empower Marketing with AI",
-                        "pl": "Wzmocnij marketing dzięki AI"
-                      },
+                      "text": "Launch with Confidence",
                       "size": "3",
                       "tag": "3"
                     }
@@ -558,11 +392,7 @@
                     "type": "component",
                     "component": "Text",
                     "props": {
-                      "text": {
-                        "_i18n": true,
-                        "en": "Marketing teams generate websites by describing their vision. Launch campaigns faster, test variations, and iterate without developer involvement.",
-                        "pl": "Zespoły marketingowe tworzą strony opisując swoją wizję. Uruchamiaj kampanie szybciej, testuj warianty i iteruj bez udziału programistów."
-                      }
+                      "text": "Deploy anywhere you want. Netlify, Vercel, or your own server. You have full control."
                     }
                   }
                 ]
@@ -586,30 +416,18 @@
                 "type": "component",
                 "component": "Heading",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Designed for Teams &amp; Enterprises",
-                    "pl": "Zaprojektowane dla zespołów i przedsiębiorstw"
-                  },
+                  "text": "Why choose this template?",
                   "size": "2",
                   "tag": "2",
                   "align": "left",
-                  "maxWidth": {
-                    "_i18n": true,
-                    "en": "100%",
-                    "pl": "700px"
-                  }
+                  "maxWidth": "100%"
                 }
               },
               {
                 "type": "component",
                 "component": "Text",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Built on GitHub. Secured by your infrastructure. Zero cloud vendor lock-in.",
-                    "pl": "Zbudowane na GitHub. Zabezpieczone przez Twoją infrastrukturę. Zero uzależnienia od dostawcy chmury."
-                  },
+                  "text": "Built with modern standards and best practices for professional websites.",
                   "size": "large",
                   "align": "left",
                   "maxWidth": "100%",
@@ -633,11 +451,7 @@
                     "type": "component",
                     "component": "TabButton",
                     "props": {
-                      "label": {
-                        "_i18n": true,
-                        "en": "Security & Access",
-                        "pl": "Bezpieczeństwo i dostęp"
-                      },
+                      "label": "Features",
                       "isActive": true
                     }
                   },
@@ -645,11 +459,7 @@
                     "type": "component",
                     "component": "TabButton",
                     "props": {
-                      "label": {
-                        "_i18n": true,
-                        "en": "Collaboration",
-                        "pl": "Współpraca"
-                      },
+                      "label": "Quality",
                       "isActive": false
                     }
                   },
@@ -657,11 +467,7 @@
                     "type": "component",
                     "component": "TabButton",
                     "props": {
-                      "label": {
-                        "_i18n": true,
-                        "en": "Cost Efficiency",
-                        "pl": "Efektywność kosztowa"
-                      }
+                      "label": "Flexibility"
                     }
                   }
                 ]
@@ -693,11 +499,7 @@
                                 "type": "component",
                                 "component": "Heading",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "GitHub Enterprise SSO & SAML",
-                                    "pl": "GitHub Enterprise SSO i SAML"
-                                  },
+                                  "text": "Component Library",
                                   "size": "3",
                                   "tag": "3"
                                 }
@@ -706,11 +508,7 @@
                                 "type": "component",
                                 "component": "Text",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Integrate seamlessly with GitHub Enterprise for SAML-based authentication. Manage team access through your existing identity provider. No additional login credentials needed.",
-                                    "pl": "Bezproblemowa integracja z GitHub Enterprise dla uwierzytelniania SAML. Zarządzaj dostępem zespołu przez istniejącego dostawcę tożsamości. Bez dodatkowych danych logowania."
-                                  }
+                                  "text": "Pre-built components for common patterns. Headers, footers, cards, forms, and navigation all included."
                                 }
                               }
                             ]
@@ -723,11 +521,7 @@
                                 "type": "component",
                                 "component": "Heading",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Zero Cloud Data, Full Control",
-                                    "pl": "Zero danych w chmurze, pełna kontrola"
-                                  },
+                                  "text": "Design Tokens",
                                   "size": "3",
                                   "tag": "3"
                                 }
@@ -736,11 +530,7 @@
                                 "type": "component",
                                 "component": "Text",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "All content and configuration stored in your GitHub repository. No vendor data collection. Self-host, deploy on-premise, or use GitHub Enterprise Server—complete data sovereignty.",
-                                    "pl": "Cała treść i konfiguracja przechowywana w Twoim repozytorium GitHub. Bez zbierania danych przez dostawcę. Hostuj samodzielnie, wdrażaj lokalnie lub używaj GitHub Enterprise Server — pełna suwerenność danych."
-                                  }
+                                  "text": "Consistent colors, spacing, and typography defined in one place. Update your brand colors once."
                                 }
                               }
                             ]
@@ -753,11 +543,7 @@
                                 "type": "component",
                                 "component": "Heading",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Enterprise Security & Compliance",
-                                    "pl": "Bezpieczeństwo i zgodność dla przedsiębiorstw"
-                                  },
+                                  "text": "Responsive Layouts",
                                   "size": "3",
                                   "tag": "3"
                                 }
@@ -766,11 +552,7 @@
                                 "type": "component",
                                 "component": "Text",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Meet HIPAA, GDPR, SOC2, and other compliance requirements. Full audit trails for every change. Encrypted at rest. Your infrastructure, your security rules.",
-                                    "pl": "Spełniaj wymagania HIPAA, GDPR, SOC2 i inne standardy zgodności. Pełna historia audytu dla każdej zmiany. Szyfrowanie w spoczynku. Twoja infrastruktura, Twoje zasady bezpieczeństwa."
-                                  }
+                                  "text": "Grid and flexbox layouts that adapt to any screen size. Mobile-first approach."
                                 }
                               }
                             ]
@@ -802,11 +584,7 @@
                                 "type": "component",
                                 "component": "Heading",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Team Collaboration & Code Review",
-                                    "pl": "Współpraca zespołowa i przegląd kodu"
-                                  },
+                                  "text": "Clean Architecture",
                                   "size": "3",
                                   "tag": "3"
                                 }
@@ -815,11 +593,7 @@
                                 "type": "component",
                                 "component": "Text",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Native GitHub branching, pull requests, and merge workflows. Design changes follow your approval process. Leverage existing GitHub permissions and team structure.",
-                                    "pl": "Natywne gałęzie GitHub, pull requesty i workflow scalania. Zmiany projektowe zgodne z Twoim procesem zatwierdzania. Wykorzystuj istniejące uprawnienia GitHub i strukturę zespołu."
-                                  }
+                                  "text": "Organized file structure and naming conventions. Easy to navigate and maintain."
                                 }
                               }
                             ]
@@ -832,11 +606,7 @@
                                 "type": "component",
                                 "component": "Heading",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Complete Audit & Version History",
-                                    "pl": "Pełna historia audytu i wersji"
-                                  },
+                                  "text": "Documentation",
                                   "size": "3",
                                   "tag": "3"
                                 }
@@ -845,11 +615,7 @@
                                 "type": "component",
                                 "component": "Text",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Every change is a commit with attribution and timestamp. Git history serves as your compliance record. Rollback to any point. Full visibility of who changed what and when.",
-                                    "pl": "Każda zmiana to commit z przypisaniem autora i znacznikiem czasu. Historia Git służy jako zapis zgodności. Cofnij do dowolnego punktu. Pełna widoczność kto, co i kiedy zmienił."
-                                  }
+                                  "text": "Clear comments and examples throughout. Understand how everything works."
                                 }
                               }
                             ]
@@ -881,11 +647,7 @@
                                 "type": "component",
                                 "component": "Heading",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Reduce Development Costs",
-                                    "pl": "Zmniejsz koszty rozwoju"
-                                  },
+                                  "text": "Easy Integration",
                                   "size": "3",
                                   "tag": "3"
                                 }
@@ -894,11 +656,7 @@
                                 "type": "component",
                                 "component": "Text",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "AI generates pages instantly. Your teams review visually. Significantly lower web development costs while maintaining enterprise standards and security.",
-                                    "pl": "AI generuje strony natychmiast. Twoje zespoły przeglądają wizualnie. Znacząco niższe koszty tworzenia stron przy zachowaniu standardów korporacyjnych i bezpieczeństwa."
-                                  }
+                                  "text": "Works with your existing tools and services. Add analytics, forms, or any third-party service."
                                 }
                               }
                             ]
@@ -911,11 +669,7 @@
                                 "type": "component",
                                 "component": "Heading",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Faster Time to Market",
-                                    "pl": "Szybszy czas wejścia na rynek"
-                                  },
+                                  "text": "No Lock-in",
                                   "size": "3",
                                   "tag": "3"
                                 }
@@ -924,11 +678,7 @@
                                 "type": "component",
                                 "component": "Text",
                                 "props": {
-                                  "text": {
-                                    "_i18n": true,
-                                    "en": "Launch products and campaigns weeks faster. AI-powered page generation combined with visual editing eliminates bottlenecks in your development pipeline.",
-                                    "pl": "Uruchamiaj produkty i kampanie o tygodnie szybciej. Generowanie stron przez AI w połączeniu z edycją wizualną eliminuje wąskie gardła w Twoim procesie rozwoju."
-                                  }
+                                  "text": "Your code, your rules. Export and deploy anywhere. No proprietary formats."
                                 }
                               }
                             ]
@@ -962,11 +712,7 @@
                 "type": "component",
                 "component": "Heading",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Frequently Asked Questions",
-                    "pl": "Często zadawane pytania"
-                  },
+                  "text": "Frequently Asked Questions",
                   "size": "2",
                   "tag": "2",
                   "align": "left"
@@ -976,11 +722,7 @@
                 "type": "component",
                 "component": "Text",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Find answers to common questions about Meno Studio, features, and getting started.",
-                    "pl": "Znajdź odpowiedzi na najczęstsze pytania dotyczące Meno Studio, funkcji i pierwszych kroków."
-                  }
+                  "text": "Common questions about using and customizing this template."
                 }
               }
             ]
@@ -996,16 +738,8 @@
                 "type": "component",
                 "component": "FaqItem",
                 "props": {
-                  "question": {
-                    "_i18n": true,
-                    "en": "What is Meno?",
-                    "pl": "Czym jest Meno?"
-                  },
-                  "answer": {
-                    "_i18n": true,
-                    "en": "Meno is a visual editor that lets you build web pages and components using a drag-and-drop interface. Your designs are saved as JSON files that render as production-ready code.",
-                    "pl": "Meno to wizualny edytor, który pozwala budować strony i komponenty za pomocą interfejsu drag-and-drop. Twoje projekty są zapisywane jako pliki JSON, które renderują się jako gotowy do produkcji kod."
-                  },
+                  "question": "What is this template?",
+                  "answer": "A modern, responsive website template built with best practices. It includes common components, layouts, and patterns to help you launch your project faster.",
                   "isOpen": true
                 }
               },
@@ -1013,96 +747,48 @@
                 "type": "component",
                 "component": "FaqItem",
                 "props": {
-                  "question": {
-                    "_i18n": true,
-                    "en": "Do I need to know how to code?",
-                    "pl": "Czy muszę umieć programować?"
-                  },
-                  "answer": {
-                    "_i18n": true,
-                    "en": "No coding required to design pages. Meno generates clean, production-ready output. Developers can customize the JSON output or extend components as needed.",
-                    "pl": "Nie wymagamy umiejętności programowania do projektowania stron. Meno generuje czysty, gotowy do produkcji kod. Programiści mogą dostosowywać wyjście JSON lub rozszerzać komponenty według potrzeb."
-                  }
+                  "question": "How do I customize the content?",
+                  "answer": "Edit the JSON files in the pages and components folders. Update text, images, and links to match your brand and content."
                 }
               },
               {
                 "type": "component",
                 "component": "FaqItem",
                 "props": {
-                  "question": {
-                    "_i18n": true,
-                    "en": "How is Meno different from other website builders?",
-                    "pl": "Czym Meno różni się od innych kreatorów stron?"
-                  },
-                  "answer": {
-                    "_i18n": true,
-                    "en": "Unlike Webflow or Framer, Meno outputs pure JSON structures you fully own—not locked to a proprietary platform. The format is AI-friendly and follows conventions similar to Astro or Next.js, making it easy for AI tools to understand and modify.",
-                    "pl": "W przeciwieństwie do Webflow czy Framer, Meno generuje czyste struktury JSON, które w pełni posiadasz — bez blokady na własnościowej platformie. Format jest przyjazny dla AI i podąża za konwencjami podobnymi do Astro lub Next.js, co ułatwia narzędziom AI zrozumienie i modyfikację."
-                  }
+                  "question": "Can I change the colors and fonts?",
+                  "answer": "Yes! Open colors.json to update your color palette. Typography settings are in the component files and can be easily modified."
                 }
               },
               {
                 "type": "component",
                 "component": "FaqItem",
                 "props": {
-                  "question": {
-                    "_i18n": true,
-                    "en": "What can I build with Meno?",
-                    "pl": "Co mogę zbudować z Meno?"
-                  },
-                  "answer": {
-                    "_i18n": true,
-                    "en": "Marketing pages, landing pages, blogs, documentation sites, and any content-driven web pages. The CMS integration supports dynamic content like blog posts and product catalogs.",
-                    "pl": "Strony marketingowe, landing page, blogi, strony dokumentacji i dowolne strony oparte na treści. Integracja z CMS wspiera dynamiczną zawartość jak wpisy blogowe i katalogi produktów."
-                  }
+                  "question": "What pages are included?",
+                  "answer": "The template includes a homepage, features page, about page, contact page, and a 404 error page. All fully responsive and ready to customize."
                 }
               },
               {
                 "type": "component",
                 "component": "FaqItem",
                 "props": {
-                  "question": {
-                    "_i18n": true,
-                    "en": "Can I use my own components?",
-                    "pl": "Czy mogę używać własnych komponentów?"
-                  },
-                  "answer": {
-                    "_i18n": true,
-                    "en": "Absolutely. Define custom component JSON schemas and Meno will make them available in the visual editor alongside built-in elements.",
-                    "pl": "Oczywiście. Zdefiniuj własne schematy JSON komponentów, a Meno udostępni je w edytorze wizualnym obok wbudowanych elementów."
-                  }
+                  "question": "Can I add new pages?",
+                  "answer": "Absolutely. Create a new JSON file in the pages folder following the same structure. Your new page will be automatically available."
                 }
               },
               {
                 "type": "component",
                 "component": "FaqItem",
                 "props": {
-                  "question": {
-                    "_i18n": true,
-                    "en": "Does it work offline?",
-                    "pl": "Czy działa offline?"
-                  },
-                  "answer": {
-                    "_i18n": true,
-                    "en": "Yes. The Meno desktop app works fully offline. Your files are stored locally and sync via Git when you're ready.",
-                    "pl": "Tak. Aplikacja desktopowa Meno działa w pełni offline. Twoje pliki są przechowywane lokalnie i synchronizowane przez Git, gdy jesteś gotowy."
-                  }
+                  "question": "How do I deploy my site?",
+                  "answer": "Build the static files and deploy to any hosting service. Works great with Netlify, Vercel, GitHub Pages, or any static hosting provider."
                 }
               },
               {
                 "type": "component",
                 "component": "FaqItem",
                 "props": {
-                  "question": {
-                    "_i18n": true,
-                    "en": "Can AI edit my Meno projects?",
-                    "pl": "Czy AI może edytować moje projekty Meno?"
-                  },
-                  "answer": {
-                    "_i18n": true,
-                    "en": "Yes. The JSON structure is designed to be readable and editable by AI assistants. Ask Claude or ChatGPT to modify your pages, add sections, or update content directly.",
-                    "pl": "Tak. Struktura JSON jest zaprojektowana tak, aby była czytelna i edytowalna przez asystentów AI. Poproś Claude lub ChatGPT o modyfikację stron, dodanie sekcji lub bezpośrednią aktualizację treści."
-                  }
+                  "question": "Is this template free to use?",
+                  "answer": "Yes, this template is free for personal and commercial use. Customize it, extend it, and use it for any project you like."
                 }
               }
             ]
@@ -1128,11 +814,7 @@
                 "type": "component",
                 "component": "Heading",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Get started with Meno",
-                    "pl": "Zacznij z Meno"
-                  },
+                  "text": "Ready to build something great?",
                   "size": "2",
                   "tag": "2",
                   "align": "center",
@@ -1144,11 +826,7 @@
                 "type": "component",
                 "component": "Text",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Download Meno Studio and build your first site in minutes. No coding. No signup. Just results.",
-                    "pl": "Pobierz Meno Studio i zbuduj swoją pierwszą stronę w kilka minut. Bez programowania. Bez rejestracji. Same rezultaty."
-                  },
+                  "text": "Start customizing this template today. It only takes a few minutes to make it yours.",
                   "align": "center",
                   "maxWidth": "400px",
                   "isMarginBottom": true
@@ -1176,17 +854,12 @@
                     "type": "component",
                     "component": "Button",
                     "props": {
-                      "text": {
-                        "_i18n": true,
-                        "en": "Download for Free",
-                        "pl": "Pobierz za darmo"
-                      },
+                      "text": "Get Started",
                       "href": "#",
                       "variant": "primary",
                       "isMarginTop": false,
                       "link": {
-                        "href": "https://github.com/meno-so/studio/releases",
-                        "target": "_blank"
+                        "href": "#"
                       }
                     }
                   },
@@ -1196,13 +869,9 @@
                     "props": {
                       "isMarginTop": false,
                       "variant": "secondary",
-                      "text": {
-                        "_i18n": true,
-                        "en": "Contact Sales",
-                        "pl": "Kontakt ze sprzedażą"
-                      },
+                      "text": "View Documentation",
                       "link": {
-                        "href": "/contact-sales"
+                        "href": "/docs"
                       }
                     }
                   }
@@ -1215,8 +884,7 @@
     ]
   },
   "meta": {
-    "title": "Meno Studio - Build websites with AI",
-    "description": "Meno Studio is an AI-powered web builder that turns your ideas into production-ready websites. Describe what you want, refine it visually, and publish—all in one place.",
-    "keywords": "sds"
+    "title": "Starter Template - Build Your Website",
+    "description": "A modern starter template for building beautiful, responsive websites. Customize it to match your brand and launch faster."
   }
 }

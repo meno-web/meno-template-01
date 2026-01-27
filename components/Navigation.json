@@ -48,7 +48,7 @@
             "base": {}
           },
           "attributes": {
-            "aria-label": "Meno - Home"
+            "aria-label": "Home"
           },
           "children": [
             {
@@ -230,9 +230,9 @@
                   "type": "component",
                   "component": "NavLink",
                   "props": {
-                    "text": "Features",
+                    "text": "Sections",
                     "link": {
-                      "href": "/features"
+                      "href": "/components"
                     }
                   }
                 },
@@ -280,23 +280,10 @@
                   "component": "Button",
                   "props": {
                     "isMarginTop": false,
-                    "variant": "secondary",
-                    "text": "Contact Sales",
-                    "link": {
-                      "href": "/contact-sales"
-                    }
-                  }
-                },
-                {
-                  "type": "component",
-                  "component": "Button",
-                  "props": {
-                    "isMarginTop": false,
-                    "text": "Download",
+                    "text": "Get Started",
                     "variant": "primary",
                     "link": {
-                      "href": "https://github.com/meno-so/studio/releases",
-                      "target": "_blank"
+                      "href": "#"
                     }
                   }
                 }

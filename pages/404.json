@@ -40,11 +40,7 @@
                 "type": "component",
                 "component": "Heading",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Page not found",
-                    "pl": "Nie znaleziono strony"
-                  },
+                  "text": "Page not found",
                   "size": "2",
                   "tag": "1",
                   "align": "center"
@@ -54,13 +50,9 @@
                 "type": "component",
                 "component": "Text",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "The page you're looking for doesn't exist or has been moved.",
-                    "pl": "Strona, której szukasz, nie istnieje lub została przeniesiona."
-                  },
+                  "text": "The page you're looking for doesn't exist or has been moved.",
                   "align": "center",
-                  "maxWidth": "400px",
+                  "maxWidth": "320px",
                   "isMarginBottom": true
                 }
               },
@@ -68,11 +60,7 @@
                 "type": "component",
                 "component": "Button",
                 "props": {
-                  "text": {
-                    "_i18n": true,
-                    "en": "Back to Home",
-                    "pl": "Wróć na stronę główną"
-                  },
+                  "text": "Back to Home",
                   "variant": "primary",
                   "isMarginTop": true,
                   "link": {
@@ -87,10 +75,6 @@
     ]
   },
   "meta": {
-    "title": {
-      "_i18n": true,
-      "en": "Page Not Found - Meno Studio",
-      "pl": "Nie znaleziono strony - Meno Studio"
-    }
+    "title": "Page Not Found"
   }
 }

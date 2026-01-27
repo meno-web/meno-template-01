@@ -6,6 +6,49 @@
       {
         "type": "component",
         "component": "Section",
+        "props": {
+          "theme": "primary",
+          "spaceTop": "small"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Sections",
+                  "maxWidth": "480px",
+                  "align": "center",
+                  "size": "1",
+                  "tag": "1",
+                  "variant": "default"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "A modern starter template for building beautiful, responsive websites. Customize it to match your brand and launch faster.",
+                  "size": "large",
+                  "align": "center",
+                  "maxWidth": "580px",
+                  "isMarginBottom": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
         "children": [
           {
             "type": "component",
@@ -34,6 +77,881 @@
               {
                 "type": "component",
                 "component": "Testimonial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary",
+          "maxWidth": "640",
+          "spaceTop": "default"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Form",
+            "props": {
+              "action": "/api/send-email",
+              "method": "post",
+              "submitHandler": "fetch",
+              "successMessage": "Thank you! Our sales team will contact you soon.",
+              "errorMessage": "Something went wrong. Please try again."
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "FormField",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Label",
+                    "props": {
+                      "text": "Full Name"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Input",
+                    "props": {
+                      "inputType": "text",
+                      "name": "fullName",
+                      "placeholder": "Your full name"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "FormField",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Label",
+                    "props": {
+                      "text": "Email Address"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Input",
+                    "props": {
+                      "inputType": "email",
+                      "name": "email",
+                      "placeholder": "you@company.com"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "FormField",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Label",
+                    "props": {
+                      "text": "Company Name"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Input",
+                    "props": {
+                      "inputType": "text",
+                      "name": "company",
+                      "placeholder": "Your company"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "FormField",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Label",
+                    "props": {
+                      "text": "How can we help?"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Textarea",
+                    "props": {
+                      "name": "message",
+                      "placeholder": "Tell us about your project...",
+                      "rows": "5"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Submit",
+                "props": {
+                  "text": "Send Message"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "spaceTop": "default",
+          "spaceBottom": "default",
+          "theme": "primary",
+          "maxWidth": "1280"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Heading",
+            "props": {
+              "text": "Frequently asked questions",
+              "size": "2",
+              "tag": "2",
+              "align": "left"
+            }
+          },
+          {
+            "type": "component",
+            "component": "Spacer",
+            "props": {
+              "size": "32"
+            }
+          },
+          {
+            "type": "component",
+            "component": "FaqList",
+            "children": [
+              {
+                "type": "component",
+                "component": "FaqItem",
+                "props": {
+                  "question": "Do I need to pay extra for enterprise features?",
+                  "answer": "No. SSO and compliance come from your GitHub org—Meno just connects to it. Self-hosting and team management are included in every plan.",
+                  "isOpen": true
+                }
+              },
+              {
+                "type": "component",
+                "component": "FaqItem",
+                "props": {
+                  "question": "Can I run Meno on my own servers?",
+                  "answer": "Yes. Meno can be deployed on-premise or in your private cloud."
+                }
+              },
+              {
+                "type": "component",
+                "component": "FaqItem",
+                "props": {
+                  "question": "What kind of support do enterprise teams get?",
+                  "answer": "All teams get priority support with a 24-hour response SLA. Larger teams can request dedicated onboarding and a direct line to our engineering team."
+                }
+              },
+              {
+                "type": "component",
+                "component": "FaqItem",
+                "props": {
+                  "question": "Is Meno SOC 2 compliant?",
+                  "answer": "Meno doesn't store your data—GitHub does. All your pages, components, and assets live in Git repositories under your organization's GitHub account. You get GitHub's enterprise-grade security (SOC 2 Type II, encryption at rest and in transit, audit logs) without any additional setup. Your security team already trusts GitHub—Meno just works on top of it."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary",
+          "spaceTop": "default",
+          "spaceBottom": "default"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Everything included. No upgrade needed.",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center",
+                  "maxWidth": "520px"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Text",
+                "props": {
+                  "text": "Most tools lock enterprise features behind expensive plans or build their own security stack. We don't. Meno connects directly to GitHub. Your SSO, audit logs, and compliance come from there. No duplicate infrastructure, no extra configuration.",
+                  "align": "center",
+                  "maxWidth": "700px"
+                }
+              }
+            ]
+          },
+          {
+            "type": "component",
+            "component": "Spacer",
+            "props": {
+              "size": "64"
+            }
+          },
+          {
+            "type": "component",
+            "component": "Grid",
+            "props": {
+              "columns": "2",
+              "gap": "24"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "SSO & Team Management",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Meno authenticates through GitHub OAuth. If your org has GitHub Enterprise with SAML SSO, your team signs in the same way they access your repos—no separate identity setup needed.",
+                      "isMarginBottom": true
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "SSO via GitHub OAuth—inherits your org's identity provider"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Role-based access through GitHub org permissions"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Team workspaces with granular permissions"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Audit logs via GitHub—every action tracked in your repos"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Self-Hosting & Security",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Your pages, components, and assets live in Git repositories under your GitHub org. Meno never stores your content—GitHub does.",
+                      "isMarginBottom": true
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Deploy on your own infrastructure"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Air-gapped environment support"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Data stored in your GitHub repos, not Meno servers"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "End-to-end encryption"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Priority Support",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Your team gets the help they need, when they need it.",
+                      "isMarginBottom": true
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Dedicated support channel for your organization"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "24-hour response SLA"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Hands-on onboarding and training"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Direct access to our engineering team for complex issues"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Custom Integrations",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Make Meno fit your workflow, not the other way around.",
+                      "isMarginBottom": true
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Full API access"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Webhooks for automation"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "CI/CD pipeline integration"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "White-label options available"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary",
+          "text": "Diffable output — Review AI changes with standard Git diffs"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "SplitContent",
+            "children": [
+              {
+                "type": "node",
+                "tag": "div",
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "A visual editor that doesn't get in your way.",
+                      "size": "2",
+                      "tag": "2",
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Build pages and components visually with a real-time preview. No generated code spaghetti—just structured JSON that compiles to static HTML."
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Spacer",
+                    "props": {
+                      "size": "24"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "BulletList",
+                    "children": [
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Drag-and-drop canvas — Add, move, and nest elements with a click"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Real-time preview — See exactly what you're building as you build it"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Component library — Reusable components with props and variants"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Responsive controls — Design for desktop, tablet, and mobile in one view"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Style panel — Full control over spacing, typography, colors, and layout"
+                        }
+                      },
+                      {
+                        "type": "component",
+                        "component": "BulletItem",
+                        "props": {
+                          "text": "Keyboard shortcuts — Fast navigation and editing for power users"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "tag": "div",
+                "style": {
+                  "base": {
+                    "display": "flex",
+                    "alignItems": "flex-start"
+                  },
+                  "tablet": {},
+                  "mobile": {}
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Image",
+                    "props": {
+                      "image": "/images/Screenshot-2026-01-13-at-15.48.27.webp",
+                      "objectFit": "contain",
+                      "height": "auto",
+                      "border": true,
+                      "rounded": "large"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "secondary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "How It Works",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              }
+            ]
+          },
+          {
+            "type": "component",
+            "component": "Grid",
+            "props": {
+              "columns": "3",
+              "gap": "24"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "StatNumber",
+                    "props": {
+                      "text": "1"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Design",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Use the visual editor to build your page layout. Add elements, style them, and preview in real-time."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "StatNumber",
+                    "props": {
+                      "text": "2",
+                      "color": "primary",
+                      "size": "large"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Commit",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Your work saves as JSON files in your Git repository. Review diffs, branch for experiments, merge when ready."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "component",
+                "component": "Card",
+                "props": {
+                  "variant": "light"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "StatNumber",
+                    "props": {
+                      "text": "3",
+                      "color": "primary"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "Deploy",
+                      "size": "3",
+                      "tag": "3"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "component": "Text",
+                    "props": {
+                      "text": "Deploy to Vercel, Netlify, GitHub Pages, or your own infrastructure using meno-core package to build static HTML"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "component",
+        "component": "Section",
+        "props": {
+          "theme": "primary"
+        },
+        "children": [
+          {
+            "type": "component",
+            "component": "Stack",
+            "props": {
+              "vertical": "center",
+              "horizontal": "center"
+            },
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "Developer-Friendly Details",
+                  "size": "2",
+                  "tag": "2",
+                  "align": "center"
+                }
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "48"
+                }
+              }
+            ]
+          },
+          {
+            "type": "component",
+            "component": "Table",
+            "children": [
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "No runtime dependency",
+                  "value": "Generated pages are static HTML + CSS"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Zero JavaScript required",
+                  "value": "Output works without JS (add it if you want)"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Predictable output",
+                  "value": "Same JSON always produces same HTML"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Component props",
+                  "value": "Pass data to components for flexible reuse"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Tree structure",
+                  "value": "Nodes have path arrays for precise targeting"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Zod validation",
+                  "value": "All schemas are validated at runtime"
+                }
+              },
+              {
+                "type": "component",
+                "component": "TableRow",
+                "props": {
+                  "label": "Extensible",
+                  "value": "Add custom components"
+                }
               }
             ]
           }

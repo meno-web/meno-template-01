@@ -34,7 +34,7 @@
             "base": {}
           },
           "attributes": {
-            "aria-label": "Meno - Home"
+            "aria-label": "Home"
           },
           "children": [
             {
@@ -119,7 +119,7 @@
               "component": "Text",
               "props": {
                 "size": "small",
-                "text": "© 2026 Meno. All rights reserved.",
+                "text": "© 2026 Your Company. All rights reserved.",
                 "align": "inherit"
               }
             }
