@@ -8,7 +8,7 @@
         "component": "Modal",
         "props": {
           "isOpen": false,
-          "modalId": "video-modal"
+          "modalId": "modal-1"
         },
         "children": [
           {
@@ -16,16 +16,46 @@
             "tag": "div",
             "style": {
               "base": {
-                "width": "100%",
-                "height": "100%",
-                "maxWidth": "1100px",
-                "maxHeight": "620px",
-                "zIndex": "1"
-              }
+                "padding": "24px 40px 32px",
+                "backgroundColor": "var(--bg)",
+                "zIndex": "1",
+                "borderRadius": "32px",
+                "maxWidth": "520px",
+                "width": "100%"
+              },
+              "tablet": {},
+              "mobile": {}
             },
-            "attributes": {
-              "data-video-src": "https://player.vimeo.com/video/1153157372?portrait=0&byline=0&dnt=1&autoplay=1"
-            }
+            "children": [
+              {
+                "type": "component",
+                "component": "Heading"
+              },
+              {
+                "type": "component",
+                "component": "Text"
+              },
+              {
+                "type": "component",
+                "component": "Spacer",
+                "props": {
+                  "size": "24"
+                }
+              },
+              {
+                "type": "component",
+                "component": "ButtonList",
+                "props": {
+                  "justify": "flex-start"
+                },
+                "children": [
+                  {
+                    "type": "component",
+                    "component": "Button"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
