@@ -66,10 +66,6 @@
         "type": "rich-text",
         "default": "Text"
       },
-      "isMarginBottom": {
-        "type": "boolean",
-        "default": false
-      },
       "maxWidth": {
         "type": "string",
         "default": "100%"
