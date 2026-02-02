@@ -51,7 +51,7 @@
                 "tablet": {},
                 "mobile": {}
               },
-              "children": "Plaster Miodu"
+              "children": "Meno Starter"
             }
           ]
         },
@@ -76,9 +76,9 @@
               "type": "component",
               "component": "NavLink",
               "props": {
-                "text": "O nas",
+                "text": "Features",
                 "link": {
-                  "href": "#o-nas"
+                  "href": "#features"
                 }
               }
             },
@@ -86,9 +86,19 @@
               "type": "component",
               "component": "NavLink",
               "props": {
-                "text": "Kontakt",
+                "text": "About",
                 "link": {
-                  "href": "#kontakt"
+                  "href": "#about"
+                }
+              }
+            },
+            {
+              "type": "component",
+              "component": "NavLink",
+              "props": {
+                "text": "Contact",
+                "link": {
+                  "href": "#contact"
                 }
               }
             }
@@ -112,7 +122,7 @@
               "component": "Text",
               "props": {
                 "size": "small",
-                "text": "© 2026 Plaster Miodu. Wszelkie prawa zastrzeżone.",
+                "text": "© 2026 Meno Starter. All rights reserved.",
                 "align": "inherit"
               }
             }

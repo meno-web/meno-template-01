@@ -65,7 +65,7 @@
                 "tablet": {},
                 "mobile": {}
               },
-              "children": "Plaster Miodu"
+              "children": "Meno Starter"
             }
           ]
         },
@@ -233,9 +233,9 @@
                   "type": "component",
                   "component": "NavLink",
                   "props": {
-                    "text": "O nas",
+                    "text": "Features",
                     "link": {
-                      "href": "/o-nas"
+                      "href": "#features"
                     }
                   }
                 },
@@ -243,9 +243,19 @@
                   "type": "component",
                   "component": "NavLink",
                   "props": {
-                    "text": "Kontakt",
+                    "text": "About",
                     "link": {
-                      "href": "#kontakt"
+                      "href": "#about"
+                    }
+                  }
+                },
+                {
+                  "type": "component",
+                  "component": "NavLink",
+                  "props": {
+                    "text": "Contact",
+                    "link": {
+                      "href": "#contact"
                     }
                   }
                 }
@@ -273,10 +283,10 @@
                   "component": "Button",
                   "props": {
                     "isMarginTop": false,
-                    "text": "Zapytaj o termin",
+                    "text": "Get Started",
                     "variant": "primary",
                     "link": {
-                      "href": "#kontakt"
+                      "href": "#contact"
                     }
                   }
                 }
