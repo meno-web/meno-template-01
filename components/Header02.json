@@ -1,0 +1,47 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "theme": "primary",
+        "spaceTop": "default"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "Heading",
+          "props": {
+            "text": "{{title}}",
+            "maxWidth": "100%",
+            "size": "1",
+            "tag": "1",
+            "variant": "default",
+            "align": "left"
+          }
+        },
+        {
+          "type": "component",
+          "component": "Text",
+          "props": {
+            "text": "{{text}}",
+            "size": "large",
+            "maxWidth": "580px",
+            "isMarginBottom": true,
+            "align": "left"
+          }
+        }
+      ]
+    },
+    "interface": {
+      "title": {
+        "type": "rich-text",
+        "default": "Header 02"
+      },
+      "text": {
+        "type": "rich-text",
+        "default": "Lorem ipsum"
+      }
+    }
+  }
+}

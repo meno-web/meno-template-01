@@ -1,0 +1,269 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "theme": "{{theme}}",
+        "spaceTop": "default"
+      },
+      "children": [
+        {
+          "type": "node",
+          "tag": "div",
+          "style": {
+            "base": {
+              "display": "grid",
+              "gridTemplateColumns": "2fr 1fr 1fr 1fr",
+              "gap": "40px"
+            },
+            "tablet": {
+              "gridTemplateColumns": "1fr 1fr"
+            },
+            "mobile": {
+              "gridTemplateColumns": "1fr"
+            }
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "div",
+              "children": [
+                {
+                  "type": "node",
+                  "tag": "div",
+                  "style": {
+                    "base": {
+                      "fontSize": "20px",
+                      "fontWeight": "700",
+                      "color": "var(--text)",
+                      "marginBottom": "16px"
+                    }
+                  },
+                  "children": "{{brandName}}"
+                },
+                {
+                  "type": "node",
+                  "tag": "p",
+                  "style": {
+                    "base": {
+                      "color": "var(--text-secondary)",
+                      "fontSize": "14px",
+                      "lineHeight": "1.6",
+                      "margin": "0",
+                      "maxWidth": "280px"
+                    }
+                  },
+                  "children": "{{tagline}}"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "sourceType": "prop",
+              "source": "{{list}}",
+              "itemAs": "item",
+              "children": [
+                {
+                  "type": "node",
+                  "tag": "div",
+                  "children": [
+                    {
+                      "type": "node",
+                      "tag": "div",
+                      "style": {
+                        "base": {
+                          "fontSize": "14px",
+                          "fontWeight": "600",
+                          "color": "var(--text)",
+                          "marginBottom": "16px",
+                          "textTransform": "uppercase",
+                          "letterSpacing": "0.5px"
+                        }
+                      },
+                      "children": "{{item.title}}"
+                    },
+                    {
+                      "type": "node",
+                      "tag": "nav",
+                      "children": [
+                        {
+                          "type": "node",
+                          "tag": "div",
+                          "style": {
+                            "base": {
+                              "display": "flex",
+                              "flexDirection": "column",
+                              "gap": "12px",
+                              "fontSize": "14px",
+                              "lineHeight": "1.6",
+                              "color": "var(--text-secondary)"
+                            }
+                          },
+                          "children": "{{item.links}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "tag": "div",
+          "style": {
+            "base": {
+              "borderTop": "1px solid var(--border)",
+              "marginTop": "48px",
+              "paddingTop": "24px",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "alignItems": "center"
+            },
+            "mobile": {
+              "flexDirection": "column",
+              "gap": "16px",
+              "textAlign": "center"
+            }
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "div",
+              "style": {
+                "base": {
+                  "color": "var(--text-secondary)",
+                  "fontSize": "14px"
+                }
+              },
+              "children": "{{copyright}}"
+            },
+            {
+              "type": "node",
+              "tag": "div",
+              "style": {
+                "base": {
+                  "display": "flex",
+                  "gap": "24px"
+                }
+              },
+              "children": [
+                {
+                  "type": "node",
+                  "tag": "a",
+                  "style": {
+                    "base": {
+                      "color": "var(--text-secondary)",
+                      "fontSize": "14px",
+                      "textDecoration": "none"
+                    }
+                  },
+                  "interactiveStyles": [
+                    {
+                      "prefix": "",
+                      "postfix": ":hover",
+                      "style": {
+                        "base": {
+                          "color": "var(--text)"
+                        }
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "href": "{{privacyLink}}"
+                  },
+                  "children": "Privacy Policy"
+                },
+                {
+                  "type": "node",
+                  "tag": "a",
+                  "style": {
+                    "base": {
+                      "color": "var(--text-secondary)",
+                      "fontSize": "14px",
+                      "textDecoration": "none"
+                    }
+                  },
+                  "interactiveStyles": [
+                    {
+                      "prefix": "",
+                      "postfix": ":hover",
+                      "style": {
+                        "base": {
+                          "color": "var(--text)"
+                        }
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "href": "{{termsLink}}"
+                  },
+                  "children": "Terms of Service"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "brandName": {
+        "type": "string",
+        "default": "Company"
+      },
+      "tagline": {
+        "type": "string",
+        "default": "Building the future of digital experiences, one product at a time."
+      },
+      "list": {
+        "type": "list",
+        "itemSchema": {
+          "title": {
+            "type": "string",
+            "default": "Column Title"
+          },
+          "links": {
+            "type": "rich-text",
+            "default": "Link 1\nLink 2\nLink 3"
+          }
+        },
+        "default": [
+          {
+            "title": "Product",
+            "links": "Features\nPricing\nIntegrations"
+          },
+          {
+            "title": "Company",
+            "links": "About\nBlog\nCareers"
+          },
+          {
+            "title": "Support",
+            "links": "Help Center\nContact\nStatus"
+          }
+        ]
+      },
+      "copyright": {
+        "type": "string",
+        "default": "© 2025 Company. All rights reserved."
+      },
+      "privacyLink": {
+        "type": "link",
+        "default": "/privacy"
+      },
+      "termsLink": {
+        "type": "link",
+        "default": "/terms"
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      }
+    }
+  }
+}

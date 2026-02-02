@@ -4,8 +4,14 @@
     "theme": "light"
   },
   "breakpoints": {
-    "tablet": 1024,
-    "mobile": 540
+    "tablet": {
+      "breakpoint": 1024,
+      "previewPoint": 880
+    },
+    "mobile": {
+      "breakpoint": 540,
+      "previewPoint": 375
+    }
   },
   "fonts": [
     {

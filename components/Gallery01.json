@@ -1,0 +1,208 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "theme": "{{theme}}",
+        "spaceTop": "default"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "SectionHeader",
+          "props": {
+            "isCenter": true,
+            "maxWidth": "600px"
+          },
+          "children": [
+            {
+              "type": "component",
+              "component": "Subtitle",
+              "props": {
+                "text": "{{subtitle}}",
+                "align": "center"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Heading",
+              "props": {
+                "text": "{{title}}",
+                "maxWidth": "",
+                "align": "center",
+                "size": "2",
+                "tag": "2"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{text}}",
+                "size": "large",
+                "align": "center",
+                "maxWidth": ""
+              }
+            }
+          ]
+        },
+        {
+          "type": "component",
+          "component": "ListGrid",
+          "props": {
+            "list": "{{list}}",
+            "columns": "3"
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "div",
+              "style": {
+                "base": {
+                  "position": "relative",
+                  "borderRadius": "12px",
+                  "overflow": "hidden",
+                  "aspectRatio": "4/3"
+                }
+              },
+              "interactiveStyles": [
+                {
+                  "prefix": "",
+                  "postfix": ":hover [data-el='overlay']",
+                  "style": {
+                    "base": {
+                      "opacity": "1"
+                    }
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "type": "node",
+                  "tag": "img",
+                  "style": {
+                    "base": {
+                      "width": "100%",
+                      "height": "100%",
+                      "objectFit": "cover",
+                      "transition": "transform 0.3s ease"
+                    }
+                  },
+                  "attributes": {
+                    "src": "{{item.image}}",
+                    "alt": "{{item.title}}"
+                  }
+                },
+                {
+                  "type": "node",
+                  "tag": "div",
+                  "style": {
+                    "base": {
+                      "position": "absolute",
+                      "bottom": "0",
+                      "left": "0",
+                      "right": "0",
+                      "padding": "24px",
+                      "background": "linear-gradient(transparent, rgba(0,0,0,0.7))",
+                      "opacity": "0",
+                      "transition": "opacity 0.3s ease"
+                    }
+                  },
+                  "attributes": {
+                    "data-el": "overlay"
+                  },
+                  "children": [
+                    {
+                      "type": "node",
+                      "tag": "p",
+                      "style": {
+                        "base": {
+                          "color": "#ffffff",
+                          "fontSize": "14px",
+                          "margin": "0"
+                        }
+                      },
+                      "children": "{{item.text}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "subtitle": {
+        "type": "string",
+        "default": "Portfolio"
+      },
+      "title": {
+        "type": "rich-text",
+        "default": "Our recent work"
+      },
+      "text": {
+        "type": "rich-text",
+        "default": "Explore some of our latest projects and see what we can create for you."
+      },
+      "list": {
+        "type": "list",
+        "itemSchema": {
+          "image": {
+            "type": "file",
+            "default": "/images/placeholder.webp"
+          },
+          "title": {
+            "type": "string",
+            "default": "Project"
+          },
+          "text": {
+            "type": "string",
+            "default": "Project description"
+          }
+        },
+        "default": [
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Project 1",
+            "text": "Brand Identity Design"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Project 2",
+            "text": "E-commerce Platform"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Project 3",
+            "text": "Mobile App UI"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Project 4",
+            "text": "Marketing Website"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Project 5",
+            "text": "Dashboard Design"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Project 6",
+            "text": "Product Photography"
+          }
+        ]
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      }
+    }
+  }
+}

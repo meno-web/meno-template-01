@@ -1,0 +1,110 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "theme": "{{theme}}",
+        "spaceTop": "default"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "SectionHeader",
+          "props": {
+            "isCenter": true,
+            "maxWidth": "500px"
+          },
+          "children": [
+            {
+              "type": "component",
+              "component": "Subtitle",
+              "props": {
+                "text": "{{subtitle}}",
+                "align": "center"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Heading",
+              "props": {
+                "text": "{{title}}",
+                "maxWidth": "",
+                "align": "center",
+                "size": "2",
+                "tag": "2"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{text}}",
+                "size": "large",
+                "align": "center",
+                "maxWidth": "",
+                "isMarginBottom": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "component",
+          "component": "SplitContent",
+          "children": [
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{leftText}}",
+                "size": "default",
+                "align": "left",
+                "maxWidth": "100%"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{rightText}}",
+                "size": "default",
+                "align": "left",
+                "maxWidth": "100%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "subtitle": {
+        "type": "string",
+        "default": "Content 02"
+      },
+      "title": {
+        "type": "rich-text",
+        "default": "Learn more about our approach"
+      },
+      "text": {
+        "type": "rich-text",
+        "default": "We believe in transparency and sharing our process with you."
+      },
+      "leftText": {
+        "type": "rich-text",
+        "default": "Our approach is built on years of experience and a deep understanding of what our customers need. We focus on delivering solutions that are both powerful and easy to use, ensuring that you can get started quickly without sacrificing functionality."
+      },
+      "rightText": {
+        "type": "rich-text",
+        "default": "We're committed to continuous improvement and innovation. Our team works tirelessly to bring you new features and enhancements that help you stay ahead of the competition. Your success is our priority, and we're here to support you every step of the way."
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "theme": "{{theme}}"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "Stack",
+          "props": {
+            "vertical": "top",
+            "horizontal": "center"
+          },
+          "children": [
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{text}}",
+                "size": "default",
+                "align": "center",
+                "maxWidth": "100%",
+                "isMarginBottom": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "sourceType": "prop",
+          "source": "{{list}}",
+          "style": {
+            "base": {
+              "display": "flex",
+              "flexWrap": "wrap",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "gap": "40px",
+              "marginTop": "32px"
+            },
+            "tablet": {},
+            "mobile": {}
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "img",
+              "style": {
+                "base": {
+                  "height": "32px",
+                  "width": "auto",
+                  "opacity": "0.6",
+                  "transition": "opacity 0.2s ease"
+                }
+              },
+              "interactiveStyles": [
+                {
+                  "prefix": "",
+                  "postfix": ":hover",
+                  "style": {
+                    "base": {
+                      "opacity": "1"
+                    }
+                  }
+                }
+              ],
+              "attributes": {
+                "src": "{{item.image}}",
+                "alt": "{{item.title}}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "text": {
+        "type": "string",
+        "default": "Trusted by leading companies"
+      },
+      "list": {
+        "type": "list",
+        "itemSchema": {
+          "image": {
+            "type": "file",
+            "default": "/images/placeholder.webp"
+          },
+          "title": {
+            "type": "string",
+            "default": "Company"
+          }
+        },
+        "default": [
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Company 1"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Company 2"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Company 3"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Company 4"
+          },
+          {
+            "image": "/images/placeholder.webp",
+            "title": "Company 5"
+          }
+        ]
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      }
+    }
+  }
+}

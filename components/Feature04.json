@@ -1,0 +1,208 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "theme": "{{theme}}",
+        "spaceTop": "default"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "SectionHeader",
+          "props": {
+            "isCenter": true,
+            "maxWidth": "640px"
+          },
+          "children": [
+            {
+              "type": "component",
+              "component": "Subtitle",
+              "props": {
+                "text": "{{subtitle}}",
+                "align": "center"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Heading",
+              "props": {
+                "text": "{{title}}",
+                "align": "center",
+                "size": "2",
+                "tag": "2"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{text}}",
+                "size": "large",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "component",
+          "component": "ListGrid",
+          "props": {
+            "list": "{{list}}",
+            "columns": "3"
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "div",
+              "label": "Card",
+              "style": {
+                "base": {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "alignItems": "center",
+                  "textAlign": "center",
+                  "padding": "32px 24px"
+                }
+              },
+              "children": [
+                {
+                  "type": "node",
+                  "tag": "div",
+                  "label": "Icon Wrap",
+                  "style": {
+                    "base": {
+                      "width": "64px",
+                      "height": "64px",
+                      "backgroundColor": "var(--bg-light)",
+                      "borderRadius": "16px",
+                      "display": "flex",
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "marginBottom": "20px"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "embed",
+                      "html": "{{item.icon}}",
+                      "label": "Icon",
+                      "style": {
+                        "base": {
+                          "height": "32px",
+                          "color": "var(--text)"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "component",
+                  "component": "Heading",
+                  "props": {
+                    "text": "{{item.title}}",
+                    "size": "5",
+                    "tag": "3",
+                    "align": "center"
+                  }
+                },
+                {
+                  "type": "component",
+                  "component": "Text",
+                  "props": {
+                    "text": "{{item.text}}",
+                    "size": "small",
+                    "variant": "light",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "subtitle": {
+        "type": "string",
+        "default": "Features"
+      },
+      "title": {
+        "type": "rich-text",
+        "default": "Why choose us"
+      },
+      "text": {
+        "type": "rich-text",
+        "default": "Discover the key features that make our platform stand out from the rest."
+      },
+      "columns": {
+        "type": "select",
+        "default": "3",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ]
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      },
+      "list": {
+        "type": "list",
+        "itemSchema": {
+          "icon": {
+            "type": "string",
+            "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"/></svg>"
+          },
+          "title": {
+            "type": "string",
+            "default": "Feature"
+          },
+          "text": {
+            "type": "string",
+            "default": "Description goes here"
+          }
+        },
+        "default": [
+          {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\"/></svg>",
+            "title": "Fast Performance",
+            "text": "Lightning-fast load times ensure your users never have to wait."
+          },
+          {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/></svg>",
+            "title": "Secure by Design",
+            "text": "Enterprise-grade security protects your data at every level."
+          },
+          {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z\"/></svg>",
+            "title": "Easy Integration",
+            "text": "Connect with your favorite tools in minutes, not hours."
+          },
+          {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3\"/></svg>",
+            "title": "24/7 Support",
+            "text": "Our team is always here to help whenever you need us."
+          },
+          {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"22 7 13.5 15.5 8.5 10.5 2 17\"/><polyline points=\"16 7 22 7 22 13\"/></svg>",
+            "title": "Scalable",
+            "text": "Grow without limits as your business expands."
+          },
+          {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3v16a2 2 0 0 0 2 2h16\"/><path d=\"M18 17V9\"/><path d=\"M13 17V5\"/><path d=\"M8 17v-3\"/></svg>",
+            "title": "Analytics",
+            "text": "Gain insights with powerful built-in analytics tools."
+          }
+        ]
+      }
+    }
+  }
+}

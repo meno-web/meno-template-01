@@ -1,0 +1,211 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "theme": "{{theme}}",
+        "spaceTop": "default"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "SectionHeader",
+          "props": {
+            "isCenter": true,
+            "maxWidth": "450px"
+          },
+          "children": [
+            {
+              "type": "component",
+              "component": "Subtitle",
+              "props": {
+                "text": "{{subtitle}}",
+                "align": "center"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Heading",
+              "props": {
+                "text": "{{title}}",
+                "maxWidth": "",
+                "align": "center",
+                "size": "2",
+                "tag": "2"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{text}}",
+                "size": "large",
+                "align": "center",
+                "maxWidth": "",
+                "isMarginBottom": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "component",
+          "component": "ListGrid",
+          "props": {
+            "list": "{{list}}",
+            "columns": "3"
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "div",
+              "style": {
+                "base": {
+                  "backgroundColor": "var(--surface)",
+                  "borderRadius": "16px",
+                  "padding": "32px"
+                }
+              },
+              "children": [
+                {
+                  "type": "node",
+                  "tag": "blockquote",
+                  "style": {
+                    "base": {
+                      "margin": "0 0 24px 0",
+                      "padding": "0",
+                      "fontSize": "16px",
+                      "lineHeight": "1.6",
+                      "color": "var(--text)"
+                    }
+                  },
+                  "children": "{{item.text}}"
+                },
+                {
+                  "type": "node",
+                  "tag": "div",
+                  "style": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "gap": "12px"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "node",
+                      "tag": "img",
+                      "style": {
+                        "base": {
+                          "width": "48px",
+                          "height": "48px",
+                          "borderRadius": "50%",
+                          "objectFit": "cover"
+                        }
+                      },
+                      "attributes": {
+                        "src": "{{item.image}}",
+                        "alt": "{{item.title}}"
+                      }
+                    },
+                    {
+                      "type": "node",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "type": "node",
+                          "tag": "div",
+                          "style": {
+                            "base": {
+                              "fontWeight": "600",
+                              "color": "var(--text)"
+                            }
+                          },
+                          "children": "{{item.title}}"
+                        },
+                        {
+                          "type": "node",
+                          "tag": "div",
+                          "style": {
+                            "base": {
+                              "color": "var(--text-secondary)",
+                              "fontSize": "14px"
+                            }
+                          },
+                          "children": "{{item.label}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "subtitle": {
+        "type": "string",
+        "default": "Testimonials"
+      },
+      "title": {
+        "type": "rich-text",
+        "default": "What our customers say"
+      },
+      "text": {
+        "type": "rich-text",
+        "default": "Don't just take our word for it. Here's what real customers have to say."
+      },
+      "list": {
+        "type": "list",
+        "itemSchema": {
+          "text": {
+            "type": "rich-text",
+            "default": "\"This product has completely transformed how we work. The interface is intuitive and the results speak for themselves.\""
+          },
+          "image": {
+            "type": "file",
+            "default": "/images/placeholder.webp"
+          },
+          "title": {
+            "type": "string",
+            "default": "Name"
+          },
+          "label": {
+            "type": "string",
+            "default": "Role at Company"
+          }
+        },
+        "default": [
+          {
+            "text": "\"This product has completely transformed how we work. The interface is intuitive and the results speak for themselves.\"",
+            "image": "/images/placeholder.webp",
+            "title": "Sarah Johnson",
+            "label": "CEO at TechCorp"
+          },
+          {
+            "text": "\"We've seen a 40% increase in productivity since implementing this solution. I can't recommend it enough.\"",
+            "image": "/images/placeholder.webp",
+            "title": "Michael Chen",
+            "label": "Product Manager at StartupXYZ"
+          },
+          {
+            "text": "\"The customer support team is incredible. They helped us get set up in no time and are always there when we need them.\"",
+            "image": "/images/placeholder.webp",
+            "title": "Emily Rodriguez",
+            "label": "Director at Agency Inc"
+          }
+        ]
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      }
+    }
+  }
+}

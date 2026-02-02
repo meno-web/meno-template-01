@@ -1,0 +1,128 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "spaceTop": "default",
+        "spaceBottom": "default",
+        "theme": "{{theme}}",
+        "maxWidth": "1280"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "SectionHeader",
+          "props": {
+            "isCenter": false,
+            "maxWidth": ""
+          },
+          "children": [
+            {
+              "type": "component",
+              "component": "Subtitle",
+              "props": {
+                "text": "{{subtitle}}",
+                "align": "left"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Heading",
+              "props": {
+                "text": "{{title}}",
+                "size": "2",
+                "tag": "2",
+                "align": "left"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{text}}",
+                "size": "large",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "component",
+          "component": "FaqList",
+          "children": [
+            {
+              "type": "list",
+              "sourceType": "prop",
+              "source": "{{list}}",
+              "itemAs": "item",
+              "children": [
+                {
+                  "type": "component",
+                  "component": "FaqItem",
+                  "props": {
+                    "question": "{{item.title}}",
+                    "answer": "{{item.text}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "subtitle": {
+        "type": "string",
+        "default": "FAQ"
+      },
+      "title": {
+        "type": "rich-text",
+        "default": "Frequently asked questions"
+      },
+      "text": {
+        "type": "rich-text",
+        "default": "Find answers to common questions about our product and services."
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      },
+      "list": {
+        "type": "list",
+        "itemSchema": {
+          "title": {
+            "type": "string",
+            "default": "Question?"
+          },
+          "text": {
+            "type": "rich-text",
+            "default": "Answer goes here."
+          }
+        },
+        "default": [
+          {
+            "title": "Do I need to pay extra for enterprise features?",
+            "text": "No. SSO and compliance come from your GitHub org—Meno just connects to it. Self-hosting and team management are included in every plan."
+          },
+          {
+            "title": "Can I run Meno on my own servers?",
+            "text": "Yes. Meno can be deployed on-premise or in your private cloud."
+          },
+          {
+            "title": "What kind of support do enterprise teams get?",
+            "text": "All teams get priority support with a 24-hour response SLA. Larger teams can request dedicated onboarding and a direct line to our engineering team."
+          },
+          {
+            "title": "Is Meno SOC 2 compliant?",
+            "text": "Meno doesn't store your data—GitHub does. All your pages, components, and assets live in Git repositories under your organization's GitHub account. You get GitHub's enterprise-grade security (SOC 2 Type II, encryption at rest and in transit, audit logs) without any additional setup."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,6 +1,12 @@
 {
   "componentTypes": [
     {
+      "id": "sections",
+      "label": "Sections",
+      "color": "#c7f033",
+      "description": ""
+    },
+    {
       "id": "ui",
       "label": "UI",
       "color": "#3270ec",
@@ -71,6 +77,41 @@
     "FormField": "form",
     "ButtonList": "ui",
     "TabButton": "ui",
-    "TabButtonsList": "ui"
+    "TabButtonsList": "ui",
+    "Header01": "sections",
+    "Header02": "sections",
+    "Header03": "sections",
+    "Feature01": "sections",
+    "Feature02": "sections",
+    "Feature03": "sections",
+    "Content01": "sections",
+    "Content02": "sections",
+    "CTA01": "sections",
+    "CTA02": "sections",
+    "Testimonial01": "sections",
+    "Testimonial02": "sections",
+    "Stats01": "sections",
+    "LogoCloud01": "sections",
+    "Footer02": "sections",
+    "Testimonials01": "sections",
+    "Testimonials02": "sections",
+    "Faq01": "sections",
+    "Blog01": "sections",
+    "Comparison01": "sections",
+    "ContactForm01": "sections",
+    "Content03": "sections",
+    "Gallery01": "sections",
+    "Hero01": "sections",
+    "Integrations01": "sections",
+    "Newsletter01": "sections",
+    "Pricing01": "sections",
+    "Team01": "sections",
+    "Testimonial": "content",
+    "TestimonialGrid": "content",
+    "Timeline01": "sections",
+    "Feature04": "sections",
+    "Feature05": "sections",
+    "Steps01": "sections",
+    "Table01": "sections"
   }
 }

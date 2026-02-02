@@ -160,6 +160,20 @@
       ],
       "createdAt": "2026-01-14T14:29:48.517Z",
       "updatedAt": "2026-01-14T14:29:48.517Z"
+    },
+    "placeholder.webp": {
+      "filename": "placeholder.webp",
+      "originalFilename": "placeholder.webp",
+      "width": 250,
+      "height": 250,
+      "blurHash": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAADQAgCdASogACAAPzmWwlmvKqcjqAgB4CcJaQAAPaOgAP7rrgAAAA==",
+      "formats": {
+        "avif": true,
+        "webp": true
+      },
+      "variants": [],
+      "createdAt": "2026-01-31T13:21:58.559Z",
+      "updatedAt": "2026-01-31T13:21:58.559Z"
     }
   }
 }

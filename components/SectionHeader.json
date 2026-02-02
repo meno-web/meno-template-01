@@ -5,48 +5,35 @@
       "tag": "div",
       "style": {
         "base": {
-          "paddingBottom": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": {
             "_mapping": true,
-            "prop": "isMain",
+            "prop": "isCenter",
             "values": {
-              "default": "80px",
-              "true": "80px",
-              "false": "0"
+              "default": "flex-start",
+              "true": "center",
+              "false": "flex-start"
             }
           },
-          "paddingLeft": {
+          "marginBottom": "80px",
+          "maxWidth": "{{maxWidth}}",
+          "textAlign": {
             "_mapping": true,
-            "prop": "isMain",
+            "prop": "isCenter",
             "values": {
-              "default": "80px",
-              "true": "80px",
-              "false": "0"
+              "default": "left",
+              "true": "center",
+              "false": "left"
             }
           },
-          "borderBottom": {
-            "_mapping": true,
-            "prop": "isMain",
-            "values": {
-              "default": "1px solid",
-              "true": "1px solid",
-              "false": "none"
-            }
-          },
-          "borderColor": "var(--border)",
-          "marginBottom": "80px"
+          "marginRight": "auto",
+          "marginLeft": "auto"
         },
         "tablet": {},
         "mobile": {
           "paddingLeft": "0",
-          "paddingBottom": {
-            "_mapping": true,
-            "prop": "isMain",
-            "values": {
-              "default": "32px",
-              "true": "32px",
-              "false": "0"
-            }
-          }
+          "paddingBottom": "32px"
         }
       },
       "children": [
@@ -56,11 +43,14 @@
       ]
     },
     "interface": {
-      "isMain": {
+      "isCenter": {
         "type": "boolean",
         "default": false
+      },
+      "maxWidth": {
+        "type": "string",
+        "default": "100%"
       }
-    },
-    "category": "ui"
+    }
   }
 }

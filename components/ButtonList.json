@@ -1,12 +1,5 @@
 {
   "component": {
-    "interface": {
-      "justify": {
-        "type": "select",
-        "options": ["center", "flex-start", "flex-end", "space-between"],
-        "default": "center"
-      }
-    },
     "structure": {
       "type": "node",
       "tag": "div",
@@ -24,14 +17,74 @@
               "flex-end": "flex-end",
               "space-between": "space-between"
             }
+          },
+          "marginTop": {
+            "_mapping": true,
+            "prop": "marginTop",
+            "values": {
+              "center": "32px",
+              "flex-start": "",
+              "flex-end": "",
+              "space-between": "",
+              "default": "32px",
+              "large": "64px",
+              "none": "0"
+            }
           }
         },
+        "tablet": {},
         "mobile": {
           "flexDirection": "column",
           "alignItems": "center"
         }
       },
-      "children": [{ "type": "slot" }]
+      "children": [
+        {
+          "type": "slot",
+          "default": [
+            {
+              "type": "component",
+              "component": "Button",
+              "props": {
+                "text": "Get started",
+                "link": "",
+                "variant": "primary"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Button",
+              "props": {
+                "text": "Learn more",
+                "link": "",
+                "variant": "secondary",
+                "isMarginTop": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "justify": {
+        "type": "select",
+        "default": "center",
+        "options": [
+          "center",
+          "flex-start",
+          "flex-end",
+          "space-between"
+        ]
+      },
+      "marginTop": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "large",
+          "none"
+        ]
+      }
     }
   }
 }
