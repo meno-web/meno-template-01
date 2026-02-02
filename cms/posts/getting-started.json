@@ -1,0 +1,115 @@
+{
+  "_id": "getting-started",
+  "_filename": "getting-started",
+  "_createdAt": "2026-01-20T14:00:00.000Z",
+  "_updatedAt": "2026-01-20T14:00:00.000Z",
+  "title": "Getting Started: A Quick Guide",
+  "slug": "getting-started",
+  "excerpt": "New here? This guide will help you get up to speed quickly and make the most of what we have to offer.",
+  "content": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Whether you've just discovered us or you're a returning visitor, this quick guide will help you navigate and find exactly what you're looking for."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Step 1: Explore"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Take some time to browse around. Check out our main pages to understand what we do and how we can help. Don't hesitate to dig into the details—that's where the good stuff often hides."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Step 2: Connect"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Have questions or want to learn more? Reach out to us. We're always happy to chat and help you find the right path forward."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Step 3: Stay Updated"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Keep an eye on this blog for the latest updates, tips, and insights. We regularly share content that we think you'll find valuable."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Ready to dive in? Let's get started."
+          }
+        ]
+      }
+    ]
+  },
+  "featuredImage": "/images/placeholder.webp",
+  "publishedAt": "2026-01-20"
+}

@@ -112,6 +112,8 @@
     "Feature04": "sections",
     "Feature05": "sections",
     "Steps01": "sections",
-    "Table01": "sections"
+    "Table01": "sections",
+    "Blog02": "sections",
+    "ListGrid": "ui"
   }
 }

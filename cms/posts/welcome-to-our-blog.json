@@ -1,0 +1,90 @@
+{
+  "_id": "welcome-to-our-blog",
+  "_filename": "welcome-to-our-blog",
+  "_createdAt": "2026-01-15T10:00:00.000Z",
+  "_updatedAt": "2026-01-15T10:00:00.000Z",
+  "title": "Welcome to Our Blog",
+  "slug": "welcome-to-our-blog",
+  "excerpt": "We're excited to launch our new blog. Here you'll find insights, updates, and stories from our team.",
+  "content": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Welcome to our blog! We're thrilled to have you here. This space will be home to our thoughts, insights, and the stories we want to share with our community."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "What to Expect"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "We'll be sharing a variety of content here, from industry insights and tutorials to behind-the-scenes looks at our work. Our goal is to provide value while building a genuine connection with our readers."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Stay Connected"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "We'd love to hear from you. Feel free to reach out with topics you'd like us to cover or questions you'd like answered. This blog is as much for you as it is for us."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Thank you for being here. We can't wait to share this journey with you."
+          }
+        ]
+      }
+    ]
+  },
+  "featuredImage": "/images/placeholder.webp",
+  "publishedAt": "2026-01-15"
+}
