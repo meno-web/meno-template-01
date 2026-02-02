@@ -45,8 +45,8 @@
             "action": "/api/send-email",
             "method": "post",
             "submitHandler": "fetch",
-            "successMessage": "Thank you! Our sales team will contact you soon.",
-            "errorMessage": "Something went wrong. Please try again."
+            "successMessage": "Dziękujemy! Odpowiemy najszybciej jak to możliwe.",
+            "errorMessage": "Coś poszło nie tak. Spróbuj ponownie."
           },
           "children": [
             {
@@ -57,7 +57,7 @@
                   "type": "component",
                   "component": "Label",
                   "props": {
-                    "text": "Full Name"
+                    "text": "Imię i nazwisko"
                   }
                 },
                 {
@@ -66,7 +66,7 @@
                   "props": {
                     "inputType": "text",
                     "name": "fullName",
-                    "placeholder": "Your full name"
+                    "placeholder": "Wasze imię i nazwisko"
                   }
                 }
               ]
@@ -79,7 +79,7 @@
                   "type": "component",
                   "component": "Label",
                   "props": {
-                    "text": "Email Address"
+                    "text": "Adres email"
                   }
                 },
                 {
@@ -88,7 +88,7 @@
                   "props": {
                     "inputType": "email",
                     "name": "email",
-                    "placeholder": "you@company.com"
+                    "placeholder": "wasz@email.pl"
                   }
                 }
               ]
@@ -101,16 +101,16 @@
                   "type": "component",
                   "component": "Label",
                   "props": {
-                    "text": "Company Name"
+                    "text": "Data wesela"
                   }
                 },
                 {
                   "type": "component",
                   "component": "Input",
                   "props": {
-                    "inputType": "text",
-                    "name": "company",
-                    "placeholder": "Your company"
+                    "inputType": "date",
+                    "name": "weddingDate",
+                    "placeholder": ""
                   }
                 }
               ]
@@ -123,7 +123,7 @@
                   "type": "component",
                   "component": "Label",
                   "props": {
-                    "text": "How can we help?"
+                    "text": "Wiadomość"
                   }
                 },
                 {
@@ -131,7 +131,7 @@
                   "component": "Textarea",
                   "props": {
                     "name": "message",
-                    "placeholder": "Tell us about your project...",
+                    "placeholder": "Opowiedzcie nam o swoim weselu...",
                     "rows": "5"
                   }
                 }

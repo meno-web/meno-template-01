@@ -114,6 +114,9 @@
     "Steps01": "sections",
     "Table01": "sections",
     "Blog02": "sections",
-    "ListGrid": "ui"
+    "ListGrid": "ui",
+    "Stats02": "sections",
+    "Stats03": "sections",
+    "Stats04": "sections"
   }
 }

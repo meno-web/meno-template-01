@@ -60,6 +60,7 @@
             {
               "type": "node",
               "tag": "div",
+              "label": "Stat Card",
               "style": {
                 "base": {
                   "textAlign": "center",
@@ -68,32 +69,23 @@
               },
               "children": [
                 {
-                  "type": "node",
-                  "tag": "div",
-                  "style": {
-                    "base": {
-                      "fontSize": "48px",
-                      "fontWeight": "700",
-                      "color": "var(--text)",
-                      "lineHeight": "1.2",
-                      "marginBottom": "8px"
-                    },
-                    "mobile": {
-                      "fontSize": "36px"
-                    }
-                  },
-                  "children": "{{item.value}}"
+                  "type": "component",
+                  "component": "Heading",
+                  "props": {
+                    "text": "{{item.value}}",
+                    "tag": "3",
+                    "align": "center",
+                    "size": "1"
+                  }
                 },
                 {
-                  "type": "node",
-                  "tag": "div",
-                  "style": {
-                    "base": {
-                      "fontSize": "16px",
-                      "color": "var(--text-secondary)"
-                    }
-                  },
-                  "children": "{{item.label}}"
+                  "type": "component",
+                  "component": "Text",
+                  "props": {
+                    "text": "{{item.label}}",
+                    "align": "center",
+                    "color": "secondary"
+                  }
                 }
               ]
             }
