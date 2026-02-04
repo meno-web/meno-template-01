@@ -280,6 +280,10 @@
               "children": [
                 {
                   "type": "component",
+                  "component": "ThemeToggle"
+                },
+                {
+                  "type": "component",
                   "component": "Button",
                   "props": {
                     "isMarginTop": false,

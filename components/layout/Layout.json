@@ -11,7 +11,8 @@
         "mobile": {}
       },
       "attributes": {
-        "theme": "light"
+        "theme": "light",
+        "data-theme-root": "true"
       },
       "children": [
         {
