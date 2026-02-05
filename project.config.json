@@ -48,7 +48,5 @@
   "icons": {
     "favicon": "/icons/icon-32.png",
     "appleTouchIcon": "/icons/icon-180.png"
-  },
-  "licenseKey": "LITE-A2312603-08FA-4C4E-987E-CED3FEFE9E79",
-  "licenseActivationId": "6feb65c6-948b-4d4f-90d6-9bc54845d01b"
+  }
 }
