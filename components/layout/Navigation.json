@@ -195,7 +195,6 @@
             {
               "name": "on Open",
               "prefix": "#menu-toggle:checked ~",
-              "postfix": "",
               "style": {
                 "base": {},
                 "tablet": {
@@ -204,7 +203,8 @@
                   "pointerEvents": "auto"
                 },
                 "mobile": {}
-              }
+              },
+              "previewProp": "isOpen"
             }
           ],
           "children": [
@@ -268,20 +268,18 @@
               "style": {
                 "base": {
                   "display": "flex",
-                  "gap": "12px"
+                  "gap": "12px",
+                  "alignItems": "center"
                 },
                 "tablet": {
                   "flexDirection": "column",
                   "width": "100%",
-                  "alignItems": "center"
+                  "alignItems": "center",
+                  "gap": "40px"
                 },
                 "mobile": {}
               },
               "children": [
-                {
-                  "type": "component",
-                  "component": "ThemeToggle"
-                },
                 {
                   "type": "component",
                   "component": "Button",
@@ -293,6 +291,10 @@
                       "href": "#contact"
                     }
                   }
+                },
+                {
+                  "type": "component",
+                  "component": "ThemeToggle"
                 }
               ]
             }
@@ -356,21 +358,9 @@
       ]
     },
     "interface": {
-      "logoText": {
-        "type": "string",
-        "default": "OSRECO"
-      },
-      "language": {
-        "type": "string",
-        "default": "EN"
-      },
-      "theme": {
-        "type": "select",
-        "default": "",
-        "options": [
-          "light",
-          "dark"
-        ]
+      "isOpen": {
+        "type": "boolean",
+        "default": false
       }
     }
   }

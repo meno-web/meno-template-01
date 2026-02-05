@@ -17,7 +17,10 @@
       "children": [
         {
           "type": "component",
-          "component": "Navigation"
+          "component": "Navigation",
+          "props": {
+            "isOpen": false
+          }
         },
         {
           "type": "node",
