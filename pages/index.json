@@ -8,7 +8,7 @@
         "component": "Hero01",
         "props": {
           "title": "Build your next great idea",
-          "text": "A modern starter template for building professional, responsive websites. Customize it to match your brand and launch faster.",
+          "text": "A modern starter template for building professional, responsive websites. Customize it to match your brand and launch faster",
           "buttonText": "Get started",
           "buttonLink": "#",
           "secondaryButtonText": "Learn more",
