@@ -13,7 +13,6 @@
           "position": "sticky",
           "top": "0",
           "padding": "0 80px",
-          "fontFamily": "Inter",
           "backgroundColor": "var(--bg)",
           "zIndex": "100"
         },

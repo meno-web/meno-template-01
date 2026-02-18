@@ -6,7 +6,8 @@
       "style": {
         "base": {
           "display": "flex",
-          "gap": "0"
+          "gap": "8px",
+          "justifyContent": "center"
         },
         "tablet": {},
         "mobile": {}

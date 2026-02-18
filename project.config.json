@@ -48,5 +48,6 @@
   "icons": {
     "favicon": "/icons/icon-32.png",
     "appleTouchIcon": "/icons/icon-180.png"
-  }
+  },
+  "baseComponent": "Layout"
 }

@@ -44,15 +44,15 @@
         "data-tab-button": "true",
         "class": "{{isActive ? \"is-active\" : \"\"}}"
       },
-      "children": "{{label}}"
+      "children": "{{text}}"
     },
     "interface": {
-      "label": {
-        "type": "string",
-        "default": "Tab"
-      },
       "isActive": {
         "type": "boolean"
+      },
+      "text": {
+        "type": "string",
+        "default": "Tab"
       }
     }
   }

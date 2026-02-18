@@ -62,7 +62,8 @@
                   "component": "FaqItem",
                   "props": {
                     "question": "{{item.title}}",
-                    "answer": "{{item.text}}"
+                    "answer": "{{item.text}}",
+                    "isOpen": "{{item.isOpen}}"
                   }
                 }
               ]
@@ -102,12 +103,17 @@
           "text": {
             "type": "rich-text",
             "default": "Answer goes here."
+          },
+          "isOpen": {
+            "type": "boolean",
+            "default": false
           }
         },
         "default": [
           {
             "title": "Do I need to pay extra for enterprise features?",
-            "text": "No. SSO and compliance come from your GitHub org—Meno just connects to it. Self-hosting and team management are included in every plan."
+            "text": "No. SSO and compliance come from your GitHub org—Meno just connects to it. Self-hosting and team management are included in every plan.",
+            "isOpen": true
           },
           {
             "title": "Can I run Meno on my own servers?",

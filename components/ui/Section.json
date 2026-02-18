@@ -31,8 +31,7 @@
               "primary": "transparent",
               "secondary": "var(--bg-light)"
             }
-          },
-          "fontFamily": "Inter"
+          }
         },
         "tablet": {},
         "mobile": {}

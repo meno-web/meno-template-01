@@ -5,7 +5,8 @@
       "tag": "div",
       "style": {
         "base": {
-          "backgroundColor": "var(--bg)"
+          "backgroundColor": "var(--bg)",
+          "fontFamily": "Inter"
         },
         "tablet": {},
         "mobile": {}

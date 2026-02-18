@@ -8,7 +8,6 @@
           "lineHeight": "1.7",
           "fontSize": "18px",
           "color": "var(--text)",
-          "fontFamily": "Inter",
           "letterSpacing": "-0.01em"
         },
         "tablet": {},
