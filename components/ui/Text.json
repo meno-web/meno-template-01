@@ -3,19 +3,20 @@
     "structure": {
       "type": "node",
       "tag": "p",
+      "if": "{{render}}",
       "style": {
         "base": {
           "fontSize": {
             "_mapping": true,
             "prop": "size",
             "values": {
-              "default": "18px",
-              "large": "22px",
-              "small": "16px"
+              "default": "var(--t-fs)",
+              "large": "var(--tl-fs)",
+              "small": "var(--ts-fs)"
             }
           },
           "lineHeight": "150%",
-          "fontWeight": "325",
+          "fontWeight": "var(--t-fw)",
           "color": {
             "_mapping": true,
             "prop": "variant",
@@ -79,6 +80,9 @@
           "right",
           "inherit"
         ]
+      },
+      "render": {
+        "type": "boolean"
       }
     }
   }

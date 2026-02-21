@@ -39,7 +39,7 @@
         "default": "Enter your message..."
       },
       "rows": {
-        "type": "string",
+        "type": "number",
         "default": "4"
       }
     }

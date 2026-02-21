@@ -5,7 +5,7 @@
     "children": [
       {
         "type": "component",
-        "component": "PageNotFound01"
+        "component": "Error404"
       }
     ]
   },

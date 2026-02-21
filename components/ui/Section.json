@@ -10,8 +10,8 @@
             "_mapping": true,
             "prop": "spaceTop",
             "values": {
-              "default": "92px",
-              "small": "56px",
+              "default": "var(--s-p)",
+              "small": "var(--se-p)",
               "none": "0"
             }
           },
@@ -19,22 +19,18 @@
             "_mapping": true,
             "prop": "spaceBottom",
             "values": {
-              "default": "92px",
-              "small": "56px",
+              "default": "var(--s-p)",
+              "small": "var(--se-p)",
               "none": "0"
             }
           },
-          "backgroundColor": {
-            "_mapping": true,
-            "prop": "theme",
-            "values": {
-              "primary": "transparent",
-              "secondary": "var(--bg-light)"
-            }
-          }
+          "backgroundColor": "var(--bg)"
         },
         "tablet": {},
         "mobile": {}
+      },
+      "attributes": {
+        "theme": "{{theme}}"
       },
       "children": [
         {
@@ -128,10 +124,7 @@
       "theme": {
         "type": "select",
         "default": "light",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       },
       "maxWidth": {
         "type": "select",

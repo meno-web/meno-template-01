@@ -5,7 +5,7 @@
     "children": [
       {
         "type": "component",
-        "component": "Hero01",
+        "component": "HeroCentered",
         "props": {
           "title": "Build your next great idea",
           "text": "A modern starter template for building professional, responsive websites. Customize it to match your brand and launch faster.",
@@ -13,13 +13,52 @@
           "buttonLink": "#",
           "secondaryButtonText": "Learn more",
           "secondaryButtonLink": "#",
-          "theme": "primary",
           "backgroundImage": ""
         }
       },
       {
         "type": "component",
-        "component": "Feature02",
+        "component": "FeatureIconGrid",
+        "props": {
+          "list": [
+            {
+              "icon": "zap",
+              "title": "Fast Performance",
+              "text": "Lightning-fast load times ensure your users never have to wait."
+            },
+            {
+              "icon": "shield",
+              "title": "Secure by Design",
+              "text": "Enterprise-grade security protects your data at every level."
+            },
+            {
+              "icon": "settings",
+              "title": "Easy Integration",
+              "text": "Connect with your favorite tools in minutes, not hours."
+            },
+            {
+              "icon": "headphones",
+              "title": "24/7 Support",
+              "text": "Our team is always here to help whenever you need us."
+            },
+            {
+              "icon": "trending-up",
+              "title": "Scalable",
+              "text": "Grow without limits as your business expands."
+            },
+            {
+              "icon": "bar-chart-3",
+              "title": "Analytics",
+              "text": "Gain insights with powerful built-in analytics tools."
+            }
+          ],
+          "columns": "3",
+          "theme": "gray"
+        }
+      },
+      {
+        "type": "component",
+        "component": "FeatureSplitImageRight",
         "props": {
           "subtitle": "Responsive",
           "title": "Built mobile-first for every device",
@@ -30,7 +69,11 @@
       },
       {
         "type": "component",
-        "component": "Feature03",
+        "component": "BlogCardGrid"
+      },
+      {
+        "type": "component",
+        "component": "FeatureSplitImageLeft",
         "props": {
           "subtitle": "Customizable",
           "title": "Make it yours in minutes",
@@ -41,7 +84,7 @@
       },
       {
         "type": "component",
-        "component": "CTA01",
+        "component": "CTACentered",
         "props": {
           "title": "Ready to build something great?",
           "text": "Start customizing this template today. It only takes a few minutes to make it yours.",
@@ -51,6 +94,10 @@
           "secondaryButtonLink": "/docs",
           "theme": "secondary"
         }
+      },
+      {
+        "type": "component",
+        "component": "FooterMultiColumn"
       }
     ]
   },

@@ -5,7 +5,7 @@
     "children": [
       {
         "type": "component",
-        "component": "Blog02"
+        "component": "BlogPostList"
       }
     ]
   },

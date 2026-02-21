@@ -5,7 +5,7 @@
       "tag": "p",
       "style": {
         "base": {
-          "fontSize": "16px",
+          "fontSize": "14px",
           "fontWeight": "600",
           "marginBottom": "16px",
           "letterSpacing": "-0.015em",
@@ -17,7 +17,9 @@
               "default": "var(--text)",
               "light": "var(--text-light)"
             }
-          }
+          },
+          "textDecoration": "none",
+          "textTransform": "uppercase"
         },
         "tablet": {},
         "mobile": {}

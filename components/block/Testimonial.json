@@ -114,7 +114,7 @@
       },
       "company": {
         "type": "string",
-        "default": "Meno Studio"
+        "default": "Acme Inc"
       },
       "avatar": {
         "type": "file",

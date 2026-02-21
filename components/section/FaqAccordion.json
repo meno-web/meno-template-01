@@ -1,0 +1,134 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "spaceTop": "default",
+        "spaceBottom": "default",
+        "theme": "{{theme}}",
+        "maxWidth": "1280"
+      },
+      "children": [
+        {
+          "type": "component",
+          "component": "SectionHeader",
+          "props": {
+            "isCenter": false,
+            "maxWidth": ""
+          },
+          "children": [
+            {
+              "type": "component",
+              "component": "Subtitle",
+              "props": {
+                "text": "{{subtitle}}",
+                "align": "left"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Heading",
+              "props": {
+                "text": "{{title}}",
+                "size": "2",
+                "tag": "2",
+                "align": "left"
+              }
+            },
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{text}}",
+                "size": "large",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "component",
+          "component": "FaqList",
+          "children": [
+            {
+              "type": "list",
+              "sourceType": "prop",
+              "source": "{{list}}",
+              "itemAs": "item",
+              "children": [
+                {
+                  "type": "component",
+                  "component": "FaqItem",
+                  "props": {
+                    "question": "{{item.title}}",
+                    "answer": "{{item.text}}",
+                    "isOpen": "{{item.isOpen}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "subtitle": {
+        "type": "string",
+        "default": "FAQ"
+      },
+      "title": {
+        "type": "rich-text",
+        "default": "Frequently asked questions"
+      },
+      "text": {
+        "type": "rich-text",
+        "default": "Find answers to common questions about our product and services."
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "secondary"
+        ]
+      },
+      "list": {
+        "type": "list",
+        "itemSchema": {
+          "title": {
+            "type": "string",
+            "default": "Question?"
+          },
+          "text": {
+            "type": "rich-text",
+            "default": "Answer goes here."
+          },
+          "isOpen": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "default": [
+          {
+            "title": "What is included in the free trial?",
+            "text": "Our 14-day free trial gives you full access to all features, so you can explore everything before committing to a plan.",
+            "isOpen": true
+          },
+          {
+            "title": "Can I cancel my subscription at any time?",
+            "text": "Yes. There are no long-term contracts. You can cancel your subscription at any time and your account will remain active until the end of the billing period."
+          },
+          {
+            "title": "What kind of support do you offer?",
+            "text": "All plans include email support. Premium plans also include priority support with a 24-hour response SLA and access to a dedicated support channel."
+          },
+          {
+            "title": "Is my data secure?",
+            "text": "Absolutely. We use AES-256 encryption at rest and in transit, conduct regular security audits, and follow industry best practices to keep your data safe."
+          }
+        ]
+      }
+    }
+  }
+}

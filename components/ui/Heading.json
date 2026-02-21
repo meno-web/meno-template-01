@@ -10,31 +10,31 @@
             "_mapping": true,
             "prop": "size",
             "values": {
-              "1": "75px",
-              "2": "58px",
-              "3": "34px",
-              "4": "34px",
-              "5": "23px",
-              "6": "18px",
+              "1": "var(--h-fs)",
+              "2": "var(--h2-fs)",
+              "3": "var(--h3-fs)",
+              "4": "var(--h4-fs)",
+              "5": "var(--h5-fs)",
+              "6": "var(--h6-fs)",
               "default": "95px"
             }
           },
-          "fontWeight": "450",
+          "fontWeight": "var(--h-fw)",
           "marginBottom": {
             "_mapping": true,
             "prop": "size",
             "values": {
-              "1": "20px",
-              "2": "20px",
-              "3": "12px",
-              "4": "12px",
-              "5": "10px",
-              "6": "10px",
+              "1": "var(--h-s)",
+              "2": "var(--h2-s)",
+              "3": "var(--h3-s)",
+              "4": "var(--h4-s)",
+              "5": "var(--h5-s)",
+              "6": "var(--h6-s)",
               "default": "20px"
             }
           },
-          "letterSpacing": "-0.025em",
-          "lineHeight": "105%",
+          "letterSpacing": "var(--h-ls)",
+          "lineHeight": "var(--h-lh)",
           "maxWidth": "{{maxWidth}}",
           "color": {
             "_mapping": true,

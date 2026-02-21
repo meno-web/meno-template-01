@@ -11,6 +11,7 @@
             "_mapping": true,
             "prop": "columns",
             "values": {
+              "1": "1fr",
               "2": "repeat(2, 1fr)",
               "3": "repeat(3, 1fr)",
               "4": "repeat(4, 1fr)",
@@ -52,6 +53,7 @@
         "type": "select",
         "default": "2",
         "options": [
+          "1",
           "2",
           "3",
           "4",

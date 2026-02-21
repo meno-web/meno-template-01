@@ -1,3 +1,4 @@
+<!-- MENO_DOCS_VERSION: 1.1 -->
 # Meno Core Documentation
 
 ## Creating Components
@@ -66,6 +67,11 @@ Properties: \`tag\` (required), \`style\`, \`attributes\`, \`children\`, \`label
 Properties: \`component\` (required), \`props\`, \`children\`, \`attributes\`
 
 **Styling**: Don't add \`style\` directly. Use props mapped to styles via \`_mapping\`.
+
+**Passing props through**: Use \`{{propName}}\` templates to forward a parent prop to a child component prop. Only use \`_mapping\` when you need to transform values (e.g., prop \`"primary"\` → style \`"var(--primary)"\`).
+\`\`\`json
+"props": { "icon": "{{icon}}" }
+\`\`\`
 
 ### 3. Slot (\`type: "slot"\`)
 Placeholder where component children are injected. Only ONE per component.
@@ -223,6 +229,9 @@ CSS generated: \`{prefix}.element-class{postfix}\`
 | Target child | "" | ".is-open [data-el='menu']" | \`.el.is-open [data-el='menu']\` |
 | Ancestor context | ".dark " | "" | \`.dark .el\` |
 
+### Placement Rule
+**Always place \`interactiveStyles\` on the target node itself.** Use \`prefix\` with the parent's \`data-el\` to reference the trigger (e.g., \`"prefix": "[data-el='dropdown']:hover "\`), instead of putting styles on the parent with a child-targeting postfix.
+
 ### JS + Interactive Styles Pattern
 1. Add \`data-el\` attributes to elements you need to target
 2. JS toggles a state class (e.g., \`.is-open\`) on the component root
@@ -270,6 +279,59 @@ Use CSS variables from colors.json:
 - \`var(--text)\`, \`var(--background)\`, \`var(--muted)\`
 
 Read colors.json to see all available colors.
+
+---
+
+## Enums
+
+Project-level reusable option sets stored in \`enums.json\`:
+\`\`\`json
+{
+  "size": ["sm", "md", "lg", "xl"],
+  "theme": ["light", "dark"]
+}
+\`\`\`
+Component select props reference enums via \`enumName\` instead of inline \`options\`:
+\`\`\`json
+"size": { "type": "select", "enumName": "size", "default": "md" }
+\`\`\`
+- **File**: \`enums.json\` in project root
+- **API**: GET \`/api/enums\`, POST \`/api/save-enums\`
+
+---
+
+## Variables
+
+CSS design tokens stored in \`variables.json\`:
+\`\`\`json
+{
+  "variables": [
+    {
+      "name": "Heading",
+      "prop_name": "Size 1",
+      "cssVar": "--h1-fs",
+      "value": "48px",
+      "type": "fontSize",
+      "group": "font-size"
+    }
+  ]
+}
+\`\`\`
+Each variable has:
+- \`name\` — display label (e.g., \`"Heading"\`)
+- \`prop_name\` (optional) — secondary label for specificity (e.g., \`"Size 1"\`)
+- \`cssVar\` — CSS custom property name (e.g., \`--h1-fs\`)
+- \`value\` — base value (e.g., \`48px\`)
+- \`type\` — responsive scaling category: \`fontSize\`, \`padding\`, \`margin\`, \`gap\`, or \`none\`
+- \`group\` (optional) — UI filter group: \`font-family\`, \`font-size\`, \`font-weight\`, \`line-height\`, \`letter-spacing\`, \`margin\`, \`padding\`, \`gap\`, \`size\`, \`border-radius\`, \`border-width\`, \`opacity\`, \`z-index\`, \`text-align\`, \`other\`
+- \`scales\` (optional) — per-variable breakpoint scale overrides, e.g., \`{ "tablet": 0.88, "mobile": 0.75 }\`
+
+Variables with \`type\` other than \`none\` auto-scale at smaller breakpoints using \`responsiveScales\` from \`project.config.json\`.
+
+Use in styles via \`var()\`: \`{ "fontSize": "var(--h1-fs)" }\`
+
+- **File**: \`variables.json\` in project root
+- **API**: GET \`/api/variables-status\`, GET \`/api/variables-css\`, POST \`/api/save-variables\`
 
 ---
 

@@ -1,7 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Skill(build-page)"
+      "Skill(build-page)",
+      "Bash(python3:*)",
+      "WebSearch",
+      "WebFetch(domain:lucide.dev)",
+      "WebFetch(domain:kristianfreeman.com)",
+      "WebFetch(domain:www.vikaskbh.com)",
+      "WebFetch(domain:unpkg.com)",
+      "Bash(find:*)",
+      "Bash(curl:*)",
+      "Skill(meno-docs)",
+      "Bash(cd:*)",
+      "Bash(ls:*)"
     ]
   }
 }

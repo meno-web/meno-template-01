@@ -1,0 +1,144 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "label": "banner",
+      "style": {
+        "base": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "gap": "12px",
+          "padding": "10px 80px",
+          "fontSize": "var(--ts-fs)",
+          "textAlign": "center",
+          "backgroundColor": {
+            "_mapping": true,
+            "prop": "variant",
+            "values": {
+              "default": "var(--bg-light)",
+              "primary": "var(--primary)"
+            }
+          },
+          "color": {
+            "_mapping": true,
+            "prop": "variant",
+            "values": {
+              "default": "var(--text)",
+              "primary": "#fff"
+            }
+          }
+        },
+        "tablet": {
+          "padding": "10px 40px"
+        },
+        "mobile": {
+          "padding": "10px 20px"
+        }
+      },
+      "children": [
+        {
+          "type": "node",
+          "tag": "span",
+          "label": "text",
+          "children": "{{text}}"
+        },
+        {
+          "type": "node",
+          "tag": "button",
+          "label": "close button",
+          "if": {
+            "_mapping": true,
+            "prop": "isDismissible",
+            "values": {
+              "true": true,
+              "false": false
+            }
+          },
+          "style": {
+            "base": {
+              "background": "none",
+              "border": "none",
+              "cursor": "pointer",
+              "color": "inherit",
+              "padding": "4px",
+              "display": "flex",
+              "alignItems": "center"
+            }
+          },
+          "interactiveStyles": [
+            {
+              "name": "on hover",
+              "postfix": ":hover",
+              "style": {
+                "base": {
+                  "opacity": "0.7"
+                }
+              }
+            }
+          ],
+          "attributes": {
+            "data-el": "close-btn"
+          },
+          "children": [
+            {
+              "type": "embed",
+              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg>",
+              "style": {
+                "base": {
+                  "display": "flex",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "fontSize": "var(--ts-fs)",
+                  "textAlign": "center",
+                  "backgroundColor": {
+                    "_mapping": true,
+                    "prop": "variant",
+                    "values": {
+                      "default": "var(--bg-light)",
+                      "primary": "var(--primary)"
+                    }
+                  },
+                  "color": {
+                    "_mapping": true,
+                    "prop": "variant",
+                    "values": {
+                      "default": "var(--text)",
+                      "primary": "#fff"
+                    }
+                  },
+                  "height": "16px"
+                },
+                "tablet": {
+                  "padding": "10px 40px"
+                },
+                "mobile": {
+                  "padding": "10px 20px"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "text": {
+        "type": "rich-text",
+        "default": "Welcome! Check out our latest features and updates."
+      },
+      "variant": {
+        "type": "select",
+        "default": "default",
+        "options": [
+          "default",
+          "primary"
+        ]
+      },
+      "isDismissible": {
+        "type": "boolean",
+        "default": true
+      }
+    }
+  }
+}

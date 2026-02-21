@@ -73,6 +73,7 @@ Create a template page at \`pages/templates/{collection}.json\`. Add \`source: "
 | \`number\` | Numeric value | - |
 | \`boolean\` | True/false toggle | \`default\` |
 | \`image\` | Image file path | - |
+| \`file\` | Any file upload | \`accept: "application/pdf"\` |
 | \`date\` | Date/datetime picker | - |
 | \`select\` | Dropdown selection | \`options: ["a", "b"]\`, \`multiple: true\` |
 | \`reference\` | Link to another collection | \`collection: "team"\` |

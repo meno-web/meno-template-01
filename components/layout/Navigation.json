@@ -64,7 +64,7 @@
                 "tablet": {},
                 "mobile": {}
               },
-              "children": "Meno Starter"
+              "children": "Starter"
             }
           ]
         },
@@ -240,13 +240,43 @@
                 },
                 {
                   "type": "component",
-                  "component": "NavLink",
+                  "component": "NavDropdown",
                   "props": {
                     "text": "About",
-                    "link": {
-                      "href": "#about"
+                    "isOpen": false
+                  },
+                  "children": [
+                    {
+                      "type": "component",
+                      "component": "NavDropdownLink",
+                      "props": {
+                        "text": "Our Story",
+                        "link": {
+                          "href": "#about"
+                        }
+                      }
+                    },
+                    {
+                      "type": "component",
+                      "component": "NavDropdownLink",
+                      "props": {
+                        "text": "Team",
+                        "link": {
+                          "href": "#team"
+                        }
+                      }
+                    },
+                    {
+                      "type": "component",
+                      "component": "NavDropdownLink",
+                      "props": {
+                        "text": "Careers",
+                        "link": {
+                          "href": "#careers"
+                        }
+                      }
                     }
-                  }
+                  ]
                 },
                 {
                   "type": "component",
@@ -261,41 +291,16 @@
               ]
             },
             {
-              "type": "node",
-              "tag": "div",
-              "label": "NavCtas",
-              "style": {
-                "base": {
-                  "display": "flex",
-                  "gap": "12px",
-                  "alignItems": "center"
-                },
-                "tablet": {
-                  "flexDirection": "column",
-                  "width": "100%",
-                  "alignItems": "center",
-                  "gap": "40px"
-                },
-                "mobile": {}
-              },
-              "children": [
-                {
-                  "type": "component",
-                  "component": "Button",
-                  "props": {
-                    "isMarginTop": false,
-                    "text": "Get Started",
-                    "variant": "primary",
-                    "link": {
-                      "href": "#contact"
-                    }
-                  }
-                },
-                {
-                  "type": "component",
-                  "component": "ThemeToggle"
+              "type": "component",
+              "component": "Button",
+              "props": {
+                "isMarginTop": false,
+                "text": "Get Started",
+                "variant": "primary",
+                "link": {
+                  "href": "#contact"
                 }
-              ]
+              }
             }
           ]
         },

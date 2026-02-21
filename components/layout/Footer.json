@@ -50,7 +50,7 @@
                 "tablet": {},
                 "mobile": {}
               },
-              "children": "Meno Starter"
+              "children": "Starter"
             }
           ]
         },
@@ -121,7 +121,7 @@
               "component": "Text",
               "props": {
                 "size": "small",
-                "text": "© 2026 Meno Starter. All rights reserved.",
+                "text": "© 2026 Starter. All rights reserved.",
                 "align": "inherit"
               }
             }

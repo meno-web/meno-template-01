@@ -9,13 +9,13 @@
       "label": "button",
       "style": {
         "base": {
-          "fontSize": "16px",
+          "fontSize": "var(--b-fs)",
           "cursor": "pointer",
           "transition": "all 0.2s",
           "display": "flex",
-          "gap": "6px",
+          "gap": "var(--b-g)",
           "alignItems": "center",
-          "padding": "12px 18px 12px 22px",
+          "padding": "var(--b-p)",
           "border": "1px solid",
           "borderColor": {
             "_mapping": true,
@@ -52,8 +52,8 @@
               "false": "0"
             }
           },
-          "borderRadius": "24px",
-          "fontWeight": "450",
+          "borderRadius": "var(--b-br)",
+          "fontWeight": "var(--b-fw)",
           "flexDirection": "row"
         },
         "tablet": {},
@@ -80,7 +80,8 @@
                   "primary": "#444",
                   "secondary": "#ddd"
                 }
-              }
+              },
+              "top": "0"
             }
           }
         }

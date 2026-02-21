@@ -1,0 +1,371 @@
+{
+  "component": {
+    "structure": {
+      "type": "component",
+      "component": "Section",
+      "props": {
+        "theme": "{{section_bg}}",
+        "spaceTop": "default"
+      },
+      "children": [
+        {
+          "type": "node",
+          "tag": "div",
+          "style": {
+            "base": {
+              "display": "grid",
+              "gridTemplateColumns": "2fr 1fr 1fr 1fr",
+              "gap": "40px"
+            },
+            "tablet": {
+              "gridTemplateColumns": "1fr 1fr"
+            },
+            "mobile": {
+              "gridTemplateColumns": "1fr"
+            }
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "div",
+              "children": [
+                {
+                  "type": "node",
+                  "tag": "div",
+                  "style": {
+                    "base": {
+                      "fontSize": "22px",
+                      "fontWeight": "700",
+                      "color": "var(--text)",
+                      "marginBottom": "16px",
+                      "letterSpacing": "-0.01em"
+                    },
+                    "tablet": {},
+                    "mobile": {}
+                  },
+                  "children": "{{brandName}}"
+                },
+                {
+                  "type": "component",
+                  "component": "Text",
+                  "props": {
+                    "text": "{{tagline}}",
+                    "maxWidth": "320px"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "tag": "div",
+              "children": [
+                {
+                  "type": "component",
+                  "component": "Subtitle",
+                  "props": {
+                    "text": "{{column1Title}}",
+                    "variant": "default"
+                  }
+                },
+                {
+                  "type": "node",
+                  "tag": "nav",
+                  "style": {
+                    "base": {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "12px"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "list",
+                      "sourceType": "prop",
+                      "source": "{{column1Links}}",
+                      "itemAs": "link",
+                      "children": [
+                        {
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "link": {
+                              "href": "{{link.href}}"
+                            },
+                            "text": "{{item.text}}"
+                          }
+                        }
+                      ],
+                      "tag": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "tag": "div",
+              "children": [
+                {
+                  "type": "component",
+                  "component": "Subtitle",
+                  "props": {
+                    "text": "{{column2Title}}",
+                    "variant": "default"
+                  }
+                },
+                {
+                  "type": "node",
+                  "tag": "nav",
+                  "style": {
+                    "base": {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "12px"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "list",
+                      "sourceType": "prop",
+                      "source": "{{column2Links}}",
+                      "itemAs": "link",
+                      "children": [
+                        {
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "link": {
+                              "href": "{{link.href}}"
+                            },
+                            "text": "{{item.text}}"
+                          }
+                        }
+                      ],
+                      "tag": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "tag": "div",
+              "children": [
+                {
+                  "type": "component",
+                  "component": "Subtitle",
+                  "props": {
+                    "text": "{{column3Title}}",
+                    "variant": "default"
+                  }
+                },
+                {
+                  "type": "node",
+                  "tag": "nav",
+                  "style": {
+                    "base": {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "12px"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "list",
+                      "sourceType": "prop",
+                      "source": "{{column3Links}}",
+                      "itemAs": "link",
+                      "children": [
+                        {
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "link": {
+                              "href": "{{link.href}}"
+                            },
+                            "text": "{{item.text}}"
+                          }
+                        }
+                      ],
+                      "tag": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "tag": "div",
+          "style": {
+            "base": {
+              "borderTop": "1px solid var(--border)",
+              "marginTop": "48px",
+              "paddingTop": "24px",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "alignItems": "center"
+            },
+            "mobile": {
+              "flexDirection": "column",
+              "gap": "16px",
+              "textAlign": "center"
+            }
+          },
+          "children": [
+            {
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{copyright}}",
+                "size": "small"
+              }
+            },
+            {
+              "type": "node",
+              "tag": "div",
+              "style": {
+                "base": {
+                  "display": "flex",
+                  "gap": "24px"
+                }
+              },
+              "children": [
+                {
+                  "type": "component",
+                  "component": "FooterLink",
+                  "props": {
+                    "link": {
+                      "href": ""
+                    },
+                    "text": "Privacy policy"
+                  }
+                },
+                {
+                  "type": "component",
+                  "component": "FooterLink",
+                  "props": {
+                    "text": "Terms of Service"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interface": {
+      "brandName": {
+        "type": "string",
+        "default": "Meno Starter"
+      },
+      "tagline": {
+        "type": "string",
+        "default": "Building the future of digital experiences, one product at a time."
+      },
+      "column1Title": {
+        "type": "string",
+        "default": "Product"
+      },
+      "column1Links": {
+        "type": "list",
+        "itemSchema": {
+          "text": {
+            "type": "string",
+            "default": "Link"
+          },
+          "href": {
+            "type": "link",
+            "default": "/"
+          }
+        },
+        "default": [
+          {
+            "text": "Features",
+            "href": "/"
+          },
+          {
+            "text": "Pricing",
+            "href": "/"
+          },
+          {
+            "text": "Integrations",
+            "href": "/"
+          }
+        ]
+      },
+      "column2Title": {
+        "type": "string",
+        "default": "Company"
+      },
+      "column2Links": {
+        "type": "list",
+        "itemSchema": {
+          "text": {
+            "type": "string",
+            "default": "Link"
+          },
+          "href": {
+            "type": "link",
+            "default": "/"
+          }
+        },
+        "default": [
+          {
+            "text": "About",
+            "href": "/"
+          },
+          {
+            "text": "Blog",
+            "href": "/"
+          },
+          {
+            "text": "Careers",
+            "href": "/"
+          }
+        ]
+      },
+      "column3Title": {
+        "type": "string",
+        "default": "Support"
+      },
+      "column3Links": {
+        "type": "list",
+        "itemSchema": {
+          "text": {
+            "type": "string",
+            "default": "Link"
+          },
+          "href": {
+            "type": "link",
+            "default": "/"
+          }
+        },
+        "default": [
+          {
+            "text": "Help Center",
+            "href": "/"
+          },
+          {
+            "text": "Blog",
+            "href": "/"
+          },
+          {
+            "text": "Status",
+            "href": "/"
+          }
+        ]
+      },
+      "copyright": {
+        "type": "string",
+        "default": "© 2026 Company. All rights reserved."
+      },
+      "section_bg": {
+        "type": "select",
+        "default": "white",
+        "enumName": "section_bg"
+      }
+    }
+  }
+}

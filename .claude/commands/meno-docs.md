@@ -30,6 +30,7 @@ Load Meno documentation for the specified topic to provide context for your task
 | `redirects` | URL redirects for static hosting |
 | `meno-filter` | Client-side filtering with data attributes |
 | `meno-filter-api` | MenoFilter JavaScript API |
+| `website-convert` | Converting imported website analysis to Meno components |
 
 ## Instructions
 
@@ -46,6 +47,8 @@ $ARGUMENTS contains the topic requested by the user.
 - `filter-api` → `meno-filter-api`
 - `js` → `javascript`
 - `styles` → `styling`
+- `convert` → `website-convert`
+- `import` → `website-convert`
 
 ### Multi-topic Loading
 If user requests multiple topics (comma-separated), load all of them:

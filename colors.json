@@ -1,16 +1,39 @@
 {
   "default": "light",
+  "palette": {
+    "white": "#ffffff",
+    "black": "#161616",
+    "blue": "#4d47eb",
+    "gray-100": "#ebebeb",
+    "gray-200": "#dddddd",
+    "gray-300": "#c0c0c0",
+    "blue-400": "#9b9bf0"
+  },
   "themes": {
     "light": {
       "label": "Light",
       "colors": {
-        "text": "#050505",
+        "text": "black",
         "text-light": "#888",
         "bg": "#fafafa",
-        "bg-light": "#ededed",
+        "bg-light": "#f0f0f0",
         "border": "#d1d5db",
         "border-light": "#e5e7eb",
-        "primary": "#5156d6",
+        "primary": "blue",
+        "text-highlight": "#7a7a7a",
+        "text-medium": "#777"
+      }
+    },
+    "gray": {
+      "label": "Gray",
+      "colors": {
+        "text": "black",
+        "text-light": "#888",
+        "bg": "#ebebeb",
+        "bg-light": "#ffffff",
+        "border": "#d1d5db",
+        "border-light": "#e5e7eb",
+        "primary": "blue",
         "text-highlight": "#7a7a7a",
         "text-medium": "#777"
       }
@@ -18,7 +41,7 @@
     "dark": {
       "label": "Dark",
       "colors": {
-        "text": "#f5f5f5",
+        "text": "gray-100",
         "text-light": "#a0a0a0",
         "bg": "#1a1a1a",
         "bg-light": "#2d2d2d",
@@ -26,6 +49,20 @@
         "border-light": "#333333",
         "primary": "#7c84f8",
         "text-highlight": "#b8b8b8"
+      }
+    },
+    "primary": {
+      "label": "Primary",
+      "colors": {
+        "text": "white",
+        "text-light": "#e1e1e1",
+        "bg": "blue-400",
+        "bg-light": "#f0f0f0",
+        "border": "#d1d5db",
+        "border-light": "#e5e7eb",
+        "primary": "#3434f5",
+        "text-highlight": "#7a7a7a",
+        "text-medium": "#eeeeee"
       }
     }
   }
