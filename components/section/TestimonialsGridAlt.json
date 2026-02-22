@@ -100,7 +100,7 @@
           },
           "image": {
             "type": "file",
-            "default": "/images/placeholder.webp"
+            "default": "/images/placeholder-img.webp"
           },
           "title": {
             "type": "string",
@@ -114,37 +114,37 @@
         "default": [
           {
             "text": "\"This product has completely transformed how we work. The interface is intuitive and the results speak for themselves.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Sarah Johnson",
             "label": "CEO at TechCorp"
           },
           {
             "text": "\"We've seen a 40% increase in productivity since implementing this solution.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Michael Chen",
             "label": "Product Manager at StartupXYZ"
           },
           {
             "text": "\"The customer support team is incredible. They helped us get set up in no time.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Emily Rodriguez",
             "label": "Director at Agency Inc"
           },
           {
             "text": "\"Best investment we've made for our team. Highly recommend to anyone looking to scale.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "David Kim",
             "label": "CTO at Growth Co"
           },
           {
             "text": "\"The onboarding was seamless and the features are exactly what we needed.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Lisa Wang",
             "label": "Head of Product at Scale Inc"
           },
           {
             "text": "\"Outstanding platform with excellent support. Our team loves using it daily.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "James Miller",
             "label": "VP Engineering at DevOps Ltd"
           }
@@ -153,10 +153,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

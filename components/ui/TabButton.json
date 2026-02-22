@@ -26,7 +26,7 @@
           "style": {
             "base": {
               "color": "var(--text)",
-              "backgroundColor": "var(--bg-light)"
+              "backgroundColor": "var(--bg-100)"
             }
           }
         },

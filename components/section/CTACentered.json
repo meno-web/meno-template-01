@@ -21,7 +21,7 @@
               "component": "Heading",
               "props": {
                 "text": "{{title}}",
-                "maxWidth": "640px",
+                "maxWidth": "440px",
                 "align": "center",
                 "size": "2",
                 "tag": "2"
@@ -34,7 +34,7 @@
                 "text": "{{text}}",
                 "size": "large",
                 "align": "center",
-                "maxWidth": "580px",
+                "maxWidth": "450px",
                 "isMarginBottom": true
               }
             },
@@ -97,10 +97,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

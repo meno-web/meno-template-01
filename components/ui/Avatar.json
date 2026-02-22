@@ -31,8 +31,8 @@
           },
           "borderRadius": "100px",
           "overflow": "hidden",
-          "backgroundColor": "var(--bg-light)",
-          "color": "var(--text-light)",
+          "backgroundColor": "var(--bg-100)",
+          "color": "var(--text-100)",
           "fontSize": {
             "_mapping": true,
             "prop": "size",

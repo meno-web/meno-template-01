@@ -17,7 +17,7 @@
             "_mapping": true,
             "prop": "variant",
             "values": {
-              "default": "var(--bg-light)",
+              "default": "var(--bg-100)",
               "primary": "var(--primary)"
             }
           },
@@ -96,7 +96,7 @@
                     "_mapping": true,
                     "prop": "variant",
                     "values": {
-                      "default": "var(--bg-light)",
+                      "default": "var(--bg-100)",
                       "primary": "var(--primary)"
                     }
                   },

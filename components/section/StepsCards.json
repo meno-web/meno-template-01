@@ -112,11 +112,8 @@
       },
       "theme": {
         "type": "select",
-        "default": "secondary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "default": "light",
+        "enumName": "theme"
       },
       "list": {
         "type": "list",

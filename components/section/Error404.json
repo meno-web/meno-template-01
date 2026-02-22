@@ -1,11 +1,17 @@
 {
   "component": {
-    "interface": {},
+    "interface": {
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "enumName": "theme"
+      }
+    },
     "structure": {
       "type": "component",
       "component": "Section",
       "props": {
-        "theme": "primary",
+        "theme": "{{theme}}",
         "spaceTop": "large"
       },
       "children": [

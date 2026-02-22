@@ -27,8 +27,8 @@
           "postfix": ":hover",
           "style": {
             "base": {
-              "backgroundColor": "var(--bg-light)",
-              "borderColor": "var(--text-light)"
+              "backgroundColor": "var(--bg-100)",
+              "borderColor": "var(--text-100)"
             },
             "tablet": {},
             "mobile": {}

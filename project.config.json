@@ -20,6 +20,38 @@
       "weight": 100,
       "weightMax": 900,
       "fontDisplay": "swap"
+    },
+    {
+      "path": "/fonts/figtree-variable.woff2",
+      "family": "Figtree",
+      "weight": 300,
+      "weightMax": 900
+    },
+    {
+      "path": "/fonts/barlow-400.woff2",
+      "family": "Barlow",
+      "weight": 400
+    },
+    {
+      "path": "/fonts/barlow-500.woff2",
+      "family": "Barlow",
+      "weight": 500
+    },
+    {
+      "path": "/fonts/barlow-600.woff2",
+      "family": "Barlow",
+      "weight": 600
+    },
+    {
+      "path": "/fonts/barlow-700.woff2",
+      "family": "Barlow",
+      "weight": 700
+    },
+    {
+      "path": "/fonts/bitter-variable.woff2",
+      "family": "Bitter",
+      "weight": 100,
+      "weightMax": 900
     }
   ],
   "responsiveScales": {

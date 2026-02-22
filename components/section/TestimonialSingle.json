@@ -116,7 +116,7 @@
       "avatar": {
         "type": "file",
         "accept": "image/*",
-        "default": "/images/placeholder.webp"
+        "default": "/images/placeholder-img.webp"
       },
       "name": {
         "type": "string",
@@ -129,7 +129,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": ["primary", "secondary"]
+        "enumName": "theme"
       }
     }
   }

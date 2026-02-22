@@ -155,10 +155,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       },
       "list": {
         "type": "list",
@@ -178,7 +175,7 @@
           "image": {
             "type": "file",
             "accept": "image/*",
-            "default": "/images/placeholder.webp"
+            "default": "/images/placeholder-img.webp"
           }
         },
         "default": [
@@ -186,13 +183,13 @@
             "tabTitle": "Tab 1",
             "title": "Tab 1",
             "text": "Text",
-            "image": "/images/placeholder.webp"
+            "image": "/images/placeholder-img.webp"
           },
           {
             "tabTitle": "Tab 2",
             "title": "Tab 2",
             "text": "Text",
-            "image": "/images/placeholder.webp"
+            "image": "/images/placeholder-img.webp"
           }
         ]
       }

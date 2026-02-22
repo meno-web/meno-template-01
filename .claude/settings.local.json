@@ -12,7 +12,8 @@
       "Bash(curl:*)",
       "Skill(meno-docs)",
       "Bash(cd:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(sed:*)"
     ]
   }
 }

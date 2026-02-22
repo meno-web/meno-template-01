@@ -1,9 +1,8 @@
 {
   "theme": [
     "light",
-    "gray",
-    "dark",
-    "primary"
+    "muted",
+    "dark"
   ],
   "icons": [
     "star",

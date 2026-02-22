@@ -33,7 +33,8 @@
                 "size": "large",
                 "align": "center",
                 "maxWidth": "640px",
-                "render": "{{text}}"
+                "render": "{{text}}",
+                "variant": "light"
               }
             },
             {
@@ -74,7 +75,7 @@
       },
       "backgroundImage": {
         "type": "file",
-        "default": "/images/placeholder.webp",
+        "default": "/images/placeholder-img.webp",
         "accept": "image/*"
       },
       "buttonText": {

@@ -6,7 +6,7 @@
       "style": {
         "base": {
           "backgroundColor": "var(--bg)",
-          "fontFamily": "Inter"
+          "fontFamily": "var(--l-ff)"
         },
         "tablet": {},
         "mobile": {}
@@ -47,7 +47,10 @@
         },
         {
           "type": "component",
-          "component": "Footer"
+          "component": "FooterMultiColumn",
+          "props": {
+            "section_bg": "white"
+          }
         }
       ]
     },

@@ -26,7 +26,7 @@
             "base": {
               "padding": "16px 20px",
               "fontWeight": "600",
-              "backgroundColor": "var(--bg-light)",
+              "backgroundColor": "var(--bg-100)",
               "color": "var(--text)"
             }
           },

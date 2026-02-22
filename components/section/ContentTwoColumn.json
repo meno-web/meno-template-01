@@ -79,7 +79,7 @@
     "interface": {
       "subtitle": {
         "type": "string",
-        "default": "Content 02"
+        "default": "Features"
       },
       "title": {
         "type": "rich-text",
@@ -100,10 +100,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

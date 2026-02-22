@@ -174,7 +174,7 @@
           },
           "image": {
             "type": "file",
-            "default": "/images/placeholder.webp"
+            "default": "/images/placeholder-img.webp"
           },
           "title": {
             "type": "string",
@@ -188,19 +188,19 @@
         "default": [
           {
             "text": "\"This product has completely transformed how we work. The interface is intuitive and the results speak for themselves.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Sarah Johnson",
             "label": "CEO at TechCorp"
           },
           {
             "text": "\"We've seen a 40% increase in productivity since implementing this solution. I can't recommend it enough.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Michael Chen",
             "label": "Product Manager at StartupXYZ"
           },
           {
             "text": "\"The customer support team is incredible. They helped us get set up in no time and are always there when we need them.\"",
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Emily Rodriguez",
             "label": "Director at Agency Inc"
           }
@@ -209,10 +209,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

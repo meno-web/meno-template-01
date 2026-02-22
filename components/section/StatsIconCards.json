@@ -95,7 +95,7 @@
                       "flexDirection": "column",
                       "alignItems": "flex-start",
                       "padding": "32px",
-                      "backgroundColor": "var(--bg-light)",
+                      "backgroundColor": "var(--bg-100)",
                       "borderRadius": "12px",
                       "borderLeft": {
                         "_mapping": true,
@@ -244,10 +244,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

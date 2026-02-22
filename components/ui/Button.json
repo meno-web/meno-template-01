@@ -22,14 +22,14 @@
             "prop": "variant",
             "values": {
               "primary": "var(--text)",
-              "secondary": "#ddd"
+              "secondary": "var(--border)"
             }
           },
           "backgroundColor": {
             "_mapping": true,
             "prop": "variant",
             "values": {
-              "primary": "var(--text)",
+              "primary": "var(--btn-bg)",
               "secondary": "var(--bg)"
             }
           },
@@ -70,7 +70,7 @@
                 "prop": "variant",
                 "values": {
                   "primary": "#333",
-                  "secondary": "#f2f2f2"
+                  "secondary": "var(--bg-100)"
                 }
               },
               "borderColor": {
@@ -78,7 +78,7 @@
                 "prop": "variant",
                 "values": {
                   "primary": "#444",
-                  "secondary": "#ddd"
+                  "secondary": "var(--border-100)"
                 }
               },
               "top": "0"

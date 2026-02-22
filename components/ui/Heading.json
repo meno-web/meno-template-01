@@ -41,7 +41,7 @@
             "prop": "variant",
             "values": {
               "default": "var(--text)",
-              "light": "var(--text-light)"
+              "light": "var(--text-100)"
             }
           },
           "textAlign": {
@@ -114,6 +114,6 @@
         ]
       }
     },
-    "css": "h1 .custom-span,\nh2 .custom-span,\nh3 .custom-span,\nh4 .custom-span,\nh5 .custom-span { color: var(--text-highlight); }"
+    "css": "h1 .custom-span,\nh2 .custom-span,\nh3 .custom-span,\nh4 .custom-span,\nh5 .custom-span { color: var(--h-span); }"
   }
 }

@@ -69,7 +69,7 @@
                       "backgroundColor": "var(--surface)",
                       "borderRadius": "16px",
                       "padding": "32px",
-                      "border": "1px solid var(--border-light)",
+                      "border": "1px solid var(--border-100)",
                       "display": "flex",
                       "flexDirection": "column"
                     }
@@ -257,10 +257,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

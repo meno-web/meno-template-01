@@ -4,7 +4,7 @@
       "type": "component",
       "component": "Section",
       "props": {
-        "theme": "{{section_bg}}",
+        "theme": "{{theme}}",
         "spaceTop": "default"
       },
       "children": [
@@ -361,10 +361,10 @@
         "type": "string",
         "default": "© 2026 Company. All rights reserved."
       },
-      "section_bg": {
+      "theme": {
         "type": "select",
-        "default": "white",
-        "enumName": "section_bg"
+        "default": "light",
+        "enumName": "theme"
       }
     }
   }

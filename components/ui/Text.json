@@ -22,7 +22,8 @@
             "prop": "variant",
             "values": {
               "default": "var(--text)",
-              "light": "var(--text-medium)"
+              "light": "var(--text-100)",
+              "lighter": "var(--text-200)"
             }
           },
           "maxWidth": "{{maxWidth}}",
@@ -51,7 +52,8 @@
         "default": "default",
         "options": [
           "default",
-          "light"
+          "light",
+          "lighter"
         ]
       },
       "size": {

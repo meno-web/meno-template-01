@@ -79,12 +79,12 @@
       "image": {
         "type": "file",
         "accept": "image/*",
-        "default": "/images/placeholder.webp"
+        "default": "/images/placeholder-img.webp"
       },
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": ["primary", "secondary"]
+        "enumName": "theme"
       }
     }
   }

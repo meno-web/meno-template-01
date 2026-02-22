@@ -159,7 +159,7 @@
         "itemSchema": {
           "image": {
             "type": "file",
-            "default": "/images/placeholder.webp"
+            "default": "/images/placeholder-img.webp"
           },
           "title": {
             "type": "string",
@@ -172,32 +172,32 @@
         },
         "default": [
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Project 1",
             "text": "Brand Identity Design"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Project 2",
             "text": "E-commerce Platform"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Project 3",
             "text": "Mobile App UI"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Project 4",
             "text": "Marketing Website"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Project 5",
             "text": "Dashboard Design"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Project 6",
             "text": "Product Photography"
           }
@@ -206,10 +206,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

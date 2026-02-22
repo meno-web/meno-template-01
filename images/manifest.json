@@ -161,19 +161,35 @@
       "createdAt": "2026-01-14T14:29:48.517Z",
       "updatedAt": "2026-01-14T14:29:48.517Z"
     },
-    "placeholder.webp": {
-      "filename": "placeholder.webp",
-      "originalFilename": "placeholder.webp",
-      "width": 250,
-      "height": 250,
+    "placeholder-img.webp": {
+      "filename": "placeholder-img.webp",
+      "originalFilename": "Placeholder-Image.jpg",
+      "width": 1200,
+      "height": 1200,
       "blurHash": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAADQAgCdASogACAAPzmWwlmvKqcjqAgB4CcJaQAAPaOgAP7rrgAAAA==",
       "formats": {
         "avif": true,
         "webp": true
       },
-      "variants": [],
-      "createdAt": "2026-01-31T13:21:58.559Z",
-      "updatedAt": "2026-01-31T13:21:58.559Z"
+      "variants": [
+        {
+          "width": 500,
+          "webpFilename": "placeholder-img-500.webp",
+          "avifFilename": "placeholder-img-500.avif"
+        },
+        {
+          "width": 800,
+          "webpFilename": "placeholder-img-800.webp",
+          "avifFilename": "placeholder-img-800.avif"
+        },
+        {
+          "width": 1080,
+          "webpFilename": "placeholder-img-1080.webp",
+          "avifFilename": "placeholder-img-1080.avif"
+        }
+      ],
+      "createdAt": "2026-02-21T14:53:45.425Z",
+      "updatedAt": "2026-02-21T14:54:46.490Z"
     }
   }
 }

@@ -5,7 +5,7 @@
       "tag": "blockquote",
       "style": {
         "base": {
-          "backgroundColor": "var(--bg-light)",
+          "backgroundColor": "var(--bg-100)",
           "borderRadius": "6px",
           "padding": "32px",
           "margin": "0",
@@ -118,7 +118,7 @@
       },
       "avatar": {
         "type": "file",
-        "default": "/images/placeholder.webp"
+        "default": "/images/placeholder-img.webp"
       }
     }
   }

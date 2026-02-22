@@ -1,68 +1,62 @@
 {
   "default": "light",
   "palette": {
-    "white": "#ffffff",
-    "black": "#161616",
-    "blue": "#4d47eb",
-    "gray-100": "#ebebeb",
-    "gray-200": "#dddddd",
-    "gray-300": "#c0c0c0",
-    "blue-400": "#9b9bf0"
+    "base-50": "#f7fee7",
+    "base-100": "#ecfccb",
+    "base-200": "#d9f99d",
+    "base-300": "#bef264",
+    "base-400": "#a3e635",
+    "base-500": "#84cc16",
+    "base-600": "#65a30d",
+    "base-700": "#4d7c0f",
+    "base-800": "#3f6212",
+    "base-900": "#365314",
+    "base-950": "#1a2e05"
   },
   "themes": {
     "light": {
       "label": "Light",
       "colors": {
-        "text": "black",
-        "text-light": "#888",
-        "bg": "#fafafa",
-        "bg-light": "#f0f0f0",
-        "border": "#d1d5db",
-        "border-light": "#e5e7eb",
-        "primary": "blue",
-        "text-highlight": "#7a7a7a",
-        "text-medium": "#777"
+        "text": "base-950",
+        "text-100": "base-800",
+        "bg": "base-50",
+        "border": "base-300",
+        "border-100": "base-200",
+        "h-span": "base-500",
+        "text-200": "base-600",
+        "btn-bg": "base-900",
+        "bg-100": "base-100",
+        "bg-200": "base-200"
       }
     },
-    "gray": {
-      "label": "Gray",
+    "muted": {
+      "label": "Muted",
       "colors": {
-        "text": "black",
-        "text-light": "#888",
-        "bg": "#ebebeb",
-        "bg-light": "#ffffff",
-        "border": "#d1d5db",
-        "border-light": "#e5e7eb",
-        "primary": "blue",
-        "text-highlight": "#7a7a7a",
-        "text-medium": "#777"
+        "text": "base-900",
+        "text-100": "base-700",
+        "bg": "base-100",
+        "border": "base-300",
+        "border-100": "base-200",
+        "h-span": "base-500",
+        "text-200": "base-600",
+        "btn-bg": "base-900",
+        "bg-100": "base-200",
+        "bg-200": "base-300"
       }
     },
     "dark": {
       "label": "Dark",
       "colors": {
-        "text": "gray-100",
-        "text-light": "#a0a0a0",
-        "bg": "#1a1a1a",
-        "bg-light": "#2d2d2d",
-        "border": "#404040",
-        "border-light": "#333333",
-        "primary": "#7c84f8",
-        "text-highlight": "#b8b8b8"
-      }
-    },
-    "primary": {
-      "label": "Primary",
-      "colors": {
-        "text": "white",
-        "text-light": "#e1e1e1",
-        "bg": "blue-400",
-        "bg-light": "#f0f0f0",
-        "border": "#d1d5db",
-        "border-light": "#e5e7eb",
-        "primary": "#3434f5",
-        "text-highlight": "#7a7a7a",
-        "text-medium": "#eeeeee"
+        "text": "base-50",
+        "text-100": "base-200",
+        "bg": "base-950",
+        "border": "base-600",
+        "border-100": "base-500",
+        "h-span": "base-400",
+        "btn-bg": "base-50",
+        "bg-100": "base-900",
+        "bg-200": "base-800",
+        "text-200": "base-300"
       }
     }
   }

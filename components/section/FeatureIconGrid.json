@@ -41,7 +41,8 @@
                 "text": "{{text}}",
                 "size": "large",
                 "align": "center",
-                "maxWidth": "400px"
+                "maxWidth": "400px",
+                "variant": "default"
               }
             }
           ]
@@ -70,7 +71,7 @@
                       "alignItems": "center",
                       "textAlign": "center",
                       "padding": "32px 24px",
-                      "background": "var(--bg-light)",
+                      "background": "var(--bg-100)",
                       "borderRadius": "12px"
                     },
                     "tablet": {},
@@ -85,7 +86,7 @@
                         "base": {
                           "width": "64px",
                           "height": "64px",
-                          "backgroundColor": "var(--bg)",
+                          "backgroundColor": "var(--bg-200)",
                           "borderRadius": "16px",
                           "display": "flex",
                           "alignItems": "center",

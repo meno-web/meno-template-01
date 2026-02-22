@@ -196,6 +196,13 @@
       "value": "450",
       "type": "none",
       "group": "font-weight"
+    },
+    {
+      "name": "Layout",
+      "cssVar": "--l-ff",
+      "value": "Inter",
+      "type": "none",
+      "group": "font-family"
     }
   ]
 }

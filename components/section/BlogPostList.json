@@ -4,7 +4,7 @@
       "type": "component",
       "component": "Section",
       "props": {
-        "theme": "primary"
+        "theme": "{{theme}}"
       },
       "children": [
         {
@@ -50,7 +50,7 @@
                   "alignItems": "start",
                   "paddingTop": "32px",
                   "paddingBottom": "32px",
-                  "borderBottom": "1px solid var(--border-light)",
+                  "borderBottom": "1px solid var(--border-100)",
                   "textDecoration": "none",
                   "color": "inherit"
                 },
@@ -143,6 +143,12 @@
         }
       ]
     },
-    "interface": {}
+    "interface": {
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "enumName": "theme"
+      }
+    }
   }
 }

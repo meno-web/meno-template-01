@@ -86,7 +86,7 @@
         "itemSchema": {
           "image": {
             "type": "file",
-            "default": "/images/placeholder.webp"
+            "default": "/images/placeholder-img.webp"
           },
           "title": {
             "type": "string",
@@ -95,23 +95,23 @@
         },
         "default": [
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Company 1"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Company 2"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Company 3"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Company 4"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Company 5"
           }
         ]
@@ -119,10 +119,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

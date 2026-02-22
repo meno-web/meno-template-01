@@ -15,7 +15,7 @@
             "prop": "variant",
             "values": {
               "default": "var(--text)",
-              "light": "var(--text-light)"
+              "light": "var(--text-100)"
             }
           },
           "textDecoration": "none",

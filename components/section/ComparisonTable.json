@@ -116,10 +116,12 @@
                               "padding": "16px 24px",
                               "fontSize": "16px",
                               "fontWeight": "600",
-                              "color": "var(--primary)",
-                              "borderBottom": "2px solid var(--primary)",
-                              "backgroundColor": "var(--surface)"
-                            }
+                              "color": "var(--text)",
+                              "borderBottom": "2px solid ",
+                              "backgroundColor": "var(--bg-100)"
+                            },
+                            "tablet": {},
+                            "mobile": {}
                           },
                           "children": "{{column2Title}}"
                         }
@@ -145,7 +147,7 @@
                               "padding": "16px 24px",
                               "fontSize": "15px",
                               "color": "var(--text)",
-                              "borderBottom": "1px solid var(--border-light)"
+                              "borderBottom": "1px solid var(--border-100)"
                             }
                           },
                           "children": "{{item.title}}"
@@ -157,7 +159,7 @@
                             "base": {
                               "textAlign": "center",
                               "padding": "16px 24px",
-                              "borderBottom": "1px solid var(--border-light)"
+                              "borderBottom": "1px solid var(--border-100)"
                             }
                           },
                           "children": "{{item.value}}"
@@ -169,7 +171,7 @@
                             "base": {
                               "textAlign": "center",
                               "padding": "16px 24px",
-                              "borderBottom": "1px solid var(--border-light)",
+                              "borderBottom": "1px solid var(--border-100)",
                               "backgroundColor": "var(--surface)"
                             }
                           },
@@ -254,10 +256,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

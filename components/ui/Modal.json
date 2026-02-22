@@ -89,7 +89,7 @@
               "postfix": ":hover",
               "style": {
                 "base": {
-                  "backgroundColor": "var(--bg-light)"
+                  "backgroundColor": "var(--bg-100)"
                 }
               }
             }

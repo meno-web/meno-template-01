@@ -144,7 +144,7 @@
         "itemSchema": {
           "image": {
             "type": "file",
-            "default": "/images/placeholder.webp"
+            "default": "/images/placeholder-img.webp"
           },
           "title": {
             "type": "string",
@@ -157,22 +157,22 @@
         },
         "default": [
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Sarah Johnson",
             "text": "CEO & Founder"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Michael Chen",
             "text": "CTO"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "Emily Rodriguez",
             "text": "Design Lead"
           },
           {
-            "image": "/images/placeholder.webp",
+            "image": "/images/placeholder-img.webp",
             "title": "David Kim",
             "text": "Engineering Lead"
           }
@@ -181,10 +181,7 @@
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "enumName": "theme"
       }
     }
   }

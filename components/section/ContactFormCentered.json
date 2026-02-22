@@ -164,11 +164,8 @@
       },
       "theme": {
         "type": "select",
-        "default": "secondary",
-        "options": [
-          "primary",
-          "secondary"
-        ]
+        "default": "light",
+        "enumName": "theme"
       },
       "buttonText": {
         "type": "string",

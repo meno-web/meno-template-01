@@ -48,7 +48,7 @@
                       "href": "{{item.href}}",
                       "style": {
                         "base": {
-                          "color": "var(--text-light)",
+                          "color": "var(--text-100)",
                           "fontSize": "var(--ts-fs)",
                           "textDecoration": "none"
                         }
@@ -74,7 +74,7 @@
                       "if": "{{itemLast}}",
                       "style": {
                         "base": {
-                          "color": "var(--text-light)",
+                          "color": "var(--text-100)",
                           "fontSize": "var(--ts-fs)"
                         }
                       },

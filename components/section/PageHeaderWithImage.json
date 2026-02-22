@@ -4,7 +4,7 @@
       "type": "component",
       "component": "Section",
       "props": {
-        "theme": "primary",
+        "theme": "{{theme}}",
         "spaceTop": "default"
       },
       "children": [
@@ -69,8 +69,13 @@
       },
       "image": {
         "type": "file",
-        "default": "/images/placeholder.webp",
+        "default": "/images/placeholder-img.webp",
         "accept": "image/*"
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "enumName": "theme"
       }
     }
   }

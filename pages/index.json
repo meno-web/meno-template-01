@@ -7,13 +7,65 @@
         "type": "component",
         "component": "HeroCentered",
         "props": {
-          "title": "Build your next great idea",
+          "title": "Build your next <span class=\"custom-span\" data-meno-span=\"true\">great idea</span>",
           "text": "A modern starter template for building professional, responsive websites. Customize it to match your brand and launch faster.",
           "buttonText": "Get started",
           "buttonLink": "#",
           "secondaryButtonText": "Learn more",
           "secondaryButtonLink": "#",
-          "backgroundImage": ""
+          "backgroundImage": "",
+          "theme": "light"
+        }
+      },
+      {
+        "type": "component",
+        "component": "BlogCardGrid",
+        "props": {
+          "theme": "muted"
+        }
+      },
+      {
+        "type": "component",
+        "component": "ComparisonTable"
+      },
+      {
+        "type": "component",
+        "component": "FeatureIconGrid",
+        "props": {
+          "list": [
+            {
+              "icon": "zap",
+              "title": "Fast Performance",
+              "text": "Lightning-fast load times ensure your users never have to wait."
+            },
+            {
+              "icon": "shield",
+              "title": "Secure by Design",
+              "text": "Enterprise-grade security protects your data at every level."
+            },
+            {
+              "icon": "settings",
+              "title": "Easy Integration",
+              "text": "Connect with your favorite tools in minutes, not hours."
+            },
+            {
+              "icon": "headphones",
+              "title": "24/7 Support",
+              "text": "Our team is always here to help whenever you need us."
+            },
+            {
+              "icon": "trending-up",
+              "title": "Scalable",
+              "text": "Grow without limits as your business expands."
+            },
+            {
+              "icon": "bar-chart-3",
+              "title": "Analytics",
+              "text": "Gain insights with powerful built-in analytics tools."
+            }
+          ],
+          "columns": "3",
+          "theme": "light"
         }
       },
       {
@@ -53,7 +105,47 @@
             }
           ],
           "columns": "3",
-          "theme": "gray"
+          "theme": "muted"
+        }
+      },
+      {
+        "type": "component",
+        "component": "FeatureIconGrid",
+        "props": {
+          "list": [
+            {
+              "icon": "zap",
+              "title": "Fast Performance",
+              "text": "Lightning-fast load times ensure your users never have to wait."
+            },
+            {
+              "icon": "shield",
+              "title": "Secure by Design",
+              "text": "Enterprise-grade security protects your data at every level."
+            },
+            {
+              "icon": "settings",
+              "title": "Easy Integration",
+              "text": "Connect with your favorite tools in minutes, not hours."
+            },
+            {
+              "icon": "headphones",
+              "title": "24/7 Support",
+              "text": "Our team is always here to help whenever you need us."
+            },
+            {
+              "icon": "trending-up",
+              "title": "Scalable",
+              "text": "Grow without limits as your business expands."
+            },
+            {
+              "icon": "bar-chart-3",
+              "title": "Analytics",
+              "text": "Gain insights with powerful built-in analytics tools."
+            }
+          ],
+          "columns": "3",
+          "theme": "dark"
         }
       },
       {
@@ -63,13 +155,12 @@
           "subtitle": "Responsive",
           "title": "Built mobile-first for every device",
           "text": "Your website looks great on phones, tablets, and desktops. No extra work needed - responsive design is built in from the start.",
-          "image": "/images/placeholder.webp",
-          "theme": "secondary"
+          "theme": "light"
         }
       },
       {
         "type": "component",
-        "component": "BlogCardGrid"
+        "component": "FaqAccordion"
       },
       {
         "type": "component",
@@ -78,8 +169,8 @@
           "subtitle": "Customizable",
           "title": "Make it yours in minutes",
           "text": "Change colors, fonts, images, and content easily. Every element is designed to be modified without breaking the design.",
-          "image": "/images/placeholder.webp",
-          "theme": "primary"
+          "image": "/images/placeholder-img.webp",
+          "theme": "light"
         }
       },
       {
@@ -92,12 +183,8 @@
           "buttonLink": "#",
           "secondaryButtonText": "View documentation",
           "secondaryButtonLink": "/docs",
-          "theme": "secondary"
+          "theme": "dark"
         }
-      },
-      {
-        "type": "component",
-        "component": "FooterMultiColumn"
       }
     ]
   },

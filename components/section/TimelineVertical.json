@@ -155,20 +155,38 @@
       "list": {
         "type": "list",
         "itemSchema": {
-          "title": { "type": "string", "default": "Step title" },
-          "text": { "type": "string", "default": "Step description" }
+          "title": {
+            "type": "string",
+            "default": "Step title"
+          },
+          "text": {
+            "type": "string",
+            "default": "Step description"
+          }
         },
         "default": [
-          { "title": "Sign up for free", "text": "Create your account in seconds. No credit card required to get started." },
-          { "title": "Set up your project", "text": "Configure your workspace and invite your team members to collaborate." },
-          { "title": "Customize your workflow", "text": "Tailor the platform to fit your specific needs and preferences." },
-          { "title": "Launch and grow", "text": "Go live and start achieving your goals with our powerful tools." }
+          {
+            "title": "Sign up for free",
+            "text": "Create your account in seconds. No credit card required to get started."
+          },
+          {
+            "title": "Set up your project",
+            "text": "Configure your workspace and invite your team members to collaborate."
+          },
+          {
+            "title": "Customize your workflow",
+            "text": "Tailor the platform to fit your specific needs and preferences."
+          },
+          {
+            "title": "Launch and grow",
+            "text": "Go live and start achieving your goals with our powerful tools."
+          }
         ]
       },
       "theme": {
         "type": "select",
         "default": "primary",
-        "options": ["primary", "secondary"]
+        "enumName": "theme"
       }
     }
   }

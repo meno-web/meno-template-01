@@ -5,7 +5,7 @@
       "component": "Section",
       "props": {
         "text": "Key benefit — A short description of what makes this feature stand out",
-        "theme": "primary"
+        "theme": "{{theme}}"
       },
       "children": [
         {
@@ -112,7 +112,7 @@
       },
       "image": {
         "type": "file",
-        "default": "/images/placeholder.webp"
+        "default": "/images/placeholder-img.webp"
       },
       "list": {
         "type": "list",
@@ -133,6 +133,11 @@
             "text": "Flexible and extensible — Adapt the platform to fit your specific needs"
           }
         ]
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "enumName": "theme"
       }
     }
   }

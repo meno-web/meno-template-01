@@ -4,7 +4,7 @@
       "type": "component",
       "component": "Section",
       "props": {
-        "theme": "primary",
+        "theme": "{{theme}}",
         "spaceTop": "default"
       },
       "children": [
@@ -41,6 +41,11 @@
       "text": {
         "type": "rich-text",
         "default": "A brief description of this page and what visitors can expect to find here."
+      },
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "enumName": "theme"
       }
     }
   }

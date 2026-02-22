@@ -17,7 +17,7 @@
             "_mapping": true,
             "prop": "variant",
             "values": {
-              "default": "var(--bg-light)",
+              "default": "var(--bg-100)",
               "primary": "var(--primary)",
               "success": "#16a34a",
               "warning": "#f59e0b"
@@ -33,7 +33,9 @@
               "warning": "#fff"
             }
           }
-        }
+        },
+        "tablet": {},
+        "mobile": {}
       },
       "children": "{{text}}"
     },
@@ -45,7 +47,12 @@
       "variant": {
         "type": "select",
         "default": "default",
-        "options": ["default", "primary", "success", "warning"]
+        "options": [
+          "default",
+          "primary",
+          "success",
+          "warning"
+        ]
       }
     }
   }

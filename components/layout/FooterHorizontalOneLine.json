@@ -50,7 +50,7 @@
                 "tablet": {},
                 "mobile": {}
               },
-              "children": "Starter"
+              "children": "{{brandName}}"
             }
           ]
         },
@@ -72,34 +72,23 @@
           },
           "children": [
             {
-              "type": "component",
-              "component": "NavLink",
-              "props": {
-                "text": "Features",
-                "link": {
-                  "href": "#features"
+              "type": "list",
+              "sourceType": "prop",
+              "source": "{{links}}",
+              "itemAs": "link",
+              "tag": false,
+              "children": [
+                {
+                  "type": "component",
+                  "component": "NavLink",
+                  "props": {
+                    "text": "{{link.text}}",
+                    "link": {
+                      "href": "{{link.href}}"
+                    }
+                  }
                 }
-              }
-            },
-            {
-              "type": "component",
-              "component": "NavLink",
-              "props": {
-                "text": "About",
-                "link": {
-                  "href": "#about"
-                }
-              }
-            },
-            {
-              "type": "component",
-              "component": "NavLink",
-              "props": {
-                "text": "Contact",
-                "link": {
-                  "href": "#contact"
-                }
-              }
+              ]
             }
           ]
         },
@@ -121,7 +110,7 @@
               "component": "Text",
               "props": {
                 "size": "small",
-                "text": "© 2026 Starter. All rights reserved.",
+                "text": "{{copyright}}",
                 "align": "inherit"
               }
             }
@@ -129,6 +118,47 @@
         }
       ]
     },
-    "interface": {}
+    "interface": {
+      "brandName": {
+        "type": "string",
+        "default": "Starter"
+      },
+      "links": {
+        "type": "list",
+        "itemSchema": {
+          "text": {
+            "type": "string",
+            "default": "Link"
+          },
+          "href": {
+            "type": "link",
+            "default": "/"
+          }
+        },
+        "default": [
+          {
+            "text": "Features",
+            "href": "#features"
+          },
+          {
+            "text": "About",
+            "href": "#about"
+          },
+          {
+            "text": "Contact",
+            "href": "#contact"
+          }
+        ]
+      },
+      "copyright": {
+        "type": "string",
+        "default": "© 2026 Starter. All rights reserved."
+      },
+      "theme": {
+        "type": "select",
+        "default": "light",
+        "enumName": "theme"
+      }
+    }
   }
 }
