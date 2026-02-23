@@ -34,6 +34,7 @@
                 {
                   "type": "component",
                   "component": "Text",
+                  "if": "{{text}}",
                   "props": {
                     "text": "{{text}}"
                   }
@@ -48,11 +49,12 @@
                 {
                   "type": "component",
                   "component": "BulletList",
+                  "if": "{{items.length}}",
                   "children": [
                     {
                       "type": "list",
                       "sourceType": "prop",
-                      "source": "{{list}}",
+                      "source": "{{items}}",
                       "itemAs": "item",
                       "children": [
                         {
@@ -110,7 +112,7 @@
         "type": "file",
         "default": "/images/placeholder-img.webp"
       },
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "text": {

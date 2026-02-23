@@ -19,6 +19,7 @@
             {
               "type": "component",
               "component": "Subtitle",
+              "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
                 "align": "center"
@@ -38,6 +39,7 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",

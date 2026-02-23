@@ -1,23 +1,13 @@
 {
   "path": [
-    0,
-    6
+    0
   ],
   "nodeType": "component",
-  "componentName": "CTACentered",
-  "props": {
-    "title": "Ready to build something great?",
-    "text": "Start customizing this template today. It only takes a few minutes to make it yours.",
-    "buttonText": "Get started",
-    "buttonLink": "#",
-    "secondaryButtonText": "View documentation",
-    "secondaryButtonLink": "/docs",
-    "theme": "dark"
-  },
-  "childrenCount": 0,
+  "componentName": "Layout",
+  "childrenCount": 7,
   "currentPage": "/",
   "isEditingComponent": false,
   "navigationPath": [],
   "filePath": "pages/index.json",
-  "_updatedAt": "2026-02-23T09:43:47.622Z"
+  "_updatedAt": "2026-02-23T13:02:44.777Z"
 }

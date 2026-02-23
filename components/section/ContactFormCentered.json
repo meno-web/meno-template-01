@@ -30,6 +30,7 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",

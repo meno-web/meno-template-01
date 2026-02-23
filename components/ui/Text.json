@@ -3,7 +3,6 @@
     "structure": {
       "type": "node",
       "tag": "p",
-      "if": "{{render}}",
       "style": {
         "base": {
           "fontSize": {
@@ -82,9 +81,6 @@
           "right",
           "inherit"
         ]
-      },
-      "render": {
-        "type": "boolean"
       }
     }
   }

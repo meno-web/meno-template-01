@@ -28,7 +28,7 @@
             {
               "type": "list",
               "sourceType": "prop",
-              "source": "list",
+              "source": "items",
               "tag": false,
               "itemAs": "item",
               "children": [
@@ -89,7 +89,7 @@
       ]
     },
     "interface": {
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "label": {

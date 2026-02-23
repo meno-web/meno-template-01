@@ -36,11 +36,13 @@
                 "align": "center",
                 "maxWidth": "450px",
                 "isMarginBottom": true
-              }
+              },
+              "if": "{{text}}"
             },
             {
               "type": "component",
               "component": "ButtonList",
+              "if": "{{buttonText}}",
               "props": {
                 "justify": "center"
               },
@@ -57,6 +59,7 @@
                 {
                   "type": "component",
                   "component": "Button",
+                  "if": "{{secondaryButtonText}}",
                   "props": {
                     "text": "{{secondaryButtonText}}",
                     "link": "{{secondaryButtonLink}}",

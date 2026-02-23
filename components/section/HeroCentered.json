@@ -5,7 +5,7 @@
       "component": "Section",
       "props": {
         "theme": "{{theme}}",
-        "backgroundImage": "{{backgroundImage}}"
+        "backgroundImage": "{{image}}"
       },
       "children": [
         {
@@ -29,18 +29,19 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",
                 "align": "center",
                 "maxWidth": "640px",
-                "render": "{{text}}",
                 "variant": "light"
               }
             },
             {
               "type": "component",
               "component": "ButtonList",
+              "if": "{{buttonText}}",
               "children": [
                 {
                   "type": "component",
@@ -53,6 +54,7 @@
                 {
                   "type": "component",
                   "component": "Button",
+                  "if": "{{secondaryButtonText}}",
                   "props": {
                     "text": "{{secondaryButtonText}}",
                     "link": "{{secondaryButtonLink}}",
@@ -74,7 +76,7 @@
         "type": "rich-text",
         "default": "Create beautiful websites and applications with our powerful platform. Get started in minutes."
       },
-      "backgroundImage": {
+      "image": {
         "type": "file",
         "default": "/images/placeholder-img.webp",
         "accept": "image/*"

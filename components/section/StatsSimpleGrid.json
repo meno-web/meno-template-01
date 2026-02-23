@@ -20,6 +20,7 @@
             {
               "type": "component",
               "component": "Subtitle",
+              "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
                 "align": "center"
@@ -39,6 +40,7 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",
@@ -60,7 +62,7 @@
             {
               "type": "list",
               "sourceType": "prop",
-              "source": "{{list}}",
+              "source": "{{items}}",
               "itemAs": "item",
               "children": [
                 {
@@ -114,7 +116,7 @@
         "type": "rich-text",
         "default": "Our track record speaks for itself. Here are some key metrics."
       },
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "value": {

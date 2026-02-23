@@ -5,11 +5,17 @@
     "children": [
       {
         "type": "component",
-        "component": "FeatureBulletList"
+        "component": "FeatureBulletList",
+        "props": {
+          "if": false
+        }
       },
       {
         "type": "component",
-        "component": "LogoCloud"
+        "component": "LogoCloud",
+        "props": {
+          "if": false
+        }
       },
       {
         "type": "component",
@@ -17,7 +23,10 @@
       },
       {
         "type": "component",
-        "component": "TestimonialsGridAlt"
+        "component": "TestimonialsGridAlt",
+        "props": {
+          "theme": "muted"
+        }
       },
       {
         "type": "component",
@@ -60,7 +69,8 @@
           "gap": "80px",
           "theme": "light",
           "speed": "fast",
-          "imageHeight": "52px"
+          "imageHeight": "52px",
+          "if": false
         }
       },
       {

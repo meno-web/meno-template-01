@@ -19,6 +19,7 @@
             {
               "type": "component",
               "component": "Subtitle",
+              "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
                 "align": "center"
@@ -38,13 +39,12 @@
             {
               "type": "component",
               "component": "Text",
-              "if": true,
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",
                 "align": "center",
-                "maxWidth": "",
-                "render": "{{text}}"
+                "maxWidth": ""
               }
             }
           ]
@@ -60,7 +60,7 @@
             {
               "type": "list",
               "sourceType": "prop",
-              "source": "{{list}}",
+              "source": "{{items}}",
               "itemAs": "item",
               "children": [
                 {
@@ -201,7 +201,7 @@
         "type": "rich-text",
         "default": "Stay up to date with the latest news, tips, and insights."
       },
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "image": {

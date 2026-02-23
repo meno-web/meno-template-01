@@ -19,6 +19,7 @@
             {
               "type": "component",
               "component": "Subtitle",
+              "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
                 "align": {
@@ -54,6 +55,7 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",
@@ -82,7 +84,7 @@
             {
               "type": "list",
               "sourceType": "prop",
-              "source": "{{list}}",
+              "source": "{{items}}",
               "itemAs": "item",
               "children": [
                 {
@@ -133,7 +135,7 @@
                           }
                         }
                       ],
-                      "showIf": "{{item.icon}}"
+                      "if": "{{item.icon}}"
                     },
                     {
                       "type": "component",
@@ -160,7 +162,7 @@
                         "size": "small",
                         "color": "secondary"
                       },
-                      "showIf": "{{item.description}}"
+                      "if": "{{item.description}}"
                     }
                   ]
                 }
@@ -200,7 +202,7 @@
         "type": "boolean",
         "default": true
       },
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "value": {

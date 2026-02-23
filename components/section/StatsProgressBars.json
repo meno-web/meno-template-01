@@ -19,6 +19,7 @@
             {
               "type": "component",
               "component": "Subtitle",
+              "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
                 "align": {
@@ -54,6 +55,7 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",
@@ -82,7 +84,7 @@
             {
               "type": "list",
               "sourceType": "prop",
-              "source": "{{list}}",
+              "source": "{{items}}",
               "itemAs": "item",
               "children": [
                 {
@@ -168,7 +170,7 @@
                         "size": "small",
                         "color": "light"
                       },
-                      "showIf": "{{item.description}}"
+                      "if": "{{item.description}}"
                     }
                   ]
                 }
@@ -195,7 +197,7 @@
         "type": "boolean",
         "default": false
       },
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "label": {

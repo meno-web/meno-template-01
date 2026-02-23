@@ -34,6 +34,7 @@
                 {
                   "type": "component",
                   "component": "Text",
+                  "if": "{{text}}",
                   "props": {
                     "text": "{{text}}",
                     "size": "large",
@@ -45,6 +46,7 @@
                 {
                   "type": "component",
                   "component": "ButtonList",
+                  "if": "{{buttonText}}",
                   "props": {
                     "justify": "flex-start"
                   },
@@ -61,6 +63,7 @@
                     {
                       "type": "component",
                       "component": "Button",
+                      "if": "{{secondaryButtonText}}",
                       "props": {
                         "text": "{{secondaryButtonText}}",
                         "link": "{{secondaryButtonLink}}",

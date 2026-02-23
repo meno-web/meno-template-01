@@ -19,6 +19,7 @@
             {
               "type": "component",
               "component": "Subtitle",
+              "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
                 "align": "center"
@@ -38,6 +39,7 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",
@@ -59,7 +61,7 @@
             {
               "type": "list",
               "sourceType": "prop",
-              "source": "{{list}}",
+              "source": "{{items}}",
               "itemAs": "item",
               "children": [
                 {
@@ -91,7 +93,7 @@
         "type": "rich-text",
         "default": "Don't just take our word for it. Here's what real customers have to say."
       },
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "text": {

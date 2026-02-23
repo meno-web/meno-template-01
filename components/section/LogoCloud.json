@@ -18,6 +18,7 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "default",
@@ -52,7 +53,7 @@
             {
               "type": "list",
               "sourceType": "prop",
-              "source": "{{list}}",
+              "source": "{{items}}",
               "children": [
                 {
                   "type": "node",
@@ -92,7 +93,7 @@
         "type": "string",
         "default": "Trusted by leading companies"
       },
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "image": {

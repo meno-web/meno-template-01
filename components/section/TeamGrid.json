@@ -19,6 +19,7 @@
             {
               "type": "component",
               "component": "Subtitle",
+              "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
                 "align": "center"
@@ -38,6 +39,7 @@
             {
               "type": "component",
               "component": "Text",
+              "if": "{{text}}",
               "props": {
                 "text": "{{text}}",
                 "size": "large",
@@ -58,7 +60,7 @@
             {
               "type": "list",
               "sourceType": "prop",
-              "source": "{{list}}",
+              "source": "{{items}}",
               "itemAs": "item",
               "children": [
                 {
@@ -139,7 +141,7 @@
         "type": "rich-text",
         "default": "Our talented team is dedicated to delivering exceptional results."
       },
-      "list": {
+      "items": {
         "type": "list",
         "itemSchema": {
           "image": {
