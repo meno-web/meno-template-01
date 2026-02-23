@@ -1,17 +1,17 @@
 {
   "default": "light",
   "palette": {
-    "base-50": "#f7fee7",
-    "base-100": "#ecfccb",
-    "base-200": "#d9f99d",
-    "base-300": "#bef264",
-    "base-400": "#a3e635",
-    "base-500": "#84cc16",
-    "base-600": "#65a30d",
-    "base-700": "#4d7c0f",
-    "base-800": "#3f6212",
-    "base-900": "#365314",
-    "base-950": "#1a2e05"
+    "base-50": "#f9fafb",
+    "base-100": "#f3f4f6",
+    "base-200": "#e5e7eb",
+    "base-300": "#d1d5db",
+    "base-400": "#9ca3af",
+    "base-500": "#6b7280",
+    "base-600": "#4b5563",
+    "base-700": "#374151",
+    "base-800": "#1f2937",
+    "base-900": "#111827",
+    "base-950": "#030712"
   },
   "themes": {
     "light": {
@@ -24,7 +24,6 @@
         "border-100": "base-200",
         "h-span": "base-500",
         "text-200": "base-600",
-        "btn-bg": "base-900",
         "bg-100": "base-100",
         "bg-200": "base-200"
       }
@@ -39,7 +38,6 @@
         "border-100": "base-200",
         "h-span": "base-500",
         "text-200": "base-600",
-        "btn-bg": "base-900",
         "bg-100": "base-200",
         "bg-200": "base-300"
       }
@@ -53,7 +51,6 @@
         "border": "base-600",
         "border-100": "base-500",
         "h-span": "base-400",
-        "btn-bg": "base-50",
         "bg-100": "base-900",
         "bg-200": "base-800",
         "text-200": "base-300"

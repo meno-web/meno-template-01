@@ -5,172 +5,72 @@
     "children": [
       {
         "type": "component",
-        "component": "HeroCentered",
-        "props": {
-          "title": "Build your next <span class=\"custom-span\" data-meno-span=\"true\">great idea</span>",
-          "text": "A modern starter template for building professional, responsive websites. Customize it to match your brand and launch faster.",
-          "buttonText": "Get started",
-          "buttonLink": "#",
-          "secondaryButtonText": "Learn more",
-          "secondaryButtonLink": "#",
-          "backgroundImage": "",
-          "theme": "light"
-        }
+        "component": "FeatureBulletList"
       },
       {
         "type": "component",
-        "component": "BlogCardGrid",
-        "props": {
-          "theme": "muted"
-        }
+        "component": "LogoCloud"
       },
       {
         "type": "component",
-        "component": "ComparisonTable"
+        "component": "NewsletterInline"
       },
       {
         "type": "component",
-        "component": "FeatureIconGrid",
+        "component": "TestimonialsGridAlt"
+      },
+      {
+        "type": "component",
+        "component": "MarqueeImages",
         "props": {
-          "list": [
+          "items": [
             {
-              "icon": "zap",
-              "title": "Fast Performance",
-              "text": "Lightning-fast load times ensure your users never have to wait."
+              "image": "/images/placeholder-img.webp",
+              "alt": "Company 1"
             },
             {
-              "icon": "shield",
-              "title": "Secure by Design",
-              "text": "Enterprise-grade security protects your data at every level."
+              "image": "/images/placeholder-img.webp",
+              "alt": "Company 2"
             },
             {
-              "icon": "settings",
-              "title": "Easy Integration",
-              "text": "Connect with your favorite tools in minutes, not hours."
+              "image": "/images/placeholder-img.webp",
+              "alt": "Company 3"
             },
             {
-              "icon": "headphones",
-              "title": "24/7 Support",
-              "text": "Our team is always here to help whenever you need us."
+              "image": "/images/placeholder-img.webp",
+              "alt": "Company 4"
             },
             {
-              "icon": "trending-up",
-              "title": "Scalable",
-              "text": "Grow without limits as your business expands."
+              "image": "/images/placeholder-img.webp",
+              "alt": "Company 5"
             },
             {
-              "icon": "bar-chart-3",
-              "title": "Analytics",
-              "text": "Gain insights with powerful built-in analytics tools."
+              "image": "/images/placeholder-img.webp",
+              "alt": "Company 6"
+            },
+            {
+              "image": "/images/placeholder-img.webp",
+              "alt": "Logo"
+            },
+            {
+              "image": "/images/placeholder-img.webp",
+              "alt": "Logo"
             }
           ],
-          "columns": "3",
-          "theme": "light"
+          "gap": "80px",
+          "theme": "light",
+          "speed": "fast",
+          "imageHeight": "52px"
         }
       },
       {
         "type": "component",
-        "component": "FeatureIconGrid",
+        "component": "SliderCards",
         "props": {
-          "list": [
-            {
-              "icon": "zap",
-              "title": "Fast Performance",
-              "text": "Lightning-fast load times ensure your users never have to wait."
-            },
-            {
-              "icon": "shield",
-              "title": "Secure by Design",
-              "text": "Enterprise-grade security protects your data at every level."
-            },
-            {
-              "icon": "settings",
-              "title": "Easy Integration",
-              "text": "Connect with your favorite tools in minutes, not hours."
-            },
-            {
-              "icon": "headphones",
-              "title": "24/7 Support",
-              "text": "Our team is always here to help whenever you need us."
-            },
-            {
-              "icon": "trending-up",
-              "title": "Scalable",
-              "text": "Grow without limits as your business expands."
-            },
-            {
-              "icon": "bar-chart-3",
-              "title": "Analytics",
-              "text": "Gain insights with powerful built-in analytics tools."
-            }
-          ],
-          "columns": "3",
-          "theme": "muted"
-        }
-      },
-      {
-        "type": "component",
-        "component": "FeatureIconGrid",
-        "props": {
-          "list": [
-            {
-              "icon": "zap",
-              "title": "Fast Performance",
-              "text": "Lightning-fast load times ensure your users never have to wait."
-            },
-            {
-              "icon": "shield",
-              "title": "Secure by Design",
-              "text": "Enterprise-grade security protects your data at every level."
-            },
-            {
-              "icon": "settings",
-              "title": "Easy Integration",
-              "text": "Connect with your favorite tools in minutes, not hours."
-            },
-            {
-              "icon": "headphones",
-              "title": "24/7 Support",
-              "text": "Our team is always here to help whenever you need us."
-            },
-            {
-              "icon": "trending-up",
-              "title": "Scalable",
-              "text": "Grow without limits as your business expands."
-            },
-            {
-              "icon": "bar-chart-3",
-              "title": "Analytics",
-              "text": "Gain insights with powerful built-in analytics tools."
-            }
-          ],
-          "columns": "3",
-          "theme": "dark"
-        }
-      },
-      {
-        "type": "component",
-        "component": "FeatureSplitImageRight",
-        "props": {
-          "subtitle": "Responsive",
-          "title": "Built mobile-first for every device",
-          "text": "Your website looks great on phones, tablets, and desktops. No extra work needed - responsive design is built in from the start.",
-          "theme": "light"
-        }
-      },
-      {
-        "type": "component",
-        "component": "FaqAccordion"
-      },
-      {
-        "type": "component",
-        "component": "FeatureSplitImageLeft",
-        "props": {
-          "subtitle": "Customizable",
-          "title": "Make it yours in minutes",
-          "text": "Change colors, fonts, images, and content easily. Every element is designed to be modified without breaking the design.",
-          "image": "/images/placeholder-img.webp",
-          "theme": "light"
+          "theme": "light",
+          "autoplay": false,
+          "loop": true,
+          "cropped": false
         }
       },
       {

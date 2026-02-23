@@ -1,4 +1,4 @@
-<!-- MENO_DOCS_VERSION: 1.1 -->
+<!-- MENO_DOCS_VERSION: 1.2 -->
 # Meno Core Documentation
 
 ## Creating Components
@@ -341,3 +341,18 @@ Use in styles via \`var()\`: \`{ "fontSize": "var(--h1-fs)" }\`
 - \`components/\` - Component definitions organized by folder (see \`components.config.json\` for folder descriptions)
 - \`colors.json\` - CSS color variables
 - \`project.config.json\` - Project configuration
+
+---
+
+## Editor Selection Context
+
+When the Meno editor is running, the currently selected element is written to \`.meno/selection.json\`.
+Read this file to understand what the user is looking at. Key fields:
+- \`filePath\` - JSON file being edited (e.g., \`pages/index.json\`, \`components/Button.json\`)
+- \`path\` - Array path to selected node in the tree (e.g., \`[0, 1, 2]\`)
+- \`nodeType\` - Type: html, component, slot, embed, link, locale-list
+- \`tag\` - HTML tag (div, span, etc.) for html nodes
+- \`componentName\` - Component name for component instances
+- \`currentPage\` - Page route being previewed
+- \`style\` - Current styles on the node
+- \`props\` - Current props on the node

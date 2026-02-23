@@ -1,18 +1,5 @@
 {
   "component": {
-    "interface": {
-      "text": { "type": "string", "default": "1" },
-      "size": {
-        "type": "select",
-        "options": ["small", "medium", "large"],
-        "default": "large"
-      },
-      "color": {
-        "type": "select",
-        "options": ["primary", "text"],
-        "default": "primary"
-      }
-    },
     "structure": {
       "type": "node",
       "tag": "div",
@@ -20,7 +7,6 @@
         "base": {
           "fontWeight": "700",
           "lineHeight": "1",
-          "marginBottom": "16px",
           "fontSize": {
             "_mapping": true,
             "prop": "size",
@@ -39,6 +25,7 @@
             }
           }
         },
+        "tablet": {},
         "mobile": {
           "fontSize": {
             "_mapping": true,
@@ -51,7 +38,32 @@
           }
         }
       },
-      "children": ["{{text}}"]
+      "children": [
+        "{{text}}"
+      ]
+    },
+    "interface": {
+      "text": {
+        "type": "string",
+        "default": "1"
+      },
+      "size": {
+        "type": "select",
+        "default": "large",
+        "options": [
+          "small",
+          "medium",
+          "large"
+        ]
+      },
+      "color": {
+        "type": "select",
+        "default": "primary",
+        "options": [
+          "primary",
+          "text"
+        ]
+      }
     }
   }
 }

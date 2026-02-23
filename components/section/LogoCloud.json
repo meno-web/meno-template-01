@@ -29,48 +29,59 @@
           ]
         },
         {
-          "type": "list",
-          "sourceType": "prop",
-          "source": "{{list}}",
+          "type": "component",
+          "component": "Spacer",
+          "props": {
+            "size": "32"
+          }
+        },
+        {
+          "type": "node",
+          "tag": "div",
           "style": {
             "base": {
               "display": "flex",
-              "flexWrap": "wrap",
-              "justifyContent": "center",
-              "alignItems": "center",
               "gap": "40px",
-              "marginTop": "32px"
+              "alignItems": "center",
+              "justifyContent": "center"
             },
             "tablet": {},
             "mobile": {}
           },
           "children": [
             {
-              "type": "node",
-              "tag": "img",
-              "style": {
-                "base": {
-                  "height": "32px",
-                  "width": "auto",
-                  "opacity": "0.6",
-                  "transition": "opacity 0.2s ease"
-                }
-              },
-              "interactiveStyles": [
+              "type": "list",
+              "sourceType": "prop",
+              "source": "{{list}}",
+              "children": [
                 {
-                  "prefix": "",
-                  "postfix": ":hover",
+                  "type": "node",
+                  "tag": "img",
                   "style": {
                     "base": {
-                      "opacity": "1"
+                      "height": "32px",
+                      "width": "auto",
+                      "opacity": "0.6",
+                      "transition": "opacity 0.2s ease"
                     }
+                  },
+                  "interactiveStyles": [
+                    {
+                      "prefix": "",
+                      "postfix": ":hover",
+                      "style": {
+                        "base": {
+                          "opacity": "1"
+                        }
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "src": "{{item.image}}",
+                    "alt": "{{item.title}}"
                   }
                 }
-              ],
-              "attributes": {
-                "src": "{{item.image}}",
-                "alt": "{{item.title}}"
-              }
+              ]
             }
           ]
         }

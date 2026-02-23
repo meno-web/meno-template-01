@@ -63,29 +63,15 @@
               "itemAs": "item",
               "children": [
                 {
-                  "type": "node",
-                  "tag": "div",
-                  "style": {
-                    "base": {
-                      "backgroundColor": "var(--surface)",
-                      "borderRadius": "16px",
-                      "padding": "32px"
-                    }
-                  },
+                  "type": "component",
+                  "component": "Card",
                   "children": [
                     {
-                      "type": "node",
-                      "tag": "blockquote",
-                      "style": {
-                        "base": {
-                          "margin": "0 0 24px 0",
-                          "padding": "0",
-                          "fontSize": "16px",
-                          "lineHeight": "1.6",
-                          "color": "var(--text)"
-                        }
-                      },
-                      "children": "{{item.text}}"
+                      "type": "component",
+                      "component": "Text",
+                      "props": {
+                        "text": "{{item.text}}"
+                      }
                     },
                     {
                       "type": "node",
@@ -94,24 +80,18 @@
                         "base": {
                           "display": "flex",
                           "alignItems": "center",
-                          "gap": "12px"
+                          "gap": "12px",
+                          "marginTop": "24px"
                         }
                       },
                       "children": [
                         {
-                          "type": "node",
-                          "tag": "img",
-                          "style": {
-                            "base": {
-                              "width": "48px",
-                              "height": "48px",
-                              "borderRadius": "50%",
-                              "objectFit": "cover"
-                            }
-                          },
-                          "attributes": {
-                            "src": "{{item.image}}",
-                            "alt": "{{item.title}}"
+                          "type": "component",
+                          "component": "Avatar",
+                          "props": {
+                            "image": "{{item.image}}",
+                            "alt": "{{item.title}}",
+                            "size": "large"
                           }
                         },
                         {
@@ -119,26 +99,22 @@
                           "tag": "div",
                           "children": [
                             {
-                              "type": "node",
-                              "tag": "div",
-                              "style": {
-                                "base": {
-                                  "fontWeight": "600",
-                                  "color": "var(--text)"
-                                }
-                              },
-                              "children": "{{item.title}}"
+                              "type": "component",
+                              "component": "Heading",
+                              "props": {
+                                "text": "{{item.title}}",
+                                "size": "6",
+                                "tag": "0"
+                              }
                             },
                             {
-                              "type": "node",
-                              "tag": "div",
-                              "style": {
-                                "base": {
-                                  "color": "var(--text-secondary)",
-                                  "fontSize": "14px"
-                                }
-                              },
-                              "children": "{{item.label}}"
+                              "type": "component",
+                              "component": "Text",
+                              "props": {
+                                "text": "{{item.label}}",
+                                "variant": "light",
+                                "size": "small"
+                              }
                             }
                           ]
                         }

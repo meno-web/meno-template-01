@@ -17,12 +17,29 @@
           },
           "children": [
             {
-              "type": "component",
-              "component": "Image",
-              "props": {
-                "image": "{{image}}",
-                "height": "400px"
-              }
+              "type": "node",
+              "tag": "div",
+              "style": {
+                "base": {
+                  "width": "100%",
+                  "maxWidth": "900px"
+                },
+                "tablet": {},
+                "mobile": {}
+              },
+              "children": [
+                {
+                  "type": "component",
+                  "component": "Image",
+                  "props": {
+                    "image": "{{image}}",
+                    "height": "400px",
+                    "border": false,
+                    "rounded": "large",
+                    "objectFit": "cover"
+                  }
+                }
+              ]
             },
             {
               "type": "component",

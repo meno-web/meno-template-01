@@ -15,6 +15,11 @@
             {
               "type": "node",
               "tag": "div",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "justifyContent": "center"
+              },
               "children": [
                 {
                   "type": "component",
@@ -48,15 +53,6 @@
                       "type": "list",
                       "sourceType": "prop",
                       "source": "{{list}}",
-                      "style": {
-                        "base": {
-                          "display": "flex",
-                          "flexDirection": "column",
-                          "gap": "8px"
-                        },
-                        "tablet": {},
-                        "mobile": {}
-                      },
                       "itemAs": "item",
                       "children": [
                         {

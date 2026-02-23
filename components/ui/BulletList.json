@@ -9,7 +9,7 @@
           "margin": "0",
           "display": "flex",
           "flexDirection": "column",
-          "gap": "8px"
+          "gap": "12px"
         },
         "tablet": {},
         "mobile": {}

@@ -1,0 +1,253 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "label": "Slider",
+      "style": {
+        "base": {
+          "position": "relative"
+        }
+      },
+      "children": [
+        {
+          "type": "node",
+          "tag": "div",
+          "label": "Swiper container",
+          "style": {
+            "base": {
+              "overflow": {
+                "_mapping": true,
+                "prop": "cropped",
+                "values": {
+                  "true": "hidden",
+                  "false": "visible"
+                }
+              }
+            }
+          },
+          "attributes": {
+            "data-el": "swiper"
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "div",
+              "label": "Swiper wrapper",
+              "style": {
+                "base": {
+                  "display": "grid",
+                  "gridAutoFlow": "column",
+                  "gridAutoColumns": {
+                    "_mapping": true,
+                    "prop": "columns",
+                    "values": {
+                      "1": "100%",
+                      "2": "50%",
+                      "3": "33.333%",
+                      "4": "25%"
+                    }
+                  },
+                  "gap": "{{gap}}px",
+                  "overflowX": {
+                    "_mapping": true,
+                    "prop": "cropped",
+                    "values": {
+                      "true": "auto",
+                      "false": "visible"
+                    }
+                  }
+                },
+                "tablet": {
+                  "gridAutoColumns": {
+                    "_mapping": true,
+                    "prop": "columns",
+                    "values": {
+                      "1": "100%",
+                      "2": "50%",
+                      "3": "50%",
+                      "4": "50%"
+                    }
+                  }
+                },
+                "mobile": {
+                  "gridAutoColumns": "100%"
+                }
+              },
+              "attributes": {
+                "data-el": "swiper-wrapper"
+              },
+              "children": [
+                {
+                  "type": "slot"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "tag": "div",
+          "label": "Navigation",
+          "style": {
+            "base": {
+              "display": "flex",
+              "gap": "8px",
+              "justifyContent": "center",
+              "marginTop": "24px"
+            },
+            "tablet": {},
+            "mobile": {}
+          },
+          "children": [
+            {
+              "type": "node",
+              "tag": "button",
+              "label": "Prev button",
+              "style": {
+                "base": {
+                  "width": "44px",
+                  "height": "44px",
+                  "borderRadius": "50%",
+                  "backgroundColor": "var(--bg)",
+                  "border": "1px solid var(--border)",
+                  "display": "flex",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "cursor": "pointer",
+                  "transition": "background-color 0.2s ease, border-color 0.2s ease",
+                  "padding": "0",
+                  "color": "var(--text)",
+                  "paddingRight": "2px"
+                },
+                "tablet": {},
+                "mobile": {}
+              },
+              "interactiveStyles": [
+                {
+                  "postfix": ":hover",
+                  "style": {
+                    "base": {
+                      "backgroundColor": "var(--bg-100)",
+                      "borderColor": "var(--text)"
+                    }
+                  }
+                }
+              ],
+              "attributes": {
+                "data-el": "prev",
+                "aria-label": "Previous slide"
+              },
+              "children": [
+                {
+                  "type": "component",
+                  "component": "Icon",
+                  "props": {
+                    "icon": "chevron-left",
+                    "size": 20
+                  }
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "tag": "button",
+              "label": "Next button",
+              "style": {
+                "base": {
+                  "width": "44px",
+                  "height": "44px",
+                  "borderRadius": "50%",
+                  "backgroundColor": "var(--bg)",
+                  "border": "1px solid var(--border)",
+                  "display": "flex",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "cursor": "pointer",
+                  "transition": "background-color 0.2s ease, border-color 0.2s ease",
+                  "padding": "0",
+                  "color": "var(--text)",
+                  "paddingLeft": "2px"
+                },
+                "tablet": {},
+                "mobile": {}
+              },
+              "interactiveStyles": [
+                {
+                  "postfix": ":hover",
+                  "style": {
+                    "base": {
+                      "backgroundColor": "var(--bg-100)",
+                      "borderColor": "var(--text)"
+                    }
+                  }
+                }
+              ],
+              "attributes": {
+                "data-el": "next",
+                "aria-label": "Next slide"
+              },
+              "children": [
+                {
+                  "type": "component",
+                  "component": "Icon",
+                  "props": {
+                    "icon": "chevron-right",
+                    "size": 20
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "tag": "div",
+          "label": "Pagination",
+          "style": {
+            "base": {
+              "display": "flex",
+              "justifyContent": "center",
+              "gap": "8px",
+              "marginTop": "24px"
+            },
+            "tablet": {},
+            "mobile": {}
+          },
+          "attributes": {
+            "data-el": "pagination"
+          }
+        }
+      ]
+    },
+    "interface": {
+      "autoplay": {
+        "type": "boolean",
+        "default": false
+      },
+      "loop": {
+        "type": "boolean",
+        "default": true
+      },
+      "columns": {
+        "type": "select",
+        "default": "3",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "gap": {
+        "type": "number",
+        "default": 24
+      },
+      "cropped": {
+        "type": "boolean",
+        "default": true
+      }
+    },
+    "css": ".swiper-slide {\n  flex-shrink: 0;\n}\n.swiper-pagination-bullet {\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  background: var(--border);\n  opacity: 1;\n  transition: background 0.2s ease;\n}\n.swiper-pagination-bullet-active {\n  background: var(--text);\n}\n"
+  }
+}

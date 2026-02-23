@@ -1,0 +1,14 @@
+.swiper-slide {
+  flex-shrink: 0;
+}
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  opacity: 1;
+  transition: background 0.2s ease;
+}
+.swiper-pagination-bullet-active {
+  background: var(--text);
+}

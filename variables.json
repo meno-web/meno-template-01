@@ -200,7 +200,7 @@
     {
       "name": "Layout",
       "cssVar": "--l-ff",
-      "value": "Inter",
+      "value": "Outfit",
       "type": "none",
       "group": "font-family"
     }

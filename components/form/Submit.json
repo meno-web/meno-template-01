@@ -14,7 +14,8 @@
           "fontFamily": "inherit",
           "backgroundColor": "var(--text)",
           "color": "var(--bg)",
-          "transition": "opacity 0.2s"
+          "transition": "opacity 0.2s",
+          "whiteSpace": "nowrap"
         },
         "tablet": {},
         "mobile": {}

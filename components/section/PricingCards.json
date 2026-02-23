@@ -62,25 +62,17 @@
               "itemAs": "item",
               "children": [
                 {
-                  "type": "node",
-                  "tag": "div",
-                  "style": {
-                    "base": {
-                      "backgroundColor": "var(--surface)",
-                      "borderRadius": "16px",
-                      "padding": "32px",
-                      "border": "1px solid var(--border-100)",
-                      "display": "flex",
-                      "flexDirection": "column"
-                    }
-                  },
+                  "type": "component",
+                  "component": "Card",
                   "children": [
                     {
                       "type": "node",
                       "tag": "div",
                       "style": {
                         "base": {
-                          "marginBottom": "24px"
+                          "display": "flex",
+                          "flexDirection": "column",
+                          "height": "100%"
                         }
                       },
                       "children": [
@@ -105,78 +97,68 @@
                           },
                           "children": [
                             {
-                              "type": "node",
-                              "tag": "span",
-                              "style": {
-                                "base": {
-                                  "fontSize": "48px",
-                                  "fontWeight": "700",
-                                  "color": "var(--text)"
-                                }
-                              },
-                              "children": "{{item.value}}"
+                              "type": "component",
+                              "component": "StatNumber",
+                              "props": {
+                                "text": "{{item.value}}"
+                              }
                             },
                             {
-                              "type": "node",
-                              "tag": "span",
-                              "style": {
-                                "base": {
-                                  "fontSize": "16px",
-                                  "color": "var(--text-secondary)"
-                                }
-                              },
-                              "children": "{{item.label}}"
+                              "type": "component",
+                              "component": "Text",
+                              "props": {
+                                "text": "{{item.label}}",
+                                "variant": "light",
+                                "size": "small"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "component",
+                          "component": "Spacer",
+                          "props": {
+                            "size": "16"
+                          }
+                        },
+                        {
+                          "type": "component",
+                          "component": "Text",
+                          "props": {
+                            "text": "{{item.text}}",
+                            "variant": "light"
+                          }
+                        },
+                        {
+                          "type": "component",
+                          "component": "Spacer",
+                          "props": {
+                            "size": "32"
+                          }
+                        },
+                        {
+                          "type": "node",
+                          "tag": "div",
+                          "style": {
+                            "base": {
+                              "display": "flex"
+                            },
+                            "tablet": {},
+                            "mobile": {}
+                          },
+                          "children": [
+                            {
+                              "type": "component",
+                              "component": "Button",
+                              "props": {
+                                "text": "{{item.buttonText}}",
+                                "link": "{{item.link}}",
+                                "variant": "primary"
+                              }
                             }
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "node",
-                      "tag": "div",
-                      "style": {
-                        "base": {
-                          "flex": "1",
-                          "marginBottom": "32px",
-                          "fontSize": "15px",
-                          "lineHeight": "1.8",
-                          "color": "var(--text-secondary)"
-                        }
-                      },
-                      "children": "{{item.text}}"
-                    },
-                    {
-                      "type": "node",
-                      "tag": "a",
-                      "style": {
-                        "base": {
-                          "display": "block",
-                          "textAlign": "center",
-                          "padding": "14px 24px",
-                          "backgroundColor": "var(--primary)",
-                          "color": "#ffffff",
-                          "borderRadius": "8px",
-                          "fontSize": "16px",
-                          "fontWeight": "600",
-                          "textDecoration": "none",
-                          "transition": "all 0.2s ease"
-                        }
-                      },
-                      "interactiveStyles": [
-                        {
-                          "prefix": "",
-                          "postfix": ":hover",
-                          "style": {
-                            "base": {
-                              "opacity": "0.9"
-                            }
-                          }
-                        }
-                      ],
-                      "attributes": {
-                        "href": "{{item.link}}"
-                      },
-                      "children": "{{item.buttonText}}"
                     }
                   ]
                 }

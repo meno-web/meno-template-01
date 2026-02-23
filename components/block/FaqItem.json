@@ -6,8 +6,11 @@
       "label": "Item",
       "style": {
         "base": {
-          "borderBottom": "1px solid var(--border)"
-        }
+          "borderBottom": "1px solid",
+          "borderColor": "var(--border)"
+        },
+        "tablet": {},
+        "mobile": {}
       },
       "attributes": {
         "class": "{{isOpen ? \"is-open\" : \"\"}}"
@@ -22,7 +25,12 @@
               "padding": "20px 0 8px",
               "fontWeight": "600",
               "cursor": "pointer",
-              "opacity": "0.6"
+              "opacity": "0.6",
+              "transition": "opacity .2s",
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "space-between",
+              "gap": "16px"
             },
             "tablet": {},
             "mobile": {}
@@ -53,14 +61,66 @@
           "children": [
             "",
             {
-              "type": "component",
-              "component": "Heading",
-              "props": {
-                "text": "{{question}}",
-                "tag": "4",
-                "variant": "default",
-                "size": "3"
-              }
+              "type": "node",
+              "tag": "div",
+              "style": {
+                "base": {
+                  "flex": "1",
+                  "minWidth": "0",
+                  "marginBottom": "calc(-1 * var(--h3-s))"
+                }
+              },
+              "children": [
+                {
+                  "type": "component",
+                  "component": "Heading",
+                  "props": {
+                    "text": "{{question}}",
+                    "tag": "4",
+                    "variant": "default",
+                    "size": "3"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "tag": "span",
+              "label": "icon",
+              "style": {
+                "base": {
+                  "display": "flex",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "flexShrink": "0",
+                  "alignSelf": "center",
+                  "transition": "transform 0.3s ease",
+                  "marginBottom": "8px"
+                },
+                "tablet": {},
+                "mobile": {}
+              },
+              "interactiveStyles": [
+                {
+                  "name": "is open",
+                  "prefix": ".is-open ",
+                  "style": {
+                    "base": {
+                      "transform": "rotate(180deg)"
+                    }
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "type": "component",
+                  "component": "Icon",
+                  "props": {
+                    "icon": "chevron-down",
+                    "size": 20
+                  }
+                }
+              ]
             }
           ]
         },
@@ -71,9 +131,10 @@
           "style": {
             "base": {
               "margin": "0",
-              "paddingBottom": "30px",
               "maxWidth": "800px",
-              "display": "none"
+              "display": "grid",
+              "gridTemplateRows": "0fr",
+              "transition": "grid-template-rows 0.3s ease"
             },
             "tablet": {},
             "mobile": {}
@@ -84,7 +145,7 @@
               "prefix": ".is-open ",
               "style": {
                 "base": {
-                  "display": "block"
+                  "gridTemplateRows": "1fr"
                 }
               }
             }
@@ -93,15 +154,38 @@
             "data-el": "answer"
           },
           "children": [
-            "",
             {
-              "type": "component",
-              "component": "Text",
-              "props": {
-                "size": "default",
-                "text": "{{answer}} ",
-                "variant": "default"
-              }
+              "type": "node",
+              "tag": "div",
+              "style": {
+                "base": {
+                  "overflow": "hidden",
+                  "minHeight": "0"
+                }
+              },
+              "children": [
+                {
+                  "type": "node",
+                  "tag": "div",
+                  "style": {
+                    "base": {
+                      "paddingBottom": "30px"
+                    }
+                  },
+                  "children": [
+                    "",
+                    {
+                      "type": "component",
+                      "component": "Text",
+                      "props": {
+                        "size": "default",
+                        "text": "{{answer}} ",
+                        "variant": "default"
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

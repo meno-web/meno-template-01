@@ -83,39 +83,11 @@
           },
           "children": [
             {
-              "type": "embed",
-              "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg>",
-              "style": {
-                "base": {
-                  "display": "flex",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "fontSize": "var(--ts-fs)",
-                  "textAlign": "center",
-                  "backgroundColor": {
-                    "_mapping": true,
-                    "prop": "variant",
-                    "values": {
-                      "default": "var(--bg-100)",
-                      "primary": "var(--primary)"
-                    }
-                  },
-                  "color": {
-                    "_mapping": true,
-                    "prop": "variant",
-                    "values": {
-                      "default": "var(--text)",
-                      "primary": "#fff"
-                    }
-                  },
-                  "height": "16px"
-                },
-                "tablet": {
-                  "padding": "10px 40px"
-                },
-                "mobile": {
-                  "padding": "10px 20px"
-                }
+              "type": "component",
+              "component": "Icon",
+              "props": {
+                "icon": "x",
+                "size": 16
               }
             }
           ]

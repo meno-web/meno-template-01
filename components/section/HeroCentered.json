@@ -21,9 +21,10 @@
               "props": {
                 "text": "{{title}}",
                 "tag": "1",
-                "size": "1",
-                "align": "center"
-              }
+                "align": "center",
+                "size": "1"
+              },
+              "tag": "4"
             },
             {
               "type": "component",

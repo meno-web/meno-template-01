@@ -31,7 +31,8 @@
               "medium": "8px"
             }
           },
-          "width": "{{width}}"
+          "width": "{{width}}",
+          "aspectRatio": "{{aspectRatio}}"
         },
         "tablet": {},
         "mobile": {}
@@ -103,6 +104,10 @@
       "width": {
         "type": "string",
         "default": "100%"
+      },
+      "aspectRatio": {
+        "type": "string",
+        "default": ""
       }
     }
   }

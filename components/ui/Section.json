@@ -24,7 +24,16 @@
               "none": "0"
             }
           },
-          "backgroundColor": "var(--bg)"
+          "backgroundColor": "var(--bg)",
+          "width": "100%",
+          "overflow": {
+            "_mapping": true,
+            "prop": "cropped",
+            "values": {
+              "true": "hidden",
+              "false": "visible"
+            }
+          }
         },
         "tablet": {},
         "mobile": {}
@@ -152,6 +161,10 @@
           "small",
           "none"
         ]
+      },
+      "cropped": {
+        "type": "boolean",
+        "default": true
       }
     }
   }
