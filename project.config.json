@@ -106,5 +106,16 @@
     "styleSrc": [
       "https://cdn.jsdelivr.net"
     ]
+  },
+  "i18n": {
+    "locales": [
+      {
+        "code": "en",
+        "name": "English",
+        "nativeName": "English",
+        "langTag": "en-US",
+        "icon": ""
+      }
+    ]
   }
 }

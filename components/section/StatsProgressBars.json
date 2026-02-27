@@ -154,10 +154,12 @@
                             "base": {
                               "width": "{{item.value}}%",
                               "height": "100%",
-                              "backgroundColor": "var(--primary)",
+                              "backgroundColor": "var(--text)",
                               "borderRadius": "4px",
                               "transition": "width 0.3s ease"
-                            }
+                            },
+                            "tablet": {},
+                            "mobile": {}
                           }
                         }
                       ]
@@ -165,12 +167,12 @@
                     {
                       "type": "component",
                       "component": "Text",
+                      "if": "{{item.description}}",
                       "props": {
                         "text": "{{item.description}}",
                         "size": "small",
                         "color": "light"
-                      },
-                      "if": "{{item.description}}"
+                      }
                     }
                   ]
                 }
