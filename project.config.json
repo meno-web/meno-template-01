@@ -52,7 +52,10 @@
   "libraries": {
     "js": [
       {
-        "url": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+        "url": "/libraries/swiper.min.js",
+        "mode": "defer",
+        "position": "body-end",
+        "type": "classic"
       }
     ]
   },
