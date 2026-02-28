@@ -15,49 +15,6 @@
   },
   "fonts": [
     {
-      "path": "/fonts/Inter-VariableFont_opsz,wght.woff2",
-      "family": "Inter",
-      "weight": 100,
-      "weightMax": 900,
-      "fontDisplay": "swap"
-    },
-    {
-      "path": "/fonts/manrope-variable.woff2",
-      "family": "Manrope",
-      "weight": 200,
-      "weightMax": 800
-    },
-    {
-      "path": "/fonts/josefin-sans-variable.woff2",
-      "family": "Josefin Sans",
-      "weight": 100,
-      "weightMax": 700
-    },
-    {
-      "path": "/fonts/geist-variable.woff2",
-      "family": "Geist",
-      "weight": 100,
-      "weightMax": 900
-    },
-    {
-      "path": "/fonts/libre-franklin-variable.woff2",
-      "family": "Libre Franklin",
-      "weight": 100,
-      "weightMax": 900
-    },
-    {
-      "path": "/fonts/playfair-display-variable-1.woff2",
-      "family": "Playfair Display",
-      "weight": 400,
-      "weightMax": 900
-    },
-    {
-      "path": "/fonts/quicksand-variable.woff2",
-      "family": "Quicksand",
-      "weight": 300,
-      "weightMax": 700
-    },
-    {
       "path": "/fonts/outfit-variable.woff2",
       "family": "Outfit",
       "weight": 100,
