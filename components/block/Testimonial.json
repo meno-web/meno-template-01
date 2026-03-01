@@ -13,7 +13,8 @@
           "flexDirection": "column",
           "gap": "24px",
           "height": "100%",
-          "boxSizing": "border-box"
+          "boxSizing": "border-box",
+          "justifyContent": "space-between"
         },
         "tablet": {
           "padding": "24px",
@@ -72,7 +73,8 @@
                   "component": "Heading",
                   "props": {
                     "text": "{{name}}",
-                    "size": "6"
+                    "size": "6",
+                    "tag": "3"
                   }
                 },
                 {
@@ -80,15 +82,6 @@
                   "component": "Text",
                   "props": {
                     "text": "{{role}}",
-                    "size": "small",
-                    "variant": "light"
-                  }
-                },
-                {
-                  "type": "component",
-                  "component": "Text",
-                  "props": {
-                    "text": "{{company}}",
                     "size": "small",
                     "variant": "light"
                   }
@@ -111,10 +104,6 @@
       "role": {
         "type": "string",
         "default": "Design Engineer"
-      },
-      "company": {
-        "type": "string",
-        "default": "Acme Inc"
       },
       "avatar": {
         "type": "file",

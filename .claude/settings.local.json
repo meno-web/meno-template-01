@@ -17,7 +17,10 @@
       "Bash(pip3 install:*)",
       "WebFetch(domain:swiperjs.com)",
       "WebFetch(domain:github.com)",
-      "Bash(xargs rm:*)"
+      "Bash(xargs rm:*)",
+      "WebFetch(domain:www.embla-carousel.com)",
+      "Bash(tr ;:*)",
+      "Bash(wc:*)"
     ]
   }
 }

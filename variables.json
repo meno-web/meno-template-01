@@ -113,7 +113,7 @@
       "name": "Heading",
       "prop_name": "Size 6",
       "cssVar": "--h6-s",
-      "value": "10px",
+      "value": "2px",
       "type": "margin",
       "group": "margin"
     },

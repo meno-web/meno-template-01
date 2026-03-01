@@ -41,6 +41,9 @@
         "tablet": {},
         "mobile": {}
       },
+      "attributes": {
+        "fade": "{{fade}}"
+      },
       "children": [
         "{{text}}"
       ]
@@ -81,6 +84,10 @@
           "right",
           "inherit"
         ]
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

@@ -1,0 +1,23 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "label": "AnimateInView",
+      "style": {
+        "base": {}
+      },
+      "children": [
+        {
+          "type": "slot"
+        }
+      ]
+    },
+    "interface": {
+      "delay": {
+        "type": "string",
+        "default": 0
+      }
+    }
+  }
+}

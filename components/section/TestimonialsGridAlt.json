@@ -54,7 +54,7 @@
           "type": "component",
           "component": "Grid",
           "props": {
-            "columns": "3",
+            "columns": "2",
             "gap": "24"
           },
           "children": [

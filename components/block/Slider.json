@@ -6,76 +6,52 @@
       "label": "Slider",
       "style": {
         "base": {
-          "position": "relative"
+          "position": "relative",
+          "--columns": {
+            "_mapping": true,
+            "prop": "columns",
+            "values": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "--gap": "{{gap}}",
+          "--peek": {
+            "_mapping": true,
+            "prop": "cropped",
+            "values": {
+              "true": "0",
+              "false": "0.2"
+            }
+          }
         }
       },
       "children": [
         {
           "type": "node",
           "tag": "div",
-          "label": "Swiper container",
+          "label": "Viewport",
           "style": {
-            "base": {
-              "overflow": {
-                "_mapping": true,
-                "prop": "cropped",
-                "values": {
-                  "true": "hidden",
-                  "false": "visible"
-                }
-              }
-            }
+            "base": {}
           },
           "attributes": {
-            "data-el": "swiper"
+            "data-el": "viewport"
           },
           "children": [
             {
               "type": "node",
               "tag": "div",
-              "label": "Swiper wrapper",
+              "label": "Container",
               "style": {
                 "base": {
-                  "display": "grid",
-                  "gridAutoFlow": "column",
-                  "gridAutoColumns": {
-                    "_mapping": true,
-                    "prop": "columns",
-                    "values": {
-                      "1": "100%",
-                      "2": "50%",
-                      "3": "33.333%",
-                      "4": "25%"
-                    }
-                  },
-                  "gap": "{{gap}}px",
-                  "overflowX": {
-                    "_mapping": true,
-                    "prop": "cropped",
-                    "values": {
-                      "true": "auto",
-                      "false": "visible"
-                    }
-                  }
-                },
-                "tablet": {
-                  "gridAutoColumns": {
-                    "_mapping": true,
-                    "prop": "columns",
-                    "values": {
-                      "1": "100%",
-                      "2": "50%",
-                      "3": "50%",
-                      "4": "50%"
-                    }
-                  }
-                },
-                "mobile": {
-                  "gridAutoColumns": "100%"
+                  "display": "flex",
+                  "gap": "{{gap}}px"
                 }
               },
               "attributes": {
-                "data-el": "swiper-wrapper"
+                "data-el": "container"
               },
               "children": [
                 {
@@ -248,6 +224,13 @@
         "default": true
       }
     },
-    "css": ".swiper-slide {\n  flex-shrink: 0;\n}\n.swiper-pagination-bullet {\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  background: var(--border);\n  opacity: 1;\n  transition: background 0.2s ease;\n}\n.swiper-pagination-bullet-active {\n  background: var(--text);\n}\n"
+    "css": ".embla-dot {\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  background: var(--border);\n  opacity: 1;\n  border: none;\n  padding: 0;\n  cursor: pointer;\n  transition: background 0.2s ease;\n}\n.embla-dot.is-active {\n  background: var(--text);\n}\n[data-el=\"viewport\"] {\n  overflow-x: auto;\n  scroll-snap-type: x mandatory;\n  -webkit-overflow-scrolling: touch;\n  scrollbar-width: none;\n}\n[data-el=\"viewport\"]::-webkit-scrollbar {\n  display: none;\n}\n[data-el=\"container\"] > * {\n  flex: 0 0 calc((100% - (var(--columns, 3) - 1) * var(--gap, 24) * 1px) / var(--columns, 3));\n  min-width: 0;\n  scroll-snap-align: start;\n}\n@media (max-width: 1024px) {\n  [data-el=\"container\"] > * {\n    flex: 0 0 calc((100% - (min(var(--columns, 3), 2) - 1) * var(--gap, 24) * 1px) / min(var(--columns, 3), 2));\n  }\n}\n@media (max-width: 540px) {\n  [data-el=\"container\"] > * {\n    flex: 0 0 100%;\n  }\n}\n",
+    "libraries": {
+      "js": [
+        {
+          "url": "/libraries/embla-carousel.umd.js"
+        }
+      ]
+    }
   }
 }

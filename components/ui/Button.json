@@ -113,6 +113,9 @@
         }
       ]
     },
+    "attributes": {
+      "fade": "{{fade}}"
+    },
     "interface": {
       "text": {
         "type": "string",
@@ -132,6 +135,10 @@
       },
       "link": {
         "type": "link"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

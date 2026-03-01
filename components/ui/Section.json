@@ -125,11 +125,6 @@
       ]
     },
     "interface": {
-      "backgroundImage": {
-        "type": "file",
-        "default": "",
-        "accept": "image/*"
-      },
       "theme": {
         "type": "select",
         "default": "light",
@@ -161,6 +156,11 @@
           "small",
           "none"
         ]
+      },
+      "backgroundImage": {
+        "type": "file",
+        "default": "",
+        "accept": "image/*"
       },
       "cropped": {
         "type": "boolean",

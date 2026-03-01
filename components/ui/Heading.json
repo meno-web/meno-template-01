@@ -59,6 +59,9 @@
         "tablet": {},
         "mobile": {}
       },
+      "attributes": {
+        "fade": "{{fade}}"
+      },
       "children": [
         "{{text}}"
       ]
@@ -113,6 +116,10 @@
           "6",
           "size"
         ]
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     },
     "css": "h1 .custom-span,\nh2 .custom-span,\nh3 .custom-span,\nh4 .custom-span,\nh5 .custom-span { color: var(--h-span); }"

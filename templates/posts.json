@@ -21,13 +21,13 @@
       "fields": {
         "title": {
           "type": "string",
-          "label": "Title",
-          "required": true
+          "required": true,
+          "label": "Title"
         },
         "slug": {
           "type": "string",
-          "label": "URL Slug",
-          "required": true
+          "required": true,
+          "label": "URL Slug"
         },
         "excerpt": {
           "type": "text",

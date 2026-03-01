@@ -1,17 +1,11 @@
 {
   "component": {
-    "interface": {
-      "theme": {
-        "type": "select",
-        "default": "primary",
-        "enumName": "theme"
-      }
-    },
     "structure": {
       "type": "component",
       "component": "Section",
       "props": {
-        "theme": "{{theme}}"
+        "theme": "{{theme}}",
+        "cropped": false
       },
       "children": [
         {
@@ -35,10 +29,26 @@
               "children": [
                 {
                   "type": "component",
+                  "component": "Image",
+                  "props": {
+                    "aspectRatio": "16/6",
+                    "image": "{{cms.featuredImage}}",
+                    "rounded": "medium"
+                  }
+                },
+                {
+                  "type": "component",
+                  "component": "Spacer",
+                  "props": {
+                    "size": "32"
+                  }
+                },
+                {
+                  "type": "component",
                   "component": "Heading",
                   "props": {
                     "text": "{{cms.title}}",
-                    "size": "1",
+                    "size": "2",
                     "tag": "1"
                   }
                 },
@@ -47,7 +57,8 @@
                   "component": "Text",
                   "props": {
                     "text": "{{cms.publishedAt}}",
-                    "size": "small"
+                    "size": "small",
+                    "variant": "lighter"
                   }
                 }
               ]
@@ -66,6 +77,13 @@
           ]
         }
       ]
+    },
+    "interface": {
+      "theme": {
+        "type": "select",
+        "default": "primary",
+        "enumName": "theme"
+      }
     }
   }
 }

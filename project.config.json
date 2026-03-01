@@ -49,16 +49,6 @@
     "appleTouchIcon": "/icons/icon-180.png"
   },
   "baseComponent": "Layout",
-  "libraries": {
-    "js": [
-      {
-        "url": "/libraries/swiper.min.js",
-        "mode": "defer",
-        "position": "body-end",
-        "type": "classic"
-      }
-    ]
-  },
   "csp": {
     "scriptSrc": [
       "https://cdn.jsdelivr.net"
@@ -75,6 +65,21 @@
         "nativeName": "English",
         "langTag": "en-US",
         "icon": ""
+      }
+    ]
+  },
+  "libraries": {
+    "css": [
+      {
+        "url": "/libraries/fade.css",
+        "disableEditor": true
+      }
+    ],
+    "js": [
+      {
+        "url": "/libraries/fade.js",
+        "mode": "defer",
+        "position": "body-end"
       }
     ]
   }

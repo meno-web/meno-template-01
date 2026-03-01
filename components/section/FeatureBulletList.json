@@ -28,7 +28,8 @@
                     "text": "{{title}}",
                     "size": "2",
                     "tag": "2",
-                    "align": "left"
+                    "align": "left",
+                    "fade": "0"
                   }
                 },
                 {
@@ -36,7 +37,8 @@
                   "component": "Text",
                   "if": "{{text}}",
                   "props": {
-                    "text": "{{text}}"
+                    "text": "{{text}}",
+                    "fade": "0.2"
                   }
                 },
                 {
@@ -61,7 +63,8 @@
                           "type": "component",
                           "component": "BulletItem",
                           "props": {
-                            "text": "{{item.text}}"
+                            "text": "{{item.text}}",
+                            "fade": "{{0.4+itemIndex*0.2}}"
                           }
                         }
                       ]
@@ -90,7 +93,8 @@
                     "objectFit": "contain",
                     "height": "auto",
                     "border": true,
-                    "rounded": "large"
+                    "rounded": "large",
+                    "fade": "0.4"
                   }
                 }
               ]

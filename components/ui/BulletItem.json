@@ -16,6 +16,9 @@
         "tablet": {},
         "mobile": {}
       },
+      "attributes": {
+        "fade": "{{fade}}"
+      },
       "children": [
         {
           "type": "node",
@@ -64,6 +67,10 @@
       "text": {
         "type": "rich-text",
         "default": "List item"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }
