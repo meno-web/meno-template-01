@@ -42,7 +42,8 @@
       ],
       "attributes": {
         "data-tab-button": "true",
-        "class": "{{isActive ? \"is-active\" : \"\"}}"
+        "class": "{{isActive ? \"is-active\" : \"\"}}",
+        "fade": "{{fade}}"
       },
       "children": "{{text}}"
     },
@@ -53,6 +54,10 @@
       "text": {
         "type": "string",
         "default": "Tab"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

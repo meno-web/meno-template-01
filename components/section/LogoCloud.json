@@ -24,7 +24,8 @@
                 "size": "default",
                 "align": "center",
                 "maxWidth": "100%",
-                "isMarginBottom": true
+                "isMarginBottom": true,
+                "fade": "0"
               }
             }
           ]
@@ -84,7 +85,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "attributes": {
+            "fade": 0.2
+          }
         }
       ]
     },

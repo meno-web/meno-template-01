@@ -1,7 +1,14 @@
 {
   "component": {
     "interface": {
-      "maxWidth": { "type": "string", "default": "800px" }
+      "maxWidth": {
+        "type": "string",
+        "default": "800px"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
+      }
     },
     "structure": {
       "type": "node",
@@ -17,7 +24,14 @@
           "borderColor": "var(--border)"
         }
       },
-      "children": [{ "type": "slot" }]
+      "children": [
+        {
+          "type": "slot"
+        }
+      ],
+      "attributes": {
+        "fade": "{{fade}}"
+      }
     }
   }
 }

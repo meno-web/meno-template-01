@@ -63,7 +63,10 @@
             }
           ]
         }
-      ]
+      ],
+      "attributes": {
+        "fade": "{{fade}}"
+      }
     },
     "interface": {
       "justify": {
@@ -84,6 +87,10 @@
           "large",
           "none"
         ]
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

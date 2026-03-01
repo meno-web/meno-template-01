@@ -20,7 +20,8 @@
         "autoPlay": "{{autoPlay}}",
         "loop": "{{loop}}",
         "muted": "{{muted}}",
-        "playsInline": "{{playsInline}}"
+        "playsInline": "{{playsInline}}",
+        "fade": "{{fade}}"
       },
       "children": []
     },
@@ -54,6 +55,10 @@
       "playsInline": {
         "type": "boolean",
         "default": true
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

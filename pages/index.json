@@ -7,25 +7,49 @@
         "type": "component",
         "component": "FeatureBulletList",
         "props": {
-          "if": false
+          "if": false,
+          "title": "A powerful tool designed for your workflow",
+          "text": "Streamline your process with an intuitive interface that puts you in control. Focus on what matters while we handle the complexity",
+          "items": [
+            {
+              "text": "Intuitive interface — Get started quickly without a steep learning curve"
+            },
+            {
+              "text": "Real-time collaboration — Work together with your team seamlessly"
+            },
+            {
+              "text": "Flexible and extensible — Adapt the platform to fit your specific needs"
+            }
+          ],
+          "theme": "light"
         }
       },
       {
         "type": "component",
         "component": "LogoCloud",
         "props": {
-          "if": false
+          "if": false,
+          "theme": "light"
         }
       },
       {
         "type": "component",
-        "component": "NewsletterInline"
+        "component": "NewsletterInline",
+        "props": {
+          "theme": "light",
+          "text": "Get the latest updates, articles, and resources delivered straight to your inbox.",
+          "placeholderText": "Enter your email",
+          "privacyText": "We respect your privacy. Unsubscribe at any time.",
+          "buttonText": "Subscribe"
+        }
       },
       {
         "type": "component",
         "component": "TestimonialsGridAlt",
         "props": {
-          "theme": "muted"
+          "theme": "muted",
+          "title": "What our customers say",
+          "text": "Get the latest updates, articles, and resources delivered straight to your inbox."
         }
       },
       {

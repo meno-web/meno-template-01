@@ -40,7 +40,10 @@
       },
       "children": [
         "{{text}}"
-      ]
+      ],
+      "attributes": {
+        "fade": "{{fade}}"
+      }
     },
     "interface": {
       "text": {
@@ -63,6 +66,10 @@
           "primary",
           "text"
         ]
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

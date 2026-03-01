@@ -155,6 +155,9 @@
         },
         "tablet": {},
         "mobile": {}
+      },
+      "attributes": {
+        "fade": "{{fade}}"
       }
     },
     "interface": {
@@ -166,6 +169,10 @@
       "size": {
         "type": "number",
         "default": 24
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

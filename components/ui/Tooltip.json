@@ -11,7 +11,8 @@
         }
       },
       "attributes": {
-        "data-el": "tooltip"
+        "data-el": "tooltip",
+        "fade": "{{fade}}"
       },
       "interactiveStyles": [
         {
@@ -100,7 +101,14 @@
       "position": {
         "type": "select",
         "default": "top",
-        "options": ["top", "bottom"]
+        "options": [
+          "top",
+          "bottom"
+        ]
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

@@ -20,7 +20,8 @@
       "Bash(xargs rm:*)",
       "WebFetch(domain:www.embla-carousel.com)",
       "Bash(tr ;:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(node:*)"
     ]
   }
 }

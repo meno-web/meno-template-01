@@ -5,7 +5,8 @@
       "tag": "nav",
       "label": "breadcrumbs",
       "attributes": {
-        "aria-label": "Breadcrumbs"
+        "aria-label": "Breadcrumbs",
+        "fade": "{{fade}}"
       },
       "children": [
         {
@@ -123,6 +124,10 @@
             }
           }
         ]
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

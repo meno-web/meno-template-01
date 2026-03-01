@@ -39,7 +39,8 @@
         "mobile": {}
       },
       "attributes": {
-        "theme": "{{theme}}"
+        "theme": "{{theme}}",
+        "fade": "{{fade}}"
       },
       "children": [
         {
@@ -165,6 +166,10 @@
       "cropped": {
         "type": "boolean",
         "default": true
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

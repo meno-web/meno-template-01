@@ -40,7 +40,10 @@
         {
           "type": "slot"
         }
-      ]
+      ],
+      "attributes": {
+        "fade": "{{fade}}"
+      }
     },
     "interface": {
       "isCenter": {
@@ -50,6 +53,10 @@
       "maxWidth": {
         "type": "string",
         "default": "100%"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

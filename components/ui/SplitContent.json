@@ -19,9 +19,17 @@
         {
           "type": "slot"
         }
-      ]
+      ],
+      "attributes": {
+        "fade": "{{fade}}"
+      }
     },
-    "interface": {},
+    "interface": {
+      "fade": {
+        "type": "string",
+        "default": ""
+      }
+    },
     "category": "ui"
   }
 }

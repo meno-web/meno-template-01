@@ -9,7 +9,8 @@
         }
       },
       "attributes": {
-        "data-active-tab": "{{activeTab}}"
+        "data-active-tab": "{{activeTab}}",
+        "fade": "{{fade}}"
       },
       "children": [
         {
@@ -112,6 +113,10 @@
       "activeTab": {
         "type": "number",
         "default": "0"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

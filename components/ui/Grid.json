@@ -46,7 +46,10 @@
         {
           "type": "slot"
         }
-      ]
+      ],
+      "attributes": {
+        "fade": "{{fade}}"
+      }
     },
     "interface": {
       "columns": {
@@ -70,6 +73,10 @@
           "32",
           "40"
         ]
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

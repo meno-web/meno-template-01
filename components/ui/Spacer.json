@@ -26,13 +26,31 @@
         "tablet": {},
         "mobile": {}
       },
-      "children": []
+      "children": [],
+      "attributes": {
+        "fade": "{{fade}}"
+      }
     },
     "interface": {
       "size": {
         "type": "select",
-        "options": ["8", "16", "24", "32", "40", "48", "56", "64", "72", "80"],
+        "options": [
+          "8",
+          "16",
+          "24",
+          "32",
+          "40",
+          "48",
+          "56",
+          "64",
+          "72",
+          "80"
+        ],
         "default": "64"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

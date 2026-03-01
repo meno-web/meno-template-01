@@ -36,7 +36,8 @@
         }
       ],
       "attributes": {
-        "data-modal-id": "{{modalId}}"
+        "data-modal-id": "{{modalId}}",
+        "fade": "{{fade}}"
       },
       "children": [
         {
@@ -112,6 +113,10 @@
       "isOpen": {
         "type": "boolean",
         "default": false
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

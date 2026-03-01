@@ -37,7 +37,10 @@
         "tablet": {},
         "mobile": {}
       },
-      "children": "{{text}}"
+      "children": "{{text}}",
+      "attributes": {
+        "fade": "{{fade}}"
+      }
     },
     "interface": {
       "text": {
@@ -53,6 +56,10 @@
           "success",
           "warning"
         ]
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

@@ -38,7 +38,8 @@
       "attributes": {
         "type": "button",
         "aria-label": "Toggle theme",
-        "data-theme-toggle": ""
+        "data-theme-toggle": "",
+        "fade": "{{fade}}"
       },
       "children": [
         {
@@ -97,6 +98,11 @@
         }
       ]
     },
-    "interface": {}
+    "interface": {
+      "fade": {
+        "type": "string",
+        "default": ""
+      }
+    }
   }
 }
