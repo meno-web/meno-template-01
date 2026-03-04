@@ -22,7 +22,8 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
-                "align": "center"
+                "align": "center",
+                "fade": "0"
               }
             },
             {
@@ -33,7 +34,8 @@
                 "maxWidth": "640px",
                 "align": "center",
                 "size": "2",
-                "tag": "2"
+                "tag": "2",
+                "fade": "0.2"
               }
             },
             {
@@ -44,7 +46,8 @@
                 "text": "{{text}}",
                 "size": "large",
                 "align": "center",
-                "maxWidth": "580px"
+                "maxWidth": "580px",
+                "fade": "0.4"
               }
             }
           ]

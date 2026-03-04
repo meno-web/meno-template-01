@@ -17,7 +17,8 @@
             "size": "1",
             "tag": "1",
             "variant": "default",
-            "align": "left"
+            "align": "left",
+            "fade": "0"
           }
         },
         {
@@ -29,7 +30,8 @@
             "size": "large",
             "maxWidth": "580px",
             "isMarginBottom": true,
-            "align": "left"
+            "align": "left",
+            "fade": "0.2"
           }
         }
       ]

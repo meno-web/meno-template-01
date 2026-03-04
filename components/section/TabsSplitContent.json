@@ -25,7 +25,8 @@
                 "maxWidth": "640px",
                 "align": "center",
                 "size": "2",
-                "tag": "2"
+                "tag": "2",
+                "fade": "0"
               }
             },
             {
@@ -37,7 +38,8 @@
                 "size": "large",
                 "align": "center",
                 "maxWidth": "580px",
-                "isMarginBottom": true
+                "isMarginBottom": true,
+                "fade": "0.2"
               }
             }
           ]
@@ -45,6 +47,9 @@
         {
           "type": "component",
           "component": "Tab",
+          "props": {
+            "fade": "0.4"
+          },
           "children": [
             {
               "type": "component",

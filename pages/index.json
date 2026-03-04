@@ -5,125 +5,36 @@
     "children": [
       {
         "type": "component",
-        "component": "FeatureBulletList",
+        "component": "HeroCentered",
         "props": {
-          "if": false,
-          "title": "A powerful tool designed for your workflow",
-          "text": "Streamline your process with an intuitive interface that puts you in control. Focus on what matters while we handle the complexity",
-          "items": [
-            {
-              "text": "Intuitive interface — Get started quickly without a steep learning curve"
-            },
-            {
-              "text": "Real-time collaboration — Work together with your team seamlessly"
-            },
-            {
-              "text": "Flexible and extensible — Adapt the platform to fit your specific needs"
-            }
-          ],
           "theme": "light"
         }
       },
       {
         "type": "component",
-        "component": "LogoCloud",
+        "component": "FeatureIconGrid",
         "props": {
-          "if": false,
           "theme": "light"
         }
       },
       {
         "type": "component",
-        "component": "NewsletterInline",
+        "component": "FaqAccordion",
         "props": {
-          "theme": "light",
-          "text": "Get the latest updates, articles, and resources delivered straight to your inbox.",
-          "placeholderText": "Enter your email",
-          "privacyText": "We respect your privacy. Unsubscribe at any time.",
-          "buttonText": "Subscribe"
-        }
-      },
-      {
-        "type": "component",
-        "component": "TestimonialsGridAlt",
-        "props": {
-          "theme": "muted",
-          "title": "What our customers say",
-          "text": "Get the latest updates, articles, and resources delivered straight to your inbox."
-        }
-      },
-      {
-        "type": "component",
-        "component": "MarqueeImages",
-        "props": {
-          "items": [
-            {
-              "image": "/images/placeholder-img.webp",
-              "alt": "Company 1"
-            },
-            {
-              "image": "/images/placeholder-img.webp",
-              "alt": "Company 2"
-            },
-            {
-              "image": "/images/placeholder-img.webp",
-              "alt": "Company 3"
-            },
-            {
-              "image": "/images/placeholder-img.webp",
-              "alt": "Company 4"
-            },
-            {
-              "image": "/images/placeholder-img.webp",
-              "alt": "Company 5"
-            },
-            {
-              "image": "/images/placeholder-img.webp",
-              "alt": "Company 6"
-            },
-            {
-              "image": "/images/placeholder-img.webp",
-              "alt": "Logo"
-            },
-            {
-              "image": "/images/placeholder-img.webp",
-              "alt": "Logo"
-            }
-          ],
-          "gap": "80px",
-          "theme": "light",
-          "speed": "fast",
-          "imageHeight": "52px",
-          "if": false
-        }
-      },
-      {
-        "type": "component",
-        "component": "SliderCards",
-        "props": {
-          "theme": "light",
-          "autoplay": false,
-          "loop": true,
-          "cropped": false
+          "theme": "primary"
         }
       },
       {
         "type": "component",
         "component": "CTACentered",
         "props": {
-          "title": "Ready to build something great?",
-          "text": "Start customizing this template today. It only takes a few minutes to make it yours.",
-          "buttonText": "Get started",
-          "buttonLink": "#",
-          "secondaryButtonText": "View documentation",
-          "secondaryButtonLink": "/docs",
           "theme": "dark"
         }
       }
     ]
   },
   "meta": {
-    "title": "Starter Template - Build Your Website",
-    "description": "A modern starter template for building beautiful, responsive websites. Customize it to match your brand and launch faster."
+    "title": "Meno Starter Template",
+    "description": "A clean, customizable starter template for Meno. Includes 40+ components, responsive design, and CMS support — ready to make your own."
   }
 }

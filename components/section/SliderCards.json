@@ -23,7 +23,8 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
-                "align": "center"
+                "align": "center",
+                "fade": "0"
               }
             },
             {
@@ -34,7 +35,8 @@
                 "maxWidth": "",
                 "align": "center",
                 "size": "2",
-                "tag": "2"
+                "tag": "2",
+                "fade": "0.2"
               }
             },
             {
@@ -45,7 +47,8 @@
                 "text": "{{text}}",
                 "size": "large",
                 "align": "center",
-                "maxWidth": "360px"
+                "maxWidth": "360px",
+                "fade": "0.4"
               }
             }
           ]
@@ -58,7 +61,8 @@
             "autoplay": "{{autoplay}}",
             "loop": "{{loop}}",
             "columns": "3",
-            "cropped": "{{cropped}}"
+            "cropped": "{{cropped}}",
+            "fade": "0.4"
           },
           "children": [
             {

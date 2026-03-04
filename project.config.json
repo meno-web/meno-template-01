@@ -75,6 +75,12 @@
         "mode": "defer",
         "position": "body-end"
       }
+    ],
+    "css": [
+      {
+        "url": "/libraries/fade.css",
+        "disableEditor": true
+      }
     ]
   }
 }

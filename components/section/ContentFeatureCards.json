@@ -23,7 +23,8 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
-                "align": "center"
+                "align": "center",
+                "fade": "0"
               }
             },
             {
@@ -34,7 +35,8 @@
                 "maxWidth": "",
                 "align": "center",
                 "size": "2",
-                "tag": "2"
+                "tag": "2",
+                "fade": "0.2"
               }
             },
             {
@@ -46,7 +48,8 @@
                 "size": "large",
                 "align": "center",
                 "maxWidth": "",
-                "isMarginBottom": true
+                "isMarginBottom": true,
+                "fade": "0.4"
               }
             }
           ]
@@ -56,7 +59,8 @@
           "component": "Grid",
           "props": {
             "columns": "2",
-            "gap": "24"
+            "gap": "24",
+            "fade": "0.4"
           },
           "children": [
             {

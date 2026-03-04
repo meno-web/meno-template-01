@@ -24,6 +24,7 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
+                "fade": "0",
                 "align": "left"
               }
             },
@@ -34,6 +35,7 @@
                 "text": "{{title}}",
                 "size": "2",
                 "tag": "2",
+                "fade": "0.2",
                 "align": "left"
               }
             },
@@ -44,6 +46,7 @@
               "props": {
                 "text": "{{text}}",
                 "size": "large",
+                "fade": "0.4",
                 "align": "left"
               }
             }
@@ -65,7 +68,8 @@
                   "props": {
                     "question": "{{item.title}}",
                     "answer": "{{item.text}}",
-                    "isOpen": "{{item.isOpen}}"
+                    "isOpen": "{{item.isOpen}}",
+                    "fade": "{{0.4+itemIndex*0.2}}"
                   }
                 }
               ]
@@ -85,7 +89,7 @@
       },
       "text": {
         "type": "rich-text",
-        "default": "Find answers to common questions about our product and services."
+        "default": "Common questions about using this template and getting started with Meno."
       },
       "theme": {
         "type": "select",
@@ -110,21 +114,21 @@
         },
         "default": [
           {
-            "title": "What is included in the free trial?",
-            "text": "Our 14-day free trial gives you full access to all features, so you can explore everything before committing to a plan.",
+            "title": "How do I customize this template?",
+            "text": "Open any page in the Meno editor, select elements to change their content, styles, and layout. You can also use AI to generate new sections or modify existing ones.",
             "isOpen": true
           },
           {
-            "title": "Can I cancel my subscription at any time?",
-            "text": "Yes. There are no long-term contracts. You can cancel your subscription at any time and your account will remain active until the end of the billing period."
+            "title": "Can I add more pages?",
+            "text": "Yes. Create new pages from the editor and compose them using any of the 40+ included section components. Each page gets its own route automatically."
           },
           {
-            "title": "What kind of support do you offer?",
-            "text": "All plans include email support. Premium plans also include priority support with a 24-hour response SLA and access to a dedicated support channel."
+            "title": "How do I change colors and fonts?",
+            "text": "Open the project settings to update your color palette and typography. Changes apply globally across all components that use design tokens."
           },
           {
-            "title": "Is my data secure?",
-            "text": "Absolutely. We use AES-256 encryption at rest and in transit, conduct regular security audits, and follow industry best practices to keep your data safe."
+            "title": "Can I connect a custom domain?",
+            "text": "Absolutely. Once your site is ready, publish it and connect your own domain through the hosting settings in your Meno dashboard."
           }
         ]
       }

@@ -13,7 +13,8 @@
         "mobile": {}
       },
       "attributes": {
-        "class": "{{isOpen ? \"is-open\" : \"\"}}"
+        "class": "{{isOpen ? \"is-open\" : \"\"}}",
+        "fade": "{{fade}}"
       },
       "children": [
         {
@@ -202,6 +203,10 @@
       },
       "isOpen": {
         "type": "boolean"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

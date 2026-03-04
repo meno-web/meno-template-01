@@ -22,6 +22,7 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
+                "fade": "0",
                 "align": "center"
               }
             },
@@ -31,6 +32,7 @@
               "props": {
                 "text": "{{title}}",
                 "maxWidth": "",
+                "fade": "0.2",
                 "align": "center",
                 "size": "2",
                 "tag": "2"
@@ -43,6 +45,7 @@
               "props": {
                 "text": "{{text}}",
                 "size": "large",
+                "fade": "0.4",
                 "align": "center",
                 "maxWidth": ""
               }
@@ -52,6 +55,9 @@
         {
           "type": "node",
           "tag": "div",
+          "attributes": {
+            "fade": 0.4
+          },
           "style": {
             "base": {
               "overflowX": "auto"

@@ -28,7 +28,8 @@
                     "maxWidth": "100%",
                     "align": "left",
                     "size": "2",
-                    "tag": "2"
+                    "tag": "2",
+                    "fade": "0"
                   }
                 },
                 {
@@ -40,7 +41,8 @@
                     "size": "large",
                     "align": "left",
                     "maxWidth": "100%",
-                    "isMarginBottom": true
+                    "isMarginBottom": true,
+                    "fade": "0.2"
                   }
                 },
                 {
@@ -48,7 +50,8 @@
                   "component": "ButtonList",
                   "if": "{{buttonText}}",
                   "props": {
-                    "justify": "flex-start"
+                    "justify": "flex-start",
+                    "fade": "0.4"
                   },
                   "children": [
                     {
@@ -79,7 +82,8 @@
               "component": "Image",
               "props": {
                 "image": "{{image}}",
-                "rounded": "large"
+                "rounded": "large",
+                "fade": "0.4"
               }
             }
           ]

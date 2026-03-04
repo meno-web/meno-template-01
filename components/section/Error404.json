@@ -38,6 +38,9 @@
                   "fontSize": "80px"
                 }
               },
+              "attributes": {
+                "fade": 0
+              },
               "children": "404"
             },
             {
@@ -47,7 +50,8 @@
                 "text": "Page not found",
                 "size": "2",
                 "tag": "1",
-                "align": "center"
+                "align": "center",
+                "fade": "0.2"
               }
             },
             {
@@ -57,7 +61,8 @@
                 "text": "The page you're looking for doesn't exist or has been moved.",
                 "align": "center",
                 "maxWidth": "320px",
-                "isMarginBottom": true
+                "isMarginBottom": true,
+                "fade": "0.4"
               }
             },
             {
@@ -69,7 +74,8 @@
                 "isMarginTop": true,
                 "link": {
                   "href": "/"
-                }
+                },
+                "fade": "0.6"
               }
             }
           ]

@@ -36,7 +36,8 @@
                     "height": "400px",
                     "border": false,
                     "rounded": "large",
-                    "objectFit": "cover"
+                    "objectFit": "cover",
+                    "fade": "0"
                   }
                 }
               ]
@@ -57,7 +58,8 @@
                 "align": "center",
                 "size": "1",
                 "tag": "1",
-                "variant": "default"
+                "variant": "default",
+                "fade": "0.2"
               }
             },
             {
@@ -69,7 +71,8 @@
                 "size": "large",
                 "align": "center",
                 "maxWidth": "580px",
-                "isMarginBottom": true
+                "isMarginBottom": true,
+                "fade": "0.4"
               }
             }
           ]

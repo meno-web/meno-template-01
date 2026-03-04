@@ -35,7 +35,8 @@
                     "maxWidth": "100%",
                     "align": "center",
                     "size": "2",
-                    "tag": "3"
+                    "tag": "3",
+                    "fade": "0"
                   }
                 }
               ]
@@ -56,6 +57,9 @@
                   "alignItems": "center",
                   "gap": "16px"
                 }
+              },
+              "attributes": {
+                "fade": 0.2
               },
               "children": [
                 {

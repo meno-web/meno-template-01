@@ -3,6 +3,9 @@
     "structure": {
       "type": "node",
       "tag": "blockquote",
+      "attributes": {
+        "fade": "{{fade}}"
+      },
       "style": {
         "base": {
           "backgroundColor": "var(--bg-100)",
@@ -108,6 +111,10 @@
       "avatar": {
         "type": "file",
         "default": "/images/placeholder-img.webp"
+      },
+      "fade": {
+        "type": "string",
+        "default": ""
       }
     }
   }

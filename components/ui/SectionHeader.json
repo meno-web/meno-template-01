@@ -31,19 +31,16 @@
           "marginLeft": "auto"
         },
         "tablet": {},
-        "mobile": {
-          "paddingLeft": "0",
-          "paddingBottom": "32px"
-        }
+        "mobile": {}
+      },
+      "attributes": {
+        "fade": "{{fade}}"
       },
       "children": [
         {
           "type": "slot"
         }
-      ],
-      "attributes": {
-        "fade": "{{fade}}"
-      }
+      ]
     },
     "interface": {
       "isCenter": {

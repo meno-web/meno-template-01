@@ -21,7 +21,8 @@
       "WebFetch(domain:www.embla-carousel.com)",
       "Bash(tr ;:*)",
       "Bash(wc:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(do python3:*)"
     ]
   }
 }

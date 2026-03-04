@@ -30,7 +30,8 @@
                     "true": "center",
                     "false": "left"
                   }
-                }
+                },
+                "fade": "0"
               }
             },
             {
@@ -49,7 +50,8 @@
                   }
                 },
                 "size": "2",
-                "tag": "2"
+                "tag": "2",
+                "fade": "0.2"
               }
             },
             {
@@ -68,7 +70,8 @@
                     "false": "left"
                   }
                 },
-                "maxWidth": "580px"
+                "maxWidth": "580px",
+                "fade": "0.4"
               }
             }
           ]
@@ -78,7 +81,8 @@
           "component": "Grid",
           "props": {
             "columns": "{{columns}}",
-            "gap": "24"
+            "gap": "24",
+            "fade": "0.4"
           },
           "children": [
             {

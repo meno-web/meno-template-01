@@ -24,7 +24,8 @@
                 "maxWidth": "440px",
                 "align": "center",
                 "size": "2",
-                "tag": "2"
+                "tag": "2",
+                "fade": "0"
               }
             },
             {
@@ -35,7 +36,8 @@
                 "size": "large",
                 "align": "center",
                 "maxWidth": "450px",
-                "isMarginBottom": true
+                "isMarginBottom": true,
+                "fade": "0.2"
               },
               "if": "{{text}}"
             },
@@ -44,7 +46,8 @@
               "component": "ButtonList",
               "if": "{{buttonText}}",
               "props": {
-                "justify": "center"
+                "justify": "center",
+                "fade": "0.4"
               },
               "children": [
                 {
@@ -75,15 +78,15 @@
     "interface": {
       "title": {
         "type": "rich-text",
-        "default": "Ready to get started?"
+        "default": "Make this template yours"
       },
       "text": {
         "type": "rich-text",
-        "default": "Join thousands of satisfied customers who have already transformed their business."
+        "default": "Replace this content, swap the colors, and publish your site. It only takes a few minutes."
       },
       "buttonText": {
         "type": "string",
-        "default": "Get started"
+        "default": "Start editing"
       },
       "buttonLink": {
         "type": "link",
@@ -91,7 +94,7 @@
       },
       "secondaryButtonText": {
         "type": "string",
-        "default": "Learn more"
+        "default": "Browse templates"
       },
       "secondaryButtonLink": {
         "type": "link",

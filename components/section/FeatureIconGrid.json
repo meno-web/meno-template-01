@@ -22,7 +22,8 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
-                "align": "center"
+                "align": "center",
+                "fade": "0"
               }
             },
             {
@@ -32,7 +33,8 @@
                 "text": "{{title}}",
                 "align": "center",
                 "size": "2",
-                "tag": "2"
+                "tag": "2",
+                "fade": "0.2"
               }
             },
             {
@@ -44,7 +46,8 @@
                 "size": "large",
                 "align": "center",
                 "maxWidth": "400px",
-                "variant": "default"
+                "variant": "default",
+                "fade": "0.4"
               }
             }
           ]
@@ -53,7 +56,8 @@
           "type": "component",
           "component": "Grid",
           "props": {
-            "columns": "{{columns}}"
+            "columns": "{{columns}}",
+            "fade": "0.4"
           },
           "children": [
             {
@@ -144,11 +148,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Why choose us"
+        "default": "Everything you need to launch"
       },
       "text": {
         "type": "rich-text",
-        "default": "Discover the key features that make our platform stand out from the rest."
+        "default": "This template comes packed with ready-to-use sections. Customize them to match your brand."
       },
       "columns": {
         "type": "select",
@@ -184,33 +188,33 @@
         "default": [
           {
             "icon": "zap",
-            "title": "Fast Performance",
-            "text": "Lightning-fast load times ensure your users never have to wait."
-          },
-          {
-            "icon": "shield",
-            "title": "Secure by Design",
-            "text": "Enterprise-grade security protects your data at every level."
+            "title": "Responsive Design",
+            "text": "Every section adapts beautifully to desktop, tablet, and mobile screens."
           },
           {
             "icon": "settings",
-            "title": "Easy Integration",
-            "text": "Connect with your favorite tools in minutes, not hours."
+            "title": "Easy to Customize",
+            "text": "Change colors, fonts, spacing, and content directly in the visual editor."
+          },
+          {
+            "icon": "shield",
+            "title": "Production Ready",
+            "text": "Clean markup, fast load times, and SEO-friendly structure out of the box."
           },
           {
             "icon": "headphones",
-            "title": "24/7 Support",
-            "text": "Our team is always here to help whenever you need us."
+            "title": "40+ Components",
+            "text": "Hero sections, feature grids, testimonials, pricing cards, and more included."
           },
           {
             "icon": "trending-up",
-            "title": "Scalable",
-            "text": "Grow without limits as your business expands."
+            "title": "Scalable Structure",
+            "text": "Add pages, sections, and components as your site grows."
           },
           {
             "icon": "bar-chart-3",
-            "title": "Analytics",
-            "text": "Gain insights with powerful built-in analytics tools."
+            "title": "CMS Built In",
+            "text": "Manage blog posts, team members, and dynamic content with collections."
           }
         ]
       }

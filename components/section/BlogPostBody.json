@@ -33,7 +33,8 @@
                   "props": {
                     "aspectRatio": "16/6",
                     "image": "{{cms.featuredImage}}",
-                    "rounded": "medium"
+                    "rounded": "medium",
+                    "fade": "0"
                   }
                 },
                 {
@@ -49,7 +50,8 @@
                   "props": {
                     "text": "{{cms.title}}",
                     "size": "2",
-                    "tag": "1"
+                    "tag": "1",
+                    "fade": "0.2"
                   }
                 },
                 {
@@ -58,7 +60,8 @@
                   "props": {
                     "text": "{{cms.publishedAt}}",
                     "size": "small",
-                    "variant": "lighter"
+                    "variant": "lighter",
+                    "fade": "0.4"
                   }
                 }
               ]

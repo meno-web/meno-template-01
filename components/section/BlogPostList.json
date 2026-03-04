@@ -17,14 +17,16 @@
               "props": {
                 "text": "Blog",
                 "size": "1",
-                "tag": "1"
+                "tag": "1",
+                "fade": "0"
               }
             },
             {
               "type": "component",
               "component": "Text",
               "props": {
-                "text": "Latest articles and insights from our team."
+                "text": "Latest articles and insights from our team.",
+                "fade": "0.2"
               }
             }
           ]
@@ -74,7 +76,8 @@
                 }
               ],
               "attributes": {
-                "href": "/blog/{{post.slug}}"
+                "href": "/blog/{{post.slug}}",
+                "fade": "{{0.4+itemIndex*0.2}}"
               },
               "children": [
                 {

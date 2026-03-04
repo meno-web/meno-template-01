@@ -22,7 +22,8 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
-                "align": "center"
+                "align": "center",
+                "fade": "0"
               }
             },
             {
@@ -33,7 +34,8 @@
                 "maxWidth": "",
                 "align": "center",
                 "size": "2",
-                "tag": "2"
+                "tag": "2",
+                "fade": "0.2"
               }
             },
             {
@@ -44,7 +46,8 @@
                 "text": "{{text}}",
                 "size": "large",
                 "align": "center",
-                "maxWidth": ""
+                "maxWidth": "",
+                "fade": "0.4"
               }
             }
           ]
@@ -54,7 +57,8 @@
           "component": "Grid",
           "props": {
             "columns": "3",
-            "gap": "16"
+            "gap": "16",
+            "fade": "0.4"
           },
           "children": [
             {

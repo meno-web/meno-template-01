@@ -17,7 +17,8 @@
               "component": "Image",
               "props": {
                 "image": "{{image}}",
-                "rounded": "large"
+                "rounded": "large",
+                "fade": "0.4"
               }
             },
             {
@@ -34,7 +35,8 @@
                   "if": "{{subtitle}}",
                   "props": {
                     "text": "{{subtitle}}",
-                    "align": "left"
+                    "align": "left",
+                    "fade": "0"
                   }
                 },
                 {
@@ -45,7 +47,8 @@
                     "maxWidth": "100%",
                     "align": "left",
                     "size": "2",
-                    "tag": "2"
+                    "tag": "2",
+                    "fade": "0.2"
                   }
                 },
                 {
@@ -56,7 +59,8 @@
                     "text": "{{text}}",
                     "size": "large",
                     "align": "left",
-                    "maxWidth": "100%"
+                    "maxWidth": "100%",
+                    "fade": "0.4"
                   }
                 }
               ]

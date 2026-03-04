@@ -35,7 +35,8 @@
         }
       ],
       "attributes": {
-        "href": "{{href}}"
+        "href": "{{href}}",
+        "fade": "{{fade}}"
       },
       "children": [
         {
@@ -117,6 +118,10 @@
         "default": ""
       },
       "excerpt": {
+        "type": "string",
+        "default": ""
+      },
+      "fade": {
         "type": "string",
         "default": ""
       }

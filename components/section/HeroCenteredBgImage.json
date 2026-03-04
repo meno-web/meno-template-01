@@ -4,7 +4,8 @@
       "type": "component",
       "component": "Section",
       "props": {
-        "theme": "{{theme}}"
+        "theme": "{{theme}}",
+        "backgroundImage": "{{image}}"
       },
       "children": [
         {
@@ -34,7 +35,7 @@
                 "size": "large",
                 "align": "center",
                 "maxWidth": "640px",
-                "variant": "light",
+                "variant": "default",
                 "fade": "0.2"
               }
             },
@@ -73,15 +74,20 @@
     "interface": {
       "title": {
         "type": "rich-text",
-        "default": "Your website, <span>built visually</span>"
+        "default": "Build something amazing"
       },
       "text": {
         "type": "rich-text",
-        "default": "Design and publish professional websites without writing code. Start with this template and make it yours in minutes."
+        "default": "Create beautiful websites and applications with our powerful platform. Get started in minutes."
+      },
+      "image": {
+        "type": "file",
+        "default": "/images/placeholder-img.webp",
+        "accept": "image/*"
       },
       "buttonText": {
         "type": "string",
-        "default": "Start building"
+        "default": "Get started"
       },
       "buttonLink": {
         "type": "link",
@@ -89,7 +95,7 @@
       },
       "secondaryButtonText": {
         "type": "string",
-        "default": "View components"
+        "default": "Learn more"
       },
       "secondaryButtonLink": {
         "type": "link",
@@ -97,7 +103,7 @@
       },
       "theme": {
         "type": "select",
-        "default": "light",
+        "default": "dark",
         "enumName": "theme"
       }
     }

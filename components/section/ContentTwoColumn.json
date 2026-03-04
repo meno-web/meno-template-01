@@ -22,6 +22,7 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
+                "fade": "0",
                 "align": "center"
               }
             },
@@ -31,6 +32,7 @@
               "props": {
                 "text": "{{title}}",
                 "maxWidth": "",
+                "fade": "0.2",
                 "align": "center",
                 "size": "2",
                 "tag": "2"
@@ -43,6 +45,7 @@
               "props": {
                 "text": "{{text}}",
                 "size": "large",
+                "fade": "0.4",
                 "align": "center",
                 "maxWidth": "",
                 "isMarginBottom": true
@@ -59,6 +62,7 @@
               "component": "Text",
               "props": {
                 "text": "{{leftText}}",
+                "fade": "0.4",
                 "size": "default",
                 "align": "left",
                 "maxWidth": "100%"
@@ -69,6 +73,7 @@
               "component": "Text",
               "props": {
                 "text": "{{rightText}}",
+                "fade": "0.6",
                 "size": "default",
                 "align": "left",
                 "maxWidth": "100%"

@@ -84,7 +84,8 @@
               "if": "{{subtitle}}",
               "props": {
                 "text": "{{subtitle}}",
-                "align": "center"
+                "align": "center",
+                "fade": "0"
               }
             },
             {
@@ -94,7 +95,8 @@
                 "text": "{{title}}",
                 "size": "2",
                 "tag": "2",
-                "align": "center"
+                "align": "center",
+                "fade": "0.2"
               }
             },
             {
@@ -104,7 +106,8 @@
               "props": {
                 "text": "{{text}}",
                 "size": "large",
-                "align": "center"
+                "align": "center",
+                "fade": "0.4"
               }
             }
           ]
@@ -119,6 +122,9 @@
         {
           "type": "component",
           "component": "Table",
+          "props": {
+            "fade": "0.4"
+          },
           "children": [
             {
               "type": "list",

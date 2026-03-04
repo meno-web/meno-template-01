@@ -12,7 +12,7 @@
             "prop": "variant",
             "values": {
               "default": "var(--bg-100)",
-              "light": "var(--bg)"
+              "light": "var(--bg-200)"
             }
           },
           "borderRadius": "6px"
@@ -20,14 +20,14 @@
         "tablet": {},
         "mobile": {}
       },
+      "attributes": {
+        "fade": "{{fade}}"
+      },
       "children": [
         {
           "type": "slot"
         }
-      ],
-      "attributes": {
-        "fade": "{{fade}}"
-      }
+      ]
     },
     "interface": {
       "variant": {
