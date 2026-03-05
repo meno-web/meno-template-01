@@ -5,7 +5,7 @@ Meno has a built-in CMS for managing dynamic content. Collection names are user-
 ### CMS File Structure
 \`\`\`
 project/
-├── pages/templates/         # CMS template pages (one per collection)
+├── templates/         # CMS template pages (one per collection)
 │   └── {collection}.json    # e.g., posts.json, products.json, team.json
 └── cms/                     # CMS item data
     └── {collection}/        # Folder matches collection ID
@@ -13,7 +13,7 @@ project/
 \`\`\`
 
 ### Defining a CMS Collection
-Create a template page at \`pages/templates/{collection}.json\`. Add \`source: "cms"\` and a \`cms\` schema INSIDE \`meta\`:
+Create a template page at \`templates/{collection}.json\`. Add \`source: "cms"\` and a \`cms\` schema INSIDE \`meta\`:
 
 **CRITICAL: The \`cms\` object MUST be inside \`meta\`, not at root level!**
 

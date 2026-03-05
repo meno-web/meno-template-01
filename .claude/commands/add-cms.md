@@ -18,7 +18,7 @@ Set up a new CMS collection with schema, template page, and sample content.
 1. **Understand the request**: Parse $ARGUMENTS for the content type
 2. **Design the schema**: Choose appropriate field types for the content
 3. **Create files**:
-   - `pages/templates/{collection}.json` - Template page with CMS schema
+   - `templates/{collection}.json` - Template page with CMS schema
    - `cms/{collection}/sample.json` - Sample content item
 
 ## Key Rules
@@ -116,7 +116,7 @@ cms/
 User: `/add-cms blog posts`
 
 Actions:
-1. Create `pages/templates/posts.json` with:
+1. Create `templates/posts.json` with:
    - Meta with title template and CMS schema
    - Body with article layout for content
 2. Create `cms/posts/` directory
