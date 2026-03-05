@@ -22,7 +22,8 @@
       "Bash(tr ;:*)",
       "Bash(wc:*)",
       "Bash(node:*)",
-      "Bash(do python3:*)"
+      "Bash(do python3:*)",
+      "Bash(do:*)"
     ]
   }
 }
