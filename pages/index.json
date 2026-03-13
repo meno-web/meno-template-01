@@ -19,6 +19,10 @@
       },
       {
         "type": "component",
+        "component": "TimelineVertical"
+      },
+      {
+        "type": "component",
         "component": "FaqAccordion",
         "props": {
           "theme": "primary"
