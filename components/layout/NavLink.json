@@ -11,7 +11,7 @@
       "children": [
         {
           "type": "link",
-          "href": "",
+          "href": "#",
           "style": {
             "base": {
               "color": "var(--text)",
