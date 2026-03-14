@@ -11,11 +11,7 @@
       "children": [
         {
           "type": "link",
-          "href": {
-            "_mapping": true,
-            "prop": "link",
-            "values": {}
-          },
+          "href": "",
           "style": {
             "base": {
               "color": "var(--text)",
