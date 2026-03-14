@@ -108,7 +108,8 @@
                           "component": "Icon",
                           "props": {
                             "size": 24,
-                            "icon": "{{item.icon}}"
+                            "icon": "{{item.icon}}",
+                            "color": ""
                           }
                         }
                       ]
