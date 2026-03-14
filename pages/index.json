@@ -14,7 +14,10 @@
           "buttonLink": {
             "href": ""
           },
-          "secondaryButtonText": "View components"
+          "secondaryButtonText": "View components",
+          "secondaryButtonLink": {
+            "href": ""
+          }
         }
       },
       {
