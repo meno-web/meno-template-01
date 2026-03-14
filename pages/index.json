@@ -13,7 +13,8 @@
           "buttonText": "Start building",
           "buttonLink": {
             "href": "/blog"
-          }
+          },
+          "secondaryButtonText": "View components"
         }
       },
       {
