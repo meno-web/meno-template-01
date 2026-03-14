@@ -217,8 +217,7 @@
           "justifyContent": "center",
           "width": "{{size}}px",
           "height": "{{size}}px",
-          "strokeWidth": "1.5",
-          "color": "var(--text)"
+          "strokeWidth": "1.5"
         },
         "tablet": {},
         "mobile": {}
