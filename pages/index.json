@@ -18,7 +18,39 @@
         "component": "FeatureIconGrid",
         "props": {
           "theme": "light",
-          "text": "This template comes packed with ready-to-use sections. Customize them to match your brand."
+          "text": "This template comes packed with ready-to-use sections. Customize them to match your brand.",
+          "items": [
+            {
+              "icon": "zap",
+              "title": "Responsive Design",
+              "text": "Every section adapts beautifully to desktop, tablet, and mobile screens."
+            },
+            {
+              "icon": "settings",
+              "title": "Easy to Customize",
+              "text": "Change colors, fonts, spacing, and content directly in the visual editor."
+            },
+            {
+              "icon": "shield",
+              "title": "Production Ready",
+              "text": "Clean markup, fast load times, and SEO-friendly structure out of the box."
+            },
+            {
+              "icon": "headphones",
+              "title": "40+ Components",
+              "text": "Hero sections, feature grids, testimonials, pricing cards, and more included."
+            },
+            {
+              "icon": "trending-up",
+              "title": "Scalable Structure",
+              "text": "Add pages, sections, and components as your site grows."
+            },
+            {
+              "icon": "bar-chart-3",
+              "title": "CMS Built In",
+              "text": "Manage blog posts, team members, and dynamic content with collections."
+            }
+          ]
         }
       },
       {
