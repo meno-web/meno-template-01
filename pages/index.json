@@ -17,7 +17,8 @@
         "type": "component",
         "component": "FeatureIconGrid",
         "props": {
-          "theme": "light"
+          "theme": "light",
+          "text": "This template comes packed with ready-to-use sections. Customize them to match your brand."
         }
       },
       {
