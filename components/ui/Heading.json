@@ -127,6 +127,6 @@
         "default": false
       }
     },
-    "css": "h1 .custom-span,\nh2 .custom-span,\nh3 .custom-span,\nh4 .custom-span,\nh5 .custom-span { color: var(--h-span); }"
+    "css": "h1 .custom-span,\nh2 .custom-span,\nh3 .custom-span,\nh4 .custom-span,\nh5 .custom-span { color: var(--h-span); }\n\n[is-mb0], [isMb0] {\n  margin-bottom: 0 !important;\n}"
   }
 }
