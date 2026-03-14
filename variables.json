@@ -203,6 +203,14 @@
       "value": "Outfit",
       "type": "none",
       "group": "font-family"
+    },
+    {
+      "name": "Container",
+      "prop_name": "maxWidth",
+      "cssVar": "--c-s",
+      "value": "1440px",
+      "type": "none",
+      "group": "size"
     }
   ]
 }

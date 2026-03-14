@@ -8,22 +8,38 @@
         "base": {
           "display": "flex",
           "alignItems": "center",
-          "justifyContent": "space-between",
+          "justifyContent": "center",
           "margin": "0 auto",
           "position": "sticky",
           "top": "0",
-          "padding": "0 80px",
           "backgroundColor": "var(--bg)",
           "zIndex": "100"
         },
-        "tablet": {
-          "padding": "20px 40px"
-        },
-        "mobile": {
-          "padding": "20px 20px"
-        }
+        "tablet": {},
+        "mobile": {}
       },
       "children": [
+        {
+          "type": "node",
+          "tag": "div",
+          "label": "Container",
+          "style": {
+            "base": {
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "space-between",
+              "width": "100%",
+              "maxWidth": "var(--c-s)",
+              "padding": "0 80px"
+            },
+            "tablet": {
+              "padding": "0px 40px"
+            },
+            "mobile": {
+              "padding": "0 20px"
+            }
+          },
+          "children": [
         {
           "type": "node",
           "tag": "input",
@@ -302,6 +318,8 @@
                 }
               }
             }
+          ]
+        }
           ]
         },
         {
