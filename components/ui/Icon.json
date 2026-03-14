@@ -239,6 +239,9 @@
       "fade": {
         "type": "string",
         "default": ""
+      },
+      "color": {
+        "type": "string"
       }
     }
   }
