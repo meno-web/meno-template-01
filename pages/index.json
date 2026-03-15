@@ -121,7 +121,8 @@
               "title": "CMS Built In",
               "text": "Manage blog posts, team members, and dynamic content with collections."
             }
-          ]
+          ],
+          "columns": "3"
         }
       },
       {
