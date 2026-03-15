@@ -77,6 +77,10 @@
         ]
       },
       {
+        "type": "component",
+        "component": "SliderCards"
+      },
+      {
         "type": "node",
         "tag": "div",
         "style": {
