@@ -65,7 +65,7 @@
     {
       "name": "Heading",
       "cssVar": "--h-lh",
-      "value": "105%",
+      "value": "107%",
       "type": "none",
       "group": "line-height"
     },
