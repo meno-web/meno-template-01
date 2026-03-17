@@ -58,7 +58,7 @@
     {
       "name": "Heading",
       "cssVar": "--h-ls",
-      "value": "-0.025em",
+      "value": "-0.02em",
       "type": "none",
       "group": "letter-spacing"
     },
