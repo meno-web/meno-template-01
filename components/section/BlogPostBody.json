@@ -75,7 +75,10 @@
             },
             {
               "type": "component",
-              "component": "RichText"
+              "component": "RichText",
+              "props": {
+                "content": "{{cms.content}}"
+              }
             }
           ]
         }

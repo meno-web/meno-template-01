@@ -37,7 +37,36 @@
                   "align": "center",
                   "maxWidth": "640px",
                   "variant": "light",
-                  "fade": "0.2"
+                  "fade": "0.2",
+                  "content": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Rich text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "attrs": {
+                          "textAlign": null
+                        },
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "asd"
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 }
               },
               {

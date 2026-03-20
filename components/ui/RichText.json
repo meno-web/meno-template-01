@@ -17,14 +17,19 @@
         "cmsrt": true,
         "fade": "{{fade}}"
       },
-      "children": "{{cms.content}}"
+      "children": "{{content}}"
     },
     "interface": {
       "fade": {
         "type": "string",
         "default": ""
+      },
+      "content": {
+        "type": "rich-text",
+        "default": "Rich text",
+        "editor": "extended"
       }
     },
-    "css": "[cmsrt] h1,\n[cmsrt] h2,\n[cmsrt] h3,\n[cmsrt] h4,\n[cmsrt] h5,\n[cmsrt] h6 {\n  font-weight: 450;\n}"
+    "css": "[cmsrt] h1,\n[cmsrt] h2,\n[cmsrt] h3,\n[cmsrt] h4,\n[cmsrt] h5,\n[cmsrt] h6 {\n  font-weight: 450;\n  margin-top: 32px;\n  margin-bottom: 4px;\n}\n\n[cmsrt] h2 {\n  font-size: 36px;\n}"
   }
 }
