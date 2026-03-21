@@ -211,6 +211,13 @@
       "value": "1440px",
       "type": "none",
       "group": "size"
+    },
+    {
+      "name": "Navigation",
+      "cssVar": "--navigation",
+      "value": "55px",
+      "type": "none",
+      "prop_name": "height"
     }
   ]
 }

@@ -29,7 +29,7 @@
           "type": "component",
           "component": "Navigation",
           "props": {
-            "isOpen": false
+            "isOpen": true
           }
         },
         {

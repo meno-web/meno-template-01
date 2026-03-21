@@ -15,7 +15,9 @@
           "backgroundColor": "var(--bg)",
           "zIndex": "100"
         },
-        "tablet": {},
+        "tablet": {
+          "height": "var(--navigation)"
+        },
         "mobile": {}
       },
       "children": [
@@ -40,286 +42,299 @@
             }
           },
           "children": [
-        {
-          "type": "node",
-          "tag": "input",
-          "label": "MenuToggle",
-          "style": {
-            "base": {
-              "display": "none"
-            },
-            "tablet": {},
-            "mobile": {}
-          },
-          "attributes": {
-            "type": "checkbox",
-            "id": "menu-toggle"
-          }
-        },
-        {
-          "type": "link",
-          "href": "/",
-          "style": {
-            "base": {}
-          },
-          "attributes": {
-            "aria-label": "Home"
-          },
-          "children": [
             {
               "type": "node",
-              "tag": "span",
-              "label": "Logo",
+              "tag": "input",
+              "label": "MenuToggle",
               "style": {
                 "base": {
-                  "color": "var(--text)",
-                  "fontSize": "20px",
-                  "fontWeight": "700",
-                  "letterSpacing": "-0.02em"
+                  "display": "none"
                 },
                 "tablet": {},
                 "mobile": {}
               },
-              "children": "Starter"
-            }
-          ]
-        },
-        {
-          "type": "node",
-          "tag": "label",
-          "label": "HamburgerButton",
-          "style": {
-            "base": {
-              "display": "none",
-              "cursor": "pointer"
+              "attributes": {
+                "type": "checkbox",
+                "id": "menu-toggle"
+              }
             },
-            "tablet": {
-              "display": "flex",
-              "flexDirection": "column",
-              "gap": "4px",
-              "width": "28px",
-              "height": "24px",
-              "justifyContent": "center",
-              "zIndex": "101",
-              "marginLeft": "auto"
-            },
-            "mobile": {}
-          },
-          "attributes": {
-            "for": "menu-toggle",
-            "aria-label": "Toggle menu"
-          },
-          "children": [
             {
-              "type": "node",
-              "tag": "span",
-              "label": "Line1",
+              "type": "link",
+              "href": "/",
               "style": {
-                "base": {
-                  "display": "none"
-                },
-                "tablet": {
-                  "display": "block",
-                  "width": "100%",
-                  "height": "2px",
-                  "backgroundColor": "var(--text)",
-                  "transition": "all 0.3s ease"
-                },
-                "mobile": {}
+                "base": {}
               },
-              "interactiveStyles": [
+              "attributes": {
+                "aria-label": "Home"
+              },
+              "children": [
                 {
-                  "prefix": "#menu-toggle:checked ~ label[for=\"menu-toggle\"] ",
-                  "postfix": ":nth-child(1)",
+                  "type": "node",
+                  "tag": "span",
+                  "label": "Logo",
                   "style": {
                     "base": {
-                      "transform": "rotate(45deg) translate(2.5px, 2.5px)"
+                      "color": "var(--text)",
+                      "fontSize": "20px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.02em"
                     },
                     "tablet": {},
                     "mobile": {}
-                  }
+                  },
+                  "children": "Starter"
                 }
               ]
             },
             {
               "type": "node",
-              "tag": "span",
-              "label": "Line2",
+              "tag": "label",
+              "label": "HamburgerButton",
               "style": {
                 "base": {
-                  "display": "none"
+                  "display": "none",
+                  "cursor": "pointer"
                 },
                 "tablet": {
-                  "display": "block",
-                  "width": "100%",
-                  "height": "2px",
-                  "backgroundColor": "var(--text)",
-                  "transition": "all 0.3s ease"
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "gap": "4px",
+                  "width": "28px",
+                  "height": "24px",
+                  "justifyContent": "center",
+                  "zIndex": "101",
+                  "marginLeft": "auto"
                 },
                 "mobile": {}
               },
-              "interactiveStyles": [
+              "attributes": {
+                "for": "menu-toggle",
+                "aria-label": "Toggle menu"
+              },
+              "children": [
                 {
-                  "prefix": "#menu-toggle:checked ~ label[for=\"menu-toggle\"] ",
-                  "postfix": ":nth-child(2)",
+                  "type": "node",
+                  "tag": "span",
+                  "label": "Line1",
                   "style": {
                     "base": {
-                      "transform": "rotate(-45deg) translate(2.5px, -2.5px)"
+                      "display": "none"
                     },
-                    "tablet": {},
+                    "tablet": {
+                      "display": "block",
+                      "width": "100%",
+                      "height": "2px",
+                      "backgroundColor": "var(--text)",
+                      "transition": "all 0.3s ease"
+                    },
                     "mobile": {}
-                  }
+                  },
+                  "interactiveStyles": [
+                    {
+                      "prefix": "#menu-toggle:checked ~ label[for=\"menu-toggle\"] ",
+                      "postfix": ":nth-child(1)",
+                      "style": {
+                        "base": {
+                          "transform": "rotate(45deg) translate(2.5px, 2.5px)"
+                        },
+                        "tablet": {},
+                        "mobile": {}
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "node",
+                  "tag": "span",
+                  "label": "Line2",
+                  "style": {
+                    "base": {
+                      "display": "none"
+                    },
+                    "tablet": {
+                      "display": "block",
+                      "width": "100%",
+                      "height": "2px",
+                      "backgroundColor": "var(--text)",
+                      "transition": "all 0.3s ease"
+                    },
+                    "mobile": {}
+                  },
+                  "interactiveStyles": [
+                    {
+                      "prefix": "#menu-toggle:checked ~ label[for=\"menu-toggle\"] ",
+                      "postfix": ":nth-child(2)",
+                      "style": {
+                        "base": {
+                          "transform": "rotate(-45deg) translate(2.5px, -2.5px)"
+                        },
+                        "tablet": {},
+                        "mobile": {}
+                      }
+                    }
+                  ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "type": "node",
-          "tag": "div",
-          "label": "NavList",
-          "style": {
-            "base": {
-              "display": "flex",
-              "alignItems": "center",
-              "gap": "16px"
             },
-            "tablet": {
-              "position": "fixed",
-              "top": "65px",
-              "left": "0",
-              "width": "100%",
-              "height": "calc(100vh - 65px)",
-              "flexDirection": "column",
-              "padding": "20px 20px",
-              "backgroundColor": "var(--bg)",
-              "zIndex": "99",
-              "transition": "opacity 0.3s ease, visibility 0.3s ease",
-              "alignItems": "flex-start",
-              "gap": "24px",
-              "overflow": "auto",
-              "opacity": "0",
-              "visibility": "hidden",
-              "pointerEvents": "none"
-            },
-            "mobile": {
-              "padding": "10px 0"
-            }
-          },
-          "interactiveStyles": [
-            {
-              "name": "on Open",
-              "prefix": "#menu-toggle:checked ~",
-              "style": {
-                "base": {},
-                "tablet": {
-                  "opacity": "1",
-                  "visibility": "visible",
-                  "pointerEvents": "auto"
-                },
-                "mobile": {}
-              },
-              "previewProp": "isOpen"
-            }
-          ],
-          "children": [
             {
               "type": "node",
-              "tag": "ul",
-              "label": "NavLinks",
+              "tag": "div",
+              "label": "NavList",
               "style": {
                 "base": {
                   "display": "flex",
                   "alignItems": "center",
-                  "justifyContent": "center"
+                  "gap": "16px"
                 },
                 "tablet": {
+                  "position": "absolute",
+                  "top": "var(--navigation)",
+                  "left": "0",
+                  "width": "100%",
+                  "height": "calc(100vh - 65px)",
                   "flexDirection": "column",
+                  "padding": "10px 20px",
+                  "backgroundColor": "var(--bg)",
+                  "zIndex": "99",
+                  "transition": "opacity 0.3s ease, visibility 0.3s ease",
                   "alignItems": "flex-start",
-                  "gap": "0"
+                  "gap": "24px",
+                  "overflow": "auto",
+                  "opacity": "0",
+                  "visibility": "hidden",
+                  "pointerEvents": "none"
                 },
                 "mobile": {
-                  "flexDirection": "column",
-                  "alignItems": "flex-start"
+                  "padding": "10px 0"
                 }
               },
+              "interactiveStyles": [
+                {
+                  "name": "on Open",
+                  "prefix": "#menu-toggle:checked ~",
+                  "style": {
+                    "base": {},
+                    "tablet": {
+                      "opacity": "1",
+                      "visibility": "visible",
+                      "pointerEvents": "auto"
+                    },
+                    "mobile": {}
+                  },
+                  "previewProp": "isOpen"
+                }
+              ],
               "children": [
                 {
-                  "type": "component",
-                  "component": "NavLink",
-                  "props": {
-                    "text": "Features",
-                    "link": {
-                      "href": "#features"
+                  "type": "node",
+                  "tag": "ul",
+                  "label": "NavLinks",
+                  "style": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "justifyContent": "center"
+                    },
+                    "tablet": {
+                      "flexDirection": "column",
+                      "alignItems": "flex-start",
+                      "gap": "0"
+                    },
+                    "mobile": {
+                      "flexDirection": "column",
+                      "alignItems": "flex-start"
                     }
-                  }
-                },
-                {
-                  "type": "component",
-                  "component": "NavDropdown",
-                  "props": {
-                    "text": "About",
-                    "isOpen": false
                   },
                   "children": [
                     {
                       "type": "component",
-                      "component": "NavDropdownLink",
+                      "component": "NavLink",
                       "props": {
-                        "text": "Our Story",
+                        "text": "Features",
                         "link": {
-                          "href": "#about"
+                          "href": "#features"
                         }
                       }
                     },
                     {
                       "type": "component",
-                      "component": "NavDropdownLink",
+                      "component": "NavDropdown",
                       "props": {
-                        "text": "Team",
-                        "link": {
-                          "href": ""
+                        "text": "About",
+                        "isOpen": false
+                      },
+                      "children": [
+                        {
+                          "type": "component",
+                          "component": "NavDropdownLink",
+                          "props": {
+                            "text": "Our Story",
+                            "link": {
+                              "href": "#about"
+                            }
+                          }
+                        },
+                        {
+                          "type": "component",
+                          "component": "NavDropdownLink",
+                          "props": {
+                            "text": "Team",
+                            "link": {
+                              "href": ""
+                            }
+                          }
+                        },
+                        {
+                          "type": "component",
+                          "component": "NavDropdownLink",
+                          "props": {
+                            "text": "Careers",
+                            "link": {
+                              "href": "#careers"
+                            }
+                          }
                         }
-                      }
+                      ]
                     },
                     {
                       "type": "component",
-                      "component": "NavDropdownLink",
+                      "component": "NavLink",
                       "props": {
-                        "text": "Careers",
+                        "text": "Contact",
                         "link": {
-                          "href": "#careers"
+                          "href": "#contact"
                         }
                       }
                     }
                   ]
                 },
                 {
-                  "type": "component",
-                  "component": "NavLink",
-                  "props": {
-                    "text": "Contact",
-                    "link": {
-                      "href": "#contact"
+                  "type": "node",
+                  "tag": "div",
+                  "style": {
+                    "base": {},
+                    "tablet": {
+                      "paddingLeft": "16px"
+                    },
+                    "mobile": {}
+                  },
+                  "children": [
+                    {
+                      "type": "component",
+                      "component": "Button",
+                      "props": {
+                        "isMarginTop": false,
+                        "text": "Get Started",
+                        "variant": "primary",
+                        "link": {
+                          "href": "#contact"
+                        }
+                      }
                     }
-                  }
+                  ]
                 }
               ]
-            },
-            {
-              "type": "component",
-              "component": "Button",
-              "props": {
-                "isMarginTop": false,
-                "text": "Get Started",
-                "variant": "primary",
-                "link": {
-                  "href": "#contact"
-                }
-              }
             }
-          ]
-        }
           ]
         },
         {
