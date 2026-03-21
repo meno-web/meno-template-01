@@ -83,5 +83,5 @@
       }
     ]
   },
-  "deploymentMethod": "github"
+  "deploymentMethod": "cloudflare"
 }
