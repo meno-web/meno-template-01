@@ -1,5 +1,4 @@
 <!-- MENO_DOCS_VERSION: 1.5 -->
-<!-- MENO_DOCS_VERSION: 1.2 -->
 # Meno Core Documentation
 
 ## Creating Components
