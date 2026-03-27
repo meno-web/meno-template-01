@@ -24,7 +24,8 @@
                   "text": "Everything you need to launch",
                   "tag": "1",
                   "align": "center",
-                  "size": "1"
+                  "size": "1",
+                  "maxWidth": "400px"
                 }
               },
               {
