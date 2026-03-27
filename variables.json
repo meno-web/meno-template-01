@@ -4,7 +4,7 @@
       "name": "Heading",
       "prop_name": "Size 1",
       "cssVar": "--h-fs",
-      "value": "75px",
+      "value": "76px",
       "type": "fontSize",
       "group": "font-size"
     },
@@ -214,10 +214,10 @@
     },
     {
       "name": "Navigation",
+      "prop_name": "height",
       "cssVar": "--navigation",
       "value": "55px",
-      "type": "none",
-      "prop_name": "height"
+      "type": "none"
     }
   ]
 }
