@@ -22,7 +22,9 @@
                 "tag": "div",
                 "style": {
                   "base": {
-                    "display": "flex"
+                    "gap": "0px",
+                    "gridTemplateColumns": "1fr",
+                    "display": "grid"
                   },
                   "tablet": {},
                   "mobile": {}
