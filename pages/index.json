@@ -18,6 +18,18 @@
             },
             "children": [
               {
+                "type": "node",
+                "tag": "div",
+                "style": {
+                  "base": {
+                    "display": "flex"
+                  },
+                  "tablet": {},
+                  "mobile": {}
+                },
+                "children": []
+              },
+              {
                 "type": "component",
                 "component": "Heading",
                 "props": {
