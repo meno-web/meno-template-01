@@ -74,11 +74,13 @@
                     "base": {
                       "backgroundColor": "var(--surface)",
                       "borderRadius": "12px",
-                      "padding": "24px",
+                      "padding": "32px",
                       "border": "1px solid var(--border-100)",
                       "textAlign": "center",
                       "transition": "transform 0.2s ease, box-shadow 0.2s ease"
-                    }
+                    },
+                    "tablet": {},
+                    "mobile": {}
                   },
                   "interactiveStyles": [
                     {
