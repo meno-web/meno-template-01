@@ -35,11 +35,11 @@
                 "type": "component",
                 "component": "Heading",
                 "props": {
-                  "text": "Everything you need to launch",
+                  "text": "Everything you need to build <span class=\"custom-span\" data-meno-span=\"true\">professional</span> website",
                   "tag": "1",
                   "align": "center",
                   "size": "1",
-                  "maxWidth": "400px"
+                  "maxWidth": "900px"
                 }
               },
               {
