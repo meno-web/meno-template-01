@@ -96,8 +96,11 @@
                       },
                       "style": {
                         "base": {
-                          "width": "100%"
-                        }
+                          "width": "100%",
+                          "height": "auto"
+                        },
+                        "tablet": {},
+                        "mobile": {}
                       }
                     },
                     {
