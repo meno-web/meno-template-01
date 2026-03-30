@@ -122,6 +122,14 @@
       },
       {
         "type": "component",
+        "component": "BlogCardGrid"
+      },
+      {
+        "type": "component",
+        "component": "IntegrationsGrid"
+      },
+      {
+        "type": "component",
         "component": "SliderCards"
       },
       {

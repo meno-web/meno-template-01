@@ -112,6 +112,11 @@
                             "objectFit": "contain",
                             "width": "48px",
                             "height": "48px"
+                          },
+                          "style": {
+                            "base": {
+                              "height": "32px"
+                            }
                           }
                         }
                       ]
