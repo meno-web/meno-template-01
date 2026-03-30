@@ -90,6 +90,11 @@
                     "height": "100%",
                     "border": true,
                     "rounded": "medium"
+                  },
+                  "style": {
+                    "base": {
+                      "width": "100%"
+                    }
                   }
                 },
                 {
