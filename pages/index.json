@@ -5,120 +5,11 @@
     "children": [
       {
         "type": "component",
-        "component": "Section",
+        "component": "HeroCentered",
         "props": {
-          "theme": "light"
-        },
-        "children": [
-          {
-            "type": "component",
-            "component": "Stack",
-            "props": {
-              "horizontal": "center"
-            },
-            "children": [
-              {
-                "type": "node",
-                "tag": "div",
-                "style": {
-                  "base": {
-                    "gap": "0px",
-                    "gridTemplateColumns": "1fr",
-                    "display": "grid"
-                  },
-                  "tablet": {},
-                  "mobile": {}
-                },
-                "children": []
-              },
-              {
-                "type": "component",
-                "component": "Heading",
-                "props": {
-                  "text": "Everything you need to build <span class=\"custom-span\" data-meno-span=\"true\">professional</span> website",
-                  "tag": "1",
-                  "align": "center",
-                  "size": "1",
-                  "maxWidth": "900px"
-                }
-              },
-              {
-                "type": "component",
-                "component": "Text",
-                "if": "Design and publish professional websites without writing code. Start with this template and make it yours in minutes.",
-                "props": {
-                  "text": "Design and publish professional websites without writing code. Start with this template and make it yours in minutes.",
-                  "size": "large",
-                  "align": "center",
-                  "maxWidth": "640px",
-                  "variant": "light",
-                  "fade": "0.2",
-                  "content": {
-                    "type": "doc",
-                    "content": [
-                      {
-                        "type": "paragraph",
-                        "attrs": {
-                          "textAlign": null
-                        },
-                        "content": [
-                          {
-                            "type": "text",
-                            "text": "Rich text"
-                          }
-                        ]
-                      },
-                      {
-                        "type": "paragraph",
-                        "attrs": {
-                          "textAlign": null
-                        },
-                        "content": [
-                          {
-                            "type": "text",
-                            "text": "asd"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                }
-              },
-              {
-                "type": "component",
-                "component": "ButtonList",
-                "if": "Start building",
-                "props": {
-                  "fade": "0.4"
-                },
-                "children": [
-                  {
-                    "type": "component",
-                    "component": "Button",
-                    "props": {
-                      "text": "Start building",
-                      "link": {
-                        "href": "/"
-                      }
-                    }
-                  },
-                  {
-                    "type": "component",
-                    "component": "Button",
-                    "if": "View components",
-                    "props": {
-                      "text": "View components",
-                      "link": {
-                        "href": ""
-                      },
-                      "variant": "secondary"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+          "title": "Everything you need to build <span class=\"custom-span\" data-meno-span=\"true\">professional</span> website",
+          "text": "Design and publish professional websites without writing code. Start with this template and make it yours in minutes."
+        }
       },
       {
         "type": "component",
@@ -131,14 +22,6 @@
       {
         "type": "component",
         "component": "SliderCards"
-      },
-      {
-        "type": "node",
-        "tag": "div",
-        "style": {
-          "base": {}
-        },
-        "children": []
       },
       {
         "type": "component",

@@ -38,6 +38,9 @@
           "alignItems": "center"
         }
       },
+      "attributes": {
+        "fade": "{{fade}}"
+      },
       "children": [
         {
           "type": "slot",
@@ -63,10 +66,7 @@
             }
           ]
         }
-      ],
-      "attributes": {
-        "fade": "{{fade}}"
-      }
+      ]
     },
     "interface": {
       "justify": {
