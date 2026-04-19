@@ -65,6 +65,8 @@ Create a template page at \`templates/{collection}.json\`. Add \`source: "cms"\`
 
 ### CMS Field Types
 
+**Note:** CMS field types are a SEPARATE type system from component interface prop types. \`image\` is a valid CMS field type here, but it is NOT a valid component interface type — for component props use \`{ "type": "file", "accept": "image/*" }\` instead. See \`CLAUDE.md\` for the interface prop types.
+
 | Type | Description | Options |
 |------|-------------|---------|
 | \`string\` | Single line text | - |

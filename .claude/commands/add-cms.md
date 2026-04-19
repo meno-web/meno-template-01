@@ -24,13 +24,15 @@ Set up a new CMS collection with schema, template page, and sample content.
 ## Key Rules
 
 ### Schema Location
-The `cms` object goes **inside** `meta`, not at root level:
+The `cms` object goes **inside** `meta`, not at root level. Also set `meta.source: "cms"` so the runtime knows this is a template page:
 ```json
 {
   "meta": {
     "title": "{{cms.title}}",
+    "source": "cms",
     "cms": {
-      "collection": "posts",
+      "id": "posts",
+      "name": "Blog Posts",
       "slugField": "slug",
       "urlPattern": "/blog/{{slug}}",
       "fields": { ... }
@@ -55,7 +57,8 @@ The `cms` object goes **inside** `meta`, not at root level:
 ### Schema Example
 ```json
 "cms": {
-  "collection": "posts",
+  "id": "posts",
+  "name": "Blog Posts",
   "slugField": "slug",
   "urlPattern": "/blog/{{slug}}",
   "fields": {
@@ -106,10 +109,35 @@ cms/
     another-post.json
 ```
 
+### Rendering a list of CMS items
+
+Use a `list` node with `sourceType: "collection"` on any page:
+
+```json
+{
+  "type": "list",
+  "sourceType": "collection",
+  "source": "posts",
+  "itemAs": "post",
+  "sort": { "field": "publishedAt", "order": "desc" },
+  "limit": 10,
+  "children": [
+    {
+      "type": "link",
+      "href": "{{post._url}}",
+      "children": [
+        { "type": "node", "tag": "h3", "children": "{{post.title}}" },
+        { "type": "node", "tag": "p", "children": "{{post.excerpt}}" }
+      ]
+    }
+  ]
+}
+```
+
 ## Reference
 
 - Schema details: `.claude/docs/meno/cms-schema.md`
-- List rendering: `.claude/docs/meno/list.md`
+- Copy-ready CMS template snippet: `.claude/docs/meno/examples.md`
 
 ## Example
 

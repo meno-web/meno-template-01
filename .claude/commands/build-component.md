@@ -28,14 +28,16 @@ Valid types: `string`, `number`, `boolean`, `select`, `link`, `file`, `rich-text
 
 ```json
 {
-  "interface": {
-    "title": { "type": "string", "default": "Heading" },
-    "count": { "type": "number", "default": 0 },
-    "visible": { "type": "boolean", "default": true },
-    "size": { "type": "select", "options": ["sm", "md", "lg"], "default": "md" },
-    "cta": { "type": "link", "default": { "href": "/", "target": "_self" } },
-    "avatar": { "type": "file", "accept": "image/*", "default": "" },
-    "content": { "type": "rich-text", "default": "<p>Text</p>" }
+  "component": {
+    "interface": {
+      "title": { "type": "string", "default": "Heading" },
+      "count": { "type": "number", "default": 0 },
+      "visible": { "type": "boolean", "default": true },
+      "size": { "type": "select", "options": ["sm", "md", "lg"], "default": "md" },
+      "cta": { "type": "link", "default": { "href": "/", "target": "_self" } },
+      "avatar": { "type": "file", "accept": "image/*", "default": "" },
+      "content": { "type": "rich-text", "default": "<p>Text</p>" }
+    }
   }
 }
 ```
@@ -54,21 +56,26 @@ Use `file` type, **NOT** `image`:
 Never use `children` as a prop name - it's reserved for slots.
 
 ### Component Structure
+
+Root must be wrapped in `{ "component": { ... } }`:
+
 ```json
 {
-  "interface": {
-    "title": { "type": "string", "default": "Hello" }
-  },
-  "structure": {
-    "type": "node",
-    "tag": "div",
-    "children": [
-      {
-        "type": "node",
-        "tag": "h2",
-        "children": "{{title}}"
-      }
-    ]
+  "component": {
+    "interface": {
+      "title": { "type": "string", "default": "Hello" }
+    },
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "children": [
+        {
+          "type": "node",
+          "tag": "h2",
+          "children": "{{title}}"
+        }
+      ]
+    }
   }
 }
 ```
@@ -81,23 +88,27 @@ Use `{{propName}}` for interpolation:
 ```
 
 ### JavaScript Behavior
-Create a `.js` file only when needed:
+Create a `.js` file only when needed. `el` (component root element) and `props` are auto-injected — do NOT use `export default`, do NOT use `DOMContentLoaded`:
+
 ```javascript
 // components/Counter.js
-export default function Counter(element, props) {
-  const button = element.querySelector('button');
-  let count = props.initialCount || 0;
+const button = el.querySelector('[data-action="increment"]');
+const countEl = el.querySelector('[data-el="count"]');
+let count = props.initialCount || 0;
 
-  button.addEventListener('click', () => {
-    count++;
-    element.querySelector('.count').textContent = count;
-  });
-}
+button?.addEventListener('click', () => {
+  count++;
+  countEl.textContent = count;
+});
 ```
+
+See `.claude/docs/meno/javascript.md` for the full JS pattern (data attributes, component communication, data-component auto-injection).
 
 ## Reference
 
-For detailed component patterns, see `.claude/docs/meno/components.md`
+- `CLAUDE.md` — node types, interface types, styles, interactiveStyles
+- `.claude/docs/meno/javascript.md` — component JavaScript patterns
+- `.claude/docs/meno/cms-schema.md` — CMS collections and field types
 
 ## Example
 

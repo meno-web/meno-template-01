@@ -13,6 +13,9 @@ For advanced use cases, MenoFilter exposes a JavaScript API for programmatic con
 | \`\$lt\` | Less than | \`{ price: { \$lt: 500 } }\` |
 | \`\$lte\` | Less than or equal | \`{ price: { \$lte: 500 } }\` |
 | \`\$contains\` | String contains (case-insensitive) | \`{ title: { \$contains: 'react' } }\` |
+| \`\$notContains\` | String does not contain | \`{ title: { \$notContains: 'draft' } }\` |
+| \`\$startsWith\` | String starts with | \`{ slug: { \$startsWith: 'how-to-' } }\` |
+| \`\$endsWith\` | String ends with | \`{ filename: { \$endsWith: '.webp' } }\` |
 | \`\$in\` | Value in array | \`{ category: { \$in: ['tech', 'design'] } }\` |
 | \`\$nin\` | Value not in array | \`{ category: { \$nin: ['draft'] } }\` |
 | \`\$empty\` | Is empty/null | \`{ description: { \$empty: true } }\` |
