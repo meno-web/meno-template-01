@@ -13,17 +13,43 @@
       },
       {
         "type": "component",
+        "component": "TimelineVertical",
+        "props": {
+          "title": "Simple steps to get started",
+          "subtitle": "How It Works",
+          "text": "Follow these easy steps to begin your journey with us.",
+          "items": [
+            {
+              "title": "Sign up for free",
+              "text": "Create your account in seconds. No credit card required to get started."
+            },
+            {
+              "title": "Set up your project",
+              "text": "Configure your workspace and invite your team members to collaborate."
+            },
+            {
+              "title": "Customize your workflow",
+              "text": "Tailor the platform to fit your specific needs and preferences."
+            },
+            {
+              "title": "Launch and grow",
+              "text": "Go live and start achieving your goals with our powerful tools."
+            }
+          ]
+        }
+      },
+      {
+        "type": "component",
+        "component": "FaqAccordion",
+        "props": {
+          "theme": "primary"
+        }
+      },
+      {
+        "type": "component",
         "component": "BlogCardGrid",
         "props": {
           "items": [
-            {
-              "image": "/images/placeholder-img.webp",
-              "label": "Business",
-              "title": "Scaling Your Startup: Lessons Learned",
-              "text": "Key insights and strategies for growing your startup from seed to series A.",
-              "link": "#",
-              "date": "Jan 5, 2025"
-            },
             {
               "image": "/images/placeholder-img.webp",
               "label": "Technology",
@@ -34,73 +60,24 @@
             },
             {
               "image": "/images/placeholder-img.webp",
+              "label": "Business",
+              "title": "Scaling Your Startup: Lessons Learned",
+              "text": "Key insights and strategies for growing your startup from seed to series A.",
+              "link": "#",
+              "date": "Jan 5, 2025"
+            },
+            {
+              "image": "/images/placeholder-img.webp",
               "label": "Design",
               "title": "Design Systems: A Complete Guide",
               "text": "How to build and maintain a design system that scales with your organization.",
               "link": "#",
               "date": "Jan 10, 2025"
             }
-          ]
-        }
-      },
-      {
-        "type": "component",
-        "component": "IntegrationsGrid"
-      },
-      {
-        "type": "component",
-        "component": "SliderCards"
-      },
-      {
-        "type": "component",
-        "component": "FeatureIconGrid",
-        "props": {
-          "theme": "light",
-          "text": "This template comes packed with ready-to-use sections. Customize them to match your brand.",
-          "items": [
-            {
-              "icon": "zap",
-              "title": "Responsive Design",
-              "text": "Every section adapts beautifully to desktop, tablet, and mobile screens."
-            },
-            {
-              "icon": "settings",
-              "title": "Easy to Customize",
-              "text": "Change colors, fonts, spacing, and content directly in the visual editor."
-            },
-            {
-              "icon": "shield",
-              "title": "Production Ready",
-              "text": "Clean markup, fast load times, and SEO-friendly structure out of the box."
-            },
-            {
-              "icon": "headphones",
-              "title": "40+ Components",
-              "text": "Hero sections, feature grids, testimonials, pricing cards, and more included."
-            },
-            {
-              "icon": "trending-up",
-              "title": "Scalable Structure",
-              "text": "Add pages, sections, and components as your site grows."
-            },
-            {
-              "icon": "bar-chart-3",
-              "title": "CMS Built In",
-              "text": "Manage blog posts, team members, and dynamic content with collections."
-            }
           ],
-          "columns": "3"
-        }
-      },
-      {
-        "type": "component",
-        "component": "TimelineVertical"
-      },
-      {
-        "type": "component",
-        "component": "FaqAccordion",
-        "props": {
-          "theme": "primary"
+          "subtitle": "Blog",
+          "title": "Latest articles",
+          "text": "Stay up to date with the latest news, tips, and insights."
         }
       },
       {
