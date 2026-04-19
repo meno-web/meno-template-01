@@ -125,11 +125,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Learn more about our approach"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "We believe in transparency and sharing our process with you."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "theme": {
         "type": "select",
@@ -154,24 +154,24 @@
         },
         "default": [
           {
-            "title": "Team Management",
-            "text": "Manage your entire team from a single dashboard with fine-grained controls over who can access what.",
-            "features": "Role-based access control\nSSO support for enterprise identity providers\nTeam workspaces with granular permissions\nAudit logs for every action"
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the card looks and reads in the editor.",
+            "features": "Supporting point one\nSupporting point two\nSupporting point three\nSupporting point four"
           },
           {
-            "title": "Security & Compliance",
-            "text": "Your data is protected with industry-leading security practices and compliance certifications.",
-            "features": "AES-256 encryption at rest and in transit\nSOC 2 Type II certified\nRegular third-party security audits\nGDPR and CCPA compliant"
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the card looks and reads in the editor.",
+            "features": "Supporting point one\nSupporting point two\nSupporting point three\nSupporting point four"
           },
           {
-            "title": "Priority Support",
-            "text": "Your team gets the help they need, when they need it.",
-            "features": "Dedicated support channel for your organization\n24-hour response SLA\nHands-on onboarding and training\nDirect access to our engineering team for complex issues"
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the card looks and reads in the editor.",
+            "features": "Supporting point one\nSupporting point two\nSupporting point three\nSupporting point four"
           },
           {
-            "title": "Custom Integrations",
-            "text": "Make the platform fit your workflow, not the other way around.",
-            "features": "Full API access\nWebhooks for automation\nCI/CD pipeline integration\nWhite-label options available"
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the card looks and reads in the editor.",
+            "features": "Supporting point one\nSupporting point two\nSupporting point three\nSupporting point four"
           }
         ]
       }

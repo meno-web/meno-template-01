@@ -7,11 +7,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Technical specifications"
+        "default": "Your specifications heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Technical specifications and features at a glance."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "theme": {
         "type": "select",
@@ -32,32 +32,32 @@
         },
         "default": [
           {
-            "label": "Uptime guarantee",
-            "value": "99.9% uptime SLA"
+            "label": "Specification one",
+            "value": "Value or description"
           },
           {
-            "label": "API rate limits",
-            "value": "10,000 requests per minute"
+            "label": "Specification two",
+            "value": "Value or description"
           },
           {
-            "label": "Data encryption",
-            "value": "AES-256 encryption at rest and in transit"
+            "label": "Specification three",
+            "value": "Value or description"
           },
           {
-            "label": "Response time",
-            "value": "Average API response under 100ms"
+            "label": "Specification four",
+            "value": "Value or description"
           },
           {
-            "label": "Storage",
-            "value": "Scalable storage with automatic backups"
+            "label": "Specification five",
+            "value": "Value or description"
           },
           {
-            "label": "Integrations",
-            "value": "REST API, webhooks, and native SDKs"
+            "label": "Specification six",
+            "value": "Value or description"
           },
           {
-            "label": "Support",
-            "value": "Email, chat, and phone support available"
+            "label": "Specification seven",
+            "value": "Value or description"
           }
         ]
       }

@@ -73,15 +73,15 @@
     "interface": {
       "title": {
         "type": "rich-text",
-        "default": "Your website, <span>built visually</span>"
+        "default": "Your headline, <span>highlighted phrase</span>"
       },
       "text": {
         "type": "rich-text",
-        "default": "Design and publish professional websites without writing code. Start with this template and make it yours in minutes."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "buttonText": {
         "type": "string",
-        "default": "Start building"
+        "default": "Primary action"
       },
       "buttonLink": {
         "type": "link",
@@ -89,7 +89,7 @@
       },
       "secondaryButtonText": {
         "type": "string",
-        "default": "View components"
+        "default": "Secondary action"
       },
       "secondaryButtonLink": {
         "type": "link",

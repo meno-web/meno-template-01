@@ -90,19 +90,19 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Learn more about our approach"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "We believe in transparency and sharing our process with you."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "leftText": {
         "type": "rich-text",
-        "default": "Our approach is built on years of experience and a deep understanding of what our customers need. We focus on delivering solutions that are both powerful and easy to use, ensuring that you can get started quickly without sacrificing functionality."
+        "default": "Short supporting paragraph that previews how this column looks in the editor. Replace this placeholder copy with your own message that speaks to your audience and supports the heading above."
       },
       "rightText": {
         "type": "rich-text",
-        "default": "We're committed to continuous improvement and innovation. Our team works tirelessly to bring you new features and enhancements that help you stay ahead of the competition. Your success is our priority, and we're here to support you every step of the way."
+        "default": "Short supporting paragraph that previews how this column looks in the editor. Replace this placeholder copy with your own message that continues the narrative from the left column."
       },
       "theme": {
         "type": "select",

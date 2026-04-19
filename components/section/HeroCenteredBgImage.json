@@ -74,11 +74,11 @@
     "interface": {
       "title": {
         "type": "rich-text",
-        "default": "Build something amazing"
+        "default": "Your headline goes here"
       },
       "text": {
         "type": "rich-text",
-        "default": "Create beautiful websites and applications with our powerful platform. Get started in minutes."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "image": {
         "type": "file",
@@ -87,7 +87,7 @@
       },
       "buttonText": {
         "type": "string",
-        "default": "Get started"
+        "default": "Primary action"
       },
       "buttonLink": {
         "type": "link",

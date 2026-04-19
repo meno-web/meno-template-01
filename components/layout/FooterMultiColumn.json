@@ -258,11 +258,11 @@
     "interface": {
       "brandName": {
         "type": "string",
-        "default": "Meno Starter"
+        "default": "Company Name"
       },
       "tagline": {
         "type": "string",
-        "default": "Building the future of digital experiences, one product at a time."
+        "default": "Short tagline that previews how this footer copy reads in the editor."
       },
       "column1Title": {
         "type": "string",

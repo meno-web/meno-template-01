@@ -76,11 +76,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Another great feature for your needs"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Discover how this feature can transform the way you work and boost your productivity."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "image": {
         "type": "file",

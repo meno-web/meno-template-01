@@ -92,18 +92,18 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "What our customers say"
+        "default": "What people are saying"
       },
       "text": {
         "type": "rich-text",
-        "default": "Don't just take our word for it. Here's what real customers have to say."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
         "itemSchema": {
           "text": {
             "type": "rich-text",
-            "default": "\"This product has completely transformed how we work.\""
+            "default": "\"A short testimonial quote goes here.\""
           },
           "image": {
             "type": "file",
@@ -115,45 +115,45 @@
           },
           "label": {
             "type": "string",
-            "default": "Role at Company"
+            "default": "Job title, Company Name"
           }
         },
         "default": [
           {
-            "text": "\"This product has completely transformed how we work. The interface is intuitive and the results speak for themselves.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "Sarah Johnson",
-            "label": "CEO at TechCorp"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           },
           {
-            "text": "\"We've seen a 40% increase in productivity since implementing this solution.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "Michael Chen",
-            "label": "Product Manager at StartupXYZ"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           },
           {
-            "text": "\"The customer support team is incredible. They helped us get set up in no time.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "Emily Rodriguez",
-            "label": "Director at Agency Inc"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           },
           {
-            "text": "\"Best investment we've made for our team. Highly recommend to anyone looking to scale.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "David Kim",
-            "label": "CTO at Growth Co"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           },
           {
-            "text": "\"The onboarding was seamless and the features are exactly what we needed.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "Lisa Wang",
-            "label": "Head of Product at Scale Inc"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           },
           {
-            "text": "\"Outstanding platform with excellent support. Our team loves using it daily.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "James Miller",
-            "label": "VP Engineering at DevOps Ltd"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           }
         ]
       },

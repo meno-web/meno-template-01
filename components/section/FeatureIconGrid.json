@@ -149,11 +149,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Everything you need to launch"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "This template comes packed with ready-to-use sections. Customize them to match your brand."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "columns": {
         "type": "select",
@@ -189,33 +189,33 @@
         "default": [
           {
             "icon": "zap",
-            "title": "Responsive Design",
-            "text": "Every section adapts beautifully to desktop, tablet, and mobile screens."
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the list looks."
           },
           {
             "icon": "settings",
-            "title": "Easy to Customize",
-            "text": "Change colors, fonts, spacing, and content directly in the visual editor."
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the list looks."
           },
           {
             "icon": "shield",
-            "title": "Production Ready",
-            "text": "Clean markup, fast load times, and SEO-friendly structure out of the box."
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the list looks."
           },
           {
             "icon": "headphones",
-            "title": "40+ Components",
-            "text": "Hero sections, feature grids, testimonials, pricing cards, and more included."
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the list looks."
           },
           {
             "icon": "trending-up",
-            "title": "Scalable Structure",
-            "text": "Add pages, sections, and components as your site grows."
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the list looks."
           },
           {
             "icon": "bar-chart-3",
-            "title": "CMS Built In",
-            "text": "Manage blog posts, team members, and dynamic content with collections."
+            "title": "Feature title",
+            "text": "Short description of this item that previews how the list looks."
           }
         ]
       }

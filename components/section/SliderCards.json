@@ -147,11 +147,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "What we offer"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Explore our range of services designed to help your business grow"
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
@@ -171,43 +171,43 @@
         "default": [
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Strategy & Planning",
-            "text": "We develop comprehensive strategies tailored to your business goals and market position"
+            "title": "Card title",
+            "text": "Short description of this item that previews how the slider looks and reads in the editor."
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Design & Branding",
-            "text": "Create a memorable brand identity that resonates with your target audience"
+            "title": "Card title",
+            "text": "Short description of this item that previews how the slider looks and reads in the editor."
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Development",
-            "text": "Build robust, scalable solutions using the latest technologies and best practices"
+            "title": "Card title",
+            "text": "Short description of this item that previews how the slider looks and reads in the editor."
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Marketing",
-            "text": "Drive growth through data-driven marketing campaigns and optimization"
+            "title": "Card title",
+            "text": "Short description of this item that previews how the slider looks and reads in the editor."
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Analytics",
-            "text": "Gain actionable insights from your data to make informed business decisions"
+            "title": "Card title",
+            "text": "Short description of this item that previews how the slider looks and reads in the editor."
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Consulting",
-            "text": "Expert guidance to help you navigate challenges and seize new opportunities"
+            "title": "Card title",
+            "text": "Short description of this item that previews how the slider looks and reads in the editor."
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Support",
-            "text": "Reliable ongoing support to keep your systems running smoothly around the clock"
+            "title": "Card title",
+            "text": "Short description of this item that previews how the slider looks and reads in the editor."
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Optimization",
-            "text": "Fine-tune your processes and performance for maximum efficiency and results"
+            "title": "Card title",
+            "text": "Short description of this item that previews how the slider looks and reads in the editor."
           }
         ]
       },

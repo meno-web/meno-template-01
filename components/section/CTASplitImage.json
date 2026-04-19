@@ -93,15 +93,15 @@
     "interface": {
       "title": {
         "type": "rich-text",
-        "default": "Take the next step today"
+        "default": "Your call to action headline"
       },
       "text": {
         "type": "rich-text",
-        "default": "Start your free trial and see the difference for yourself. No credit card required."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "buttonText": {
         "type": "string",
-        "default": "Get started"
+        "default": "Primary action"
       },
       "buttonLink": {
         "type": "link",

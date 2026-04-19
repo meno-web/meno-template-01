@@ -203,11 +203,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Choose the right plan"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "See how our plans compare and find the perfect fit for your needs."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "column1Title": {
         "type": "string",
@@ -235,29 +235,29 @@
         },
         "default": [
           {
-            "title": "Number of projects",
-            "value": "5",
-            "label": "Unlimited"
+            "title": "Feature one",
+            "value": "Basic",
+            "label": "Included"
           },
           {
-            "title": "Team members",
-            "value": "2",
-            "label": "Unlimited"
+            "title": "Feature two",
+            "value": "Limited",
+            "label": "Included"
           },
           {
-            "title": "Storage",
-            "value": "1 GB",
-            "label": "100 GB"
-          },
-          {
-            "title": "Priority support",
+            "title": "Feature three",
             "value": "-",
-            "label": "Yes"
+            "label": "Included"
           },
           {
-            "title": "Custom integrations",
+            "title": "Feature four",
             "value": "-",
-            "label": "Yes"
+            "label": "Included"
+          },
+          {
+            "title": "Feature five",
+            "value": "-",
+            "label": "Included"
           }
         ]
       },

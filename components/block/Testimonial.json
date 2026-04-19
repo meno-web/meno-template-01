@@ -98,15 +98,15 @@
     "interface": {
       "quote": {
         "type": "string",
-        "default": "This product has transformed how we work. Highly recommended!"
+        "default": "A short testimonial quote goes here about a positive experience."
       },
       "name": {
         "type": "string",
-        "default": "John Doe"
+        "default": "Jane Doe"
       },
       "role": {
         "type": "string",
-        "default": "Design Engineer"
+        "default": "Job title, Company Name"
       },
       "avatar": {
         "type": "file",

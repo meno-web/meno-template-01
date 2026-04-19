@@ -185,7 +185,7 @@
       },
       "text": {
         "type": "rich-text",
-        "default": "Choose the plan that works best for you. No hidden fees."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
@@ -220,24 +220,24 @@
             "title": "Starter",
             "value": "$9",
             "label": "/month",
-            "text": "Up to 5 projects\nBasic analytics\nEmail support\n1 GB storage",
-            "buttonText": "Get started",
+            "text": "Included feature one\nIncluded feature two\nIncluded feature three\nIncluded feature four",
+            "buttonText": "Primary action",
             "link": "#"
           },
           {
             "title": "Professional",
             "value": "$29",
             "label": "/month",
-            "text": "Unlimited projects\nAdvanced analytics\nPriority support\n10 GB storage",
-            "buttonText": "Get started",
+            "text": "Included feature one\nIncluded feature two\nIncluded feature three\nIncluded feature four",
+            "buttonText": "Primary action",
             "link": "#"
           },
           {
             "title": "Enterprise",
             "value": "$99",
             "label": "/month",
-            "text": "Everything in Pro\nCustom integrations\nDedicated support\nUnlimited storage",
-            "buttonText": "Contact sales",
+            "text": "Included feature one\nIncluded feature two\nIncluded feature three\nIncluded feature four",
+            "buttonText": "Primary action",
             "link": "#"
           }
         ]

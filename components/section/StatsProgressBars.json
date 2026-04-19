@@ -193,11 +193,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Our achievements at a glance"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Track record of excellence across key metrics."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "isCenter": {
         "type": "boolean",
@@ -221,19 +221,19 @@
         },
         "default": [
           {
-            "label": "Customer Satisfaction",
+            "label": "Metric one",
             "value": 95,
-            "description": "Based on annual surveys"
+            "description": "Short description of this metric"
           },
           {
-            "label": "Project Success Rate",
+            "label": "Metric two",
             "value": 88,
-            "description": "Projects delivered on time and budget"
+            "description": "Short description of this metric"
           },
           {
-            "label": "Team Retention",
+            "label": "Metric three",
             "value": 92,
-            "description": "Year-over-year retention"
+            "description": "Short description of this metric"
           }
         ]
       },

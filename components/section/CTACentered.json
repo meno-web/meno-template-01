@@ -78,15 +78,15 @@
     "interface": {
       "title": {
         "type": "rich-text",
-        "default": "Make this template yours"
+        "default": "Your call to action headline"
       },
       "text": {
         "type": "rich-text",
-        "default": "Replace this content, swap the colors, and publish your site. It only takes a few minutes."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "buttonText": {
         "type": "string",
-        "default": "Start editing"
+        "default": "Primary action"
       },
       "buttonLink": {
         "type": "link",
@@ -94,7 +94,7 @@
       },
       "secondaryButtonText": {
         "type": "string",
-        "default": "Browse templates"
+        "default": "Secondary action"
       },
       "secondaryButtonLink": {
         "type": "link",

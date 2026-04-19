@@ -76,11 +76,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Powerful feature that makes a difference"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "This feature helps you accomplish your goals faster and more efficiently than ever before."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "image": {
         "type": "file",

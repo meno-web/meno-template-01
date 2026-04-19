@@ -114,7 +114,7 @@
       },
       "text": {
         "type": "rich-text",
-        "default": "Follow these easy steps to begin your journey with us."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "theme": {
         "type": "select",
@@ -140,18 +140,18 @@
         "default": [
           {
             "value": "1",
-            "title": "Sign Up",
-            "text": "Create your free account in seconds. No credit card required to get started."
+            "title": "Step one",
+            "text": "Short description of this step that previews how the card looks and reads in the editor."
           },
           {
             "value": "2",
-            "title": "Configure",
-            "text": "Set up your workspace and customize it to match your team's workflow and preferences."
+            "title": "Step two",
+            "text": "Short description of this step that previews how the card looks and reads in the editor."
           },
           {
             "value": "3",
-            "title": "Launch",
-            "text": "Go live and start seeing results. Our platform scales with you as your needs grow."
+            "title": "Step three",
+            "text": "Short description of this step that previews how the card looks and reads in the editor."
           }
         ]
       }

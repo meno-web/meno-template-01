@@ -89,7 +89,7 @@
       },
       "text": {
         "type": "rich-text",
-        "default": "Common questions about using this template and getting started with Meno."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "theme": {
         "type": "select",
@@ -114,21 +114,21 @@
         },
         "default": [
           {
-            "title": "How do I customize this template?",
-            "text": "Open any page in the Meno editor, select elements to change their content, styles, and layout. You can also use AI to generate new sections or modify existing ones.",
+            "title": "Your first question?",
+            "text": "Short answer that previews how this accordion item looks and reads in the editor. Replace with your own content.",
             "isOpen": true
           },
           {
-            "title": "Can I add more pages?",
-            "text": "Yes. Create new pages from the editor and compose them using any of the 40+ included section components. Each page gets its own route automatically."
+            "title": "Your second question?",
+            "text": "Short answer that previews how this accordion item looks and reads in the editor. Replace with your own content."
           },
           {
-            "title": "How do I change colors and fonts?",
-            "text": "Open the project settings to update your color palette and typography. Changes apply globally across all components that use design tokens."
+            "title": "Your third question?",
+            "text": "Short answer that previews how this accordion item looks and reads in the editor. Replace with your own content."
           },
           {
-            "title": "Can I connect a custom domain?",
-            "text": "Absolutely. Once your site is ready, publish it and connect your own domain through the hosting settings in your Meno dashboard."
+            "title": "Your fourth question?",
+            "text": "Short answer that previews how this accordion item looks and reads in the editor. Replace with your own content."
           }
         ]
       }

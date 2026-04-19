@@ -187,7 +187,7 @@
       },
       "text": {
         "type": "rich-text",
-        "default": "We're proud of the results we've achieved together with our clients."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "isCenter": {
         "type": "boolean",
@@ -229,20 +229,20 @@
         "default": [
           {
             "value": "500+",
-            "label": "Projects Delivered",
-            "description": "Successfully completed projects across various industries",
+            "label": "Stat label",
+            "description": "Short description of this statistic that previews how the card looks.",
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>"
           },
           {
             "value": "98%",
-            "label": "Client Retention",
-            "description": "Clients who continue working with us year after year",
+            "label": "Stat label",
+            "description": "Short description of this statistic that previews how the card looks.",
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>"
           },
           {
             "value": "15+",
-            "label": "Years of Experience",
-            "description": "Building expertise and delivering excellence since day one",
+            "label": "Stat label",
+            "description": "Short description of this statistic that previews how the card looks.",
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>"
           }
         ]
