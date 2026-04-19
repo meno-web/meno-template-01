@@ -200,12 +200,14 @@ Automatically shown/hidden based on filtered results.
 
 ### CMS Integration in Meno
 
-Add \`data-{field}\` attributes to list items in cms-list:
+Use a \`list\` node with \`sourceType: "collection"\` and add \`data-{field}\` attributes to each item so the filter can match them:
 
 \`\`\`json
 {
-  "type": "cms-list",
-  "collection": "posts",
+  "type": "list",
+  "sourceType": "collection",
+  "source": "posts",
+  "itemAs": "item",
   "children": [
     {
       "type": "node",
@@ -234,7 +236,13 @@ Wrap with a filter container in the page:
   },
   "children": [
     { "type": "node", "tag": "button", "attributes": { "data-meno-clear": "" }, "children": "All" },
-    { "type": "cms-list", "collection": "posts", "children": [...] },
+    {
+      "type": "list",
+      "sourceType": "collection",
+      "source": "posts",
+      "itemAs": "item",
+      "children": [ ... ]
+    },
     { "type": "node", "tag": "button", "attributes": { "data-meno-page": "prev" }, "children": "Prev" },
     { "type": "node", "tag": "button", "attributes": { "data-meno-page": "next" }, "children": "Next" }
   ]

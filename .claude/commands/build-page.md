@@ -5,7 +5,7 @@ allowed-tools: Read, Write, Glob
 
 # Build Page
 
-Create a new page prioritizing existing components.
+Create a new page, reusing existing components where possible.
 
 ## Usage
 
@@ -15,70 +15,65 @@ Create a new page prioritizing existing components.
 
 ## Instructions
 
-1. **Understand the request**: Parse $ARGUMENTS for the page description
+1. **Understand the request**: Parse $ARGUMENTS for the page description.
 
-2. **Discover available components** (REQUIRED FIRST STEP):
-   - Read `components.config.json` to see components and their categories
-   - Categories: **sections** (full page sections), **ui** (layout primitives), **forms**, **shared**
+2. **Discover available components**:
+   - List the `components/` directory with Glob (`components/**/*.json`).
+   - For each candidate that matches the need, read its `.json` to learn its `interface` (props).
+   - If the project is fresh/blank and has no matching components, read `.claude/docs/meno/examples.md` for ready-made Layout / Navigation / Hero / Card-grid / Footer patterns and adapt them into new component files before building the page.
 
-3. **Gather context**:
-   - Read `pages/index.json` for page structure reference
+3. **Check the base component**:
+   - Read `project.config.json`. If `baseComponent` is set (blank projects ship `"Layout"`), the page's `root` should be `{ "type": "component", "component": "<baseComponent>", "children": [...] }`.
 
-4. **Build page using priority order**:
+4. **Build the page using this priority order**:
 
-   **Priority 1 - Existing Sections**: If a section component matches the need, use it:
+   **Priority 1 — Existing components**: compose the page from what's already in `components/`.
    ```json
    { "type": "component", "component": "HeroSection", "props": { "title": "..." } }
    ```
 
-   **Priority 2 - UI Components**: Compose with UI primitives (Grid, Stack, Card, Button):
-   ```json
-   {
-     "type": "component",
-     "component": "Grid",
-     "props": { "columns": "3" },
-     "children": [...]
-   }
-   ```
+   **Priority 2 — New components**: if a pattern repeats or the page needs a clear section (hero, feature grid, CTA), create a reusable component at `components/{Name}.json` using `/build-component`, then reference it. Use `examples.md` as a starting point.
 
-   **Priority 3 - Raw Nodes**: Only when no suitable component exists:
+   **Priority 3 — Raw nodes**: inline `type: "node"` only for layout scaffolding that isn't worth extracting.
    ```json
    { "type": "node", "tag": "div", "style": {...}, "children": [...] }
    ```
 
-5. **Create the page**: Write to `pages/[name].json`
+5. **Write the page** to `pages/{name}.json`.
 
 ## Key Rules
 
-### Component Usage
-Always check components.config.json first. Use component instances:
+### Page Structure
 ```json
 {
-  "type": "component",
-  "component": "ComponentName",
-  "props": { "propName": "value" },
-  "children": [...]  // if component has a slot
+  "meta": {
+    "title": "Page Title",
+    "description": "SEO description"
+  },
+  "root": {
+    "type": "component",
+    "component": "Layout",
+    "children": [
+      { "type": "component", "component": "HeroSection", "props": { "title": "..." } }
+    ]
+  }
 }
 ```
 
 ### Text Content
-Use `children` for text, **NOT** `text` prop:
+Use `children` for text, **NOT** a `text` prop:
 ```json
-// CORRECT
 { "type": "node", "tag": "span", "children": "Hello" }
-
-// WRONG
-{ "type": "node", "tag": "span", "text": "Hello" }
 ```
 
 ### Colors
-Always use CSS variables from colors.json:
+Always use CSS variables from `colors.json`:
 ```json
-"style": { "base": { "color": "var(--textPrimary)" } }
+"style": { "base": { "color": "var(--text)", "backgroundColor": "var(--bg)" } }
 ```
 
 ### Responsive Styles
-Use breakpoint object structure:
+Use breakpoint objects:
 ```json
 "style": {
   "base": { "fontSize": "48px", "padding": "80px" },
@@ -87,30 +82,14 @@ Use breakpoint object structure:
 }
 ```
 
-### Page Structure
-```json
-{
-  "meta": {
-    "title": "Page Title",
-    "description": "Page description for SEO"
-  },
-  "root": {
-    "type": "component",
-    "component": "Layout",
-    "children": [
-      // sections/components go here
-    ]
-  }
-}
-```
-
 ### Images
-Use standard HTML attributes:
+Reference assets by absolute path from `/images/`:
 ```json
 {
+  "type": "node",
   "tag": "img",
   "attributes": {
-    "src": "/image.jpg",
+    "src": "/images/hero.webp",
     "alt": "Description",
     "loading": "lazy"
   }
@@ -119,23 +98,25 @@ Use standard HTML attributes:
 
 ## Reference
 
-For detailed node types and patterns `.claude/docs/meno/components.md`
+- `CLAUDE.md` — node types, interface types, styles, page meta
+- `.claude/docs/meno/examples.md` — copy-ready Layout, Hero, Nav, Footer, CMS patterns
 
 ## Example
 
 User: `/build-page landing page with hero section and features grid`
 
 Actions:
-1. Read `components.config.json` - find HeroSection, FeaturesGrid in sections
-2. Read component files to understand their props
-3. Read `colors.json` for color palette
-4. Create `pages/landing.json` using existing section components:
+1. Glob `components/**/*.json` — discover what exists.
+2. If a `HeroSection` and `FeaturesGrid` already exist, read their interfaces and use them.
+3. Otherwise, read `examples.md`, adapt the Hero + Card-grid snippets into new components.
+4. Wrap the page in `Layout` (per `project.config.json.baseComponent`).
+5. Write `pages/landing.json`:
    ```json
    {
      "meta": { "title": "Landing", "description": "..." },
      "root": {
-       "type": "node",
-       "tag": "main",
+       "type": "component",
+       "component": "Layout",
        "children": [
          { "type": "component", "component": "HeroSection", "props": { "title": "..." } },
          { "type": "component", "component": "FeaturesGrid", "props": { "columns": "3" } }
