@@ -115,7 +115,7 @@
     "interface": {
       "quote": {
         "type": "rich-text",
-        "default": "\"This product has completely transformed how we work. I can't imagine going back to the old way of doing things.\""
+        "default": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\""
       },
       "avatar": {
         "type": "file",
@@ -124,11 +124,11 @@
       },
       "name": {
         "type": "string",
-        "default": "Jane Smith"
+        "default": "Jane Doe"
       },
       "role": {
         "type": "string",
-        "default": "CEO at Company"
+        "default": "Job title, Company Name"
       },
       "theme": {
         "type": "select",

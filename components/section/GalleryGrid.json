@@ -150,15 +150,15 @@
     "interface": {
       "subtitle": {
         "type": "string",
-        "default": "Portfolio"
+        "default": "Gallery"
       },
       "title": {
         "type": "rich-text",
-        "default": "Our recent work"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Explore some of our latest projects and see what we can create for you."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
@@ -179,33 +179,33 @@
         "default": [
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Project 1",
-            "text": "Brand Identity Design"
+            "title": "Item one",
+            "text": "Short caption for this gallery item"
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Project 2",
-            "text": "E-commerce Platform"
+            "title": "Item two",
+            "text": "Short caption for this gallery item"
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Project 3",
-            "text": "Mobile App UI"
+            "title": "Item three",
+            "text": "Short caption for this gallery item"
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Project 4",
-            "text": "Marketing Website"
+            "title": "Item four",
+            "text": "Short caption for this gallery item"
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Project 5",
-            "text": "Dashboard Design"
+            "title": "Item five",
+            "text": "Short caption for this gallery item"
           },
           {
             "image": "/images/placeholder-img.webp",
-            "title": "Project 6",
-            "text": "Product Photography"
+            "title": "Item six",
+            "text": "Short caption for this gallery item"
           }
         ]
       },

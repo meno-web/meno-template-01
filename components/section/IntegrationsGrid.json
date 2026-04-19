@@ -158,11 +158,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Works with your favorite tools"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Connect with the apps you already use and love."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
@@ -183,43 +183,43 @@
         "default": [
           {
             "icon": "/images/placeholder-img.webp",
-            "title": "Slack",
-            "text": "Team communication"
+            "title": "Item title",
+            "text": "Short caption"
           },
           {
             "icon": "/images/placeholder-img.webp",
-            "title": "Notion",
-            "text": "Documentation"
+            "title": "Item title",
+            "text": "Short caption"
           },
           {
             "icon": "/images/placeholder-img.webp",
-            "title": "Figma",
-            "text": "Design collaboration"
+            "title": "Item title",
+            "text": "Short caption"
           },
           {
             "icon": "/images/placeholder-img.webp",
-            "title": "GitHub",
-            "text": "Code management"
+            "title": "Item title",
+            "text": "Short caption"
           },
           {
             "icon": "/images/placeholder-img.webp",
-            "title": "Jira",
-            "text": "Project tracking"
+            "title": "Item title",
+            "text": "Short caption"
           },
           {
             "icon": "/images/placeholder-img.webp",
-            "title": "Zapier",
-            "text": "Automation"
+            "title": "Item title",
+            "text": "Short caption"
           },
           {
             "icon": "/images/placeholder-img.webp",
-            "title": "Stripe",
-            "text": "Payment processing"
+            "title": "Item title",
+            "text": "Short caption"
           },
           {
             "icon": "/images/placeholder-img.webp",
-            "title": "Google Analytics",
-            "text": "Website analytics"
+            "title": "Item title",
+            "text": "Short caption"
           }
         ]
       },

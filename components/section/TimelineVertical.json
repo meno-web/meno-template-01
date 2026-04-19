@@ -182,7 +182,7 @@
       },
       "text": {
         "type": "rich-text",
-        "default": "Follow these easy steps to begin your journey with us."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
@@ -198,20 +198,20 @@
         },
         "default": [
           {
-            "title": "Sign up for free",
-            "text": "Create your account in seconds. No credit card required to get started."
+            "title": "Step one",
+            "text": "Short description of this step that previews how the timeline looks and reads in the editor."
           },
           {
-            "title": "Set up your project",
-            "text": "Configure your workspace and invite your team members to collaborate."
+            "title": "Step two",
+            "text": "Short description of this step that previews how the timeline looks and reads in the editor."
           },
           {
-            "title": "Customize your workflow",
-            "text": "Tailor the platform to fit your specific needs and preferences."
+            "title": "Step three",
+            "text": "Short description of this step that previews how the timeline looks and reads in the editor."
           },
           {
-            "title": "Launch and grow",
-            "text": "Go live and start achieving your goals with our powerful tools."
+            "title": "Step four",
+            "text": "Short description of this step that previews how the timeline looks and reads in the editor."
           }
         ]
       },

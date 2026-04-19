@@ -141,18 +141,18 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "What our customers say"
+        "default": "What people are saying"
       },
       "text": {
         "type": "rich-text",
-        "default": "Don't just take our word for it. Here's what real customers have to say."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
         "itemSchema": {
           "text": {
             "type": "rich-text",
-            "default": "\"This product has completely transformed how we work. The interface is intuitive and the results speak for themselves.\""
+            "default": "\"A short testimonial quote goes here about a positive experience.\""
           },
           "image": {
             "type": "file",
@@ -164,27 +164,27 @@
           },
           "label": {
             "type": "string",
-            "default": "Role at Company"
+            "default": "Job title, Company Name"
           }
         },
         "default": [
           {
-            "text": "\"This product has completely transformed how we work. The interface is intuitive and the results speak for themselves.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "Sarah Johnson",
-            "label": "CEO at TechCorp"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           },
           {
-            "text": "\"We've seen a 40% increase in productivity since implementing this solution. I can't recommend it enough.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "Michael Chen",
-            "label": "Product Manager at StartupXYZ"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           },
           {
-            "text": "\"The customer support team is incredible. They helped us get set up in no time and are always there when we need them.\"",
+            "text": "\"A short testimonial quote goes here about a positive experience with your brand or offering.\"",
             "image": "/images/placeholder-img.webp",
-            "title": "Emily Rodriguez",
-            "label": "Director at Agency Inc"
+            "title": "Jane Doe",
+            "label": "Job title, Company Name"
           }
         ]
       },

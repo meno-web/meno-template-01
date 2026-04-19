@@ -97,7 +97,7 @@
     "interface": {
       "text": {
         "type": "rich-text",
-        "default": "Welcome! Check out our latest features and updates."
+        "default": "Short announcement text goes here."
       },
       "variant": {
         "type": "select",

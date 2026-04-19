@@ -106,11 +106,11 @@
     "interface": {
       "title": {
         "type": "rich-text",
-        "default": "A powerful tool designed for your workflow"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Streamline your process with an intuitive interface that puts you in control. Focus on what matters while we handle the complexity."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "image": {
         "type": "file",
@@ -126,13 +126,13 @@
         },
         "default": [
           {
-            "text": "Intuitive interface — Get started quickly without a steep learning curve"
+            "text": "Supporting point one — short description of this bullet item"
           },
           {
-            "text": "Real-time collaboration — Work together with your team seamlessly"
+            "text": "Supporting point two — short description of this bullet item"
           },
           {
-            "text": "Flexible and extensible — Adapt the platform to fit your specific needs"
+            "text": "Supporting point three — short description of this bullet item"
           }
         ]
       },

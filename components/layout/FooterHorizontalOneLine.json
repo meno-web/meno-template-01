@@ -121,7 +121,7 @@
     "interface": {
       "brandName": {
         "type": "string",
-        "default": "Starter"
+        "default": "Company Name"
       },
       "links": {
         "type": "list",
@@ -152,7 +152,7 @@
       },
       "copyright": {
         "type": "string",
-        "default": "© 2026 Starter. All rights reserved."
+        "default": "© 2026 Company Name. All rights reserved."
       },
       "theme": {
         "type": "select",

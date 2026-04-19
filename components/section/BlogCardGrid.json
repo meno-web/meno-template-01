@@ -203,7 +203,7 @@
       },
       "text": {
         "type": "rich-text",
-        "default": "Stay up to date with the latest news, tips, and insights."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
@@ -236,25 +236,25 @@
         "default": [
           {
             "image": "/images/placeholder-img.webp",
-            "label": "Technology",
-            "title": "Getting Started with Modern Web Development",
-            "text": "Learn the fundamentals of modern web development and best practices for building scalable applications.",
+            "label": "Category",
+            "title": "Article title goes here",
+            "text": "Short excerpt that previews how this article card looks and reads in the editor.",
             "link": "#",
             "date": "Jan 15, 2025"
           },
           {
             "image": "/images/placeholder-img.webp",
-            "label": "Design",
-            "title": "Design Systems: A Complete Guide",
-            "text": "How to build and maintain a design system that scales with your organization.",
+            "label": "Category",
+            "title": "Article title goes here",
+            "text": "Short excerpt that previews how this article card looks and reads in the editor.",
             "link": "#",
             "date": "Jan 10, 2025"
           },
           {
             "image": "/images/placeholder-img.webp",
-            "label": "Business",
-            "title": "Scaling Your Startup: Lessons Learned",
-            "text": "Key insights and strategies for growing your startup from seed to series A.",
+            "label": "Category",
+            "title": "Article title goes here",
+            "text": "Short excerpt that previews how this article card looks and reads in the editor.",
             "link": "#",
             "date": "Jan 5, 2025"
           }

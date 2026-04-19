@@ -152,11 +152,11 @@
     "interface": {
       "title": {
         "type": "rich-text",
-        "default": "Ready to build something great?"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Start customizing this template today. It only takes a few minutes to make it yours."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "theme": {
         "type": "select",

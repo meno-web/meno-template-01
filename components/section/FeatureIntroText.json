@@ -61,11 +61,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "Everything you need to succeed"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Our platform provides all the tools and features you need to build amazing products."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "theme": {
         "type": "select",

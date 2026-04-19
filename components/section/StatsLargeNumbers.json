@@ -184,11 +184,11 @@
       },
       "title": {
         "type": "rich-text",
-        "default": "The impact we've made"
+        "default": "Your section heading"
       },
       "text": {
         "type": "rich-text",
-        "default": "Real numbers that showcase our commitment to excellence."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "isCenter": {
         "type": "boolean",
@@ -213,18 +213,18 @@
         "default": [
           {
             "value": "2.5M+",
-            "label": "Users Worldwide",
-            "description": "Active users across 120+ countries trust our platform daily"
+            "label": "Stat label",
+            "description": "Short description of this statistic that previews how the row looks."
           },
           {
             "value": "99.9%",
-            "label": "Uptime Guarantee",
-            "description": "Enterprise-grade reliability you can count on"
+            "label": "Stat label",
+            "description": "Short description of this statistic that previews how the row looks."
           },
           {
             "value": "< 50ms",
-            "label": "Response Time",
-            "description": "Lightning-fast performance for seamless experiences"
+            "label": "Stat label",
+            "description": "Short description of this statistic that previews how the row looks."
           }
         ]
       },

@@ -118,7 +118,7 @@
       },
       "text": {
         "type": "rich-text",
-        "default": "Our track record speaks for itself. Here are some key metrics."
+        "default": "Short supporting description that previews how this section looks and reads in the editor."
       },
       "items": {
         "type": "list",
