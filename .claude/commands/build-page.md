@@ -23,7 +23,7 @@ Create a new page, reusing existing components where possible.
    - If the project is fresh/blank and has no matching components, read `.claude/docs/meno/examples.md` for ready-made Layout / Navigation / Hero / Card-grid / Footer patterns and adapt them into new component files before building the page.
 
 3. **Check the base component**:
-   - Read `project.config.json`. If `baseComponent` is set (blank projects ship `"Layout"`), the page's `root` should be `{ "type": "component", "component": "<baseComponent>", "children": [...] }`.
+   - Look at the `Base component:` line in your `## Current Project` context (provided automatically — do not read `project.config.json` for this). If a base component is listed, the page's `root` should be `{ "type": "component", "component": "<baseComponent>", "children": [...] }`. If no base component is listed, use a plain `{ "type": "node", "tag": "main", "children": [...] }` root instead.
 
 4. **Build the page using this priority order**:
 
