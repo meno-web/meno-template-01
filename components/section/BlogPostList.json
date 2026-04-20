@@ -43,7 +43,7 @@
           "children": [
             {
               "type": "link",
-              "tag": "a",
+              "href": "{{item._url}}",
               "style": {
                 "base": {
                   "display": "grid",
@@ -144,8 +144,7 @@
                     }
                   ]
                 }
-              ],
-              "href": "{{item._url}}"
+              ]
             }
           ]
         }
