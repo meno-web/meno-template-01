@@ -42,7 +42,7 @@
           },
           "children": [
             {
-              "type": "node",
+              "type": "link",
               "tag": "a",
               "style": {
                 "base": {
@@ -145,7 +145,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "href": "{{item._url}}"
             }
           ]
         }
