@@ -78,9 +78,15 @@ The `cms` object goes **inside** `meta`, not at root level. Also set `meta.sourc
 ```
 
 ### Content Item Structure
+
+**Every CMS item file MUST include `_id`, `_filename`, and `_createdAt` — the CMS will not list items missing these fields.** Use a short random id, a slug-like filename, and the current ISO timestamp.
+
 ```json
 // cms/posts/hello-world.json
 {
+  "_id": "abc123",
+  "_filename": "hello-world",
+  "_createdAt": "2024-01-15T10:00:00Z",
   "title": "Hello World",
   "slug": "hello-world",
   "excerpt": "My first blog post",

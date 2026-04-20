@@ -42,7 +42,7 @@
           },
           "children": [
             {
-              "type": "node",
+              "type": "link",
               "tag": "a",
               "style": {
                 "base": {
@@ -76,7 +76,6 @@
                 }
               ],
               "attributes": {
-                "href": "/blog/{{post.slug}}",
                 "fade": "{{0.4+itemIndex*0.2}}"
               },
               "children": [
@@ -145,7 +144,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "href": "{{item._url}}"
             }
           ]
         }

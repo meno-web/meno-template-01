@@ -1,4 +1,4 @@
-<!-- MENO_DOCS_VERSION: 1.7 -->
+<!-- MENO_DOCS_VERSION: 1.8 -->
 # Meno Core Documentation
 
 ## Quick Start
@@ -130,6 +130,26 @@ Properties: `html` (required), `style`, `attributes`, `label`
 
 ### 6. List (`type: "list"`)
 Iterate over prop arrays or CMS collections:
+
+**No styles on list nodes.** List nodes have no `style` or `interactiveStyles` — they are pure iteration (like React's `map()`). Wrap the list in a `type: "node"` parent for container styles; style a `type: "node"` inside `children` for per-item styles.
+
+```json
+{
+  "type": "node",
+  "tag": "ul",
+  "style": { "base": { "display": "grid", "gap": "16px" } },
+  "children": [
+    {
+      "type": "list",
+      "sourceType": "prop",
+      "source": "items",
+      "children": [
+        { "type": "node", "tag": "li", "style": { "base": { "padding": "8px" } }, "children": "{{item.title}}" }
+      ]
+    }
+  ]
+}
+```
 
 **Prop-based:**
 ```json
