@@ -8,7 +8,7 @@
         "component": "HeroCentered",
         "props": {
           "title": "Everything you need to build <span class=\"custom-span\" data-meno-span=\"true\">professional</span> website",
-          "text": "Design and publish professional websites without writing code. Start with this template and make it yours in minutes.",
+          "text": "",
           "theme": "light"
         }
       },
