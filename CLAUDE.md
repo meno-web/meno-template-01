@@ -1,4 +1,4 @@
-<!-- MENO_DOCS_VERSION: 1.8 -->
+<!-- MENO_DOCS_VERSION: 2.0.1 -->
 # Meno Core Documentation
 
 ## Quick Start
@@ -186,7 +186,26 @@ Iterate over prop arrays or CMS collections:
 - `limit`, `offset` - Pagination
 - Collection-only: `filter`, `sort`, `items`, `excludeCurrentItem`
 
-**Template variables:** `{{item.field}}`, `{{itemIndex}}`, `{{itemFirst}}`, `{{itemLast}}`
+**Template variables:** `{{item.field}}`, `{{item._url}}` (auto-computed page URL for CMS items), `{{itemIndex}}`, `{{itemFirst}}`, `{{itemLast}}`
+
+**Linking each item to its page** (CMS collections only) — wrap each item in a `link` node with `href: "{{item._url}}"` (or `{{<itemAs>._url}}` if renamed). `_url` is auto-computed from the collection schema's `urlPattern`; never write it to the item.
+```json
+{
+  "type": "list",
+  "sourceType": "collection",
+  "source": "posts",
+  "itemAs": "post",
+  "children": [
+    {
+      "type": "link",
+      "href": "{{post._url}}",
+      "children": [
+        { "type": "node", "tag": "h3", "children": "{{post.title}}" }
+      ]
+    }
+  ]
+}
+```
 
 ### 7. Locale List (`type: "locale-list"`)
 Language switcher based on project locales:
@@ -223,6 +242,32 @@ Properties: `displayType` ("code"|"name"|"nativeName"), `showFlag`, `showCurrent
 
 **`rich-text` editor** — `"basic"` (headings + inline) or `"extended"` (full toolbar).
 
+### Writing rich-text values inline
+
+`rich-text` prop values accept raw HTML when written by hand in page/component JSON. The SSR pipeline emits them unescaped. Supported inline patterns:
+
+| Pattern | Use |
+|---------|-----|
+| `<strong>text</strong>` | Bold |
+| `<em>text</em>` | Italic |
+| `<a href="/about">text</a>` | Internal link |
+| `<a href="https://…" target="_blank">text</a>` | External link (auto `rel="noopener noreferrer"`) |
+| `<span class="custom-span" data-meno-span="true">text</span>` | Class-based styling hook (pair with component `css`) |
+| `<br>` | Line break |
+
+Example — span-highlighted heading:
+```json
+"title": "Everything you need to build <span class=\"custom-span\" data-meno-span=\"true\">professional</span> website"
+```
+Companion CSS on the receiving component (e.g. `Heading.json` `css` field):
+```css
+h1 .custom-span, h2 .custom-span, h3 .custom-span { color: var(--h-span); }
+```
+
+**Always include `data-meno-span="true"`** on styled spans so the editor round-trips cleanly. Allowed link protocols: `http:`, `https:`, `mailto:`, `tel:`, plus `/path` and `#anchor` — other schemes are dropped.
+
+**Only works on `rich-text` props.** Plain `string` props HTML-escape their values — `<strong>` would render as literal text. Full allowlist: `packages/core/lib/shared/richtext/tiptapToHtml.ts` (`RICH_TEXT_ALLOWED_TAGS`, `RICH_TEXT_ALLOWED_ATTRS`).
+
 ---
 
 ## Template Variables
@@ -245,9 +290,23 @@ Templates support a full expression syntax, not just variable lookups. Use it an
 
 ---
 
-## Style Mappings
+## Property Mappings (`_mapping`)
 
-Use `_mapping` to vary styles based on props:
+`_mapping` transforms **one** property value based on a component prop. It is a value-level transform, not a general-purpose variable system. Four forms exist — each works in exactly one place:
+
+| Form | Where it goes | Example target | Notes |
+|------|---------------|----------------|-------|
+| Style | Any CSS property inside `style.base/tablet/mobile` | `backgroundColor`, `fontSize` | Works on `node`, `component`, `link`, `embed`, `locale-list` |
+| Link | `href` of a `type: "link"` node | `href` | `values` optional — omit for passthrough of a `type: "link"` prop |
+| HTML | `html` of a `type: "embed"` node | `html` | `values` optional — omit for passthrough of a string prop |
+| Boolean | `if` on any conditional node (incl. `list`) | `if` | `values` must be booleans |
+
+Shape:
+```json
+{ "_mapping": true, "prop": "<propName>", "values": { "<propValue>": "<output>" } }
+```
+
+Example — style mapping on `backgroundColor`:
 ```json
 "backgroundColor": {
   "_mapping": true,
@@ -255,6 +314,16 @@ Use `_mapping` to vary styles based on props:
   "values": { "primary": "var(--primary)", "secondary": "var(--secondary)" }
 }
 ```
+
+### Where `_mapping` does NOT work — use `{{propName}}` templates instead
+`_mapping` is only valid in the four places above. Everywhere else that accepts a string, use `{{propName}}` templates:
+- Component-instance `props` values → `"props": { "icon": "{{icon}}" }`
+- `tag` (HTML element name) → `"tag": "{{headingLevel}}"`
+- `attributes.*` (e.g., `src`, `alt`, `data-*`) → `"attributes": { "src": "{{image}}" }`
+- `children` text → `"children": "{{title}}"`
+- Inside `style` on a `type: "list"` node → `list` has no `style`; wrap it in a `type: "node"` parent.
+- `interface` prop `default` → defaults must be literal values; no mappings or templates.
+- `type: "slot"` → slots have no mappable fields.
 
 ---
 
