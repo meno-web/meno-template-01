@@ -1,4 +1,4 @@
-<!-- MENO_DOCS_VERSION: 2.0.2 -->
+<!-- MENO_DOCS_VERSION: 2.0.3 -->
 # Meno Core Documentation
 
 ## Quick Start
@@ -70,6 +70,12 @@ Components use the Meno JSON structure. NEVER use raw HTML/CSS format.
 }
 ```
 Properties: `tag` (required), `style`, `attributes`, `children`, `label`, `interactiveStyles`
+
+**Attributes must have a value**: Every attribute is rendered as `name="value"` — both sides are required. If the value side is `null`, `undefined`, or an entirely-template expression that resolves to empty, the whole attribute is dropped (not rendered as `name=""`). Key consequences:
+- `"attributes": { "target": "{{target}}" }` renders nothing when the `target` prop is missing/empty — the whole `target="..."` pair is stripped.
+- To guarantee the attribute appears, provide a non-empty value — a literal (`"target": "_self"`) or a template with a fallback (`"{{target || '_self'}}"`).
+- Boolean `true` renders as a bare attribute name (e.g. `disabled`); boolean `false` is dropped.
+- Never depend on a template resolving to an empty string to "emit an empty attribute" — it will be removed. If you truly need an empty-valued attribute, hard-code it (`"foo": ""`).
 
 **Text content**: Use `children` for text (there is NO `text` property):
 ```json
@@ -595,7 +601,7 @@ Static assets live next to your project files and are referenced by absolute pat
 A component may have up to three sibling files — all auto-linked by name:
 
 - `components/Foo.json` — structure + interface (required)
-- `components/Foo.js` — vanilla JS with auto-injected `el` and `props` (never use `export default` or `DOMContentLoaded`). See `.claude/docs/meno/javascript.md`.
+- `components/Foo.js` — vanilla JS with auto-injected `el` and `props` (never use `export default` or `DOMContentLoaded`). Every prop from `interface` is also destructured into scope automatically (`var { question, answer } = props` is prepended), so do NOT declare a local `const`/`let` with the same name as a prop — it is a SyntaxError that breaks the whole page bundle. Rename colliding locals (e.g. `answerEl` instead of `answer`). See `.claude/docs/meno/javascript.md`.
 - `components/Foo.css` — plain CSS appended to the page stylesheet; use for rules you can't express via `style` (keyframes, pseudo-elements, etc.)
 
 Alternatively, inline CSS via a component-level `css` field:

@@ -1,6 +1,8 @@
 ## JavaScript in Components (CRITICAL)
 
-**\`defineVars\` is automatic** - When you create a \`.js\` file for a component, \`defineVars: true\` is set automatically. You only need to set it manually if defining JavaScript inline in the JSON.
+**Always put component JS in a sibling \`.js\` file** (e.g. \`Button.json\` + \`Button.js\`). Do **NOT** write JS into the JSON \`component.javascript\` field unless the user explicitly asks for inline JS — the sibling file is the canonical pattern and is how every example component in the project is structured.
+
+**\`defineVars\` is automatic** - When you create a \`.js\` file for a component, \`defineVars: true\` is set automatically. The inline \`component.javascript\` field exists as a legacy fallback and requires setting \`defineVars\` manually; only use it when the user explicitly asks for inline JS.
 
 ### How defineVars Works
 
@@ -22,12 +24,22 @@ When a component has a \`.js\` file (e.g., \`Button.js\` for \`Button.json\`), y
 \`\`\`javascript
 // ComponentName.js - el and props are automatically available (defineVars is auto-enabled)
 const button = el.querySelector('[data-action="submit"]');
-const { title } = props;
-
+// title is already in scope - see "Props are destructured into scope" below
 button?.addEventListener('click', () => {
   console.log('Clicked:', title);
 });
 \`\`\`
+
+### Props are destructured into scope automatically
+
+Every prop from \`interface\` is destructured into scope automatically — e.g. a component with props \`question\` and \`answer\` compiles to:
+
+\`\`\`javascript
+var { question, answer } = props;
+// ...your code here...
+\`\`\`
+
+**Do not declare local variables with the same name as any prop.** Redeclaring a prop name with \`const\`/\`let\` is a SyntaxError that breaks the entire bundle (not just your component — nothing on the page initializes). Common trap: a prop called \`answer\` or \`title\` colliding with a local \`const answer = el.querySelector(...)\`. Rename the local (e.g. \`answerEl\`) when a prop already owns the name.
 
 ### Why NOT to use DOMContentLoaded
 
@@ -95,7 +107,7 @@ el.addEventListener('open-modal', (e) => {
 
 ### Rules Summary
 
-1. **Create a .js file** - defineVars is automatic when .js file exists
+1. **Create a sibling .js file** - canonical pattern; defineVars is automatic when .js file exists. Do NOT write JS into the JSON \`component.javascript\` field unless the user explicitly asks for inline JS.
 2. **Never use DOMContentLoaded** - Breaks in editor
 3. **Never use React** - No JSX, hooks, or React imports
 4. Use \`el.querySelector()\` to find child elements
