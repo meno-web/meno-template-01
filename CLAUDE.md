@@ -1,4 +1,4 @@
-<!-- MENO_DOCS_VERSION: 2.0.3 -->
+<!-- MENO_DOCS_VERSION: 2.0.4 -->
 # Meno Core Documentation
 
 ## Quick Start
@@ -390,6 +390,22 @@ Styles support three breakpoints:
   "mobile": { "fontSize": "14px", "padding": "12px" }
 }
 ```
+
+---
+
+## Shorthand Rules
+
+**Always split `border` from its color.** Keep the width+style in `border` and the color in a separate `borderColor` property so the editor's color picker and variable tokens can target the color independently.
+
+```json
+// CORRECT
+"style": { "base": { "border": "1px solid", "borderColor": "var(--border)" } }
+
+// WRONG — color is locked inside the shorthand, picker/tokens can't edit it
+"style": { "base": { "border": "1px solid var(--border)" } }
+```
+
+Same rule per side: `borderTop: "1px solid"` + `borderTopColor: "var(--border)"`, etc.
 
 ---
 
