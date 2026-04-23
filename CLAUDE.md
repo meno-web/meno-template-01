@@ -1,4 +1,4 @@
-<!-- MENO_DOCS_VERSION: 2.0.1 -->
+<!-- MENO_DOCS_VERSION: 2.0.2 -->
 # Meno Core Documentation
 
 ## Quick Start
@@ -680,3 +680,15 @@ Read this file to understand what the user is looking at. Key fields:
 - `currentPage` - Page route being previewed
 - `style` - Current styles on the node
 - `props` - Current props on the node
+
+---
+
+## Match the Page's Existing Pattern
+
+Once you know the selected file from `.meno/selection.json`, **read the file and detect which of these patterns it already uses, then mirror it**. Don't mix styles within a page.
+
+- **Lists** — the page contains a `{ "type": "list", ... }` node (`sourceType: "prop"` or `"collection"`). To add items, extend the list's `source` (or the underlying prop/CMS collection) or tweak its `children` template — do **not** hand-roll duplicate sibling components next to the list.
+- **Pure components** — the page is a tree of `type: "component"` instances with no list nodes. To add items, insert another sibling component instance in the same style — do **not** introduce a list.
+- **Variables** — styles already use `var(--…)` tokens and component props flow through `{{propName}}` templates (or `_mapping` for transformed values). Keep writing through tokens/templates — do **not** hard-code colors, sizes, spacing, or prop values when the surrounding page already routes through variables.
+
+If the user explicitly asks for a different pattern, follow their instruction. Otherwise, match what's already there.
