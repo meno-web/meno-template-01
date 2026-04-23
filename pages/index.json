@@ -43,7 +43,8 @@
         "type": "component",
         "component": "FaqAccordion",
         "props": {
-          "theme": "primary"
+          "theme": "primary",
+          "text": "Short supporting description that previews how this section looks and reads in the editor."
         }
       },
       {
