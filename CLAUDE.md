@@ -1,4 +1,4 @@
-<!-- MENO_DOCS_VERSION: 2.0.4 -->
+<!-- MENO_DOCS_VERSION: 2.0.23 -->
 # Meno Core Documentation
 
 ## Quick Start
@@ -15,10 +15,14 @@ A blank Meno project ships with:
 **First steps when asked to build something:**
 1. Read `.claude/docs/meno/examples.md` for copy-ready Layout / Navigation / Hero / CMS patterns.
 2. Build components by creating `components/{Name}.json` (use the examples as a starting point).
-3. Fill `pages/{name}.json` with a `root` that uses `type: "component"`, `component: "Layout"` and section components as children.
+3. Fill `pages/{name}.json` with a `root` that uses `type: "component"`, `component: "Layout"` and **page-specific** section components as children. Sections that should appear on every page belong in `components/Layout.json` instead.
 4. Add images to `/images/` and reference them with absolute paths: `/images/hero.webp`.
 
 **Do not assume** `components.config.json` exists — blank projects do not ship it. List the `components/` directory directly to discover what's available.
+
+**Before creating a CMS collection** (writing anything under `templates/*.json` with `meta.source: "cms"`, or any file under `cms/`), **read `.claude/docs/meno/cms-schema.md` first.** A collection needs three pieces in lockstep: a template page at `templates/{id}.json` with the `cms` schema inside `meta`, the `cms/{id}/` directory, and at least one item file with `_id` matching the file's stem (e.g. `hello-world.json` → `"_id": "hello-world"`) plus `_createdAt`. Skip any of these and you get an empty collection in the editor with no error surfaced.
+
+**Before writing any `data-meno-filter` / `data-meno-list` / `data-meno-range` attribute, or wiring filtering / sorting / search over a CMS collection, read `.claude/docs/meno/meno-filter.md` first.** Getting it right requires a schema flag (`clientData.enabled` + `strategy: "static"`), a list flag (`emitTemplate: true`), and a field-naming convention that the doc spells out. Skipping the doc almost always produces a "count moves but cards don't" or "filter does nothing" silent failure.
 
 ---
 
@@ -100,6 +104,16 @@ Properties: `component` (required), `props`, `children`
 "props": { "icon": "{{icon}}" }
 ```
 
+**Template scope inside a component's structure** — when a component instance is used inside a list, `{{item.X}}` (or whatever `itemAs` is set to) resolves in the **`props` block of the instance** and inside the component's `children`/text/`href`. It does **not** resolve inside the `attributes` object on the component's structure root. If you need the iteration value on a root attribute (e.g. `data-id`, `data-{field}` for filters), forward it as a prop and reference the local prop name inside the component's `attributes`:
+```json
+// Page (inside the list)
+{ "type": "component", "component": "Card",
+  "props": { "id": "{{item._id}}", "tier": "{{item.priceTier}}" } }
+
+// Card.json structure root
+"attributes": { "data-id": "{{id}}", "data-tier": "{{tier}}" }
+```
+
 ### 3. Slot (`type: "slot"`)
 Placeholder where component children are injected. Only ONE per component.
 ```json
@@ -116,6 +130,8 @@ Placeholder where component children are injected. Only ONE per component.
 }
 ```
 Properties: `href` (required), `children`, `style`, `attributes`
+
+**Never nest links.** `type: "link"` nodes (and any `<a>` tags in rich text or embed HTML) must not contain other links — HTML forbids nested anchors, so browsers silently split the DOM and navigation breaks. If a card needs both an outer link and an inner CTA, make the whole card one link and render the CTA as plain styled text (or a non-anchor element), not a second link.
 
 **Dynamic href** - use template with link-type prop:
 ```json
@@ -187,10 +203,13 @@ Iterate over prop arrays or CMS collections:
 
 **Properties:**
 - `sourceType` - "prop" (default) or "collection"
-- `source` (required) - Prop name or collection name
+- `source` (required) - Prop name or collection name. For `sourceType: "prop"` only, may also be a `{{...}}` template that resolves to an array from the parent template context (e.g. `source: "{{category.items}}"` inside a parent list). For `sourceType: "collection"` it must be a literal collection name.
 - `itemAs` - Variable name for templates (default: "item")
 - `limit`, `offset` - Pagination
-- Collection-only: `filter`, `sort`, `items`, `excludeCurrentItem`
+- Collection-only:
+  - `items` — explicit ID list. Accepts a literal string, literal array, or a `{{...}}` template that resolves to either (e.g. `{{cms.author}}`, `{{cms.tags}}`, or `{{post.tags}}` from a parent list). When `items` is set, MenoFilter SSR calls `cmsService.getItemsByIds(source, ids)` instead of running a query — used for resolving reference fields. `source` is the **target collection** to fetch from, not the field name.
+  - `filter` — query filter. Values support `{{...}}` templates resolved against the parent template context, so the inner query can reference the outer loop variable.
+  - `sort`, `excludeCurrentItem`
 
 **Template variables:** `{{item.field}}`, `{{item._url}}` (auto-computed page URL for CMS items), `{{itemIndex}}`, `{{itemFirst}}`, `{{itemLast}}`
 
@@ -212,6 +231,79 @@ Iterate over prop arrays or CMS collections:
   ]
 }
 ```
+
+**Nested collection lists** — render fields from a referenced collection (`type: "reference"` field) by nesting a second `list` whose `items` template points at the parent's reference field. `source` is the **target collection**; `items` is the array (or single string) of IDs/filenames to fetch. Always set `itemAs` on the inner list so its loop variable doesn't shadow the outer one.
+
+```json
+{
+  "type": "list",
+  "sourceType": "collection",
+  "source": "charters",
+  "itemAs": "item",
+  "children": [
+    {
+      "type": "node",
+      "tag": "article",
+      "children": [
+        { "type": "component", "component": "Heading", "props": { "tag": "3", "text": "{{item.title}}" } },
+        {
+          "type": "list",
+          "sourceType": "collection",
+          "source": "charter-tags",
+          "itemAs": "tag",
+          "items": "{{item.tags}}",
+          "children": [
+            { "type": "component", "component": "Badge", "props": { "text": "{{tag.name}}" } }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+`items` accepts the three shapes a reference field can take:
+- `"{{cms.author}}"` — single `type: "reference"` field on a CMS template page (string ID).
+- `"{{cms.tags}}"` — multi-reference field (`multiple: true`, array of IDs).
+- `"{{item.X}}"` — same shapes resolved from a parent list's loop variable (rename via `itemAs` if you renamed it).
+
+**Templated `filter` from a parent list.** Inside an outer list, the inner list can run a query that references the outer loop variable. Useful when the parent doesn't store an array of child IDs (no back-reference field), but each child references its parent.
+
+```json
+{
+  "type": "list",
+  "sourceType": "collection",
+  "source": "team",
+  "itemAs": "author",
+  "children": [
+    {
+      "type": "node",
+      "tag": "section",
+      "children": [
+        { "type": "node", "tag": "h3", "children": "{{author.name}}" },
+        {
+          "type": "list",
+          "sourceType": "collection",
+          "source": "posts",
+          "filter": { "field": "author", "value": "{{author._id}}" },
+          "itemAs": "post",
+          "children": [
+            { "type": "node", "tag": "h4", "children": "{{post.title}}" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+`filter` values pass through `resolveFilterTemplates` against the **parent list's template context**, so any `{{<itemAs>.field}}` from the outer loop works. The whole `value` must be a single `{{...}}` expression — partial templates like `"prefix-{{x}}"` are not resolved. The simple-object form (`"filter": { "category": "{{author.role}}" }`) is also accepted — both shapes work.
+
+**Page-root in a CMS template (`templates/{collection}.json`).** `filter` values are NOT resolved against `cmsContext` here — `{{cms._id}}` in a `filter.value` will be left as the literal string and match nothing. To list "items belonging to the current CMS item" at page root, prefer one of:
+1. **Back-reference array on the parent** (most common): store an array of child IDs on the parent CMS item (e.g. `team` has `posts: ["hello-world", "second-post"]`) and use `items: "{{cms.posts}}"` — the `{{cms.X}}` form on `items` IS resolved against `cmsContext`.
+2. Wrap the inner list in a one-item outer list whose source is the current item, so the inner `filter` sees a parent template context.
+
+**Performance note** — every parent iteration triggers a fresh `getItemsByIds` (or `queryItems`) call at SSR time. For large outer lists, prefer denormalising the labels you actually render onto the parent (`tagsLabels: ["Scenic","Adventure"]` as a plain string array) and iterating that as a `sourceType: "prop"` list — no second collection lookup per row.
 
 ### 7. Locale List (`type: "locale-list"`)
 Language switcher based on project locales:
@@ -247,6 +339,8 @@ Properties: `displayType` ("code"|"name"|"nativeName"), `showFlag`, `showCurrent
 **`list` prop** — used for arrays of structured items (e.g., feature cards, testimonials). Define the per-item shape under `itemSchema`. In the structure, render with a `list` node whose `sourceType` is `"prop"` and `source` matches the prop name.
 
 **`rich-text` editor** — `"basic"` (headings + inline) or `"extended"` (full toolbar).
+
+**Boolean prop → `data-*` attribute**: a `boolean`-typed prop rendered into an attribute template follows HTML5 boolean-attribute rules — `true` becomes a bare attribute (`data-active`), `false` is dropped. Neither stringifies to `"true"`/`"false"`. If you need a filterable string value (e.g. for MenoFilter `data-{field}`), declare the prop as `string` and convert at the call site with a ternary: `"props": { "active": "{{item.active ? 'true' : 'false'}}" }`. The matching filter button must also have the field declared in `data-meno-types` (e.g. `{"active":"boolean"}`) so MenoFilter coerces its string `data-meno-filter-value` against the typed JSON value — see `.claude/docs/meno/meno-filter.md` → **Type Coercion**.
 
 ### Writing rich-text values inline
 
@@ -494,14 +588,19 @@ Use in styles via `var()`: `{ "fontSize": "var(--h1-fs)" }`
 
 ## Layout & Base Component
 
-Setting `baseComponent` in `project.config.json` wraps every page's `root` inside that component's slot. This is how real projects share nav, footer, and global wrappers across pages.
+`baseComponent` in `project.config.json` wraps every page's `root` inside that component's `slot`. The Layout component is the **shared chrome** (nav, footer, global wrappers) — its `children` render on every page. Pages contribute **page-specific content** as children of the Layout instance.
 
-**project.config.json:**
-```json
-{ "baseComponent": "Layout" }
-```
+**Decide where a section goes before writing:**
 
-**components/Layout.json** (minimal):
+| Should this section show on every page? | → `components/Layout.json` children |
+|------------------------------------------|----------------------------------------|
+| Should this section show on one page?    | → `pages/{name}.json` `root.children` (default) |
+
+The `{ "type": "slot" }` inside Layout is the injection point where each page's content lands automatically — don't put page-specific siblings next to it.
+
+**project.config.json:** `{ "baseComponent": "Layout" }`
+
+**components/Layout.json** (minimal — shared chrome only):
 ```json
 {
   "component": {
@@ -515,7 +614,7 @@ Setting `baseComponent` in `project.config.json` wraps every page's `root` insid
 }
 ```
 
-**pages/index.json** using it:
+**pages/index.json** (page-specific content as children of the Layout instance):
 ```json
 {
   "root": {
@@ -582,18 +681,27 @@ Declare locales in `project.config.json`:
 }
 ```
 
-**`_i18n` value objects** — any string meta field or prop value can be replaced by an object with translations:
+**`_i18n` value objects** — any string can be replaced by an object with translations:
 
 ```json
 "title": { "_i18n": true, "en": "Hello", "pl": "Cześć" }
 ```
 
-Works in `meta.title`, `meta.description`, `meta.ogTitle`, component prop defaults, and page `root` string values.
+Works **everywhere a string is rendered to the page**, including inside component structures (not just page roots):
+- `meta.title`, `meta.description`, `meta.ogTitle` in pages and templates
+- Component instance `props` values in page/template `root` AND nested inside other components
+- Component prop `default` values inside `interface` (`components/*.json`)
+- Raw `type: "node"` / `type: "link"` / `type: "embed"` **`children` text** — both at page `root` and inside a component's `structure`
+- Raw `type: "node"` **`attributes.*` values** (e.g. `alt`, `aria-label`, `title`, `data-*`) — same scope as above
+- **CMS item field values** — any `string` / `text` / `rich-text` field in `cms/{collection}/*.json`. The schema's `type` stays the same; just swap the value for an `_i18n` object. See `cms-schema.md` → **Localizing CMS items** for the worked example.
 
-**Per-locale URLs** — use `meta.slugs`:
-```json
-"slugs": { "en": "/about", "pl": "/o-nas" }
-```
+The SSR pipeline and the in-browser ComponentBuilder both auto-resolve `_i18n` shapes against the active locale, with fallback to `defaultLocale` then any available value.
+
+**Per-locale URLs:**
+- **Static pages**: `meta.slugs` — `"slugs": { "en": "/about", "pl": "/o-nas" }`.
+- **CMS items**: set the slug-field value to an `_i18n` object — `"slug": { "_i18n": true, "en": "hello", "pl": "witaj" }`. The collection's `urlPattern` stays unchanged; the SSR resolves the locale-specific slug at render time.
+
+**To translate a whole site**: locale declaration + every user-visible string in pages, templates, components, AND CMS items + per-locale URLs in both `meta.slugs` (pages) and item slug fields (CMS).
 
 **Language switcher** — use the `locale-list` node type (see Node Types section).
 
@@ -692,22 +800,27 @@ Topic-specific guides live in `.claude/docs/meno/`. Read the one that matches yo
 
 ## Editor Selection Context
 
-When the Meno editor is running, the currently selected element is written to `.meno/selection.json`.
-Read this file to understand what the user is looking at. Key fields:
-- `filePath` - JSON file being edited (e.g., `pages/index.json`, `components/Button.json`)
-- `path` - Array path to selected node in the tree (e.g., `[0, 1, 2]`)
-- `nodeType` - Type: html, component, slot, embed, link, locale-list
-- `tag` - HTML tag (div, span, etc.) for html nodes
-- `componentName` - Component name for component instances
-- `currentPage` - Page route being previewed
-- `style` - Current styles on the node
-- `props` - Current props on the node
+When the Meno editor is running, the currently selected element is written to `.meno/selection.json` as a **bare JSON array** — the editing hierarchy from the outermost page through every component drill-in down to the selected node:
+
+```json
+[
+  "pages/index.json:6-14",
+  "components/section/HeroCentered.json:49-56",
+  "components/ui/Button.json:90-101"
+]
+```
+
+- Each entry is shaped as `<filePath>:<lineStart>-<lineEnd>`. The line range may be a single number, or omitted when unknown.
+- **The last entry is the selected node itself.** Earlier entries are the component instances the user clicked through to reach it — the next entry's filename names that component (e.g. `pages/index.json:6-14` points to a `HeroCentered` instance, made obvious by the next line being `components/section/HeroCentered.json`).
+- The line range disambiguates *which* instance was entered when a page contains several of the same component.
+- Open the file at the given line range to see the node's full `type`, `tag`, `componentName`, `style`, `props` in source. Those fields are intentionally not duplicated in `selection.json`.
+- When nothing is selected the file contains `null`.
 
 ---
 
 ## Match the Page's Existing Pattern
 
-Once you know the selected file from `.meno/selection.json`, **read the file and detect which of these patterns it already uses, then mirror it**. Don't mix styles within a page.
+Once you know the selected file from the last entry of the array in `.meno/selection.json`, **read the file and detect which of these patterns it already uses, then mirror it**. Don't mix styles within a page.
 
 - **Lists** — the page contains a `{ "type": "list", ... }` node (`sourceType: "prop"` or `"collection"`). To add items, extend the list's `source` (or the underlying prop/CMS collection) or tweak its `children` template — do **not** hand-roll duplicate sibling components next to the list.
 - **Pure components** — the page is a tree of `type: "component"` instances with no list nodes. To add items, insert another sibling component instance in the same style — do **not** introduce a list.
